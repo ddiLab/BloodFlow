@@ -37,12 +37,16 @@ class AngleRbc : public Angle {
   void read_restart(FILE *);
   void write_data(FILE *);
   double single(int, int, int, int);
-  void computeAreaVol(double *, double *);
+  void computeAreaVol(double *, double *, int **);
+  void minimum_image_xyz(double &dx, double &dy, double &dz, int &xflag, int &yflag, int &zflag);
+  void check_crossing(int **crossFlag);
+  void positionShift(double *, double *, int *);
 
  protected:
   double *Cq,*q,*ka,*A0t,*kv,*V0t,*kd,*A0;
   int nmolecule; 
   double *At,*Vt;
+  int **crossFlag;
 
   virtual void allocate();
 };
