@@ -25,6 +25,7 @@
 #include "error.h"
 #include "update.h"//debug only
 #include <vector>
+#include <set>
 
 using namespace LAMMPS_NS;
 using namespace MathConst;
@@ -297,7 +298,7 @@ void AngleRbc::compute(int eflag, int vflag)
     }*/
 /*
       int me = comm->me;
-            if ( ntimestep > 1700){
+            if ( ntimestep > 1){
                 printf("Vt %lg V0t %lg At %lg A0t %lg\n",Vt[molId],V0t[type],At[molId],A0t[type]);
                 printf("cnt %lg %lg %lg xi %lg %lg %lg\n",cnt[0],cnt[1],cnt[2],xi[0],xi[1],xi[2] );
                 //printf("x1 %lg %lg %lg x2 %lg %lg %lg x3 %lg %lg %lg\n",x[i1][0],x[i1][1],x[i1][2],x[i2][0],x[i2][1],x[i2][2],x[i3][0],x[i3][1],x[i3][2] );
@@ -609,6 +610,45 @@ void AngleRbc::check_crossing(int **crossFlag)
   double **x = atom->x;
   tagint *molecule = atom->molecule;
   std::vector< std::vector<double> > xx;
+  //new code
+  /*std::set<int> cell;
+  std::set<int>::iterator it; 
+  for (int i=0;i<nlocal;i++){
+    cell.insert(molecule[i]);
+  }
+  for (it=cell.begin();it!=cell.end();it++){
+    xx.clear();
+    for (int i=0;i<nlocal;i++){
+      molId = molecule[i];
+      if (*it == molId){
+        std::vector<double> tmp;
+        tmp.push_back(x[i][0]);
+        tmp.push_back(x[i][1]);
+        tmp.push_back(x[i][2]);
+        xx.push_back(tmp);
+      }
+    }
+    maxX[0]=domain->sublo[0];
+    maxX[1]=domain->sublo[1];
+    maxX[2]=domain->sublo[2];
+    minX[0]=domain->subhi[0];
+    minX[1]=domain->subhi[1];
+    minX[2]=domain->subhi[2];
+    for (int i=0;i<xx.size();i++){
+      if (xx[i][0] > maxX[0]) maxX[0] = xx[i][0];
+      if (xx[i][1] > maxX[1]) maxX[1] = xx[i][1];
+      if (xx[i][2] > maxX[2]) maxX[2] = xx[i][2];
+      if (xx[i][0] < minX[0]) minX[0] = xx[i][0];
+      if (xx[i][1] < minX[1]) minX[1] = xx[i][1];
+      if (xx[i][2] < minX[2]) minX[2] = xx[i][2];
+    }
+    MPI_Allreduce(&maxX[0],&gmax[0],3,MPI_DOUBLE,MPI_MAX,world);
+    MPI_Allreduce(&minX[0],&gmin[0],3,MPI_DOUBLE,MPI_MIN,world);
+    if ((gmax[0]-gmin[0])>domain->xprd_half) crossFlag[*it][0]=1;
+    if ((gmax[1]-gmin[1])>domain->yprd_half) crossFlag[*it][1]=1;
+    if ((gmax[2]-gmin[2])>domain->zprd_half) crossFlag[*it][2]=1;
+  }*/
+  
   for (int j = 1; j < nmolecule+1; j++) {
     xx.clear();
     for (int i=0;i<nlocal;i++){
@@ -650,16 +690,16 @@ void AngleRbc::positionShift(double *x, double *xnew, int *crossFlag){
   if (crossFlag[0] == 1){
     double xprd_half = domain->xprd_half;  
     double xprd = domain->xprd;
-    if (x[0] < xprd_half) xnew[0] = x[0] + xprd;
+    if (x[0] < domain->boxlo[0] + xprd_half) xnew[0] = x[0] + xprd;
   }
   if (crossFlag[1] == 1){
     double yprd_half = domain->yprd_half;  
     double yprd = domain->yprd;
-    if (x[1] < yprd_half) xnew[1] = x[1] + yprd;
+    if (x[1] < domain->boxlo[1] + yprd_half) xnew[1] = x[1] + yprd;
   }
   if (crossFlag[2] == 1){
     double zprd_half = domain->zprd_half; 
     double zprd = domain->zprd;
-    if (x[2] < zprd_half) xnew[2] = x[2] + zprd;
+    if (x[2] < domain->boxlo[2] + zprd_half) xnew[2] = x[2] + zprd;
   }    
 }
