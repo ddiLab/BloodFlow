@@ -95,6 +95,7 @@ void AngleRbc::computeAreaVol(double *At, double *Vt, int **crossFlag){
   double delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3;
   double xi[3],cnt[3],xi2;
   double at,vt;
+  double nhat,area,a_xy;
   double rsq1,rsq2,r1,r2;
     
   double x1[3],x2[3],x3[3];
@@ -107,6 +108,9 @@ void AngleRbc::computeAreaVol(double *At, double *Vt, int **crossFlag){
   int nlocal = atom->nlocal;
   int newton_bond = force->newton_bond;
     
+  int xperiodic = domain->xperiodic;
+  int yperiodic = domain->yperiodic;
+  int zperiodic = domain->zperiodic;
   check_crossing(crossFlag);
   // each processor has nanglelist, see neighbor.cpp
   // calculate area and volume
@@ -166,7 +170,19 @@ void AngleRbc::computeAreaVol(double *At, double *Vt, int **crossFlag){
     xi[2]=dely1*delx2 - delx1*dely2;
     
     xi2=xi[0]*xi[0] + xi[1]*xi[1] + xi[2]*xi[2];
-    At[molId] += 0.5*sqrt(xi2);
+    area = 0.5*sqrt(xi2);
+    //At[molId] += 0.5*sqrt(xi2);
+    At[molId] += area;
+
+    //new code
+    /*if (xperiodic || yperiodic){
+      a_xy = 0.5*xi[2];//area projection on xy plane
+      Vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
+    }else if(zperiodic){
+      a_xy = 0.5*xi[1];//area projection on xz plane
+      Vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
+    }*/
+
 
     /*cnt[0]=(x[i1][0] + x[i2][0] + x[i3][0])/3.0;
     cnt[1]=(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
@@ -176,6 +192,7 @@ void AngleRbc::computeAreaVol(double *At, double *Vt, int **crossFlag){
     cnt[2]=(x1[2] + x2[2] + x3[2])/3.0;
     
     Vt[molId] += 1.0/6.0*(xi[0]*cnt[0] + xi[1]*cnt[1] + xi[2]*cnt[2]);
+
    /* 
     bigint ntimestep;
     ntimestep = update->ntimestep;
@@ -198,6 +215,122 @@ void AngleRbc::computeAreaVol(double *At, double *Vt, int **crossFlag){
     MPI_Allreduce(&Vt[i],&vt,1,MPI_DOUBLE,MPI_SUM,world);
     At[i] = at;
     Vt[i] = vt;
+    //if (comm->me == 0) 
+    //printf("%d cell: Vt %lg  At %lg \n",i,Vt[i],At[i]);
+  }
+}
+
+/* ------------------No check on crossing boundary-------------------- */
+void AngleRbc::computeAreaVol(double *At, double *Vt){
+  for (int i = 1; i < nmolecule+1; i++) {
+    At[i] = 0.0;
+    Vt[i] = 0.0;
+  }
+  int i1,i2,i3,n,type,molId;
+  double delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3;
+  double xi[3],cnt[3],xi2;
+  double at,vt;
+  double nhat,area,a_xy;
+  double rsq1,rsq2,r1,r2;
+    
+  double x1[3],x2[3],x3[3];
+  double **x = atom->x;
+  double **f = atom->f;
+  tagint *molecule = atom->molecule;
+  tagint *image = atom->image;
+  int **anglelist = neighbor->anglelist;
+  int nanglelist = neighbor->nanglelist;
+  int nlocal = atom->nlocal;
+  int newton_bond = force->newton_bond;
+    
+  int xperiodic = domain->xperiodic;
+  int yperiodic = domain->yperiodic;
+  int zperiodic = domain->zperiodic;
+  // each processor has nanglelist, see neighbor.cpp
+  // calculate area and volume
+  for (n = 0; n < nanglelist; n++) {
+    i1 = anglelist[n][0];
+    i2 = anglelist[n][1];
+    i3 = anglelist[n][2];
+    type = anglelist[n][3];
+    molId = molecule[i2];
+
+    //if (molId < 0 || molId > nmolecule+1)  error->all(FLERR,"Wrong molecule ID");
+
+    // 1st bond
+    /*    /\3
+     *   /  \
+     *  /1___\2
+     * dx_ij=x_i - x_j
+     * */
+    delx1 = x[i1][0] - x[i2][0];
+    dely1 = x[i1][1] - x[i2][1];
+    delz1 = x[i1][2] - x[i2][2];
+        
+    rsq1 = delx1*delx1 + dely1*dely1 + delz1*delz1;
+    r1 = sqrt(rsq1);
+
+    // 2nd bond
+    delx2 = x[i3][0] - x[i2][0];
+    dely2 = x[i3][1] - x[i2][1];
+    delz2 = x[i3][2] - x[i2][2];
+    
+    rsq2 = delx2*delx2 + dely2*dely2 + delz2*delz2;
+    r2 = sqrt(rsq2);
+
+    // 3rd bond
+    delx3 = x[i1][0] - x[i3][0];
+    dely3 = x[i1][1] - x[i3][1];
+    delz3 = x[i1][2] - x[i3][2];
+    
+    // norm xi=dx_2 x dx_1
+    xi[0]=delz1*dely2 - dely1*delz2;
+    xi[1]=delx1*delz2 - delz1*delx2;
+    xi[2]=dely1*delx2 - delx1*dely2;
+    
+    xi2=xi[0]*xi[0] + xi[1]*xi[1] + xi[2]*xi[2];
+    area = 0.5*sqrt(xi2);
+    //At[molId] += 0.5*sqrt(xi2);
+    At[molId] += area;
+
+    //new code
+    if (xperiodic || yperiodic){
+      a_xy = 0.5*xi[2];//area projection on xy plane
+      Vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
+    }else if(zperiodic){
+      a_xy = 0.5*xi[1];//area projection on xz plane
+      Vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
+    }
+
+
+   /* 
+    bigint ntimestep;
+    ntimestep = update->ntimestep;
+    if (ntimestep > 1700 && n==13){
+                printf("angle %d\n",n);
+                printf("crossing %d %d %d\n",crossFlag[0],crossFlag[1],crossFlag[2]);
+                printf("Vt %lg V0t %lg At %lg A0t %lg\n",Vt[molId],V0t[type],At[molId],A0t[type]);
+                printf("dV %lg\n",1.0/6.0*(xi[0]*cnt[0] + xi[1]*cnt[1] + xi[2]*cnt[2]) );
+                printf("dA %lg\n",0.5*sqrt(xi2) );
+                printf("image %d %d %d\n",image[i1],image[i2],image[i3] );
+                
+                printf("cnt %lg %lg %lg xi %lg %lg %lg\n",cnt[0],cnt[1],cnt[2],xi[0],xi[1],xi[2] );
+                //printf("x1 %lg %lg %lg x2 %lg %lg %lg x3 %lg %lg %lg\n",x[i1][0],x[i1][1],x[i1][2],x[i2][0],x[i2][1],x[i2][2],x[i3][0],x[i3][1],x[i3][2] );
+                printf("x1 %lg %lg %lg x2 %lg %lg %lg x3 %lg %lg %lg\n",x1[0],x1[1],x1[2],x2[0],x2[1],x2[2],x3[0],x3[1],x3[2] );
+                printf("dx1 %lg %lg %lg dx2 %lg %lg %lg dx3 %lg %lg %lg\n",delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3);
+            }*/
+  }
+  for (int i = 1; i < nmolecule+1; i++) {
+    MPI_Allreduce(&At[i],&at,1,MPI_DOUBLE,MPI_SUM,world);
+    MPI_Allreduce(&Vt[i],&vt,1,MPI_DOUBLE,MPI_SUM,world);
+    At[i] = at;
+    Vt[i] = vt;
+    if (comm->me == 0){
+      if (abs((vt-V0t[i])/V0t[i]) > 0.5 ){
+      printf("%d cell: V0t %lg Vt %lg  At %lg \n",V0t[i],i,Vt[i],At[i]);   
+      error->all(FLERR,"Incorrect args for angle coefficients");
+      }
+    }
   }
 }
 /* ---------------------------------------------------------------------- */
@@ -227,11 +360,10 @@ void AngleRbc::compute(int eflag, int vflag)
   double x1[3],x2[3],x3[3];
   // each processor has nanglelist, see neighbor.cpp
   a0=0.0;
-  computeAreaVol(At,Vt,crossFlag);
+  //computeAreaVol(At,Vt,crossFlag);
+  computeAreaVol(At,Vt);
   bigint ntimestep;
   ntimestep = update->ntimestep;
-  //if (comm->me == 0) 
-  //printf("Vt %lg V0t %lg At %lg A0t %lg\n",Vt[1],V0t[type],At[1],A0t[type]);
   for (n = 0; n < nanglelist; n++) {
     i1 = anglelist[n][0];
     i2 = anglelist[n][1];
@@ -239,35 +371,35 @@ void AngleRbc::compute(int eflag, int vflag)
     type = anglelist[n][3];
     molId = molecule[i2];
 
-    positionShift(x[i1],x1,crossFlag[molId]); 
+    /*positionShift(x[i1],x1,crossFlag[molId]); 
     positionShift(x[i2],x2,crossFlag[molId]); 
-    positionShift(x[i3],x3,crossFlag[molId]); 
+    positionShift(x[i3],x3,crossFlag[molId]);*/
     /*domain->unmap(x[i1],image[i1],x1);
     domain->unmap(x[i2],image[i2],x2);
     domain->unmap(x[i3],image[i3],x3);*/
     // 1st bond 
-    /*delx1 = x[i1][0] - x[i2][0];
+    delx1 = x[i1][0] - x[i2][0];
     dely1 = x[i1][1] - x[i2][1];
-    delz1 = x[i1][2] - x[i2][2];*/
-    delx1 = x1[0] - x2[0];
+    delz1 = x[i1][2] - x[i2][2];
+    /*delx1 = x1[0] - x2[0];
     dely1 = x1[1] - x2[1];
-    delz1 = x1[2] - x2[2];
+    delz1 = x1[2] - x2[2];*/
 
     // 2nd bond
-    /*delx2 = x[i3][0] - x[i2][0];
+    delx2 = x[i3][0] - x[i2][0];
     dely2 = x[i3][1] - x[i2][1];
-    delz2 = x[i3][2] - x[i2][2];*/
+    delz2 = x[i3][2] - x[i2][2];
 
-    delx2 = x3[0] - x2[0];
+    /*delx2 = x3[0] - x2[0];
     dely2 = x3[1] - x2[1];
-    delz2 = x3[2] - x2[2];
+    delz2 = x3[2] - x2[2];*/
     // 3rd bond
-    /*delx3 = x[i1][0] - x[i3][0];
+    delx3 = x[i1][0] - x[i3][0];
     dely3 = x[i1][1] - x[i3][1];
-    delz3 = x[i1][2] - x[i3][2];*/
-    delx3 = x1[0] - x3[0];
+    delz3 = x[i1][2] - x[i3][2];
+    /*delx3 = x1[0] - x3[0];
     dely3 = x1[1] - x3[1];
-    delz3 = x1[2] - x3[2];
+    delz3 = x1[2] - x3[2];*/
    
     // norm xi=dx_2 x dx_1
     xi[0]=delz1*dely2 - dely1*delz2;
@@ -277,12 +409,12 @@ void AngleRbc::compute(int eflag, int vflag)
     xi2=xi[0]*xi[0] + xi[1]*xi[1] + xi[2]*xi[2];
     a0 = 0.5*sqrt(xi2);
     
-    /*cnt[0]=(x[i1][0] + x[i2][0] + x[i3][0])/3.0;
+    cnt[0]=(x[i1][0] + x[i2][0] + x[i3][0])/3.0;
     cnt[1]=(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
-    cnt[2]=(x[i1][2] + x[i2][2] + x[i3][2])/3.0;*/
-    cnt[0]=(x1[0] + x2[0] + x3[0])/3.0;
+    cnt[2]=(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
+    /*cnt[0]=(x1[0] + x2[0] + x3[0])/3.0;
     cnt[1]=(x1[1] + x2[1] + x3[1])/3.0;
-    cnt[2]=(x1[2] + x2[2] + x3[2])/3.0;
+    cnt[2]=(x1[2] + x2[2] + x3[2])/3.0;*/
     //---check periodic conditions-----------// 
     /*if (xflag){
       if (cnt[0] < xprd_half) cnt[0] -= domain->xprd/3.0;
