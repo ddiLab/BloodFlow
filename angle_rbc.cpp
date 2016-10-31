@@ -325,12 +325,16 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
     MPI_Allreduce(&Vt[i],&vt,1,MPI_DOUBLE,MPI_SUM,world);
     At[i] = at;
     Vt[i] = vt;
-    if (comm->me == 0){
-      if (abs((vt-V0t[i])/V0t[i]) > 0.5 ){
-      printf("%d cell: V0t %lg Vt %lg  At %lg \n",V0t[i],i,Vt[i],At[i]);   
-      error->all(FLERR,"Incorrect args for angle coefficients");
+    /*if (comm->me == 0){
+      bigint ntimestep;
+      ntimestep = update->ntimestep;
+      if (ntimestep > 7673){
+      //if (abs((vt-V0t[i])/V0t[i]) > 0.5 ){
+      printf("%d cell: V0t %lg Vt %lg  At %lg \n",i,V0t[1],Vt[i],At[i]);// V0t[type], not i   
+      //error->all(FLERR,"Incorrect args for angle coefficients");
+      //}
       }
-    }
+    }*/
   }
 }
 /* ---------------------------------------------------------------------- */
@@ -340,6 +344,7 @@ void AngleRbc::compute(int eflag, int vflag)
   int i1,i2,i3,n,type,molId;
   double delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3;
   double eangle,f1[3],f2[3],f3[3];
+  //double fa1[3],fa2[3],fa3[3],fv1[3],fv2[3],fv3[3];//debug
   double dA;
   double xi[3],cnt[3],xi2;//
   double a0,beta_a, beta_ad, beta_area, beta_v;
@@ -455,8 +460,19 @@ void AngleRbc::compute(int eflag, int vflag)
     f3[0] = -beta_area*(xi[1]*delz1 - xi[2]*dely1);
     f3[1] = -beta_area*(xi[2]*delx1 - xi[0]*delz1);
     f3[2] = -beta_area*(xi[0]*dely1 - xi[1]*delx1);
+    
+    /*fa1[0] = beta_area*(xi[1]*delz2 - xi[2]*dely2);
+    fa1[1] = beta_area*(xi[2]*delx2 - xi[0]*delz2);
+    fa1[2] = beta_area*(xi[0]*dely2 - xi[1]*delx2);
+    fa2[0] = beta_area*(xi[1]*delz3 - xi[2]*dely3);
+    fa2[1] = beta_area*(xi[2]*delx3 - xi[0]*delz3);
+    fa2[2] = beta_area*(xi[0]*dely3 - xi[1]*delx3);
+    fa3[0] = -beta_area*(xi[1]*delz1 - xi[2]*dely1);
+    fa3[1] = -beta_area*(xi[2]*delx1 - xi[0]*delz1);
+    fa3[2] = -beta_area*(xi[0]*dely1 - xi[1]*delx1);*/
    
-    beta_v = - 0.166666667 * kv[type] * (Vt[molId] - V0t[type]) / V0t[type];
+    beta_v = -0.166666667 * kv[type] * (Vt[molId] - V0t[type]) / V0t[type];
+    
     f1[0] += beta_v*(xi[0]/3.0 + cnt[1]*delz2 - cnt[2]*dely2);
     f1[1] += beta_v*(xi[1]/3.0 + cnt[2]*delx2 - cnt[0]*delz2);
     f1[2] += beta_v*(xi[2]/3.0 + cnt[0]*dely2 - cnt[1]*delx2);
@@ -469,6 +485,26 @@ void AngleRbc::compute(int eflag, int vflag)
     f3[1] += beta_v*(xi[1]/3.0 - (cnt[2]*delx1 - cnt[0]*delz1));
     f3[2] += beta_v*(xi[2]/3.0 - (cnt[0]*dely1 - cnt[1]*delx1));
 
+    /*fv1[0] = beta_v*(xi[0]/3.0 + cnt[1]*delz2 - cnt[2]*dely2);
+    fv1[1] = beta_v*(xi[1]/3.0 + cnt[2]*delx2 - cnt[0]*delz2);
+    fv1[2] = beta_v*(xi[2]/3.0 + cnt[0]*dely2 - cnt[1]*delx2);
+    fv2[0] = beta_v*(xi[0]/3.0 + cnt[1]*delz3 - cnt[2]*dely3);
+    fv2[1] = beta_v*(xi[1]/3.0 + cnt[2]*delx3 - cnt[0]*delz3);
+    fv2[2] = beta_v*(xi[2]/3.0 + cnt[0]*dely3 - cnt[1]*delx3);
+    fv3[0] = beta_v*(xi[0]/3.0 - (cnt[1]*delz1 - cnt[2]*dely1));
+    fv3[1] = beta_v*(xi[1]/3.0 - (cnt[2]*delx1 - cnt[0]*delz1));
+    fv3[2] = beta_v*(xi[2]/3.0 - (cnt[0]*dely1 - cnt[1]*delx1));*/
+
+    //debug
+    /*if (comm->me == 0){
+      if (ntimestep > 38275){
+      printf("%d cell: V0t %lg Vt %lg A0t %lg At %lg \n",molId,V0t[type],Vt[molId],A0t[type],At[molId]);// V0t[type], not i   
+      printf("fa1 %lg %lg %lg, fv1 %lg %lg %lg \n",fa1[0], fa1[1],fa1[2],fv1[0],fv1[1],fv1[2]);// V0t[type], not i   
+      printf("fa2 %lg %lg %lg, fv2 %lg %lg %lg \n",fa2[0], fa2[1],fa2[2],fv2[0],fv2[1],fv2[2]);// V0t[type], not i   
+      printf("fa3 %lg %lg %lg, fv3 %lg %lg %lg \n",fa3[0], fa3[1],fa3[2],fv3[0],fv3[1],fv3[2]);// V0t[type], not i   
+      error->all(FLERR,"Incorrect args for angle coefficients");
+      }
+    }*/
     // only local area conservation energy
     dA = a0 - A0[type];
     if (eflag) eangle = 0.5*kd[type]*dA*dA/A0[type];
