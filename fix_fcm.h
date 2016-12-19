@@ -36,6 +36,7 @@ class FixFCM : public Fix {
   void min_setup(int);
   void post_force(int);
   void min_post_force(int);
+  void end_of_step();
   //double compute_scalar();
 
   //void set_energy(double eng);

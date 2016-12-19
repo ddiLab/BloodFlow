@@ -39,8 +39,9 @@ FixFCM::FixFCM(LAMMPS *lmp, int narg, char **arg) :
   
   fexternal = NULL;
   grow_arrays(atom->nmax);
+  atom->add_callback(0);
   
-  }
+}
 
 /* ---------------------------------------------------------------------- */
 
@@ -48,6 +49,7 @@ FixFCM::~FixFCM()
 {
   // unregister callbacks to this fix from Atom class
 
+  atom->delete_callback(id,0);
   memory->destroy(fexternal);
 }
 
@@ -58,6 +60,7 @@ int FixFCM::setmask()
   int mask = 0;
   mask |= POST_FORCE;
   mask |= MIN_POST_FORCE;
+  mask |= END_OF_STEP;
   return mask;
 }
 
@@ -75,6 +78,19 @@ void FixFCM::init()
       }
 }
 
+/* ---------------------------------------------------------------------- */
+
+void FixFCM::end_of_step()
+{
+  int *mask = atom->mask;
+  int nlocal = atom->nlocal;
+  for (int i = 0; i < nlocal; i++)
+      if (mask[i] & groupbit) {
+        fexternal[i][0]=0.;
+        fexternal[i][1]=0.;
+        fexternal[i][2]=0.;
+      }
+}
 /* ---------------------------------------------------------------------- */
 
 void FixFCM::setup(int vflag)
