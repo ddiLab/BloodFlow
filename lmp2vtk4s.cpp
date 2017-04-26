@@ -9,19 +9,28 @@
 using namespace std;
 
 void readXYZ(string fp_name, vector<int> &time, vector< vector<double> > &pos);
-void readTopo(string fp_name, vector< vector<int> > &face);
+void readTopo(string fp_name, vector< vector<int> > &face, int cell_flag);
 void writeVTKsolid(vector<int> &time, vector< vector<double> > &pos, vector< vector<int> > &face);
+
 int main(int argc, char **argv)
 {
   int opt;
   string fp_name,ftp_name;
-  while ((opt =getopt(argc,argv,"p:t:")) != -1){
+  int pos_flag, cell_flag;
+  pos_flag=0;
+  cell_flag=0;
+  while ((opt =getopt(argc,argv,"p:tc:tp")) != -1){
     switch(opt){
       case 'p':
         fp_name =string(optarg);
-        cout<<"file name "<<fp_name<<endl;
+        pos_flag=1;
+        //cout<<"file name "<<fp_name<<endl;
         break;
-      case 't':
+      case "tc":
+        ftp_name = string(optarg);
+        cell_flag=1;
+        break;
+      case "tp":
         ftp_name = string(optarg);
         break;
       default:
@@ -34,7 +43,7 @@ int main(int argc, char **argv)
   vector < vector<double> > pos;
   vector < vector<int> > face;
   readXYZ(fp_name, time, pos);
-  readTopo(ftp_name,face);
+  readTopo(ftp_name,face,cell_flag);
   writeVTKsolid(time,pos,face);
 
   return 0;
@@ -62,27 +71,43 @@ void readXYZ(string fp_name, vector<int> &time, vector< vector<double> > &pos){
   fp.close();
 }
 
-void readTopo(string ftp_name, vector< vector<int> > &face){
+void readTopo(string ftp_name, vector< vector<int> > &face, int cell_flag){
   fstream ftp;
   ftp.open(ftp_name.c_str());
   vector<int> row(3,0);
-  int na,count,tmp;
+  vector <int> bond(2,0);
+  int na,count,tmp,natom;
   count=0;
   string buf;
   size_t loc;
-  while (getline(ftp,buf)){
-    loc = buf.find("angles");
-    if (loc != string::npos)  {
-      na = atoi(buf.substr(0,loc).c_str());
-      //cout<<"na "<<na<<endl;
-    }
-    loc = buf.find("Angles");
-    if (loc != string::npos)  {
-      for (int i=0;i<na;i++){
-        ftp>>tmp>>tmp>>row[0]>>row[1]>>row[2];
-        face.push_back(row);
+  if (cell_flag){ //cell surface
+    while (getline(ftp,buf)){
+      loc = buf.find("angles");
+      if (loc != string::npos)  {
+        na = atoi(buf.substr(0,loc).c_str());
+        //cout<<"na "<<na<<endl;
+      }
+      loc = buf.find("Angles");
+      if (loc != string::npos)  {
+        for (int i=0;i<na;i++){
+          ftp>>tmp>>tmp>>row[0]>>row[1]>>row[2];
+          face.push_back(row);
+        }
       }
     }
+  }else{
+    while (getline(ftp,buf)){
+      loc = buf.find("atoms");
+      if (loc != string::npos)  {
+        natom = atoi(buf.substr(0,loc).c_str());
+      }
+    }
+    int nplatelet = natom/7;
+    for (int i=0;i<nplatelet;i++)
+      for (int j=1;j<7,j++){
+        bond[0]=i*7+j;bond[1]=i*7+7;
+        face.push_back(bond);
+      }
   }
   ftp.close();
 }

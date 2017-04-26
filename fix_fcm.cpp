@@ -81,7 +81,7 @@ void FixFCM::init()
 /* ---------------------------------------------------------------------- */
 
 void FixFCM::end_of_step()
-{
+{/*
   int *mask = atom->mask;
   int nlocal = atom->nlocal;
   for (int i = 0; i < nlocal; i++)
@@ -89,7 +89,7 @@ void FixFCM::end_of_step()
         fexternal[i][0]=0.;
         fexternal[i][1]=0.;
         fexternal[i][2]=0.;
-      }
+      }*/
 }
 /* ---------------------------------------------------------------------- */
 
