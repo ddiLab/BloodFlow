@@ -564,7 +564,7 @@ void AngleRbc::coeff(int narg, char **arg)
   if (!allocated) allocate();
 
   int ilo,ihi;
-  force->bounds(FLERR,arg[0],atom->nangletypes,ilo,ihi);
+  force->bounds(arg[0],atom->nangletypes,ilo,ihi);
 
   double Cq_one = force->numeric(FLERR,arg[1]);
   double q_one = force->numeric(FLERR,arg[2]);
