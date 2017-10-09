@@ -46,7 +46,7 @@ class AngleRbc : public Angle {
  protected:
   double *Cq,*q,*ka,*A0t,*kv,*V0t,*kd,*A0;
   int nmolecule; 
-  double *At,*Vt;
+  double *At,*Vt,*at,*vt;//global and local vairables
   int **crossFlag;
 
   virtual void allocate();

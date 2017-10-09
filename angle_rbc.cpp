@@ -36,6 +36,7 @@ using namespace MathConst;
 
 AngleRbc::AngleRbc(LAMMPS *lmp) : Angle(lmp) {
   At = Vt = NULL;
+  at = vt = NULL;
   crossFlag = NULL;
 }
 
@@ -57,6 +58,8 @@ AngleRbc::~AngleRbc()
   if(nmolecule > 0 && !copymode){
     memory->destroy(At);
     memory->destroy(Vt);
+    memory->destroy(at);
+    memory->destroy(vt);
     memory->destroy(crossFlag);
   }
 }
@@ -79,6 +82,8 @@ void AngleRbc::init_style()
   
   memory->create(At,nmolecule+1,"angle:At");
   memory->create(Vt,nmolecule+1,"angle:Vt");
+  memory->create(at,nmolecule+1,"angle:At");
+  memory->create(vt,nmolecule+1,"angle:Vt");
   memory->create(crossFlag,nmolecule+1,3,"angle:crossFlag");
 }
 
@@ -225,11 +230,13 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
   for (int i = 1; i < nmolecule+1; i++) {
     At[i] = 0.0;
     Vt[i] = 0.0;
+    at[i] = 0.0;
+    vt[i] = 0.0;
   }
   int i1,i2,i3,n,type,molId;
   double delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3;
   double xi[3],cnt[3],xi2;
-  double at,vt;
+  //double at,vt;
   double nhat,area,a_xy;
   double rsq1,rsq2,r1,r2;
     
@@ -291,15 +298,18 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
     xi2=xi[0]*xi[0] + xi[1]*xi[1] + xi[2]*xi[2];
     area = 0.5*sqrt(xi2);
     //At[molId] += 0.5*sqrt(xi2);
-    At[molId] += area;
+    //At[molId] += area;
+    at[molId] += area;
 
     //new code
     if (xperiodic || yperiodic){
       a_xy = 0.5*xi[2];//area projection on xy plane
-      Vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
+      //Vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
+      vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
     }else if(zperiodic){
       a_xy = 0.5*xi[1];//area projection on xz plane
-      Vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
+      //Vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
+      vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
     }
 
 
@@ -320,12 +330,12 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
                 printf("dx1 %lg %lg %lg dx2 %lg %lg %lg dx3 %lg %lg %lg\n",delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3);
             }*/
   }
-  for (int i = 1; i < nmolecule+1; i++) {
+  /*for (int i = 1; i < nmolecule+1; i++) {
     MPI_Allreduce(&At[i],&at,1,MPI_DOUBLE,MPI_SUM,world);
     MPI_Allreduce(&Vt[i],&vt,1,MPI_DOUBLE,MPI_SUM,world);
     At[i] = at;
     Vt[i] = vt;
-    /*if (comm->me == 0){
+    if (comm->me == 0){
       bigint ntimestep;
       ntimestep = update->ntimestep;
       if (ntimestep > 7673){
@@ -334,8 +344,11 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
       //error->all(FLERR,"Incorrect args for angle coefficients");
       //}
       }
-    }*/
-  }
+    }
+  }*/
+  
+    MPI_Allreduce(at,At,nmolecule+1,MPI_DOUBLE,MPI_SUM,world);
+    MPI_Allreduce(vt,Vt,nmolecule+1,MPI_DOUBLE,MPI_SUM,world);
 }
 /* ---------------------------------------------------------------------- */
 
