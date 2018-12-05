@@ -253,6 +253,8 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
   int xperiodic = domain->xperiodic;
   int yperiodic = domain->yperiodic;
   int zperiodic = domain->zperiodic;
+  
+  if (xperiodic && yperiodic && zperiodic) error->all(FLERR,"At least one nonperiodic boundary condition for volume calculation");
   // each processor has nanglelist, see neighbor.cpp
   // calculate area and volume
   for (n = 0; n < nanglelist; n++) {
@@ -302,15 +304,18 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
     at[molId] += area;
 
     //new code
-    if (xperiodic || yperiodic){
+    if (!zperiodic){
       a_xy = 0.5*xi[2];//area projection on xy plane
       //Vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
       vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
-    }else if(zperiodic){
+    }else if(!yperiodic){
       a_xy = 0.5*xi[1];//area projection on xz plane
-      //Vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
       vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
+    }else if(!xperiodic){
+      a_xy = 0.5*xi[0];//area projection on xz plane
+      vt[molId] += a_xy*(x[i1][0] + x[i2][0] + x[i3][0])/3.0;
     }
+
 
 
    /* 
