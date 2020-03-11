@@ -38,6 +38,7 @@ AngleRbc::AngleRbc(LAMMPS *lmp) : Angle(lmp) {
   At = Vt = NULL;
   at = vt = NULL;
   crossFlag = NULL;
+  MAXxyz = maxxyz = MINxyz = minxyz =  NULL;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -61,6 +62,10 @@ AngleRbc::~AngleRbc()
     memory->destroy(at);
     memory->destroy(vt);
     memory->destroy(crossFlag);
+    memory->destroy(MAXxyz);
+    memory->destroy(maxxyz);
+    memory->destroy(MINxyz);
+    memory->destroy(minxyz);
   }
 }
 
@@ -71,7 +76,7 @@ void AngleRbc::init_style()
 
   int nlocal = atom->nlocal;
   tagint *molecule = atom->molecule;
- 
+  
   n = 0;
   nmolecule = 0;
   for (i = 0; i < nlocal; i++){
@@ -85,6 +90,15 @@ void AngleRbc::init_style()
   memory->create(at,nmolecule+1,"angle:At");
   memory->create(vt,nmolecule+1,"angle:Vt");
   memory->create(crossFlag,nmolecule+1,3,"angle:crossFlag");
+  memory->create(MAXxyz,nmolecule+1,3,"angle:MAXxyz");
+  memory->create(maxxyz,nmolecule+1,3,"angle:maxxyz");
+  memory->create(MINxyz,nmolecule+1,3,"angle:MINxyz");
+  memory->create(minxyz,nmolecule+1,3,"angle:minxyz");
+  check_crossing(crossFlag);
+  for (int j=1;j<nmolecule+1;j++)
+  { if ((crossFlag[j][0]) || (crossFlag[j][1]) || (crossFlag[j][2]))
+      if (comm->me ==0) error->warning(FLERR,"Cell is straddled across the boundary or the cell size is bigger than half of the box side, check your initial input files\n");
+  }
 }
 
 /* ---------------------------------------------------------------------- */
@@ -255,6 +269,7 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
   int zperiodic = domain->zperiodic;
   
   if (xperiodic && yperiodic && zperiodic) error->all(FLERR,"At least one nonperiodic boundary condition for volume calculation");
+    //printf("%d processor:  %d angles  At %lg \n",comm->me,nanglelist);
   // each processor has nanglelist, see neighbor.cpp
   // calculate area and volume
   for (n = 0; n < nanglelist; n++) {
@@ -307,13 +322,15 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
     if (!zperiodic){
       a_xy = 0.5*xi[2];//area projection on xy plane
       //Vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
-      vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
+      vt[molId] += a_xy*(x[i1][2] + x[i2][2] + x[i3][2])*0.333333333;
     }else if(!yperiodic){
       a_xy = 0.5*xi[1];//area projection on xz plane
-      vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
+      vt[molId] += a_xy*(x[i1][1] + x[i2][1] + x[i3][1])*0.333333333;
+      //cnt[1]=(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
+      //printf("%d cell:%d angle, area:  %lg cnt %lg  vt %lg \n",molId,n,a_xy,cnt[1],vt[molId]);// V0t[type], not i   
     }else if(!xperiodic){
       a_xy = 0.5*xi[0];//area projection on xz plane
-      vt[molId] += a_xy*(x[i1][0] + x[i2][0] + x[i3][0])/3.0;
+      vt[molId] += a_xy*(x[i1][0] + x[i2][0] + x[i3][0])*0.333333333;
     }
 
 
@@ -335,25 +352,14 @@ void AngleRbc::computeAreaVol(double *At, double *Vt){
                 printf("dx1 %lg %lg %lg dx2 %lg %lg %lg dx3 %lg %lg %lg\n",delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3);
             }*/
   }
-  /*for (int i = 1; i < nmolecule+1; i++) {
-    MPI_Allreduce(&At[i],&at,1,MPI_DOUBLE,MPI_SUM,world);
-    MPI_Allreduce(&Vt[i],&vt,1,MPI_DOUBLE,MPI_SUM,world);
-    At[i] = at;
-    Vt[i] = vt;
-    if (comm->me == 0){
-      bigint ntimestep;
-      ntimestep = update->ntimestep;
-      if (ntimestep > 7673){
-      //if (abs((vt-V0t[i])/V0t[i]) > 0.5 ){
-      printf("%d cell: V0t %lg Vt %lg  At %lg \n",i,V0t[1],Vt[i],At[i]);// V0t[type], not i   
-      //error->all(FLERR,"Incorrect args for angle coefficients");
-      //}
-      }
-    }
-  }*/
-  
+    
     MPI_Allreduce(at,At,nmolecule+1,MPI_DOUBLE,MPI_SUM,world);
     MPI_Allreduce(vt,Vt,nmolecule+1,MPI_DOUBLE,MPI_SUM,world);
+    /*if (comm->me == 0){ 
+    for (int i = 1; i < nmolecule+1; i++) {
+            printf("%d cell: Vt %lg  At %lg \n",i,Vt[i],At[i]);
+        }
+    }*/
 }
 /* ---------------------------------------------------------------------- */
 
@@ -362,7 +368,7 @@ void AngleRbc::compute(int eflag, int vflag)
   int i1,i2,i3,n,type,molId;
   double delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3;
   double eangle,f1[3],f2[3],f3[3];
-  //double fa1[3],fa2[3],fa3[3],fv1[3],fv2[3],fv3[3];//debug
+  double fa1[3],fa2[3],fa3[3],fv1[3],fv2[3],fv3[3];//debug
   double dA;
   double xi[3],cnt[3],xi2;//
   double a0,beta_a, beta_ad, beta_area, beta_v;
@@ -370,6 +376,10 @@ void AngleRbc::compute(int eflag, int vflag)
   eangle = 0.0;
   if (eflag || vflag) ev_setup(eflag,vflag);
   else evflag = 0;
+  
+  int xperiodic = domain->xperiodic;
+  int yperiodic = domain->yperiodic;
+  int zperiodic = domain->zperiodic;
 
   double **x = atom->x;
   double **f = atom->f;
@@ -377,14 +387,22 @@ void AngleRbc::compute(int eflag, int vflag)
   int nanglelist = neighbor->nanglelist;
   tagint *molecule = atom->molecule;
   tagint *image = atom->image;
+  tagint *tag = atom->tag;
   int nlocal = atom->nlocal;
   int newton_bond = force->newton_bond;
-  
+  tagint g1,g2,g3; //global id for atoms 
+  int l1,l2,l3; //local id for atoms 
   double x1[3],x2[3],x3[3];
   // each processor has nanglelist, see neighbor.cpp
   a0=0.0;
   //computeAreaVol(At,Vt,crossFlag);
+  //for (int i = 0; i < nlocal; i++) domain->unmap(x[i],image[i],x1);
   computeAreaVol(At,Vt);
+  check_crossing(crossFlag);
+  /*if (comm->me == 0) {
+    for (int j=1;j<nmolecule+1;j++)
+        printf("%d molecule cross: %d %d %d\n", j, crossFlag[j][0],crossFlag[j][1],crossFlag[j][2]);
+  }*/
   bigint ntimestep;
   ntimestep = update->ntimestep;
   for (n = 0; n < nanglelist; n++) {
@@ -393,13 +411,26 @@ void AngleRbc::compute(int eflag, int vflag)
     i3 = anglelist[n][2];
     type = anglelist[n][3];
     molId = molecule[i2];
-
+    /*g1=tag[i1];
+    g2=tag[i2];
+    g3=tag[i3];
+    l1=atom->map(g1);
+    l2=atom->map(g2);
+    l3=atom->map(g3);
+    l1 = domain->closest_image(i1,l1);
+    l2 = domain->closest_image(i1,l2);
+    l3 = domain->closest_image(i1,l3);*/
+    //printf("proc: %d, %d/%d angles: i1 i2 i3:  %d %d %d local: %d global id %d %d %d\n",comm->me,n,nanglelist,i1,i2,i3,nlocal,g1,g2,g3); 
     /*positionShift(x[i1],x1,crossFlag[molId]); 
     positionShift(x[i2],x2,crossFlag[molId]); 
     positionShift(x[i3],x3,crossFlag[molId]);*/
+    //if ((i1<nlocal) && (i2<nlocal) && (i3<nlocal)){
     /*domain->unmap(x[i1],image[i1],x1);
     domain->unmap(x[i2],image[i2],x2);
     domain->unmap(x[i3],image[i3],x3);*/
+
+    //printf("proc: %d, %d/%d angles: i1 i2 i3:  %d %d %d local: %d global id %d %d %d unwrap x1 %lg %f %f x2 %g %g %g x3 %g %g %g wrap x1 %lg %f %f x2 %g %g %g x3 %g %g %g\n",comm->me,n,nanglelist,i1,i2,i3,nlocal,g1,g2,g3,x1[0],x1[1],x1[2],x2[0],x2[1],x2[2],x3[0],x3[1],x3[2],x[i1][0],x[i1][1],x[i1][2],x[i2][0],x[i2][1],x[i2][2],x[i3][0],x[i3][1],x[i3][2]); 
+    
     // 1st bond 
     delx1 = x[i1][0] - x[i2][0];
     dely1 = x[i1][1] - x[i2][1];
@@ -407,7 +438,6 @@ void AngleRbc::compute(int eflag, int vflag)
     /*delx1 = x1[0] - x2[0];
     dely1 = x1[1] - x2[1];
     delz1 = x1[2] - x2[2];*/
-
     // 2nd bond
     delx2 = x[i3][0] - x[i2][0];
     dely2 = x[i3][1] - x[i2][1];
@@ -432,35 +462,27 @@ void AngleRbc::compute(int eflag, int vflag)
     xi2=xi[0]*xi[0] + xi[1]*xi[1] + xi[2]*xi[2];
     a0 = 0.5*sqrt(xi2);
     
-    cnt[0]=(x[i1][0] + x[i2][0] + x[i3][0])/3.0;
-    cnt[1]=(x[i1][1] + x[i2][1] + x[i3][1])/3.0;
-    cnt[2]=(x[i1][2] + x[i2][2] + x[i3][2])/3.0;
-    /*cnt[0]=(x1[0] + x2[0] + x3[0])/3.0;
-    cnt[1]=(x1[1] + x2[1] + x3[1])/3.0;
-    cnt[2]=(x1[2] + x2[2] + x3[2])/3.0;*/
-    //---check periodic conditions-----------// 
-    /*if (xflag){
-      if (cnt[0] < xprd_half) cnt[0] -= domain->xprd/3.0;
-      else cnt[0] += domain->xprd/3.0;
-    }
-    if (yflag){
-      if (cnt[1] < yprd_half) cnt[1] -= domain->yprd/3.0;
-      else cnt[1] += domain->yprd/3.0;
-    }
-    if (zflag){
-      if (cnt[2] < zprd_half) cnt[2] -= domain->zprd/3.0;
-      else cnt[2] += domain->zprd/3.0;
-    }*/
-/*
-      int me = comm->me;
-            if ( ntimestep > 1){
-                printf("Vt %lg V0t %lg At %lg A0t %lg\n",Vt[molId],V0t[type],At[molId],A0t[type]);
-                printf("cnt %lg %lg %lg xi %lg %lg %lg\n",cnt[0],cnt[1],cnt[2],xi[0],xi[1],xi[2] );
-                //printf("x1 %lg %lg %lg x2 %lg %lg %lg x3 %lg %lg %lg\n",x[i1][0],x[i1][1],x[i1][2],x[i2][0],x[i2][1],x[i2][2],x[i3][0],x[i3][1],x[i3][2] );
-                printf("x1 %lg %lg %lg x2 %lg %lg %lg x3 %lg %lg %lg\n",x1[0],x1[1],x1[2],x2[0],x2[1],x2[2],x3[0],x3[1],x3[2] );
-                printf("dx1 %lg %lg %lg dx2 %lg %lg %lg dx3 %lg %lg %lg\n",delx1,dely1,delz1,delx2,dely2,delz2,delx3,dely3,delz3);
-            }*/
+    cnt[0]=0.333333333*(x[i1][0] + x[i2][0] + x[i3][0]);
+    cnt[1]=0.333333333*(x[i1][1] + x[i2][1] + x[i3][1]);
+    cnt[2]=0.333333333*(x[i1][2] + x[i2][2] + x[i3][2]);
 
+    if (xperiodic){ 
+        if ((crossFlag[molId][0]) && (cnt[0]<domain->xprd_half))
+            cnt[0] += domain->xprd;    
+    }
+    if (yperiodic){ 
+        if ((crossFlag[molId][1]) && (cnt[1]<domain->yprd_half))
+            cnt[1] += domain->yprd;    
+    }
+    if (zperiodic){ 
+        if ((crossFlag[molId][2]) && (cnt[2]<domain->zprd_half))
+            cnt[2] += domain->zprd;    
+    }
+    /*if (comm->me==0){
+        //printf("image %ld %ld %ld,i1-3: %d, %d, %d,  xunwrap %lg %lg %lg, x %lg %lg %lg\n",image[i1],image[i2],image[i3],i1,i2,i3,x1[0],x1[1],x1[2],x[i1][0],x[i1][1],x[i1][2]); 
+        //printf("%d processor %d angle: dx1_unwrap: %lg %lg %lg, dx2_org: %lg %lg %lg\n",comm->me, n,delx1,dely1,delz1,x[i1][0] - x[i2][0],x[i1][1] - x[i2][1],x[i1][2] - x[i2][2]);
+        printf("%d cell, crossFlag: %d %d %d cnt_unwrap: %lg %lg %lg, cnt_org: %lg %lg %lg\n",molId, crossFlag[molId][0],crossFlag[molId][1],crossFlag[molId][2],cnt[0],cnt[1],cnt[2],(x[i1][0] + x[i2][0] + x[i3][0])/3.0,(x[i1][1] + x[i2][1] + x[i3][1])/3.0,(x[i1][2] + x[i2][2] + x[i3][2])/3.0);
+    }*/
     //global area
     beta_a = -0.25 * ka[type] * (At[molId] - A0t[type]) / (A0t[type] * a0);
     beta_ad = -0.25 * kd[type] * (a0 - A0[type])/(A0[type]*a0);
@@ -491,17 +513,17 @@ void AngleRbc::compute(int eflag, int vflag)
    
     beta_v = -0.166666667 * kv[type] * (Vt[molId] - V0t[type]) / V0t[type];
     
-    f1[0] += beta_v*(xi[0]/3.0 + cnt[1]*delz2 - cnt[2]*dely2);
-    f1[1] += beta_v*(xi[1]/3.0 + cnt[2]*delx2 - cnt[0]*delz2);
-    f1[2] += beta_v*(xi[2]/3.0 + cnt[0]*dely2 - cnt[1]*delx2);
+    f1[0] += beta_v*(0.333333333*xi[0] + cnt[1]*delz2 - cnt[2]*dely2);
+    f1[1] += beta_v*(0.333333333*xi[1] + cnt[2]*delx2 - cnt[0]*delz2);
+    f1[2] += beta_v*(0.333333333*xi[2] + cnt[0]*dely2 - cnt[1]*delx2);
 
-    f2[0] += beta_v*(xi[0]/3.0 + cnt[1]*delz3 - cnt[2]*dely3);
-    f2[1] += beta_v*(xi[1]/3.0 + cnt[2]*delx3 - cnt[0]*delz3);
-    f2[2] += beta_v*(xi[2]/3.0 + cnt[0]*dely3 - cnt[1]*delx3);
+    f2[0] += beta_v*(0.333333333*xi[0] + cnt[1]*delz3 - cnt[2]*dely3);
+    f2[1] += beta_v*(0.333333333*xi[1] + cnt[2]*delx3 - cnt[0]*delz3);
+    f2[2] += beta_v*(0.333333333*xi[2] + cnt[0]*dely3 - cnt[1]*delx3);
     
-    f3[0] += beta_v*(xi[0]/3.0 - (cnt[1]*delz1 - cnt[2]*dely1));
-    f3[1] += beta_v*(xi[1]/3.0 - (cnt[2]*delx1 - cnt[0]*delz1));
-    f3[2] += beta_v*(xi[2]/3.0 - (cnt[0]*dely1 - cnt[1]*delx1));
+    f3[0] += beta_v*(0.333333333*xi[0] - (cnt[1]*delz1 - cnt[2]*dely1));
+    f3[1] += beta_v*(0.333333333*xi[1] - (cnt[2]*delx1 - cnt[0]*delz1));
+    f3[2] += beta_v*(0.333333333*xi[2] - (cnt[0]*dely1 - cnt[1]*delx1));
 
     /*fv1[0] = beta_v*(xi[0]/3.0 + cnt[1]*delz2 - cnt[2]*dely2);
     fv1[1] = beta_v*(xi[1]/3.0 + cnt[2]*delx2 - cnt[0]*delz2);
@@ -515,13 +537,13 @@ void AngleRbc::compute(int eflag, int vflag)
 
     //debug
     /*if (comm->me == 0){
-      if (ntimestep > 38275){
+      //if (ntimestep > 38275){
       printf("%d cell: V0t %lg Vt %lg A0t %lg At %lg \n",molId,V0t[type],Vt[molId],A0t[type],At[molId]);// V0t[type], not i   
       printf("fa1 %lg %lg %lg, fv1 %lg %lg %lg \n",fa1[0], fa1[1],fa1[2],fv1[0],fv1[1],fv1[2]);// V0t[type], not i   
       printf("fa2 %lg %lg %lg, fv2 %lg %lg %lg \n",fa2[0], fa2[1],fa2[2],fv2[0],fv2[1],fv2[2]);// V0t[type], not i   
       printf("fa3 %lg %lg %lg, fv3 %lg %lg %lg \n",fa3[0], fa3[1],fa3[2],fv3[0],fv3[1],fv3[2]);// V0t[type], not i   
-      error->all(FLERR,"Incorrect args for angle coefficients");
-      }
+      //error->all(FLERR,"Incorrect args for angle coefficients");
+      //}
     }*/
     // only local area conservation energy
     dA = a0 - A0[type];
@@ -549,7 +571,10 @@ void AngleRbc::compute(int eflag, int vflag)
     // this may not be correct for angle_rbc style
     if (evflag) ev_tally(i1,i2,i3,nlocal,newton_bond,eangle,f1,f3,
                          delx1,dely1,delz1,delx2,dely2,delz2);
-  }
+                         
+     // } //if(i1<nlocal)
+  } // nanglelist
+  //for (int i = 0; i < nlocal; i++) domain->remap(x[i],image[i]);
 }
 
 /* ---------------------------------------------------------------------- */
@@ -789,13 +814,51 @@ void AngleRbc::check_crossing(int **crossFlag)
 {
   //check if cell is crossing the boundary
   //return cross[ncell][3]
-  double maxX[3],minX[3];
-  double gmax[3],gmin[3];
-  int molId;
+  //double maxX[3],minX[3];
+  //double gmax[3],gmin[3];
+  int molID;
   int nlocal = atom->nlocal;
   double **x = atom->x;
   tagint *molecule = atom->molecule;
-  std::vector< std::vector<double> > xx;
+  int imagePBC;
+  double maxImag, minImag;
+  tagint *image = atom->image;
+  for (int j = 1; j < nmolecule+1; j++) {
+    maxxyz[j][0]=domain->sublo[0];
+    maxxyz[j][1]=domain->sublo[1];
+    maxxyz[j][2]=domain->sublo[2];
+    minxyz[j][0]=domain->subhi[0];
+    minxyz[j][1]=domain->subhi[1];
+    minxyz[j][2]=domain->subhi[2];
+    crossFlag[j][0]=0;
+    crossFlag[j][1]=0;
+    crossFlag[j][2]=0;
+  }
+  imagePBC=0; 
+  for (int i=0;i<nlocal;i++){
+        molID = molecule[i];
+        //printf("proc: %d, ilocal %d image "TAGINT_FORMAT"\n",comm->me, i, image[i]);
+        //if (image[i] != image[0]) imagePBC=1; //works for 1 periodic, but for multiple PBCs, may have problems. Jifu 3/10/2020
+        if (maxxyz[molID][0]<x[i][0]) maxxyz[molID][0] = x[i][0];   
+        if (maxxyz[molID][1]<x[i][1]) maxxyz[molID][1] = x[i][1];   
+        if (maxxyz[molID][2]<x[i][2]) maxxyz[molID][2] = x[i][2];   
+        if (minxyz[molID][0]>x[i][0]) minxyz[molID][0] = x[i][0];   
+        if (minxyz[molID][1]>x[i][1]) minxyz[molID][1] = x[i][1];   
+        if (minxyz[molID][2]>x[i][2]) minxyz[molID][2] = x[i][2];   
+    }
+    MPI_Allreduce(&maxxyz[0][0],&MAXxyz[0][0],3*(nmolecule+1),MPI_DOUBLE,MPI_MAX,world);
+    MPI_Allreduce(&minxyz[0][0],&MINxyz[0][0],3*(nmolecule+1),MPI_DOUBLE,MPI_MIN,world);
+    /*if (comm->me == 0) {
+    for (int j=1;j<nmolecule+1;j++)
+        printf("%d molecule cross: %f %f %f %f %f %f\n", j, MAXxyz[j][0],MAXxyz[j][1],MAXxyz[j][2], MINxyz[j][0],MINxyz[j][1],MINxyz[j][2]);
+  }*/
+    //printf("image pbc %d\n",imagePBC);
+  for (int j = 1; j < nmolecule+1; j++) {
+    if ((MAXxyz[j][0]-MINxyz[j][0])>domain->xprd_half) crossFlag[j][0]=1;
+    if ((MAXxyz[j][1]-MINxyz[j][1])>domain->yprd_half) crossFlag[j][1]=1;
+    if ((MAXxyz[j][2]-MINxyz[j][2])>domain->zprd_half) crossFlag[j][2]=1;
+  }
+    //std::vector< std::vector<double> > xx;
   //new code
   /*std::set<int> cell;
   std::set<int>::iterator it; 
@@ -834,7 +897,7 @@ void AngleRbc::check_crossing(int **crossFlag)
     if ((gmax[1]-gmin[1])>domain->yprd_half) crossFlag[*it][1]=1;
     if ((gmax[2]-gmin[2])>domain->zprd_half) crossFlag[*it][2]=1;
   }*/
-  
+ /* 
   for (int j = 1; j < nmolecule+1; j++) {
     xx.clear();
     for (int i=0;i<nlocal;i++){
@@ -866,7 +929,7 @@ void AngleRbc::check_crossing(int **crossFlag)
     if ((gmax[0]-gmin[0])>domain->xprd_half) crossFlag[j][0]=1;
     if ((gmax[1]-gmin[1])>domain->yprd_half) crossFlag[j][1]=1;
     if ((gmax[2]-gmin[2])>domain->zprd_half) crossFlag[j][2]=1;
-  }
+  }*/
 }
 
 void AngleRbc::positionShift(double *x, double *xnew, int *crossFlag){
