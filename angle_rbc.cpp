@@ -96,7 +96,7 @@ void AngleRbc::init_style()
   memory->create(minxyz,nmolecule+1,3,"angle:minxyz");
   check_crossing(crossFlag);
   for (int j=1;j<nmolecule+1;j++)
-  { if ((crossFlag[j][0]) || (crossFlag[j][1]) || (crossFlag[j][2]))
+  { if (((crossFlag[j][0]) && (domain->xperiodic)) || ((crossFlag[j][1]) && (domain->yperiodic))|| ((crossFlag[j][2]) && (domain->zperiodic)))
       if (comm->me ==0) error->warning(FLERR,"Cell is straddled across the boundary or the cell size is bigger than half of the box side, check your initial input files\n");
   }
 }
@@ -824,12 +824,18 @@ void AngleRbc::check_crossing(int **crossFlag)
   double maxImag, minImag;
   tagint *image = atom->image;
   for (int j = 1; j < nmolecule+1; j++) {
-    maxxyz[j][0]=domain->sublo[0];
+    /*maxxyz[j][0]=domain->sublo[0];
     maxxyz[j][1]=domain->sublo[1];
     maxxyz[j][2]=domain->sublo[2];
     minxyz[j][0]=domain->subhi[0];
     minxyz[j][1]=domain->subhi[1];
-    minxyz[j][2]=domain->subhi[2];
+    minxyz[j][2]=domain->subhi[2];*/
+    maxxyz[j][0]=domain->boxlo[0];
+    maxxyz[j][1]=domain->boxlo[1];
+    maxxyz[j][2]=domain->boxlo[2];
+    minxyz[j][0]=domain->boxhi[0];
+    minxyz[j][1]=domain->boxhi[1];
+    minxyz[j][2]=domain->boxhi[2];
     crossFlag[j][0]=0;
     crossFlag[j][1]=0;
     crossFlag[j][2]=0;
@@ -854,9 +860,9 @@ void AngleRbc::check_crossing(int **crossFlag)
   }*/
     //printf("image pbc %d\n",imagePBC);
   for (int j = 1; j < nmolecule+1; j++) {
-    if ((MAXxyz[j][0]-MINxyz[j][0])>domain->xprd_half) crossFlag[j][0]=1;
-    if ((MAXxyz[j][1]-MINxyz[j][1])>domain->yprd_half) crossFlag[j][1]=1;
-    if ((MAXxyz[j][2]-MINxyz[j][2])>domain->zprd_half) crossFlag[j][2]=1;
+    if (((MAXxyz[j][0]-MINxyz[j][0])>domain->xprd_half) && (domain->xperiodic)) crossFlag[j][0]=1;
+    if (((MAXxyz[j][1]-MINxyz[j][1])>domain->yprd_half) && (domain->yperiodic)) crossFlag[j][1]=1;
+    if (((MAXxyz[j][2]-MINxyz[j][2])>domain->zprd_half) && (domain->zperiodic)) crossFlag[j][2]=1;
   }
     //std::vector< std::vector<double> > xx;
   //new code
