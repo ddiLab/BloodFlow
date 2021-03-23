@@ -37,11 +37,11 @@ FixActivatePlatelet::FixActivatePlatelet(LAMMPS *lmp, int narg, char **arg) :
   // register with Atom class
   //napply = force->inumeric(FLERR,arg[3]);
   //rate = force->inumeric(FLERR,arg[3]);
-  xi0 = force->numeric(FLERR,arg[3]);
-  m0 = force->numeric(FLERR,arg[4]);
-  tau = force->numeric(FLERR,arg[5]);
-  alpha = force->numeric(FLERR,arg[6]);
-  n = force->numeric(FLERR,arg[7]);
+  xi0 = utils::numeric(FLERR,arg[3],false,lmp);
+  m0 = utils::numeric(FLERR,arg[4],false,lmp);
+  tau = utils::numeric(FLERR,arg[5],false,lmp);
+  alpha = utils::numeric(FLERR,arg[6],false,lmp);
+  n = utils::numeric(FLERR,arg[7],false,lmp);
   
   fexternal = NULL;
   grow_arrays(atom->nmax);

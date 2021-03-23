@@ -37,7 +37,8 @@ FixRLS::FixRLS(LAMMPS *lmp, int narg, char **arg) :
   // register with Atom class
   //napply = force->inumeric(FLERR,arg[3]);
   //rate = force->inumeric(FLERR,arg[3]);
-  rate = force->numeric(FLERR,arg[3]);
+  //rate = force->numeric(FLERR,arg[3]);
+  rate = utils::numeric(FLERR,arg[3],false,lmp);
   
   fexternal = NULL;
   grow_arrays(atom->nmax);
