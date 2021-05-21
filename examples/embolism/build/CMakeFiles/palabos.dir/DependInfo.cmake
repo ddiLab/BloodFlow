@@ -156,7 +156,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/murphyc/palabos/src"
   "/home/murphyc/palabos/externalLibraries"
   "/home/murphyc/palabos/externalLibraries/Eigen3"
-  "/home/murphyc/bloodflow/ibm"
+  "/home/murphyc/BloodFlow/ibm"
   "/home/lammps/src"
   "../COUPLING_DIR-NOTFOUND/src"
   )

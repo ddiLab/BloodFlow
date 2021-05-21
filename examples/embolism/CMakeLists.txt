@@ -20,7 +20,7 @@ cmake_minimum_required(VERSION 2.8.12)
 project(palabosExample)
 enable_language(CXX)
 set(PALABOS_ROOT "/home/murphyc/palabos")
-set(BLOODFLOW_ROOT "/home/murphyc/bloodflow")
+set(BLOODFLOW_ROOT "/home/murphyc/BloodFlow")
 #set(COUPLING_ROOT "/home/insley/JTAN/CODE/palabos-lammps/")
 #FIND_PACKAGE(LAMMPS REQUIRED)
 set(LAMMPS_DIR "/home/lammps"
