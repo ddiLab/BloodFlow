@@ -26,7 +26,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/murphyc/palabos/externalLibraries"
   "/home/murphyc/palabos/externalLibraries/Eigen3"
   "/home/murphyc/BloodFlow/ibm"
-  "/home/lammps/src"
+  "/home/murphyc/lammps/src"
   "../COUPLING_DIR-NOTFOUND/src"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

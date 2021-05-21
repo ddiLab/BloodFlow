@@ -196,7 +196,7 @@ MPIEXEC_POSTFLAGS:STRING=
 // run by MPIEXEC.
 MPIEXEC_PREFLAGS:STRING=
 
-//Cleared
+//Path to a program.
 MPI_CXX_COMPILER:FILEPATH=/soft/libraries/mpi/mvapich2/gcc/bin/mpicxx
 
 //MPI CXX compilation flags
@@ -211,7 +211,7 @@ MPI_CXX_LIBRARIES:STRING=/soft/libraries/mpi/mvapich2-2.2/gcc/lib/libmpicxx.so;/
 //MPI CXX linking flags
 MPI_CXX_LINK_FLAGS:STRING= -Wl,-rpath  -Wl,/soft/libraries/mpi/mvapich2-2.2/gcc/lib  -Wl,--enable-new-dtags
 
-//Cleared
+//Path to a program.
 MPI_C_COMPILER:FILEPATH=/soft/libraries/mpi/mvapich2/gcc/bin/mpicc
 
 //MPI C compilation flags
@@ -231,9 +231,6 @@ MPI_EXTRA_LIBRARY:STRING=/soft/libraries/mpi/mvapich2-2.2/gcc/lib/libmpi.so
 
 //MPI library to link against
 MPI_LIBRARY:FILEPATH=/soft/libraries/mpi/mvapich2-2.2/gcc/lib/libmpicxx.so
-
-//Path to a program.
-file_cmd:FILEPATH=/bin/file
 
 //Value Computed by CMake
 palabosExample_BINARY_DIR:STATIC=/home/murphyc/BloodFlow/examples/embolism/build
@@ -416,6 +413,4 @@ MPI_C_LINK_FLAGS-ADVANCED:INTERNAL=1
 MPI_HEADER_PATH:INTERNAL=MPI_HEADER_PATH-NOTFOUND
 //Scratch variable for MPI lib detection
 MPI_LIB:INTERNAL=MPI_LIB-NOTFOUND
-//ADVANCED property for variable: file_cmd
-file_cmd-ADVANCED:INTERNAL=1
 

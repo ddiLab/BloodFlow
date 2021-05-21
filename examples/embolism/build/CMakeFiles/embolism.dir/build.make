@@ -85,7 +85,7 @@ embolism_EXTERNAL_OBJECTS =
 ../embolism: CMakeFiles/embolism.dir/embolism.cpp.o
 ../embolism: CMakeFiles/embolism.dir/build.make
 ../embolism: libpalabos.a
-../embolism: /home/lammps/src/liblammps_mpi.a
+../embolism: /home/murphyc/lammps/src/liblammps_mpi.a
 ../embolism: /soft/libraries/mpi/mvapich2-2.2/gcc/lib/libmpicxx.so
 ../embolism: /soft/libraries/mpi/mvapich2-2.2/gcc/lib/libmpi.so
 ../embolism: CMakeFiles/embolism.dir/link.txt

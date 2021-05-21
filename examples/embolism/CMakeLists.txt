@@ -23,7 +23,7 @@ set(PALABOS_ROOT "/home/murphyc/palabos")
 set(BLOODFLOW_ROOT "/home/murphyc/BloodFlow")
 #set(COUPLING_ROOT "/home/insley/JTAN/CODE/palabos-lammps/")
 #FIND_PACKAGE(LAMMPS REQUIRED)
-set(LAMMPS_DIR "/home/lammps"
+set(LAMMPS_DIR "/home/murphyc/lammps"
   )
 FIND_PATH(COUPLING_DIR palabos-lammps
   )
