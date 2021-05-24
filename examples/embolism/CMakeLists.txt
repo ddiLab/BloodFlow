@@ -28,7 +28,7 @@ set(LAMMPS_DIR "/home/murphyc/lammps"
 FIND_PATH(COUPLING_DIR palabos-lammps
   )
 set(LAMMPS_LIB "${LAMMPS_DIR}/src")
-set(LAMMPS_INCLUDE "${LAMMPS_DIR}/src")
+#set(LAMMPS_INCLUDE "${LAMMPS_DIR}/src")
 set(EXECUTABLE_NAME "embolism")
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "../")
 if(NOT CMAKE_BUILD_TYPE)
@@ -91,13 +91,13 @@ include_directories("${PALABOS_ROOT}/src")
 include_directories("${PALABOS_ROOT}/externalLibraries")
 include_directories("${PALABOS_ROOT}/externalLibraries/Eigen3")
 include_directories("${BLOODFLOW_ROOT}/ibm")
-include_directories("${LAMMPS_INCLUDE}")
+include_directories("${LAMMPS_LIB}")
 file(GLOB_RECURSE PALABOS_SRC "${PALABOS_ROOT}/src/*.cpp")
 file(GLOB_RECURSE EXT_SRC "${PALABOS_ROOT}/externalLibraries/tinyxml/*.cpp")
 add_library(palabos STATIC ${PALABOS_SRC} ${EXT_SRC})
 ###############################################################################
 #  LAMMPS Library
-include_directories("${LAMMPS_INCLUDE}")
+include_directories("${LAMMPS_LIB}")
 include_directories("${COUPLING_DIR}/src")
 add_library(lammps STATIC IMPORTED)
 set_property(TARGET lammps PROPERTY
