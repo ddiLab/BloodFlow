@@ -1,0 +1,2 @@
+LAMMPS (8 Apr 2021)
+ERROR on proc 0: string pointer is null (../input.cpp:305)

@@ -55,16 +55,16 @@ include CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o: /home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o -c /home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o -c /home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o.requires
@@ -78,16 +78,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/basicAlgorithms.cpp.o.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o: /home/murphyc/palabos/src/algorithm/empiricalData.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o -c /home/murphyc/palabos/src/algorithm/empiricalData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o -c /home/murphyc/palabos/src/algorithm/empiricalData.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/algorithm/empiricalData.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/algorithm/empiricalData.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/algorithm/empiricalData.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/algorithm/empiricalData.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o.requires
@@ -101,16 +101,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/empiricalData.cpp.o.pr
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o: /home/murphyc/palabos/src/algorithm/statistics.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o -c /home/murphyc/palabos/src/algorithm/statistics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o -c /home/murphyc/palabos/src/algorithm/statistics.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/algorithm/statistics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/algorithm/statistics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/algorithm/statistics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/algorithm/statistics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o.requires
@@ -124,16 +124,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/algorithm/statistics.cpp.o.provi
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o.requires
@@ -147,16 +147,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock2D.cpp.o.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o.requires
@@ -170,16 +170,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlock3D.cpp.o.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o.requires
@@ -193,16 +193,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperation
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o.requires
@@ -216,16 +216,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockOperation
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o.requires
@@ -239,16 +239,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerialize
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o.requires
@@ -262,16 +262,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicBlockSerialize
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o.requires
@@ -285,16 +285,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o.requires
@@ -308,16 +308,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/atomicContainerBlock
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o.requires
@@ -331,16 +331,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFuncti
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o.requires
@@ -354,16 +354,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessingFuncti
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_14)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.o.requires
@@ -377,16 +377,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor2D.cpp.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_15)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.o.requires
@@ -400,16 +400,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessor3D.cpp.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_16)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o.requires
@@ -423,16 +423,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o.requires
@@ -446,16 +446,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/dataProcessorWrapper
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_18)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o.requires
@@ -469,16 +469,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcess
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_19)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o.requires
@@ -492,16 +492,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcess
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o: /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_20)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o.requires
@@ -515,16 +515,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcess
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o: /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_21)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o.requires
@@ -538,16 +538,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/atomicBlock/reductiveDataProcess
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o: /home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_22)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o -c /home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o -c /home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o.requires
@@ -561,16 +561,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/complexDynamics/carreauGlobalDef
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o: /home/murphyc/palabos/src/core/block2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_23)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o -c /home/murphyc/palabos/src/core/block2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o -c /home/murphyc/palabos/src/core/block2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/block2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/block2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/block2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/block2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o.requires
@@ -584,16 +584,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block2D.cpp.o.provides.buil
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o: /home/murphyc/palabos/src/core/block3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_24)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o -c /home/murphyc/palabos/src/core/block3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o -c /home/murphyc/palabos/src/core/block3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/block3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/block3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/block3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/block3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o.requires
@@ -607,16 +607,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/block3D.cpp.o.provides.buil
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o: /home/murphyc/palabos/src/core/blockIdentifiers.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_25)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o -c /home/murphyc/palabos/src/core/blockIdentifiers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o -c /home/murphyc/palabos/src/core/blockIdentifiers.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/blockIdentifiers.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/blockIdentifiers.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/blockIdentifiers.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/blockIdentifiers.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o.requires
@@ -630,16 +630,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockIdentifiers.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o: /home/murphyc/palabos/src/core/blockStatistics.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_26)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o -c /home/murphyc/palabos/src/core/blockStatistics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o -c /home/murphyc/palabos/src/core/blockStatistics.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/blockStatistics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/blockStatistics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/blockStatistics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/blockStatistics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o.requires
@@ -653,16 +653,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockStatistics.cpp.o.provi
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o: /home/murphyc/palabos/src/core/blockSurface2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_27)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o -c /home/murphyc/palabos/src/core/blockSurface2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o -c /home/murphyc/palabos/src/core/blockSurface2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/blockSurface2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/blockSurface2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/blockSurface2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/blockSurface2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o.requires
@@ -676,16 +676,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface2D.cpp.o.provid
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o: /home/murphyc/palabos/src/core/blockSurface3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_28)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o -c /home/murphyc/palabos/src/core/blockSurface3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o -c /home/murphyc/palabos/src/core/blockSurface3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/blockSurface3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/blockSurface3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/blockSurface3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/blockSurface3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o.requires
@@ -699,16 +699,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/blockSurface3D.cpp.o.provid
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o: /home/murphyc/palabos/src/core/globalDefs.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_29)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o -c /home/murphyc/palabos/src/core/globalDefs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o -c /home/murphyc/palabos/src/core/globalDefs.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/globalDefs.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/globalDefs.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/globalDefs.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/globalDefs.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o.requires
@@ -722,16 +722,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/globalDefs.cpp.o.provides.b
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o: /home/murphyc/palabos/src/core/indexUtil.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_30)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o -c /home/murphyc/palabos/src/core/indexUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o -c /home/murphyc/palabos/src/core/indexUtil.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/indexUtil.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/indexUtil.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/indexUtil.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/indexUtil.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o.requires
@@ -745,16 +745,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/indexUtil.cpp.o.provides.bu
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.o: /home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_31)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.o -c /home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.o -c /home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp.o.requires
@@ -768,16 +768,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers2D.cpp
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.o: /home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_32)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.o -c /home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.o -c /home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp.o.requires
@@ -791,16 +791,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/multiBlockIdentifiers3D.cpp
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o: /home/murphyc/palabos/src/core/plbDebug.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_33)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o -c /home/murphyc/palabos/src/core/plbDebug.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o -c /home/murphyc/palabos/src/core/plbDebug.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbDebug.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbDebug.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbDebug.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbDebug.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o.requires
@@ -814,16 +814,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbDebug.cpp.o.provides.bui
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o: /home/murphyc/palabos/src/core/plbInit.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_34)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o -c /home/murphyc/palabos/src/core/plbInit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o -c /home/murphyc/palabos/src/core/plbInit.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbInit.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbInit.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbInit.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbInit.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o.requires
@@ -837,16 +837,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbInit.cpp.o.provides.buil
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o: /home/murphyc/palabos/src/core/plbLogFiles.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_35)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o -c /home/murphyc/palabos/src/core/plbLogFiles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o -c /home/murphyc/palabos/src/core/plbLogFiles.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbLogFiles.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbLogFiles.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbLogFiles.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbLogFiles.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o.requires
@@ -860,16 +860,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbLogFiles.cpp.o.provides.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o: /home/murphyc/palabos/src/core/plbProfiler.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_36)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o -c /home/murphyc/palabos/src/core/plbProfiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o -c /home/murphyc/palabos/src/core/plbProfiler.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbProfiler.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbProfiler.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbProfiler.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbProfiler.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o.requires
@@ -883,16 +883,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbProfiler.cpp.o.provides.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o: /home/murphyc/palabos/src/core/plbTimer.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_37)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o -c /home/murphyc/palabos/src/core/plbTimer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o -c /home/murphyc/palabos/src/core/plbTimer.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbTimer.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbTimer.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbTimer.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbTimer.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o.requires
@@ -906,16 +906,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTimer.cpp.o.provides.bui
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o: /home/murphyc/palabos/src/core/plbTypenames.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_38)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o -c /home/murphyc/palabos/src/core/plbTypenames.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o -c /home/murphyc/palabos/src/core/plbTypenames.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbTypenames.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/plbTypenames.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbTypenames.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/plbTypenames.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o.requires
@@ -929,16 +929,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/plbTypenames.cpp.o.provides
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.o: /home/murphyc/palabos/src/core/processorIdentifiers2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_39)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.o -c /home/murphyc/palabos/src/core/processorIdentifiers2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.o -c /home/murphyc/palabos/src/core/processorIdentifiers2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/processorIdentifiers2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/processorIdentifiers2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/processorIdentifiers2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/processorIdentifiers2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.o.requires
@@ -952,16 +952,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers2D.cpp.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.o: /home/murphyc/palabos/src/core/processorIdentifiers3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_40)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.o -c /home/murphyc/palabos/src/core/processorIdentifiers3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.o -c /home/murphyc/palabos/src/core/processorIdentifiers3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/processorIdentifiers3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/processorIdentifiers3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/processorIdentifiers3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/processorIdentifiers3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.o.requires
@@ -975,16 +975,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/processorIdentifiers3D.cpp.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o: /home/murphyc/palabos/src/core/runTimeDiagnostics.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_41)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o -c /home/murphyc/palabos/src/core/runTimeDiagnostics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o -c /home/murphyc/palabos/src/core/runTimeDiagnostics.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/runTimeDiagnostics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/runTimeDiagnostics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/runTimeDiagnostics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/runTimeDiagnostics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o.requires
@@ -998,16 +998,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/runTimeDiagnostics.cpp.o.pr
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o: /home/murphyc/palabos/src/core/serializer.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_42)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o -c /home/murphyc/palabos/src/core/serializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o -c /home/murphyc/palabos/src/core/serializer.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/serializer.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/serializer.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/serializer.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/serializer.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o.requires
@@ -1021,16 +1021,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/serializer.cpp.o.provides.b
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o: /home/murphyc/palabos/src/core/units.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_43)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o -c /home/murphyc/palabos/src/core/units.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o -c /home/murphyc/palabos/src/core/units.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/units.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/core/units.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/units.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/core/units.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o.requires
@@ -1044,16 +1044,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/core/units.cpp.o.provides.build:
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o: /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_44)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o -c /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o -c /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o.requires
@@ -1067,16 +1067,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunction
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o: /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_45)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o -c /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o -c /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o.requires
@@ -1090,16 +1090,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffFunction
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o: /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_46)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o -c /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o -c /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o.requires
@@ -1113,16 +1113,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper2
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o: /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_47)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o -c /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o -c /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o.requires
@@ -1136,16 +1136,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/dataProcessors/metaStuffWrapper3
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o: /home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_48)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o -c /home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o -c /home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o.requires
@@ -1159,16 +1159,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/boxLogic3D.cpp.o.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o: /home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_49)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o -c /home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o -c /home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o.requires
@@ -1182,16 +1182,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/couplingInterface
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o: /home/murphyc/palabos/src/gridRefinement/octree.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_50)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o -c /home/murphyc/palabos/src/gridRefinement/octree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o -c /home/murphyc/palabos/src/gridRefinement/octree.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/octree.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/octree.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/octree.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/octree.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o.requires
@@ -1205,16 +1205,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octree.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.o: /home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_51)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.o -c /home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.o -c /home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerator.cpp.o.requires
@@ -1228,16 +1228,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridGenerat
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.o: /home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_52)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.o -c /home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.o -c /home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructure.cpp.o.requires
@@ -1251,16 +1251,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/gridRefinement/octreeGridStructu
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o: /home/murphyc/palabos/src/io/colormaps.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_53)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o -c /home/murphyc/palabos/src/io/colormaps.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o -c /home/murphyc/palabos/src/io/colormaps.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/colormaps.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/colormaps.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/colormaps.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/colormaps.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o.requires
@@ -1274,16 +1274,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/colormaps.cpp.o.provides.buil
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o: /home/murphyc/palabos/src/io/mpiParallelIO.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_54)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o -c /home/murphyc/palabos/src/io/mpiParallelIO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o -c /home/murphyc/palabos/src/io/mpiParallelIO.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/mpiParallelIO.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/mpiParallelIO.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/mpiParallelIO.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/mpiParallelIO.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o.requires
@@ -1297,16 +1297,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/mpiParallelIO.cpp.o.provides.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o: /home/murphyc/palabos/src/io/multiBlockReader2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_55)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o -c /home/murphyc/palabos/src/io/multiBlockReader2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o -c /home/murphyc/palabos/src/io/multiBlockReader2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/multiBlockReader2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/multiBlockReader2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/multiBlockReader2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/multiBlockReader2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o.requires
@@ -1320,16 +1320,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader2D.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o: /home/murphyc/palabos/src/io/multiBlockReader3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_56)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o -c /home/murphyc/palabos/src/io/multiBlockReader3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o -c /home/murphyc/palabos/src/io/multiBlockReader3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/multiBlockReader3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/multiBlockReader3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/multiBlockReader3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/multiBlockReader3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o.requires
@@ -1343,16 +1343,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockReader3D.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o: /home/murphyc/palabos/src/io/multiBlockWriter2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_57)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o -c /home/murphyc/palabos/src/io/multiBlockWriter2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o -c /home/murphyc/palabos/src/io/multiBlockWriter2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/multiBlockWriter2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/multiBlockWriter2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/multiBlockWriter2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/multiBlockWriter2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o.requires
@@ -1366,16 +1366,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter2D.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o: /home/murphyc/palabos/src/io/multiBlockWriter3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_58)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o -c /home/murphyc/palabos/src/io/multiBlockWriter3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o -c /home/murphyc/palabos/src/io/multiBlockWriter3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/multiBlockWriter3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/multiBlockWriter3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/multiBlockWriter3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/multiBlockWriter3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o.requires
@@ -1389,16 +1389,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/multiBlockWriter3D.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o: /home/murphyc/palabos/src/io/parallelIO.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_59)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o -c /home/murphyc/palabos/src/io/parallelIO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o -c /home/murphyc/palabos/src/io/parallelIO.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/parallelIO.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/parallelIO.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/parallelIO.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/parallelIO.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o.requires
@@ -1412,16 +1412,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/parallelIO.cpp.o.provides.bui
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o: /home/murphyc/palabos/src/io/plbFiles.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_60)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o -c /home/murphyc/palabos/src/io/plbFiles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o -c /home/murphyc/palabos/src/io/plbFiles.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/plbFiles.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/plbFiles.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/plbFiles.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/plbFiles.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o.requires
@@ -1435,16 +1435,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/plbFiles.cpp.o.provides.build
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o: /home/murphyc/palabos/src/io/serializerIO.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_61)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o -c /home/murphyc/palabos/src/io/serializerIO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o -c /home/murphyc/palabos/src/io/serializerIO.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/serializerIO.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/serializerIO.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/serializerIO.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/serializerIO.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o.requires
@@ -1458,16 +1458,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO.cpp.o.provides.b
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o: /home/murphyc/palabos/src/io/serializerIO_2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_62)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o -c /home/murphyc/palabos/src/io/serializerIO_2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o -c /home/murphyc/palabos/src/io/serializerIO_2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/serializerIO_2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/serializerIO_2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/serializerIO_2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/serializerIO_2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o.requires
@@ -1481,16 +1481,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_2D.cpp.o.provide
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o: /home/murphyc/palabos/src/io/serializerIO_3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_63)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o -c /home/murphyc/palabos/src/io/serializerIO_3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o -c /home/murphyc/palabos/src/io/serializerIO_3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/serializerIO_3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/serializerIO_3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/serializerIO_3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/serializerIO_3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o.requires
@@ -1504,16 +1504,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/serializerIO_3D.cpp.o.provide
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o: /home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_64)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o -c /home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o -c /home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o.requires
@@ -1527,16 +1527,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/sparseVtkDataOutput.cpp.o.pro
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o: /home/murphyc/palabos/src/io/utilIO_2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_65)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o -c /home/murphyc/palabos/src/io/utilIO_2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o -c /home/murphyc/palabos/src/io/utilIO_2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/utilIO_2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/utilIO_2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/utilIO_2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/utilIO_2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o.requires
@@ -1550,16 +1550,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_2D.cpp.o.provides.buil
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o: /home/murphyc/palabos/src/io/utilIO_3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_66)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o -c /home/murphyc/palabos/src/io/utilIO_3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o -c /home/murphyc/palabos/src/io/utilIO_3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/utilIO_3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/utilIO_3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/utilIO_3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/utilIO_3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o.requires
@@ -1573,16 +1573,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/utilIO_3D.cpp.o.provides.buil
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o: /home/murphyc/palabos/src/io/vtkDataOutput.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_67)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o -c /home/murphyc/palabos/src/io/vtkDataOutput.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o -c /home/murphyc/palabos/src/io/vtkDataOutput.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/vtkDataOutput.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/vtkDataOutput.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/vtkDataOutput.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/vtkDataOutput.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o.requires
@@ -1596,16 +1596,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkDataOutput.cpp.o.provides.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o: /home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_68)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o -c /home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o -c /home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o.requires
@@ -1619,16 +1619,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/io/vtkStructuredDataOutput.cpp.o
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o: /home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_69)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o -c /home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o -c /home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o.requires
@@ -1642,16 +1642,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/libraryInterfaces/TINYXML_xmlIO.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.o: /home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_70)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.o -c /home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.o -c /home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cpp.o.requires
@@ -1665,16 +1665,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/combinedStatistics.cp
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o: /home/murphyc/palabos/src/multiBlock/coupling2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_71)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/coupling2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/coupling2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/coupling2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/coupling2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/coupling2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/coupling2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o.requires
@@ -1688,16 +1688,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling2D.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o: /home/murphyc/palabos/src/multiBlock/coupling3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_72)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/coupling3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/coupling3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/coupling3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/coupling3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/coupling3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/coupling3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o.requires
@@ -1711,16 +1711,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/coupling3D.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.o: /home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_73)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.cpp.o.requires
@@ -1734,16 +1734,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation2D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.o: /home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_74)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.cpp.o.requires
@@ -1757,16 +1757,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/domainManipulation3D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o: /home/murphyc/palabos/src/multiBlock/group2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_75)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/group2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/group2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/group2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/group2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/group2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/group2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o.requires
@@ -1780,16 +1780,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group2D.cpp.o.provide
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o: /home/murphyc/palabos/src/multiBlock/group3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_76)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/group3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/group3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/group3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/group3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/group3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/group3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o.requires
@@ -1803,16 +1803,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/group3D.cpp.o.provide
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o: /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_77)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o.requires
@@ -1826,16 +1826,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo2D
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o: /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_78)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o.requires
@@ -1849,16 +1849,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/localMultiBlockInfo3D
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_79)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o.requires
@@ -1872,16 +1872,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock2D.cpp.o.pr
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_80)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o.requires
@@ -1895,16 +1895,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlock3D.cpp.o.pr
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_81)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o.requires
@@ -1918,16 +1918,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator2D
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_82)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o.requires
@@ -1941,16 +1941,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockGenerator3D
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_83)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.o.requires
@@ -1964,16 +1964,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo2D.cpp.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_84)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.o.requires
@@ -1987,16 +1987,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockInfo3D.cpp.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_85)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2D.cpp.o.requires
@@ -2010,16 +2010,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement2
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_86)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3D.cpp.o.requires
@@ -2033,16 +2033,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockManagement3
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_87)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2D.cpp.o.requires
@@ -2056,16 +2056,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations2
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_88)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3D.cpp.o.requires
@@ -2079,16 +2079,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockOperations3
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_89)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o.requires
@@ -2102,16 +2102,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer2
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_90)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o.requires
@@ -2125,16 +2125,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiBlockSerializer3
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_91)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D.cpp.o.requires
@@ -2148,16 +2148,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock2D
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_92)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D.cpp.o.requires
@@ -2171,16 +2171,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiContainerBlock3D
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_93)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o.requires
@@ -2194,16 +2194,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWra
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o: /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_94)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o.requires
@@ -2217,16 +2217,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/multiDataProcessorWra
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o: /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_95)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o.requires
@@ -2240,16 +2240,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D.cp
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o: /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_96)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o.requires
@@ -2263,16 +2263,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer2D_3D
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o: /home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_97)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o.requires
@@ -2286,16 +2286,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/nonLocalTransfer3D.cp
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.o: /home/murphyc/palabos/src/multiBlock/redistribution3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_98)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/redistribution3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/redistribution3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/redistribution3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/redistribution3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/redistribution3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/redistribution3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.o.requires
@@ -2309,16 +2309,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/redistribution3D.cpp.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o: /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_99)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o.requires
@@ -2332,16 +2332,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataPro
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o: /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_100)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o.requires
@@ -2355,16 +2355,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/reductiveMultiDataPro
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o: /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_101)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o.requires
@@ -2378,16 +2378,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicat
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o: /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_102)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o.requires
@@ -2401,16 +2401,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/serialBlockCommunicat
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o: /home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_103)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o.requires
@@ -2424,16 +2424,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure2
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o: /home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_104)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o.requires
@@ -2447,16 +2447,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/sparseBlockStructure3
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.o: /home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_105)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.o -c /home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.cpp.o.requires
@@ -2470,16 +2470,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions2D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.o: /home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_106)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.o -c /home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.cpp.o.requires
@@ -2493,16 +2493,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/staticRepartitions3D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.o: /home/murphyc/palabos/src/multiBlock/threadAttribution.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_107)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.o -c /home/murphyc/palabos/src/multiBlock/threadAttribution.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.o -c /home/murphyc/palabos/src/multiBlock/threadAttribution.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/threadAttribution.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiBlock/threadAttribution.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/threadAttribution.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiBlock/threadAttribution.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp.o.requires
@@ -2516,16 +2516,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiBlock/threadAttribution.cpp
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o: /home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_108)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o.requires
@@ -2539,16 +2539,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/domainDivision3D.cpp.o
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o: /home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_109)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o.requires
@@ -2562,16 +2562,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid2D.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o: /home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_110)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o.requires
@@ -2585,16 +2585,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGrid3D.cpp.o.prov
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o: /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_111)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o.requires
@@ -2608,16 +2608,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessor
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o: /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_112)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o.requires
@@ -2631,16 +2631,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridDataProcessor
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.o: /home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_113)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.cpp.o.requires
@@ -2654,16 +2654,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement2D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.o: /home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_114)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.cpp.o.requires
@@ -2677,16 +2677,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridManagement3D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.o: /home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_115)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.cpp.o.requires
@@ -2700,16 +2700,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations2D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.o: /home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_116)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.cpp.o.requires
@@ -2723,16 +2723,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiGridOperations3D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o: /home/murphyc/palabos/src/multiGrid/multiScale.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_117)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiScale.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o -c /home/murphyc/palabos/src/multiGrid/multiScale.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiScale.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/multiScale.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiScale.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/multiScale.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o.requires
@@ -2746,16 +2746,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/multiScale.cpp.o.provi
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o: /home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_118)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o -c /home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o.requires
@@ -2769,16 +2769,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer2D.cpp.o.p
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o: /home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_119)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o -c /home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o.requires
@@ -2792,16 +2792,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiGrid/parallelizer3D.cpp.o.p
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o: /home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_120)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o -c /home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o -c /home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o.requires
@@ -2815,16 +2815,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/bubbleMatch3D.cpp.o
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o: /home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_121)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o -c /home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o -c /home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o.requires
@@ -2838,16 +2838,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceAnalysis
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o: /home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_122)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o -c /home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o -c /home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o.requires
@@ -2861,16 +2861,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/multiPhysics/freeSurfaceModel3D.
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.o: /home/murphyc/palabos/src/offLattice/domainClustering3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_123)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.o -c /home/murphyc/palabos/src/offLattice/domainClustering3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.o -c /home/murphyc/palabos/src/offLattice/domainClustering3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/offLattice/domainClustering3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/offLattice/domainClustering3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/offLattice/domainClustering3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/offLattice/domainClustering3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cpp.o.requires
@@ -2884,16 +2884,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/domainClustering3D.cp
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o: /home/murphyc/palabos/src/offLattice/marchingCube.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_124)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o -c /home/murphyc/palabos/src/offLattice/marchingCube.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o -c /home/murphyc/palabos/src/offLattice/marchingCube.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/offLattice/marchingCube.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/offLattice/marchingCube.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/offLattice/marchingCube.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/offLattice/marchingCube.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o.requires
@@ -2907,16 +2907,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/marchingCube.cpp.o.pr
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o: /home/murphyc/palabos/src/offLattice/voxelizer.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_125)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o -c /home/murphyc/palabos/src/offLattice/voxelizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o -c /home/murphyc/palabos/src/offLattice/voxelizer.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/offLattice/voxelizer.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/offLattice/voxelizer.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/offLattice/voxelizer.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/offLattice/voxelizer.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o.requires
@@ -2930,16 +2930,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/offLattice/voxelizer.cpp.o.provi
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o: /home/murphyc/palabos/src/parallelism/mpiManager.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_126)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o -c /home/murphyc/palabos/src/parallelism/mpiManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o -c /home/murphyc/palabos/src/parallelism/mpiManager.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/mpiManager.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/mpiManager.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/mpiManager.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/mpiManager.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o.requires
@@ -2953,16 +2953,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/mpiManager.cpp.o.pro
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o: /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_127)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o -c /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o -c /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o.requires
@@ -2976,16 +2976,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommuni
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o: /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_128)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o -c /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o -c /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o.requires
@@ -2999,16 +2999,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelBlockCommuni
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.o: /home/murphyc/palabos/src/parallelism/parallelStatistics.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_129)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.o -c /home/murphyc/palabos/src/parallelism/parallelStatistics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.o -c /home/murphyc/palabos/src/parallelism/parallelStatistics.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/parallelStatistics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/parallelStatistics.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/parallelStatistics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/parallelStatistics.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.cpp.o.requires
@@ -3022,16 +3022,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/parallelStatistics.c
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o: /home/murphyc/palabos/src/parallelism/sendRecvPool.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_130)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o -c /home/murphyc/palabos/src/parallelism/sendRecvPool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o -c /home/murphyc/palabos/src/parallelism/sendRecvPool.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/sendRecvPool.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/src/parallelism/sendRecvPool.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/sendRecvPool.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/src/parallelism/sendRecvPool.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o.requires
@@ -3045,16 +3045,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/src/parallelism/sendRecvPool.cpp.o.p
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.o: /home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_131)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.o -c /home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.o -c /home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cpp.o.requires
@@ -3068,16 +3068,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxml.cp
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o: /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_132)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o -c /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o -c /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o.requires
@@ -3091,16 +3091,16 @@ CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlerr
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o: /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_133)
-	@echo "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o"
-	mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o -c /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o"
+	/soft/compilers/gcc/7.1.0/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o -c /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.i"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.i"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp > CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.i
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.s"
-	mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.s"
+	/soft/compilers/gcc/7.1.0/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp -o CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.s
 
 CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o.requires:
 .PHONY : CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o.requires
@@ -3385,7 +3385,7 @@ libpalabos.a: CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tiny
 libpalabos.a: CMakeFiles/palabos.dir/home/murphyc/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o
 libpalabos.a: CMakeFiles/palabos.dir/build.make
 libpalabos.a: CMakeFiles/palabos.dir/link.txt
-	@echo "Linking CXX static library libpalabos.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libpalabos.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/palabos.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/palabos.dir/link.txt --verbose=$(VERBOSE)
 
@@ -3533,6 +3533,6 @@ CMakeFiles/palabos.dir/clean:
 .PHONY : CMakeFiles/palabos.dir/clean
 
 CMakeFiles/palabos.dir/depend:
-	cd /home/murphyc/BloodFlow/examples/embolism/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/murphyc/BloodFlow/examples/embolism /home/murphyc/BloodFlow/examples/embolism /home/murphyc/BloodFlow/examples/embolism/build /home/murphyc/BloodFlow/examples/embolism/build /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/palabos.dir/DependInfo.cmake
+	cd /home/murphyc/BloodFlow/examples/embolism/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/murphyc/BloodFlow/examples/embolism /home/murphyc/BloodFlow/examples/embolism /home/murphyc/BloodFlow/examples/embolism/build /home/murphyc/BloodFlow/examples/embolism/build /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/palabos.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/palabos.dir/depend
 
