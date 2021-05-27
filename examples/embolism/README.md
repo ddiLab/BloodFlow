@@ -19,7 +19,7 @@ The embolism example is tested with the following versions:
 
 Steps to compile the code
 1. The BloodFlow repository should have a branch for BloodFlow on Cooley. This has a different CMakeLists.txt file than the main branch. Clone this branch to your home directory if you are on the Cooley server. In this CMakeLists.txt file, there are some file paths that need to be modified. These are below the comment starting with "CONNOR: ..."
-2. The embolism.sh executable file needs to have a directory path updated. This file is in BloodFlow/examples/embolism.2. The embolism.sh executable file needs to have a directory path updated. This file is in BloodFlow/examples/embolism.
+2. The embolism.sh executable file needs to have a directory path updated. This file is in BloodFlow/examples/embolism.
 3. Compile lammps as a library, go to folder lammps/src, type `make mpi mode=lib`. You may need to append `-std=c++11` flags in CCFLAGS in Makefile.mpi under lammps/src/MAKE folder. When compiling compiling the executable file later on, an error might occur complaining about package that is needed in lammps (I had to install the MC package). Enter the lammps/src directory and use the command `make yes-<packagename>`, remake lammps as a library, and rebuild the executable.
 4. go to embolism/build and use the command: `cmake -B . -S /PATH/TO/embolism \-DCMAKE_C_COMPILER=mpicc -DCMAKE_CXX_STANDARD=11`
 `make`
