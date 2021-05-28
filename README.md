@@ -1,3 +1,3 @@
 # BloodFlow
 Palabos + LAMMPS + SENSEI Integration
-This Fork was created in order to integrate the code given by Dr. Tan onto Argonne's Cooley server.
+This Fork was created in order to integrate the fluid structure interaction code onto Argonne's Cooley server.
