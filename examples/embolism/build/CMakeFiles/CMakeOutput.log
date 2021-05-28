@@ -28,30 +28,30 @@ The CXX compiler identification is GNU, found in "/home/murphyc/BloodFlow/exampl
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/bin/gmake "cmTryCompileExec3023585468/fast"
-/bin/gmake -f CMakeFiles/cmTryCompileExec3023585468.dir/build.make CMakeFiles/cmTryCompileExec3023585468.dir/build
+Run Build Command:/bin/gmake "cmTryCompileExec997248348/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec997248348.dir/build.make CMakeFiles/cmTryCompileExec997248348.dir/build
 gmake[1]: Entering directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3023585468.dir/testCCompiler.c.o
-/soft/libraries/mpi/mvapich2/gcc/bin/mpicc    -o CMakeFiles/cmTryCompileExec3023585468.dir/testCCompiler.c.o   -c /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec3023585468
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3023585468.dir/link.txt --verbose=1
-/soft/libraries/mpi/mvapich2/gcc/bin/mpicc       CMakeFiles/cmTryCompileExec3023585468.dir/testCCompiler.c.o  -o cmTryCompileExec3023585468 -rdynamic 
+Building C object CMakeFiles/cmTryCompileExec997248348.dir/testCCompiler.c.o
+/soft/libraries/mpi/mvapich2/gcc/bin/mpicc    -o CMakeFiles/cmTryCompileExec997248348.dir/testCCompiler.c.o   -c /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec997248348
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec997248348.dir/link.txt --verbose=1
+/soft/libraries/mpi/mvapich2/gcc/bin/mpicc       CMakeFiles/cmTryCompileExec997248348.dir/testCCompiler.c.o  -o cmTryCompileExec997248348 -rdynamic 
 gmake[1]: Leaving directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/bin/gmake "cmTryCompileExec995821379/fast"
-/bin/gmake -f CMakeFiles/cmTryCompileExec995821379.dir/build.make CMakeFiles/cmTryCompileExec995821379.dir/build
+Run Build Command:/bin/gmake "cmTryCompileExec3163838812/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec3163838812.dir/build.make CMakeFiles/cmTryCompileExec3163838812.dir/build
 gmake[1]: Entering directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o
-/soft/libraries/mpi/mvapich2/gcc/bin/mpicc    -o CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec995821379
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec995821379.dir/link.txt --verbose=1
-/soft/libraries/mpi/mvapich2/gcc/bin/mpicc     -v CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec995821379 -rdynamic  
+Building C object CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o
+/soft/libraries/mpi/mvapich2/gcc/bin/mpicc    -o CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3163838812
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3163838812.dir/link.txt --verbose=1
+/soft/libraries/mpi/mvapich2/gcc/bin/mpicc     -v CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3163838812 -rdynamic  
 mpicc for MVAPICH2 version 2.2
 Using built-in specs.
 COLLECT_GCC=gcc
@@ -62,9 +62,9 @@ Thread model: posix
 gcc version 7.1.0 (GCC) 
 COMPILER_PATH=/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/:/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/
 LIBRARY_PATH=/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec995821379' '-rdynamic' '-I' '/soft/libraries/mpi/mvapich2-2.2/gcc/include' '-L/soft/libraries/mpi/mvapich2-2.2/gcc/lib' '-mtune=generic' '-march=x86-64'
- /soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec995821379 /lib/../lib64/crt1.o /lib/../lib64/crti.o /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o -L/soft/libraries/mpi/mvapich2-2.2/gcc/lib -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0 -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../.. CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o -rpath /soft/libraries/mpi/mvapich2-2.2/gcc/lib --enable-new-dtags -lmpi -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec995821379' '-rdynamic' '-I' '/soft/libraries/mpi/mvapich2-2.2/gcc/include' '-L/soft/libraries/mpi/mvapich2-2.2/gcc/lib' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3163838812' '-rdynamic' '-I' '/soft/libraries/mpi/mvapich2-2.2/gcc/include' '-L/soft/libraries/mpi/mvapich2-2.2/gcc/lib' '-mtune=generic' '-march=x86-64'
+ /soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3163838812 /lib/../lib64/crt1.o /lib/../lib64/crti.o /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o -L/soft/libraries/mpi/mvapich2-2.2/gcc/lib -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0 -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../.. CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o -rpath /soft/libraries/mpi/mvapich2-2.2/gcc/lib --enable-new-dtags -lmpi -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3163838812' '-rdynamic' '-I' '/soft/libraries/mpi/mvapich2-2.2/gcc/include' '-L/soft/libraries/mpi/mvapich2-2.2/gcc/lib' '-mtune=generic' '-march=x86-64'
 gmake[1]: Leaving directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp'
 
 
@@ -72,15 +72,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/bin/gmake "cmTryCompileExec995821379/fast"]
-  ignore line: [/bin/gmake -f CMakeFiles/cmTryCompileExec995821379.dir/build.make CMakeFiles/cmTryCompileExec995821379.dir/build]
+  ignore line: [Run Build Command:/bin/gmake "cmTryCompileExec3163838812/fast"]
+  ignore line: [/bin/gmake -f CMakeFiles/cmTryCompileExec3163838812.dir/build.make CMakeFiles/cmTryCompileExec3163838812.dir/build]
   ignore line: [gmake[1]: Entering directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/soft/libraries/mpi/mvapich2/gcc/bin/mpicc    -o CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec995821379]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec995821379.dir/link.txt --verbose=1]
-  ignore line: [/soft/libraries/mpi/mvapich2/gcc/bin/mpicc     -v CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec995821379 -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/soft/libraries/mpi/mvapich2/gcc/bin/mpicc    -o CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3163838812]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3163838812.dir/link.txt --verbose=1]
+  ignore line: [/soft/libraries/mpi/mvapich2/gcc/bin/mpicc     -v CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3163838812 -rdynamic  ]
   ignore line: [mpicc for MVAPICH2 version 2.2]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=gcc]
@@ -91,8 +91,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 7.1.0 (GCC) ]
   ignore line: [COMPILER_PATH=/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/:/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/]
   ignore line: [LIBRARY_PATH=/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec995821379' '-rdynamic' '-I' '/soft/libraries/mpi/mvapich2-2.2/gcc/include' '-L/soft/libraries/mpi/mvapich2-2.2/gcc/lib' '-mtune=generic' '-march=x86-64']
-  link line: [ /soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec995821379 /lib/../lib64/crt1.o /lib/../lib64/crti.o /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o -L/soft/libraries/mpi/mvapich2-2.2/gcc/lib -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0 -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../.. CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o -rpath /soft/libraries/mpi/mvapich2-2.2/gcc/lib --enable-new-dtags -lmpi -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3163838812' '-rdynamic' '-I' '/soft/libraries/mpi/mvapich2-2.2/gcc/include' '-L/soft/libraries/mpi/mvapich2-2.2/gcc/lib' '-mtune=generic' '-march=x86-64']
+  link line: [ /soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3163838812 /lib/../lib64/crt1.o /lib/../lib64/crti.o /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o -L/soft/libraries/mpi/mvapich2-2.2/gcc/lib -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0 -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../.. CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o -rpath /soft/libraries/mpi/mvapich2-2.2/gcc/lib --enable-new-dtags -lmpi -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtend.o /lib/../lib64/crtn.o]
     arg [/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
@@ -101,7 +101,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec995821379] ==> ignore
+    arg [cmTryCompileExec3163838812] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o] ==> ignore
@@ -113,7 +113,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L.] ==> ignore
     arg [-L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../..] ==> dir [/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../..]
-    arg [CMakeFiles/cmTryCompileExec995821379.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3163838812.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-rpath] ==> ignore
     arg [/soft/libraries/mpi/mvapich2-2.2/gcc/lib] ==> ignore
     arg [--enable-new-dtags] ==> ignore
@@ -148,30 +148,30 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/bin/gmake "cmTryCompileExec2391723541/fast"
-/bin/gmake -f CMakeFiles/cmTryCompileExec2391723541.dir/build.make CMakeFiles/cmTryCompileExec2391723541.dir/build
+Run Build Command:/bin/gmake "cmTryCompileExec4111983404/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec4111983404.dir/build.make CMakeFiles/cmTryCompileExec4111983404.dir/build
 gmake[1]: Entering directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2391723541.dir/testCXXCompiler.cxx.o
-/soft/compilers/gcc/7.1.0/bin/c++     -o CMakeFiles/cmTryCompileExec2391723541.dir/testCXXCompiler.cxx.o -c /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec2391723541
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2391723541.dir/link.txt --verbose=1
-/soft/compilers/gcc/7.1.0/bin/c++        CMakeFiles/cmTryCompileExec2391723541.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2391723541 -rdynamic 
+Building CXX object CMakeFiles/cmTryCompileExec4111983404.dir/testCXXCompiler.cxx.o
+/soft/compilers/gcc/7.1.0/bin/c++     -o CMakeFiles/cmTryCompileExec4111983404.dir/testCXXCompiler.cxx.o -c /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec4111983404
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4111983404.dir/link.txt --verbose=1
+/soft/compilers/gcc/7.1.0/bin/c++        CMakeFiles/cmTryCompileExec4111983404.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec4111983404 -rdynamic 
 gmake[1]: Leaving directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/bin/gmake "cmTryCompileExec2545712293/fast"
-/bin/gmake -f CMakeFiles/cmTryCompileExec2545712293.dir/build.make CMakeFiles/cmTryCompileExec2545712293.dir/build
+Run Build Command:/bin/gmake "cmTryCompileExec2237580707/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec2237580707.dir/build.make CMakeFiles/cmTryCompileExec2237580707.dir/build
 gmake[1]: Entering directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o
-/soft/compilers/gcc/7.1.0/bin/c++     -o CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec2545712293
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2545712293.dir/link.txt --verbose=1
-/soft/compilers/gcc/7.1.0/bin/c++      -v CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2545712293 -rdynamic  
+Building CXX object CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o
+/soft/compilers/gcc/7.1.0/bin/c++     -o CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2237580707
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2237580707.dir/link.txt --verbose=1
+/soft/compilers/gcc/7.1.0/bin/c++      -v CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2237580707 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/soft/compilers/gcc/7.1.0/bin/c++
 COLLECT_LTO_WRAPPER=/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/lto-wrapper
@@ -181,9 +181,9 @@ Thread model: posix
 gcc version 7.1.0 (GCC) 
 COMPILER_PATH=/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/:/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/
 LIBRARY_PATH=/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2545712293' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2545712293 /lib/../lib64/crt1.o /lib/../lib64/crti.o /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0 -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../.. CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtend.o /lib/../lib64/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2545712293' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2237580707' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2237580707 /lib/../lib64/crt1.o /lib/../lib64/crti.o /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0 -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../.. CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtend.o /lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2237580707' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 gmake[1]: Leaving directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp'
 
 
@@ -191,15 +191,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/bin/gmake "cmTryCompileExec2545712293/fast"]
-  ignore line: [/bin/gmake -f CMakeFiles/cmTryCompileExec2545712293.dir/build.make CMakeFiles/cmTryCompileExec2545712293.dir/build]
+  ignore line: [Run Build Command:/bin/gmake "cmTryCompileExec2237580707/fast"]
+  ignore line: [/bin/gmake -f CMakeFiles/cmTryCompileExec2237580707.dir/build.make CMakeFiles/cmTryCompileExec2237580707.dir/build]
   ignore line: [gmake[1]: Entering directory `/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/soft/compilers/gcc/7.1.0/bin/c++     -o CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec2545712293]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2545712293.dir/link.txt --verbose=1]
-  ignore line: [/soft/compilers/gcc/7.1.0/bin/c++      -v CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2545712293 -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/soft/compilers/gcc/7.1.0/bin/c++     -o CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2237580707]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2237580707.dir/link.txt --verbose=1]
+  ignore line: [/soft/compilers/gcc/7.1.0/bin/c++      -v CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2237580707 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/soft/compilers/gcc/7.1.0/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/lto-wrapper]
@@ -209,8 +209,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.1.0 (GCC) ]
   ignore line: [COMPILER_PATH=/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/:/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/]
   ignore line: [LIBRARY_PATH=/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:./:/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2545712293' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2545712293 /lib/../lib64/crt1.o /lib/../lib64/crti.o /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0 -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../.. CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtend.o /lib/../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2237580707' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2 --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2237580707 /lib/../lib64/crt1.o /lib/../lib64/crti.o /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0 -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L. -L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../.. CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtend.o /lib/../lib64/crtn.o]
     arg [/soft/compilers/gcc/7.1.0/bin/../libexec/gcc/x86_64-pc-linux-gnu/7.1.0/collect2] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
@@ -219,7 +219,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2545712293] ==> ignore
+    arg [cmTryCompileExec2237580707] ==> ignore
     arg [/lib/../lib64/crt1.o] ==> ignore
     arg [/lib/../lib64/crti.o] ==> ignore
     arg [/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/crtbegin.o] ==> ignore
@@ -230,7 +230,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L.] ==> ignore
     arg [-L/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../..] ==> dir [/soft/compilers/gcc/7.1.0/bin/../lib/gcc/x86_64-pc-linux-gnu/7.1.0/../../..]
-    arg [CMakeFiles/cmTryCompileExec2545712293.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec2237580707.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]

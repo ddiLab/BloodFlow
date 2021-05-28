@@ -1,0 +1,25 @@
+Jobid: 2095197
+qsub -n 1 -t 10 -A visualization -q debug ./embolism.sh
+Fri May 28 16:10:21 2021 +0000 (UTC) submitted with cwd set to: /gpfs/mira-home/murphyc/BloodFlow/examples/embolism
+jobid 2095197 submitted from terminal /dev/pts/24
+Fri May 28 16:10:47 2021 +0000 (UTC) 
+Fri May 28 16:10:47 2021 +0000 (UTC) Command: '/usr/bin/ssh' 'cc013.cooley' '/usr/bin/cobalt-launcher.py' '--nf' '/var/tmp/cobalt.2095197' '--jobid' '2095197' '--cwd' '/gpfs/mira-home/murphyc/BloodFlow/examples/embolism' '--env' 'COBALT_JOBID=2095197' '/gpfs/mira-home/murphyc/BloodFlow/examples/embolism/./embolism.sh'
+Fri May 28 16:10:47 2021 +0000 (UTC) 
+Fri May 28 16:10:47 2021 +0000 (UTC) Environment:
+Fri May 28 16:10:47 2021 +0000 (UTC) SHELL=/bin/bash
+Fri May 28 16:10:47 2021 +0000 (UTC) COBALT_NODEFILE=/tmp/tmpo1ObjI
+Fri May 28 16:10:47 2021 +0000 (UTC) COBALT_PARTNAME=cc013.cooley
+Fri May 28 16:10:47 2021 +0000 (UTC) COBALT_JOBID=2095197
+Fri May 28 16:10:47 2021 +0000 (UTC) COBALT_STARTTIME=1622218227
+Fri May 28 16:10:47 2021 +0000 (UTC) LOGNAME=murphyc
+Fri May 28 16:10:47 2021 +0000 (UTC) USER=murphyc
+Fri May 28 16:10:47 2021 +0000 (UTC) COBALT_ENDTIME=1622218827
+Fri May 28 16:10:47 2021 +0000 (UTC) COBALT_PARTSIZE=1
+Fri May 28 16:10:47 2021 +0000 (UTC) HOME=/home/murphyc
+Fri May 28 16:10:47 2021 +0000 (UTC) COBALT_JOBSIZE=1
+Fri May 28 16:10:47 2021 +0000 (UTC) 
+Fri May 28 16:10:47 2021 +0000 (UTC) Info: stdin received from /dev/null
+Fri May 28 16:10:47 2021 +0000 (UTC) Info: stdout sent to /gpfs/mira-home/murphyc/BloodFlow/examples/embolism/2095197.output
+Fri May 28 16:10:47 2021 +0000 (UTC) Info: stderr sent to /gpfs/mira-home/murphyc/BloodFlow/examples/embolism/2095197.error
+Fri May 28 16:10:47 2021 +0000 (UTC) 
+Fri May 28 16:11:09 2021 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal
