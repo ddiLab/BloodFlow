@@ -1,2 +1,0 @@
-/home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/embolism.dir
-/home/murphyc/BloodFlow/examples/embolism/build/CMakeFiles/palabos.dir
