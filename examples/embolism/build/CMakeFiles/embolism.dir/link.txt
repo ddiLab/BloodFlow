@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -Wall -Wnon-virtual-dtor  -O3 -DNDEBUG    CMakeFiles/embolism.dir/embolism.cpp.o  -o ../embolism -rdynamic libpalabos.a /home/jifutan/lammpsFeb2021/src/liblammps_mpi.a /shared/openmpi-4.0.3/gcc-4.8.5/lib/libmpi.so -Wl,-rpath,/shared/openmpi-4.0.3/gcc-4.8.5/lib 

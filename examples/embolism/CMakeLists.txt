@@ -1,45 +1,44 @@
 if(CI)
 ###############################################################################
-# Jifu: you need to change the EXECUTABLE_NAME to your file, here is embolism
-set(EXECUTABLE_NAME "embolism")
-
+get_filename_component(EXECUTABLE_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-
 ###############################################################################
-
-get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+#get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+get_filename_component(PROJECT_NAME ${EXECUTABLE_NAME} NAME)
 add_executable(${PROJECT_NAME} "./${EXECUTABLE_NAME}.cpp")
-
 # Link with the following libraries
 target_link_libraries(${PROJECT_NAME} palabos)
 if(ENABLE_MPI)
     target_link_libraries(${PROJECT_NAME} ${MPI_CXX_LIBRARIES})
 endif()
-
 ###############################################################################
-
 # This returns when you compile Palabos and all the examples (root CMakeLists.txt)
 return()
-
 ###############################################################################
 endif()
-
 cmake_minimum_required(VERSION 2.8.12)
-
 project(palabosExample)
 enable_language(CXX)
-
-# Jifu: you need to change the EXECUTABLE_NAME to your file, here is embolism
+#CONNOR: The three lines below with murphyc in the file path need to be modified.
+set(PALABOS_ROOT "/home/murphyc/palabos")
+set(BLOODFLOW_ROOT "/home/murphyc/BloodFlow")
+#set(COUPLING_ROOT "/home/insley/JTAN/CODE/palabos-lammps/")
+#FIND_PACKAGE(LAMMPS REQUIRED)
+set(LAMMPS_DIR "/home/murphyc/lammps"
+  )
+FIND_PATH(COUPLING_DIR palabos-lammps
+  )
+set(LAMMPS_LIB "${LAMMPS_DIR}/src")
+#CONNOR:Change the following line to your executable name
 set(EXECUTABLE_NAME "embolism")
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "../")
-
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Release")
     #set(CMAKE_CONFIGURATION_TYPES "Debug;Release")
 endif()
 message("Generated with config types: ${CMAKE_CONFIGURATION_TYPES}")
 message(${CMAKE_BUILD_TYPE})
-
+message("LAMMPS_INCLUDE: ${LAMMPS_INCLUDE}")
 # Compiler flags
 # Append flags: set(CMAKE_XXX_FLAGS "${CMAKE_XXX_FLAGS} ...")
 if(${CMAKE_CXX_COMPILER_ID} STREQUAL GNU)
@@ -60,7 +59,6 @@ elseif(${CMAKE_CXX_COMPILER_ID} STREQUAL MSVC)
 else()
     message( FATAL_ERROR "CXX compiler not recognized. CMake will quit." )
 endif()
-
 option(ENABLE_MPI "Enable MPI" ON)
 if(ENABLE_MPI)
     message("Enabling MPI")
@@ -72,52 +70,46 @@ if(ENABLE_MPI)
         add_definitions(-DPLB_MPI_PARALLEL)
     endif()
 endif()
-
 if(WIN32)
     option(ENABLE_POSIX "Enable POSIX" OFF)
 else()
     option(ENABLE_POSIX "Enable POSIX" ON)
 endif()
-
 if(ENABLE_POSIX)
     message("Enabling POSIX")
     add_definitions(-DPLB_USE_POSIX)
 endif()
-
 if(APPLE)
     add_definitions(-DPLB_MAC_OS_X)
 endif()
-
 if(WIN32 OR CYGWIN)
     add_definitions(-DPLB_WINDOWS)
 endif()
-
 ###############################################################################
 # Palabos Library
 ###############################################################################
-# Jifu: you need to modify the path to palabos and other source code
-include_directories("/home/jifutan/palabos/src")
-include_directories("/home/jifutan/palabos/externalLibraries")
-include_directories("/home/jifutan/palabos/externalLibraries/Eigen3")
-# Jifu: add the following two directories 
-include_directories("/home/jifutan/bloodflow/ibm")
-include_directories("/home/jifutan/lammpsFeb2021/src")
-
-# Jifu: you need to modify the path to palabos and other source code
-file(GLOB_RECURSE PALABOS_SRC "/home/jifutan/palabos/src/*.cpp")
-file(GLOB_RECURSE EXT_SRC "/home/jifutan/palabos/externalLibraries/tinyxml/*.cpp")
-# Jifu: set the directory for lammps library
-set(LAMMPS_SRC "/home/jifutan/lammpsFeb2021/src")
-
+include_directories("${PALABOS_ROOT}/src")
+include_directories("${PALABOS_ROOT}/externalLibraries")
+include_directories("${PALABOS_ROOT}/externalLibraries/Eigen3")
+include_directories("${BLOODFLOW_ROOT}/ibm")
+include_directories("${LAMMPS_LIB}")
+file(GLOB_RECURSE PALABOS_SRC "${PALABOS_ROOT}/src/*.cpp")
+file(GLOB_RECURSE EXT_SRC "${PALABOS_ROOT}/externalLibraries/tinyxml/*.cpp")
 add_library(palabos STATIC ${PALABOS_SRC} ${EXT_SRC})
-
 ###############################################################################
-
+#  LAMMPS Library
+include_directories("${LAMMPS_LIB}")
+include_directories("${COUPLING_DIR}/src")
+add_library(lammps STATIC IMPORTED)
+set_property(TARGET lammps PROPERTY
+             IMPORTED_LOCATION "${LAMMPS_LIB}/liblammps_mpi.a")
+#link_libraries (
+#    lammps
+#)
+###############################################################################
 add_executable(${EXECUTABLE_NAME} "./${EXECUTABLE_NAME}.cpp")
-
 # Link with the following libraries
-# Jifu: modifiy the following line with linked lammps library
-target_link_libraries(${EXECUTABLE_NAME} palabos ${LAMMPS_SRC}/liblammps_mpi.a)
+target_link_libraries(${EXECUTABLE_NAME} palabos lammps)
 if(ENABLE_MPI)
     target_link_libraries(${EXECUTABLE_NAME} ${MPI_CXX_LIBRARIES})
 endif()
