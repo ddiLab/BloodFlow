@@ -607,16 +607,27 @@ void AngleRbc::coeff(int narg, char **arg)
   if (!allocated) allocate();
 
   int ilo,ihi;
-  force->bounds(FLERR,arg[0],atom->nangletypes,ilo,ihi);
+  //force->bounds(FLERR,arg[0],atom->nangletypes,ilo,ihi);
+  utils::bounds(FLERR,arg[0],1,atom->nangletypes,ilo,ihi,error);
 
-  double Cq_one = force->numeric(FLERR,arg[1]);
+  /*double Cq_one = force->numeric(FLERR,arg[1]);
   double q_one = force->numeric(FLERR,arg[2]);
   double ka_one = force->numeric(FLERR,arg[3]);
   double A0t_one = force->numeric(FLERR,arg[4]);
   double kv_one = force->numeric(FLERR,arg[5]);
   double V0t_one = force->numeric(FLERR,arg[6]);
   double kd_one = force->numeric(FLERR,arg[7]);
-  double A0_one = force->numeric(FLERR,arg[8]);
+  double A0_one = force->numeric(FLERR,arg[8]);*/
+
+  double Cq_one = utils::numeric(FLERR,arg[1],false,lmp);
+  double q_one = utils::numeric(FLERR,arg[2],false,lmp);
+  double ka_one = utils::numeric(FLERR,arg[3],false,lmp);
+  double A0t_one = utils::numeric(FLERR,arg[4],false,lmp);
+  double kv_one = utils::numeric(FLERR,arg[5],false,lmp);
+  double V0t_one = utils::numeric(FLERR,arg[6],false,lmp);
+  double kd_one = utils::numeric(FLERR,arg[7],false,lmp);
+  double A0_one = utils::numeric(FLERR,arg[8],false,lmp);
+
 
   // convert theta0 from degrees to radians
 

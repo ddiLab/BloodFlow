@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jifutan/bloodflow/examples/embolism/embolism.cpp" "/home/jifutan/bloodflow/examples/embolism/build/CMakeFiles/embolism.dir/embolism.cpp.o"
+  "/home/jifutan/BloodFlow/examples/embolism/embolism.cpp" "/home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles/embolism.dir/embolism.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/jifutan/bloodflow/examples/embolism/build/CMakeFiles/palabos.dir/DependInfo.cmake"
+  "/home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles/palabos.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
@@ -25,7 +25,7 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/jifutan/palabos/src"
   "/home/jifutan/palabos/externalLibraries"
   "/home/jifutan/palabos/externalLibraries/Eigen3"
-  "/home/jifutan/bloodflow/ibm"
+  "/home/jifutan/BloodFlow/ibm"
   "/home/jifutan/lammpsFeb2021/src"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

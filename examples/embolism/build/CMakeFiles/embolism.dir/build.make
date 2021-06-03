@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jifutan/bloodflow/examples/embolism
+CMAKE_SOURCE_DIR = /home/jifutan/BloodFlow/examples/embolism
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jifutan/bloodflow/examples/embolism/build
+CMAKE_BINARY_DIR = /home/jifutan/BloodFlow/examples/embolism/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/embolism.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/embolism.dir/flags.make
 
 CMakeFiles/embolism.dir/embolism.cpp.o: CMakeFiles/embolism.dir/flags.make
 CMakeFiles/embolism.dir/embolism.cpp.o: ../embolism.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/embolism.dir/embolism.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/embolism.dir/embolism.cpp.o -c /home/jifutan/bloodflow/examples/embolism/embolism.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/embolism.dir/embolism.cpp.o -c /home/jifutan/BloodFlow/examples/embolism/embolism.cpp
 
 CMakeFiles/embolism.dir/embolism.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/embolism.dir/embolism.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jifutan/bloodflow/examples/embolism/embolism.cpp > CMakeFiles/embolism.dir/embolism.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jifutan/BloodFlow/examples/embolism/embolism.cpp > CMakeFiles/embolism.dir/embolism.cpp.i
 
 CMakeFiles/embolism.dir/embolism.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/embolism.dir/embolism.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jifutan/bloodflow/examples/embolism/embolism.cpp -o CMakeFiles/embolism.dir/embolism.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jifutan/BloodFlow/examples/embolism/embolism.cpp -o CMakeFiles/embolism.dir/embolism.cpp.s
 
 CMakeFiles/embolism.dir/embolism.cpp.o.requires:
 .PHONY : CMakeFiles/embolism.dir/embolism.cpp.o.requires
@@ -103,6 +103,6 @@ CMakeFiles/embolism.dir/clean:
 .PHONY : CMakeFiles/embolism.dir/clean
 
 CMakeFiles/embolism.dir/depend:
-	cd /home/jifutan/bloodflow/examples/embolism/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jifutan/bloodflow/examples/embolism /home/jifutan/bloodflow/examples/embolism /home/jifutan/bloodflow/examples/embolism/build /home/jifutan/bloodflow/examples/embolism/build /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles/embolism.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jifutan/BloodFlow/examples/embolism/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jifutan/BloodFlow/examples/embolism /home/jifutan/BloodFlow/examples/embolism /home/jifutan/BloodFlow/examples/embolism/build /home/jifutan/BloodFlow/examples/embolism/build /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles/embolism.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/embolism.dir/depend
 

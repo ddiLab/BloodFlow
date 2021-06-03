@@ -100,7 +100,7 @@ include_directories("/home/jifutan/palabos/src")
 include_directories("/home/jifutan/palabos/externalLibraries")
 include_directories("/home/jifutan/palabos/externalLibraries/Eigen3")
 # Jifu: add the following two directories 
-include_directories("/home/jifutan/bloodflow/ibm")
+include_directories("/home/jifutan/BloodFlow/ibm")
 include_directories("/home/jifutan/lammpsFeb2021/src")
 
 # Jifu: you need to modify the path to palabos and other source code

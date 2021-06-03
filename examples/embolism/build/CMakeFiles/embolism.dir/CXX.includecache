@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/jifutan/bloodflow/examples/embolism/embolism.cpp
+/home/jifutan/BloodFlow/examples/embolism/embolism.cpp
 palabos3D.h
-/home/jifutan/bloodflow/examples/embolism/palabos3D.h
+/home/jifutan/BloodFlow/examples/embolism/palabos3D.h
 palabos3D.hh
-/home/jifutan/bloodflow/examples/embolism/palabos3D.hh
+/home/jifutan/BloodFlow/examples/embolism/palabos3D.hh
 ibm3D.h
-/home/jifutan/bloodflow/examples/embolism/ibm3D.h
+/home/jifutan/BloodFlow/examples/embolism/ibm3D.h
 vector
 -
 cmath
@@ -22,73 +22,73 @@ iostream
 fstream
 -
 mpi.h
-/home/jifutan/bloodflow/examples/embolism/mpi.h
+/home/jifutan/BloodFlow/examples/embolism/mpi.h
 lammps.h
-/home/jifutan/bloodflow/examples/embolism/lammps.h
+/home/jifutan/BloodFlow/examples/embolism/lammps.h
 input.h
-/home/jifutan/bloodflow/examples/embolism/input.h
+/home/jifutan/BloodFlow/examples/embolism/input.h
 library.h
-/home/jifutan/bloodflow/examples/embolism/library.h
+/home/jifutan/BloodFlow/examples/embolism/library.h
 lammpsWrapper.h
-/home/jifutan/bloodflow/examples/embolism/lammpsWrapper.h
+/home/jifutan/BloodFlow/examples/embolism/lammpsWrapper.h
 latticeDecomposition.h
-/home/jifutan/bloodflow/examples/embolism/latticeDecomposition.h
+/home/jifutan/BloodFlow/examples/embolism/latticeDecomposition.h
 
-/home/jifutan/bloodflow/ibm/ibm3D.h
+/home/jifutan/BloodFlow/ibm/ibm3D.h
 lammpsWrapper.h
-/home/jifutan/bloodflow/ibm/lammpsWrapper.h
+/home/jifutan/BloodFlow/ibm/lammpsWrapper.h
 ibm3D.hh
-/home/jifutan/bloodflow/ibm/ibm3D.hh
+/home/jifutan/BloodFlow/ibm/ibm3D.hh
 
-/home/jifutan/bloodflow/ibm/ibm3D.hh
+/home/jifutan/BloodFlow/ibm/ibm3D.hh
 atom.h
-/home/jifutan/bloodflow/ibm/atom.h
+/home/jifutan/BloodFlow/ibm/atom.h
 modify.h
-/home/jifutan/bloodflow/ibm/modify.h
+/home/jifutan/BloodFlow/ibm/modify.h
 fix.h
-/home/jifutan/bloodflow/ibm/fix.h
+/home/jifutan/BloodFlow/ibm/fix.h
 fix_fcm.h
-/home/jifutan/bloodflow/ibm/fix_fcm.h
+/home/jifutan/BloodFlow/ibm/fix_fcm.h
 fix_activate_platelet.h
-/home/jifutan/bloodflow/ibm/fix_activate_platelet.h
+/home/jifutan/BloodFlow/ibm/fix_activate_platelet.h
 fix_rls.h
-/home/jifutan/bloodflow/ibm/fix_rls.h
+/home/jifutan/BloodFlow/ibm/fix_rls.h
 update.h
-/home/jifutan/bloodflow/ibm/update.h
+/home/jifutan/BloodFlow/ibm/update.h
 
-/home/jifutan/bloodflow/ibm/lammpsWrapper.h
+/home/jifutan/BloodFlow/ibm/lammpsWrapper.h
 mpi.h
-/home/jifutan/bloodflow/ibm/mpi.h
+/home/jifutan/BloodFlow/ibm/mpi.h
 lammps.h
-/home/jifutan/bloodflow/ibm/lammps.h
+/home/jifutan/BloodFlow/ibm/lammps.h
 input.h
-/home/jifutan/bloodflow/ibm/input.h
+/home/jifutan/BloodFlow/ibm/input.h
 library.h
-/home/jifutan/bloodflow/ibm/library.h
+/home/jifutan/BloodFlow/ibm/library.h
 lammpsWrapper.hh
-/home/jifutan/bloodflow/ibm/lammpsWrapper.hh
+/home/jifutan/BloodFlow/ibm/lammpsWrapper.hh
 
-/home/jifutan/bloodflow/ibm/lammpsWrapper.hh
+/home/jifutan/BloodFlow/ibm/lammpsWrapper.hh
 lammpsWrapper.h
-/home/jifutan/bloodflow/ibm/lammpsWrapper.h
+/home/jifutan/BloodFlow/ibm/lammpsWrapper.h
 mpi.h
-/home/jifutan/bloodflow/ibm/mpi.h
+/home/jifutan/BloodFlow/ibm/mpi.h
 sstream
 -
 
-/home/jifutan/bloodflow/ibm/latticeDecomposition.h
+/home/jifutan/BloodFlow/ibm/latticeDecomposition.h
 mpi.h
-/home/jifutan/bloodflow/ibm/mpi.h
+/home/jifutan/BloodFlow/ibm/mpi.h
 lammps.h
-/home/jifutan/bloodflow/ibm/lammps.h
+/home/jifutan/BloodFlow/ibm/lammps.h
 latticeDecomposition.hh
-/home/jifutan/bloodflow/ibm/latticeDecomposition.hh
+/home/jifutan/BloodFlow/ibm/latticeDecomposition.hh
 
-/home/jifutan/bloodflow/ibm/latticeDecomposition.hh
+/home/jifutan/BloodFlow/ibm/latticeDecomposition.hh
 comm.h
-/home/jifutan/bloodflow/ibm/comm.h
+/home/jifutan/BloodFlow/ibm/comm.h
 domain.h
-/home/jifutan/bloodflow/ibm/domain.h
+/home/jifutan/BloodFlow/ibm/domain.h
 
 /home/jifutan/lammpsFeb2021/src/atom.h
 pointers.h
@@ -114,7 +114,15 @@ map
 pointers.h
 /home/jifutan/lammpsFeb2021/src/pointers.h
 
+/home/jifutan/lammpsFeb2021/src/fix_activate_platelet.h
+fix.h
+/home/jifutan/lammpsFeb2021/src/fix.h
+
 /home/jifutan/lammpsFeb2021/src/fix_fcm.h
+fix.h
+/home/jifutan/lammpsFeb2021/src/fix.h
+
+/home/jifutan/lammpsFeb2021/src/fix_rls.h
 fix.h
 /home/jifutan/lammpsFeb2021/src/fix.h
 

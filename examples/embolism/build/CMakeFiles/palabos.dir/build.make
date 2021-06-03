@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jifutan/bloodflow/examples/embolism
+CMAKE_SOURCE_DIR = /home/jifutan/BloodFlow/examples/embolism
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jifutan/bloodflow/examples/embolism/build
+CMAKE_BINARY_DIR = /home/jifutan/BloodFlow/examples/embolism/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/palabos.dir/depend.make
@@ -54,7 +54,7 @@ include CMakeFiles/palabos.dir/flags.make
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/basicAlgorithms.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/basicAlgorithms.cpp.o: /home/jifutan/palabos/src/algorithm/basicAlgorithms.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/basicAlgorithms.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/basicAlgorithms.cpp.o -c /home/jifutan/palabos/src/algorithm/basicAlgorithms.cpp
 
@@ -77,7 +77,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/basicAlgorithms.cpp.o.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/empiricalData.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/empiricalData.cpp.o: /home/jifutan/palabos/src/algorithm/empiricalData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/empiricalData.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/empiricalData.cpp.o -c /home/jifutan/palabos/src/algorithm/empiricalData.cpp
 
@@ -100,7 +100,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/empiricalData.cpp.o.pr
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/statistics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/statistics.cpp.o: /home/jifutan/palabos/src/algorithm/statistics.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/statistics.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/statistics.cpp.o -c /home/jifutan/palabos/src/algorithm/statistics.cpp
 
@@ -123,7 +123,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/algorithm/statistics.cpp.o.provi
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/atomicBlock2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/atomicBlock2D.cpp
 
@@ -146,7 +146,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock2D.cpp.o.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/atomicBlock3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/atomicBlock3D.cpp
 
@@ -169,7 +169,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlock3D.cpp.o.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/atomicBlockOperations2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperations2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/atomicBlockOperations2D.cpp
 
@@ -192,7 +192,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperation
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/atomicBlockOperations3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperations3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/atomicBlockOperations3D.cpp
 
@@ -215,7 +215,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockOperation
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer2D.cpp
 
@@ -238,7 +238,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerialize
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/atomicBlockSerializer3D.cpp
 
@@ -261,7 +261,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicBlockSerialize
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/atomicContainerBlock2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/atomicContainerBlock2D.cpp
 
@@ -284,7 +284,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/atomicContainerBlock3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/atomicContainerBlock3D.cpp
 
@@ -307,7 +307,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/atomicContainerBlock
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional2D.cpp
 
@@ -330,7 +330,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFuncti
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/dataProcessingFunctional3D.cpp
 
@@ -353,7 +353,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessingFuncti
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/dataProcessor2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/dataProcessor2D.cpp
 
@@ -376,7 +376,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor2D.cpp.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/dataProcessor3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/dataProcessor3D.cpp
 
@@ -399,7 +399,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessor3D.cpp.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper2D.cpp
 
@@ -422,7 +422,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper3D.cpp
 
@@ -445,7 +445,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/dataProcessorWrapper
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional2D.cpp
 
@@ -468,7 +468,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcess
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/reductiveDataProcessingFunctional3D.cpp
 
@@ -491,7 +491,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcess
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o: /home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper2D.cpp
 
@@ -514,7 +514,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcess
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o: /home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp.o -c /home/jifutan/palabos/src/atomicBlock/reductiveDataProcessorWrapper3D.cpp
 
@@ -537,7 +537,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/atomicBlock/reductiveDataProcess
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o: /home/jifutan/palabos/src/complexDynamics/carreauGlobalDefs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/complexDynamics/carreauGlobalDefs.cpp.o -c /home/jifutan/palabos/src/complexDynamics/carreauGlobalDefs.cpp
 
@@ -560,7 +560,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/complexDynamics/carreauGlobalDef
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block2D.cpp.o: /home/jifutan/palabos/src/core/block2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block2D.cpp.o -c /home/jifutan/palabos/src/core/block2D.cpp
 
@@ -583,7 +583,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block2D.cpp.o.provides.buil
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block3D.cpp.o: /home/jifutan/palabos/src/core/block3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block3D.cpp.o -c /home/jifutan/palabos/src/core/block3D.cpp
 
@@ -606,7 +606,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/block3D.cpp.o.provides.buil
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockIdentifiers.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockIdentifiers.cpp.o: /home/jifutan/palabos/src/core/blockIdentifiers.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockIdentifiers.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockIdentifiers.cpp.o -c /home/jifutan/palabos/src/core/blockIdentifiers.cpp
 
@@ -629,7 +629,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockIdentifiers.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockStatistics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockStatistics.cpp.o: /home/jifutan/palabos/src/core/blockStatistics.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockStatistics.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockStatistics.cpp.o -c /home/jifutan/palabos/src/core/blockStatistics.cpp
 
@@ -652,7 +652,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockStatistics.cpp.o.provi
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface2D.cpp.o: /home/jifutan/palabos/src/core/blockSurface2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface2D.cpp.o -c /home/jifutan/palabos/src/core/blockSurface2D.cpp
 
@@ -675,7 +675,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface2D.cpp.o.provid
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface3D.cpp.o: /home/jifutan/palabos/src/core/blockSurface3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface3D.cpp.o -c /home/jifutan/palabos/src/core/blockSurface3D.cpp
 
@@ -698,7 +698,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/blockSurface3D.cpp.o.provid
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/globalDefs.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/globalDefs.cpp.o: /home/jifutan/palabos/src/core/globalDefs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/globalDefs.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/globalDefs.cpp.o -c /home/jifutan/palabos/src/core/globalDefs.cpp
 
@@ -721,7 +721,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/globalDefs.cpp.o.provides.b
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/indexUtil.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/indexUtil.cpp.o: /home/jifutan/palabos/src/core/indexUtil.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/indexUtil.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/indexUtil.cpp.o -c /home/jifutan/palabos/src/core/indexUtil.cpp
 
@@ -744,7 +744,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/indexUtil.cpp.o.provides.bu
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers2D.cpp.o: /home/jifutan/palabos/src/core/multiBlockIdentifiers2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers2D.cpp.o -c /home/jifutan/palabos/src/core/multiBlockIdentifiers2D.cpp
 
@@ -767,7 +767,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers2D.cpp
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers3D.cpp.o: /home/jifutan/palabos/src/core/multiBlockIdentifiers3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers3D.cpp.o -c /home/jifutan/palabos/src/core/multiBlockIdentifiers3D.cpp
 
@@ -790,7 +790,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/multiBlockIdentifiers3D.cpp
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbDebug.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbDebug.cpp.o: /home/jifutan/palabos/src/core/plbDebug.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbDebug.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbDebug.cpp.o -c /home/jifutan/palabos/src/core/plbDebug.cpp
 
@@ -813,7 +813,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbDebug.cpp.o.provides.bui
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbInit.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbInit.cpp.o: /home/jifutan/palabos/src/core/plbInit.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbInit.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbInit.cpp.o -c /home/jifutan/palabos/src/core/plbInit.cpp
 
@@ -836,7 +836,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbInit.cpp.o.provides.buil
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbLogFiles.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbLogFiles.cpp.o: /home/jifutan/palabos/src/core/plbLogFiles.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbLogFiles.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbLogFiles.cpp.o -c /home/jifutan/palabos/src/core/plbLogFiles.cpp
 
@@ -859,7 +859,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbLogFiles.cpp.o.provides.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbProfiler.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbProfiler.cpp.o: /home/jifutan/palabos/src/core/plbProfiler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbProfiler.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbProfiler.cpp.o -c /home/jifutan/palabos/src/core/plbProfiler.cpp
 
@@ -882,7 +882,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbProfiler.cpp.o.provides.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTimer.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTimer.cpp.o: /home/jifutan/palabos/src/core/plbTimer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTimer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTimer.cpp.o -c /home/jifutan/palabos/src/core/plbTimer.cpp
 
@@ -905,7 +905,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTimer.cpp.o.provides.bui
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTypenames.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTypenames.cpp.o: /home/jifutan/palabos/src/core/plbTypenames.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTypenames.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTypenames.cpp.o -c /home/jifutan/palabos/src/core/plbTypenames.cpp
 
@@ -928,7 +928,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/plbTypenames.cpp.o.provides
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers2D.cpp.o: /home/jifutan/palabos/src/core/processorIdentifiers2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers2D.cpp.o -c /home/jifutan/palabos/src/core/processorIdentifiers2D.cpp
 
@@ -951,7 +951,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers2D.cpp.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers3D.cpp.o: /home/jifutan/palabos/src/core/processorIdentifiers3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers3D.cpp.o -c /home/jifutan/palabos/src/core/processorIdentifiers3D.cpp
 
@@ -974,7 +974,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/processorIdentifiers3D.cpp.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/runTimeDiagnostics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/runTimeDiagnostics.cpp.o: /home/jifutan/palabos/src/core/runTimeDiagnostics.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/runTimeDiagnostics.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/runTimeDiagnostics.cpp.o -c /home/jifutan/palabos/src/core/runTimeDiagnostics.cpp
 
@@ -997,7 +997,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/runTimeDiagnostics.cpp.o.pr
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/serializer.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/serializer.cpp.o: /home/jifutan/palabos/src/core/serializer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/serializer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/serializer.cpp.o -c /home/jifutan/palabos/src/core/serializer.cpp
 
@@ -1020,7 +1020,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/serializer.cpp.o.provides.b
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/units.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/units.cpp.o: /home/jifutan/palabos/src/core/units.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/units.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/units.cpp.o -c /home/jifutan/palabos/src/core/units.cpp
 
@@ -1043,7 +1043,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/core/units.cpp.o.provides.build:
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o: /home/jifutan/palabos/src/dataProcessors/metaStuffFunctional2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunctional2D.cpp.o -c /home/jifutan/palabos/src/dataProcessors/metaStuffFunctional2D.cpp
 
@@ -1066,7 +1066,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunction
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o: /home/jifutan/palabos/src/dataProcessors/metaStuffFunctional3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunctional3D.cpp.o -c /home/jifutan/palabos/src/dataProcessors/metaStuffFunctional3D.cpp
 
@@ -1089,7 +1089,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffFunction
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o: /home/jifutan/palabos/src/dataProcessors/metaStuffWrapper2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper2D.cpp.o -c /home/jifutan/palabos/src/dataProcessors/metaStuffWrapper2D.cpp
 
@@ -1112,7 +1112,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper2
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o: /home/jifutan/palabos/src/dataProcessors/metaStuffWrapper3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper3D.cpp.o -c /home/jifutan/palabos/src/dataProcessors/metaStuffWrapper3D.cpp
 
@@ -1135,7 +1135,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/dataProcessors/metaStuffWrapper3
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/boxLogic3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/boxLogic3D.cpp.o: /home/jifutan/palabos/src/gridRefinement/boxLogic3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/boxLogic3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/boxLogic3D.cpp.o -c /home/jifutan/palabos/src/gridRefinement/boxLogic3D.cpp
 
@@ -1158,7 +1158,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/boxLogic3D.cpp.o.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o: /home/jifutan/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp.o -c /home/jifutan/palabos/src/gridRefinement/couplingInterfaceGenerator3D.cpp
 
@@ -1181,7 +1181,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/couplingInterface
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octree.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octree.cpp.o: /home/jifutan/palabos/src/gridRefinement/octree.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octree.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octree.cpp.o -c /home/jifutan/palabos/src/gridRefinement/octree.cpp
 
@@ -1204,7 +1204,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octree.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridGenerator.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridGenerator.cpp.o: /home/jifutan/palabos/src/gridRefinement/octreeGridGenerator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridGenerator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridGenerator.cpp.o -c /home/jifutan/palabos/src/gridRefinement/octreeGridGenerator.cpp
 
@@ -1227,7 +1227,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridGenerat
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridStructure.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridStructure.cpp.o: /home/jifutan/palabos/src/gridRefinement/octreeGridStructure.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridStructure.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridStructure.cpp.o -c /home/jifutan/palabos/src/gridRefinement/octreeGridStructure.cpp
 
@@ -1250,7 +1250,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/gridRefinement/octreeGridStructu
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/colormaps.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/colormaps.cpp.o: /home/jifutan/palabos/src/io/colormaps.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/colormaps.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/colormaps.cpp.o -c /home/jifutan/palabos/src/io/colormaps.cpp
 
@@ -1273,7 +1273,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/colormaps.cpp.o.provides.buil
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/mpiParallelIO.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/mpiParallelIO.cpp.o: /home/jifutan/palabos/src/io/mpiParallelIO.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/mpiParallelIO.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/mpiParallelIO.cpp.o -c /home/jifutan/palabos/src/io/mpiParallelIO.cpp
 
@@ -1296,7 +1296,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/mpiParallelIO.cpp.o.provides.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader2D.cpp.o: /home/jifutan/palabos/src/io/multiBlockReader2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader2D.cpp.o -c /home/jifutan/palabos/src/io/multiBlockReader2D.cpp
 
@@ -1319,7 +1319,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader2D.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader3D.cpp.o: /home/jifutan/palabos/src/io/multiBlockReader3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader3D.cpp.o -c /home/jifutan/palabos/src/io/multiBlockReader3D.cpp
 
@@ -1342,7 +1342,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockReader3D.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter2D.cpp.o: /home/jifutan/palabos/src/io/multiBlockWriter2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter2D.cpp.o -c /home/jifutan/palabos/src/io/multiBlockWriter2D.cpp
 
@@ -1365,7 +1365,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter2D.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter3D.cpp.o: /home/jifutan/palabos/src/io/multiBlockWriter3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter3D.cpp.o -c /home/jifutan/palabos/src/io/multiBlockWriter3D.cpp
 
@@ -1388,7 +1388,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/multiBlockWriter3D.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/parallelIO.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/parallelIO.cpp.o: /home/jifutan/palabos/src/io/parallelIO.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/parallelIO.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/parallelIO.cpp.o -c /home/jifutan/palabos/src/io/parallelIO.cpp
 
@@ -1411,7 +1411,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/parallelIO.cpp.o.provides.bui
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/plbFiles.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/plbFiles.cpp.o: /home/jifutan/palabos/src/io/plbFiles.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_60)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/plbFiles.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/plbFiles.cpp.o -c /home/jifutan/palabos/src/io/plbFiles.cpp
 
@@ -1434,7 +1434,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/plbFiles.cpp.o.provides.build
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO.cpp.o: /home/jifutan/palabos/src/io/serializerIO.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO.cpp.o -c /home/jifutan/palabos/src/io/serializerIO.cpp
 
@@ -1457,7 +1457,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO.cpp.o.provides.b
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_2D.cpp.o: /home/jifutan/palabos/src/io/serializerIO_2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_2D.cpp.o -c /home/jifutan/palabos/src/io/serializerIO_2D.cpp
 
@@ -1480,7 +1480,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_2D.cpp.o.provide
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_3D.cpp.o: /home/jifutan/palabos/src/io/serializerIO_3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_63)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_3D.cpp.o -c /home/jifutan/palabos/src/io/serializerIO_3D.cpp
 
@@ -1503,7 +1503,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/serializerIO_3D.cpp.o.provide
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/sparseVtkDataOutput.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/sparseVtkDataOutput.cpp.o: /home/jifutan/palabos/src/io/sparseVtkDataOutput.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/sparseVtkDataOutput.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/sparseVtkDataOutput.cpp.o -c /home/jifutan/palabos/src/io/sparseVtkDataOutput.cpp
 
@@ -1526,7 +1526,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/sparseVtkDataOutput.cpp.o.pro
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_2D.cpp.o: /home/jifutan/palabos/src/io/utilIO_2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_2D.cpp.o -c /home/jifutan/palabos/src/io/utilIO_2D.cpp
 
@@ -1549,7 +1549,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_2D.cpp.o.provides.buil
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_3D.cpp.o: /home/jifutan/palabos/src/io/utilIO_3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_3D.cpp.o -c /home/jifutan/palabos/src/io/utilIO_3D.cpp
 
@@ -1572,7 +1572,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/utilIO_3D.cpp.o.provides.buil
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkDataOutput.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkDataOutput.cpp.o: /home/jifutan/palabos/src/io/vtkDataOutput.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_67)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkDataOutput.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkDataOutput.cpp.o -c /home/jifutan/palabos/src/io/vtkDataOutput.cpp
 
@@ -1595,7 +1595,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkDataOutput.cpp.o.provides.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkStructuredDataOutput.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkStructuredDataOutput.cpp.o: /home/jifutan/palabos/src/io/vtkStructuredDataOutput.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkStructuredDataOutput.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkStructuredDataOutput.cpp.o -c /home/jifutan/palabos/src/io/vtkStructuredDataOutput.cpp
 
@@ -1618,7 +1618,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/io/vtkStructuredDataOutput.cpp.o
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o: /home/jifutan/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_69)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp.o -c /home/jifutan/palabos/src/libraryInterfaces/TINYXML_xmlIO.cpp
 
@@ -1641,7 +1641,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/libraryInterfaces/TINYXML_xmlIO.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/combinedStatistics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/combinedStatistics.cpp.o: /home/jifutan/palabos/src/multiBlock/combinedStatistics.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_70)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/combinedStatistics.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/combinedStatistics.cpp.o -c /home/jifutan/palabos/src/multiBlock/combinedStatistics.cpp
 
@@ -1664,7 +1664,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/combinedStatistics.cp
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling2D.cpp.o: /home/jifutan/palabos/src/multiBlock/coupling2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_71)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/coupling2D.cpp
 
@@ -1687,7 +1687,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling2D.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling3D.cpp.o: /home/jifutan/palabos/src/multiBlock/coupling3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_72)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/coupling3D.cpp
 
@@ -1710,7 +1710,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/coupling3D.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation2D.cpp.o: /home/jifutan/palabos/src/multiBlock/domainManipulation2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_73)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/domainManipulation2D.cpp
 
@@ -1733,7 +1733,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation2D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation3D.cpp.o: /home/jifutan/palabos/src/multiBlock/domainManipulation3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_74)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/domainManipulation3D.cpp
 
@@ -1756,7 +1756,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/domainManipulation3D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group2D.cpp.o: /home/jifutan/palabos/src/multiBlock/group2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_75)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/group2D.cpp
 
@@ -1779,7 +1779,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group2D.cpp.o.provide
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group3D.cpp.o: /home/jifutan/palabos/src/multiBlock/group3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_76)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/group3D.cpp
 
@@ -1802,7 +1802,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/group3D.cpp.o.provide
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o: /home/jifutan/palabos/src/multiBlock/localMultiBlockInfo2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_77)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/localMultiBlockInfo2D.cpp
 
@@ -1825,7 +1825,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo2D
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o: /home/jifutan/palabos/src/multiBlock/localMultiBlockInfo3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_78)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/localMultiBlockInfo3D.cpp
 
@@ -1848,7 +1848,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/localMultiBlockInfo3D
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock2D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlock2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_79)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlock2D.cpp
 
@@ -1871,7 +1871,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock2D.cpp.o.pr
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock3D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlock3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_80)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlock3D.cpp
 
@@ -1894,7 +1894,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlock3D.cpp.o.pr
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockGenerator2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_81)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockGenerator2D.cpp
 
@@ -1917,7 +1917,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator2D
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockGenerator3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_82)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockGenerator3D.cpp
 
@@ -1940,7 +1940,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockGenerator3D
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo2D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockInfo2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_83)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockInfo2D.cpp
 
@@ -1963,7 +1963,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo2D.cpp.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo3D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockInfo3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_84)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockInfo3D.cpp
 
@@ -1986,7 +1986,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockInfo3D.cpp.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement2D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockManagement2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_85)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockManagement2D.cpp
 
@@ -2009,7 +2009,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement2
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement3D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockManagement3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_86)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockManagement3D.cpp
 
@@ -2032,7 +2032,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockManagement3
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations2D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockOperations2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_87)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockOperations2D.cpp
 
@@ -2055,7 +2055,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations2
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations3D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockOperations3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_88)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_88)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockOperations3D.cpp
 
@@ -2078,7 +2078,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockOperations3
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockSerializer2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_89)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_89)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockSerializer2D.cpp
 
@@ -2101,7 +2101,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer2
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiBlockSerializer3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_90)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_90)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiBlockSerializer3D.cpp
 
@@ -2124,7 +2124,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiBlockSerializer3
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock2D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiContainerBlock2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_91)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_91)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiContainerBlock2D.cpp
 
@@ -2147,7 +2147,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock2D
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock3D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiContainerBlock3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_92)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_92)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiContainerBlock3D.cpp
 
@@ -2170,7 +2170,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiContainerBlock3D
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_93)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_93)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper2D.cpp
 
@@ -2193,7 +2193,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWra
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o: /home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_94)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_94)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/multiDataProcessorWrapper3D.cpp
 
@@ -2216,7 +2216,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/multiDataProcessorWra
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o: /home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_95)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_95)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D.cpp
 
@@ -2239,7 +2239,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D.cp
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o: /home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_96)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_96)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D_3D.cpp
 
@@ -2262,7 +2262,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer2D_3D
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o: /home/jifutan/palabos/src/multiBlock/nonLocalTransfer3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_97)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_97)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/nonLocalTransfer3D.cpp
 
@@ -2285,7 +2285,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/nonLocalTransfer3D.cp
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/redistribution3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/redistribution3D.cpp.o: /home/jifutan/palabos/src/multiBlock/redistribution3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_98)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_98)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/redistribution3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/redistribution3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/redistribution3D.cpp
 
@@ -2308,7 +2308,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/redistribution3D.cpp.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o: /home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_99)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_99)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper2D.cpp
 
@@ -2331,7 +2331,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataPro
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o: /home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_100)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_100)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/reductiveMultiDataProcessorWrapper3D.cpp
 
@@ -2354,7 +2354,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/reductiveMultiDataPro
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o: /home/jifutan/palabos/src/multiBlock/serialBlockCommunicator2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_101)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_101)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicator2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/serialBlockCommunicator2D.cpp
 
@@ -2377,7 +2377,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicat
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o: /home/jifutan/palabos/src/multiBlock/serialBlockCommunicator3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_102)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_102)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicator3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/serialBlockCommunicator3D.cpp
 
@@ -2400,7 +2400,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/serialBlockCommunicat
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o: /home/jifutan/palabos/src/multiBlock/sparseBlockStructure2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_103)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_103)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/sparseBlockStructure2D.cpp
 
@@ -2423,7 +2423,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure2
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o: /home/jifutan/palabos/src/multiBlock/sparseBlockStructure3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_104)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_104)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/sparseBlockStructure3D.cpp
 
@@ -2446,7 +2446,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/sparseBlockStructure3
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions2D.cpp.o: /home/jifutan/palabos/src/multiBlock/staticRepartitions2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_105)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_105)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions2D.cpp.o -c /home/jifutan/palabos/src/multiBlock/staticRepartitions2D.cpp
 
@@ -2469,7 +2469,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions2D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions3D.cpp.o: /home/jifutan/palabos/src/multiBlock/staticRepartitions3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_106)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_106)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions3D.cpp.o -c /home/jifutan/palabos/src/multiBlock/staticRepartitions3D.cpp
 
@@ -2492,7 +2492,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/staticRepartitions3D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/threadAttribution.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/threadAttribution.cpp.o: /home/jifutan/palabos/src/multiBlock/threadAttribution.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_107)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_107)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/threadAttribution.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/threadAttribution.cpp.o -c /home/jifutan/palabos/src/multiBlock/threadAttribution.cpp
 
@@ -2515,7 +2515,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiBlock/threadAttribution.cpp
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/domainDivision3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/domainDivision3D.cpp.o: /home/jifutan/palabos/src/multiGrid/domainDivision3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_108)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_108)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/domainDivision3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/domainDivision3D.cpp.o -c /home/jifutan/palabos/src/multiGrid/domainDivision3D.cpp
 
@@ -2538,7 +2538,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/domainDivision3D.cpp.o
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid2D.cpp.o: /home/jifutan/palabos/src/multiGrid/multiGrid2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_109)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_109)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid2D.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiGrid2D.cpp
 
@@ -2561,7 +2561,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid2D.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid3D.cpp.o: /home/jifutan/palabos/src/multiGrid/multiGrid3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_110)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_110)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid3D.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiGrid3D.cpp
 
@@ -2584,7 +2584,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGrid3D.cpp.o.prov
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o: /home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_111)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_111)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper2D.cpp
 
@@ -2607,7 +2607,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessor
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o: /home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_112)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_112)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiGridDataProcessorWrapper3D.cpp
 
@@ -2630,7 +2630,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridDataProcessor
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement2D.cpp.o: /home/jifutan/palabos/src/multiGrid/multiGridManagement2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_113)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_113)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement2D.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiGridManagement2D.cpp
 
@@ -2653,7 +2653,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement2D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement3D.cpp.o: /home/jifutan/palabos/src/multiGrid/multiGridManagement3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_114)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_114)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement3D.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiGridManagement3D.cpp
 
@@ -2676,7 +2676,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridManagement3D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations2D.cpp.o: /home/jifutan/palabos/src/multiGrid/multiGridOperations2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_115)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_115)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations2D.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiGridOperations2D.cpp
 
@@ -2699,7 +2699,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations2D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations3D.cpp.o: /home/jifutan/palabos/src/multiGrid/multiGridOperations3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_116)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_116)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations3D.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiGridOperations3D.cpp
 
@@ -2722,7 +2722,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiGridOperations3D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiScale.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiScale.cpp.o: /home/jifutan/palabos/src/multiGrid/multiScale.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_117)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_117)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiScale.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiScale.cpp.o -c /home/jifutan/palabos/src/multiGrid/multiScale.cpp
 
@@ -2745,7 +2745,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/multiScale.cpp.o.provi
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer2D.cpp.o: /home/jifutan/palabos/src/multiGrid/parallelizer2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_118)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_118)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer2D.cpp.o -c /home/jifutan/palabos/src/multiGrid/parallelizer2D.cpp
 
@@ -2768,7 +2768,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer2D.cpp.o.p
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer3D.cpp.o: /home/jifutan/palabos/src/multiGrid/parallelizer3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_119)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_119)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer3D.cpp.o -c /home/jifutan/palabos/src/multiGrid/parallelizer3D.cpp
 
@@ -2791,7 +2791,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiGrid/parallelizer3D.cpp.o.p
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/bubbleMatch3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/bubbleMatch3D.cpp.o: /home/jifutan/palabos/src/multiPhysics/bubbleMatch3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_120)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_120)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/bubbleMatch3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/bubbleMatch3D.cpp.o -c /home/jifutan/palabos/src/multiPhysics/bubbleMatch3D.cpp
 
@@ -2814,7 +2814,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/bubbleMatch3D.cpp.o
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o: /home/jifutan/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_121)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_121)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp.o -c /home/jifutan/palabos/src/multiPhysics/freeSurfaceAnalysis3D.cpp
 
@@ -2837,7 +2837,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceAnalysis
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o: /home/jifutan/palabos/src/multiPhysics/freeSurfaceModel3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_122)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_122)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceModel3D.cpp.o -c /home/jifutan/palabos/src/multiPhysics/freeSurfaceModel3D.cpp
 
@@ -2860,7 +2860,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/multiPhysics/freeSurfaceModel3D.
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/domainClustering3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/domainClustering3D.cpp.o: /home/jifutan/palabos/src/offLattice/domainClustering3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_123)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_123)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/domainClustering3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/domainClustering3D.cpp.o -c /home/jifutan/palabos/src/offLattice/domainClustering3D.cpp
 
@@ -2883,7 +2883,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/domainClustering3D.cp
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/marchingCube.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/marchingCube.cpp.o: /home/jifutan/palabos/src/offLattice/marchingCube.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_124)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_124)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/marchingCube.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/marchingCube.cpp.o -c /home/jifutan/palabos/src/offLattice/marchingCube.cpp
 
@@ -2906,7 +2906,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/marchingCube.cpp.o.pr
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/voxelizer.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/voxelizer.cpp.o: /home/jifutan/palabos/src/offLattice/voxelizer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_125)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_125)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/voxelizer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/voxelizer.cpp.o -c /home/jifutan/palabos/src/offLattice/voxelizer.cpp
 
@@ -2929,7 +2929,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/offLattice/voxelizer.cpp.o.provi
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/mpiManager.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/mpiManager.cpp.o: /home/jifutan/palabos/src/parallelism/mpiManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_126)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_126)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/mpiManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/mpiManager.cpp.o -c /home/jifutan/palabos/src/parallelism/mpiManager.cpp
 
@@ -2952,7 +2952,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/mpiManager.cpp.o.pro
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o: /home/jifutan/palabos/src/parallelism/parallelBlockCommunicator2D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_127)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_127)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommunicator2D.cpp.o -c /home/jifutan/palabos/src/parallelism/parallelBlockCommunicator2D.cpp
 
@@ -2975,7 +2975,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommuni
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o: /home/jifutan/palabos/src/parallelism/parallelBlockCommunicator3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_128)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_128)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommunicator3D.cpp.o -c /home/jifutan/palabos/src/parallelism/parallelBlockCommunicator3D.cpp
 
@@ -2998,7 +2998,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelBlockCommuni
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelStatistics.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelStatistics.cpp.o: /home/jifutan/palabos/src/parallelism/parallelStatistics.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_129)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_129)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelStatistics.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelStatistics.cpp.o -c /home/jifutan/palabos/src/parallelism/parallelStatistics.cpp
 
@@ -3021,7 +3021,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/parallelStatistics.c
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/sendRecvPool.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/sendRecvPool.cpp.o: /home/jifutan/palabos/src/parallelism/sendRecvPool.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_130)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_130)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/sendRecvPool.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/sendRecvPool.cpp.o -c /home/jifutan/palabos/src/parallelism/sendRecvPool.cpp
 
@@ -3044,7 +3044,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/src/parallelism/sendRecvPool.cpp.o.p
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxml.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxml.cpp.o: /home/jifutan/palabos/externalLibraries/tinyxml/tinyxml.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_131)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_131)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxml.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxml.cpp.o -c /home/jifutan/palabos/externalLibraries/tinyxml/tinyxml.cpp
 
@@ -3067,7 +3067,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxml.cp
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o: /home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_132)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_132)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp.o -c /home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlerror.cpp
 
@@ -3090,7 +3090,7 @@ CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlerr
 
 CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o: CMakeFiles/palabos.dir/flags.make
 CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o: /home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_133)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles $(CMAKE_PROGRESS_133)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/palabos.dir/home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp.o -c /home/jifutan/palabos/externalLibraries/tinyxml/tinyxmlparser.cpp
 
@@ -3533,6 +3533,6 @@ CMakeFiles/palabos.dir/clean:
 .PHONY : CMakeFiles/palabos.dir/clean
 
 CMakeFiles/palabos.dir/depend:
-	cd /home/jifutan/bloodflow/examples/embolism/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jifutan/bloodflow/examples/embolism /home/jifutan/bloodflow/examples/embolism /home/jifutan/bloodflow/examples/embolism/build /home/jifutan/bloodflow/examples/embolism/build /home/jifutan/bloodflow/examples/embolism/build/CMakeFiles/palabos.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jifutan/BloodFlow/examples/embolism/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jifutan/BloodFlow/examples/embolism /home/jifutan/BloodFlow/examples/embolism /home/jifutan/BloodFlow/examples/embolism/build /home/jifutan/BloodFlow/examples/embolism/build /home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles/palabos.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/palabos.dir/depend
 
