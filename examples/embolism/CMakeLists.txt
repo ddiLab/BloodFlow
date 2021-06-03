@@ -20,14 +20,12 @@ cmake_minimum_required(VERSION 2.8.12)
 project(palabosExample)
 enable_language(CXX)
 #CONNOR: The three lines below with murphyc in the file path need to be modified.
-set(PALABOS_ROOT "/home/murphyc/palabos")
-set(BLOODFLOW_ROOT "/home/murphyc/BloodFlow")
+#set(PALABOS_ROOT "/home/murphyc/palabos")
+#set(BLOODFLOW_ROOT "/home/murphyc/BloodFlow")
 #set(COUPLING_ROOT "/home/insley/JTAN/CODE/palabos-lammps/")
 #FIND_PACKAGE(LAMMPS REQUIRED)
-set(LAMMPS_DIR "/home/murphyc/lammps"
-  )
-FIND_PATH(COUPLING_DIR palabos-lammps
-  )
+#set(LAMMPS_DIR "/home/murphyc/lammps")
+FIND_PATH(COUPLING_DIR palabos-lammps)
 set(LAMMPS_LIB "${LAMMPS_DIR}/src")
 #CONNOR:Change the following line to your executable name
 set(EXECUTABLE_NAME "embolism")
