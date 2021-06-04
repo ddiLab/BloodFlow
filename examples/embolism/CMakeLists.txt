@@ -4,7 +4,7 @@ get_filename_component(EXECUTABLE_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 ###############################################################################
 #get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
-get_filename_component(PROJECT_NAME embolism NAME)
+get_filename_component(PROJECT_NAME ${EXECUTABLE_NAME} NAME)
 add_executable(${PROJECT_NAME} "./${EXECUTABLE_NAME}.cpp")
 # Link with the following libraries
 target_link_libraries(${PROJECT_NAME} palabos)
@@ -19,16 +19,15 @@ endif()
 cmake_minimum_required(VERSION 2.8.12)
 project(palabosExample)
 enable_language(CXX)
-set(PALABOS_ROOT "/home/murphyc/palabos")
-set(BLOODFLOW_ROOT "/home/murphyc/BloodFlow")
+
+set(PALABOS_ROOT "$ENV{HOME}/palabos" CACHE PATH "Path to PALABOS root directory")
+set(BLOODFLOW_ROOT "$ENV{HOME}/BloodFlow" CACHE PATH "Path to BloodFlow root directory")
 #set(COUPLING_ROOT "/home/insley/JTAN/CODE/palabos-lammps/")
 #FIND_PACKAGE(LAMMPS REQUIRED)
-set(LAMMPS_DIR "/home/lammps"
-  )
-FIND_PATH(COUPLING_DIR palabos-lammps
-  )
+set(LAMMPS_DIR "$ENV{HOME}/lammps" CACHE PATH "Path to LAMMPS root directory")
+FIND_PATH(COUPLING_DIR palabos-lammps)
 set(LAMMPS_LIB "${LAMMPS_DIR}/src")
-set(LAMMPS_INCLUDE "${LAMMPS_DIR}/src")
+#CONNOR:Change the following line to your executable name
 set(EXECUTABLE_NAME "embolism")
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "../")
 if(NOT CMAKE_BUILD_TYPE)
@@ -91,13 +90,13 @@ include_directories("${PALABOS_ROOT}/src")
 include_directories("${PALABOS_ROOT}/externalLibraries")
 include_directories("${PALABOS_ROOT}/externalLibraries/Eigen3")
 include_directories("${BLOODFLOW_ROOT}/ibm")
-include_directories("${LAMMPS_INCLUDE}")
+include_directories("${LAMMPS_LIB}")
 file(GLOB_RECURSE PALABOS_SRC "${PALABOS_ROOT}/src/*.cpp")
 file(GLOB_RECURSE EXT_SRC "${PALABOS_ROOT}/externalLibraries/tinyxml/*.cpp")
 add_library(palabos STATIC ${PALABOS_SRC} ${EXT_SRC})
 ###############################################################################
 #  LAMMPS Library
-include_directories("${LAMMPS_INCLUDE}")
+include_directories("${LAMMPS_LIB}")
 include_directories("${COUPLING_DIR}/src")
 add_library(lammps STATIC IMPORTED)
 set_property(TARGET lammps PROPERTY
