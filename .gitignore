@@ -1,0 +1,6 @@
+build/
+*.vti
+dump.*
+*.dat
+CMakeCache.txt
+CMakeFiles/
