@@ -1,2 +1,0 @@
-/home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles/embolism.dir
-/home/jifutan/BloodFlow/examples/embolism/build/CMakeFiles/palabos.dir
