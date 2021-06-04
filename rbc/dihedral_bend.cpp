@@ -281,14 +281,15 @@ void DihedralBend::coeff(int narg, char **arg)
   if (!allocated) allocate();
 
   int ilo,ihi;
-  force->bounds(FLERR,arg[0],atom->ndihedraltypes,ilo,ihi);
+  //force->bounds(FLERR,arg[0],atom->ndihedraltypes,ilo,ihi);
+  utils::bounds(FLERR,arg[0],1,atom->ndihedraltypes,ilo,ihi,error);
 
   // require integer values of shift for backwards compatibility
   // arbitrary phase angle shift could be allowed, but would break
   //   backwards compatibility and is probably not needed
 
-  double k_one = force->numeric(FLERR,arg[1]);
-  int shift_one = force->inumeric(FLERR,arg[2]);
+  double k_one = utils::numeric(FLERR,arg[1],false,lmp);
+  int shift_one = utils::inumeric(FLERR,arg[2],false,lmp);
   //printf("shift one k=%g %d %d\n",k_one,shift_one,atoi(arg[2]));
   int count = 0;
   for (int i = ilo; i <= ihi; i++) {
