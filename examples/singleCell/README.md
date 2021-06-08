@@ -15,7 +15,11 @@ cmake ..
 make
 cd ..
 ```
-
+here you may want to change the EXECUTABLE_NAME in `CMakelist.txt`, here, 
+```
+set(EXECUTABLE_NAME "cellFlow")
+```
+before you type `cmake ..`
 * in folder `singleCell`, type the following commands to run the code:
 ```
 mpirun -np 2 cellFlow in.lmp4cell
