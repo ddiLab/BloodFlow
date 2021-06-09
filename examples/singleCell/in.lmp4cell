@@ -27,7 +27,7 @@ pair_coeff * * 1e-8 1.5
 #group big type 1
 group           cells type 1 
 #group  wall type 2
-velocity	cells create 4e-7 87287 loop geom # set/change group (big) velocity at temperature=1.44,
+#velocity	cells create 4e-7 87287 loop geom # set/change group (big) velocity at temperature=1.44,
 
 
 reset_timestep	0 # reset timestep to 0
@@ -43,9 +43,9 @@ comm_modify cutoff 5
 
 # use fix SRD to push small particles out from inside big ones
 
-timestep	1
+timestep	100
 
-fix		1 all nve
+#fix		1 all nve
 fix 2 cells fcm 1
 #fix 3 wall move linear 0 0 0
 #fix 4 cells viscous 0.1
@@ -72,7 +72,7 @@ fix 2 cells fcm 1
 #thermo		100
 #run             1000000
 # output thermodynamic infor every 100 timesteps
-dump            1 cells xyz 50 dump.rbc.xyz
+dump            1 cells xyz 10 dump.rbc.xyz
 #dump           2 all custom 500 dump.rbc.force id fx fy fz
 #dump           3 all custom 500 dump.rbc.vel id vx vy vz
-run	      1000 
+run	      1 
