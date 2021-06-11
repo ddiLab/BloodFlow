@@ -116,7 +116,7 @@ void readWrite(string ftp_name, string fp_name, string ff_name, string fa_name, 
     of << "Cells\n";
     of << "ASCII\n";
     of << "DATASET POLYDATA\n";
-    n=30726;//for current cells only
+    //n=30726;//for current cells only
     //int n1=5136;//for current cells only
     //int n1=204840;//for current cells only
     of << "POINTS "<<n<< " float\n";
