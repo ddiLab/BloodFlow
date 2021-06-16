@@ -1,6 +1,5 @@
 import sys
-import vtk #vtk.util.numpy_support as vtknp
-#import numpy as np
+import vtk 
 import glob
 import math
 

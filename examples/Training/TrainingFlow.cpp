@@ -298,9 +298,9 @@ int main(int argc, char* argv[]) {
             30.,        // ly
             40.         // lz
     );
-    const T maxT    = 10000;//6.6e4; //(T)0.01;  // maximum time duration
-    plint iSave =500;//2000;//10; //This value indicated how often the code will save a vtk file
-    plint iCheck = 500*iSave;
+    const T maxT    =100 ;//6.6e4; //(T)0.01;  // maximum time duration
+    plint iSave =10;//2000;//10; //This value indicated how often the code will save a vtk file
+    plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille"); //A function defined in palabos/src/core/units.h (Logs the parameters and other values calculated by them)
 
     LammpsWrapper wrapper(argv,global::mpi().getGlobalCommunicator()); //Uses mpi to communicate with Lammps somehow. This class is found in BloodFlow/ibm/lammpsWrapper.h ??????????

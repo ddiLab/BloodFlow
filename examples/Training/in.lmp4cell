@@ -75,4 +75,4 @@ fix 2 cells fcm 1
 dump            1 cells xyz 10 dump.rbc.xyz
 #dump           2 all custom 500 dump.rbc.force id fx fy fz
 #dump           3 all custom 500 dump.rbc.vel id vx vy vz
-run	      10 
+run	      1 
