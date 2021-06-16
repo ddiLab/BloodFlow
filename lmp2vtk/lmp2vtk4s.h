@@ -94,7 +94,7 @@ void readWrite(string ftp_name, string fp_name, string ff_name, string fa_name, 
       fp>>tmp>>row[0]>>row[1]>>row[2];
       pos.push_back(row);
     }
-    periodicCorrection(time, pos, ncell, 10242, pxyz, lxyz);
+    periodicCorrection(time, pos, ncell, pxyz, lxyz);
     if (flag_a){
       for (i=0;i<7;i++) ff>>buf;
       ff>>buf;// number of atoms
