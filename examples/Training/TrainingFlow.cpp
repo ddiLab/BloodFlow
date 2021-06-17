@@ -302,11 +302,11 @@ int main(int argc, char* argv[]) {
     plint iSave =10;//2000;//10; //This value indicated how often the code will save a vtk file
     plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille"); //A function defined in palabos/src/core/units.h (Logs the parameters and other values calculated by them)
-
+//////////////////////////////////////////
     LammpsWrapper wrapper(argv,global::mpi().getGlobalCommunicator()); //Uses mpi to communicate with Lammps somehow. This class is found in BloodFlow/ibm/lammpsWrapper.h ??????????
     char * inlmp = argv[1];//??????
-    wrapper.execFile(inlmp);//Just a void function that appears to do nothing in lammpsWrapper
-   
+    wrapper.execFile(inlmp);
+//////////////////////////////////////////
     //MultiTensorField3D<T,3> vel(parameters.getNx(),parameters.getNy(),parameters.getNz());
     pcout<<"Nx,Ny,Nz "<<parameters.getNx()<<" "<<parameters.getNy()<<" "<<parameters.getNz()<<endl; //This line just outputs how many nodes in each dimension for user reference
     LatticeDecomposition lDec(parameters.getNx(),parameters.getNy(),parameters.getNz(), //Part of the ibm coupling code. What does it do????????????? Located in BloodFlow/ibm/latticeDecomposition.h
@@ -368,10 +368,14 @@ int main(int argc, char* argv[]) {
             pcout<<"Timestep "<<iT<<" Saving checkPoint file..."<<endl;
             saveBinaryBlock(lattice,"checkpoint.dat");
         }
+        ///////////////////////////////////////////////////
         // lammps to calculate force
-        wrapper.execCommand("run 1 pre no post no");
+        wrapper.execCommand("run 1 pre no post no"); //run 1: iteration  
+        /*
+         So if pre is specified as “no” then the initial setup is skipped, except for printing thermodynamic info.
+         If post is specified as “no”, the full timing summary is skipped; only a one-line summary timing is printed.
         // Clear and spread fluid force 
-        
+        ///////////////////////////////////////////////////
         setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);//I think this spreads the force of the solid to neighboring fluid nodes??????????????
         ////-----classical ibm coupling-------------//
         spreadForce3D(lattice,wrapper);
