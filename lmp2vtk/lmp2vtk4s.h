@@ -94,7 +94,9 @@ void readWrite(string ftp_name, string fp_name, string ff_name, string fa_name, 
       fp>>tmp>>row[0]>>row[1]>>row[2];
       pos.push_back(row);
     }
-    periodicCorrection(time, pos, ncell, pxyz, lxyz);
+    //periodicCorrection(time, pos, ncell, 10242, pxyz, lxyz);
+    periodicCorrection(time, pos, ncell,  pxyz, lxyz);
+
     if (flag_a){
       for (i=0;i<7;i++) ff>>buf;
       ff>>buf;// number of atoms
@@ -116,7 +118,8 @@ void readWrite(string ftp_name, string fp_name, string ff_name, string fa_name, 
     of << "Cells\n";
     of << "ASCII\n";
     of << "DATASET POLYDATA\n";
-    //n=42;//for current cells only
+
+    //n=30726;//for current cells only
     //int n1=5136;//for current cells only
     //int n1=204840;//for current cells only
     of << "POINTS "<<n<< " float\n";
