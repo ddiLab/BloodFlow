@@ -35,4 +35,4 @@ When in BloodFlow/rbc: `cp fix* path/to/lammps/src`
 `make`
 6. A executable named embolism should now exist in the embolism directory. Finally, use the following command while in the embolism directory to submit the code to run on a Cooley node:
 `qsub -n 1 -t 10 -A <ProjectName> ./embolism.sh` (My ProjectName is visualization)
-The parameters of this command can be different, [Cooley Overview](see https://www.alcf.anl.gov/support-center/cooley/submitting-jobs-cooley)
+The parameters of this command can be different, [Cooley Overview](https://www.alcf.anl.gov/support-center/cooley/submitting-jobs-cooley)
