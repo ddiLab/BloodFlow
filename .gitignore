@@ -4,3 +4,4 @@ dump.*
 *.dat
 CMakeCache.txt
 CMakeFiles/
+*.vtk
