@@ -14,13 +14,13 @@ then go to embolism, you should be able to see the executable embolism generated
 
 # How to run the embolism code (Cooley)
 The embolism example is tested with the following versions:
-- palabos version downloaded in May 16, 2021. (https://gitlab.com/unigespc/palabos)
-`git clone git@gitlab.com:unigespc/palabos.git` (clone with ssh)
-`git clone https://gitlab.com/unigespc/palabos.git` (clone with https)
+- palabos version downloaded in May 16, 2021. (https://gitlab.com/unigespc/palabos)\
+`git clone git@gitlab.com:unigespc/palabos.git` (clone with ssh)\
+`git clone https://gitlab.com/unigespc/palabos.git` (clone with https)\
 `git checkout e960674cea38515ae3749218c314a9e1a3c6c140` (update to the version we know works)
-- lammps version downloaded in May 16, 2021. (https://github.com/lammps/lammps)
-`git clone git@github.com:lammps/lammps.git` (clone with ssh)
-`git clone https://github.com/lammps/lammps.git` (clone with https)
+- lammps version downloaded in May 16, 2021. (https://github.com/lammps/lammps)\
+`git clone git@github.com:lammps/lammps.git` (clone with ssh)\
+`git clone https://github.com/lammps/lammps.git` (clone with https)\
 `git checkout e498e8ad7f24fd7ff87313670db7873703c1fd3f` (update to the version we know works)
 
 **Steps to compile the code:**
