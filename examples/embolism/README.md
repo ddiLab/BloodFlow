@@ -14,11 +14,11 @@ then go to embolism, you should be able to see the executable embolism generated
 
 # How to run the embolism code (Cooley)
 The embolism example is tested with the following versions:
-- Palabos (https://gitlab.com/unigespc/palabos)\
+- Palabos (https://gitlab.com/unigespc/palabos) \
 `git clone git@gitlab.com:unigespc/palabos.git` (clone with ssh)\
 `git clone https://gitlab.com/unigespc/palabos.git` (clone with https)\
 `git checkout e960674cea38515ae3749218c314a9e1a3c6c140` (update to the version we know works)
-- LAMMPS  (https://github.com/lammps/lammps)\
+- LAMMPS  (https://github.com/lammps/lammps) \
 `git clone git@github.com:lammps/lammps.git` (clone with ssh)\
 `git clone https://github.com/lammps/lammps.git` (clone with https)\
 `git checkout e498e8ad7f24fd7ff87313670db7873703c1fd3f` (update to the version we know works)
@@ -30,7 +30,7 @@ The embolism example is tested with the following versions:
 2. Embolism needs several files to be copied from BloodFlow/rbc to lammps/src. These all begin with fix. \
 When in BloodFlow/rbc: `cp fix* path/to/lammps/src` 
 3. The embolism.sh executable file needs to have a directory path updated. This file is in BloodFlow/examples/embolism. \
-`EMB_PATH=path/to/your/embolism
+`EMB_PATH=path/to/your/embolism`
 4. Compile lammps as a library, go to folder lammps/src, type `make mpi mode=lib`. You will need to append `-std=c++11` flags in CCFLAGS in Makefile.mpi under lammps/src/MAKE folder. When compiling the executable file later on, an error might occur complaining about package that is needed in lammps (I had to install the MC package). Enter the lammps/src directory and use the command `make yes-<packagename>`, remake lammps as a library, and rebuild the executable.
 5. go to embolism/build and use the command: `cmake -C /path/to/BloodFlow/sites/cooley.cmake ../`\
 `make`
