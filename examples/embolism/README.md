@@ -31,9 +31,11 @@ The embolism example is tested with the following versions:
 When in BloodFlow/rbc: `cp fix* path/to/lammps/src` 
 3. The embolism.sh executable file needs to have a directory path updated. This file is in BloodFlow/examples/embolism. \
 `EMB_PATH=path/to/your/embolism`
-4. Compile lammps as a library, go to folder lammps/src, type `make mpi mode=lib`. You will need to append `-std=c++11` flags in CCFLAGS in Makefile.mpi under lammps/src/MAKE folder. When compiling the executable file later on, an error might occur complaining about package that is needed in lammps (I had to install the MC package). Enter the lammps/src directory and use the command `make yes-<packagename>`, remake lammps as a library, and rebuild the executable.
-5. go to embolism/build and use the command: `cmake -C /path/to/BloodFlow/sites/cooley.cmake ../`\
+4. Go to lammps/src and make sure the MOLECULE and MC packages are installed : \
+`make yes-<packagename>`
+5. Compile lammps as a library, go to folder lammps/src, type `make mpi mode=lib`. You will need to append `-std=c++11` flags in CCFLAGS in Makefile.mpi under lammps/src/MAKE folder.
+6. go to embolism/build and use the command: `cmake -C /path/to/BloodFlow/sites/cooley.cmake ../`\
 `make`
-6. A executable named embolism should now exist in the embolism directory. Finally, use the following command while in the embolism directory to submit the code to run on a Cooley node:
+7. A executable named embolism should now exist in the embolism directory. Finally, use the following command while in the embolism directory to submit the code to run on a Cooley node:
 `qsub -n 1 -t 10 -A <ProjectName> ./embolism.sh` (My ProjectName is visualization)
 The parameters of this command can be different, [Cooley Overview](https://www.alcf.anl.gov/support-center/cooley/submitting-jobs-cooley)
