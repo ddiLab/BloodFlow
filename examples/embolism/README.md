@@ -29,7 +29,8 @@ The embolism example is tested with the following versions:
 `git clone https://github.com/ddiLab/BloodFlow.git` (clone with https)
 2. Embolism needs several files to be copied from BloodFlow/rbc to lammps/src. These all begin with fix. \
 When in BloodFlow/rbc: `cp fix* path/to/lammps/src` 
-3. The embolism.sh executable file needs to have a directory path updated. This file is in BloodFlow/examples/embolism.
+3. The embolism.sh executable file needs to have a directory path updated. This file is in BloodFlow/examples/embolism. \
+`EMB_PATH=path/to/your/embolism
 4. Compile lammps as a library, go to folder lammps/src, type `make mpi mode=lib`. You will need to append `-std=c++11` flags in CCFLAGS in Makefile.mpi under lammps/src/MAKE folder. When compiling the executable file later on, an error might occur complaining about package that is needed in lammps (I had to install the MC package). Enter the lammps/src directory and use the command `make yes-<packagename>`, remake lammps as a library, and rebuild the executable.
 5. go to embolism/build and use the command: `cmake -C /path/to/BloodFlow/sites/cooley.cmake ../`\
 `make`
