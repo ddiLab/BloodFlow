@@ -1,4 +1,4 @@
-# This is an example for blood cell model. 
+ This is an example for blood cell model. 
 you can either run it with just lammps, or couple it with fluid using palabos. 
 * copy `bond_wlc_pow.h/.cpp, angle_rbc.h/.cpp dihedral_bend.h/.cpp` from subfolder `rbc` into folder `lammps/src`
 ## only lammps  

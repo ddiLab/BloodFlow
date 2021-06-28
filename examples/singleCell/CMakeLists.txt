@@ -24,6 +24,7 @@ find_package(SENSEI)
 if(SENSEI_FOUND)
   message("FOUND SENSEI")
 endif()
+
 set(PALABOS_ROOT "$ENV{HOME}/palabos" CACHE PATH "Path to PALABOS root directory")
 set(BLOODFLOW_ROOT "$ENV{HOME}/BloodFlow" CACHE PATH "Path to BloodFlow root directory")
 #set(COUPLING_ROOT "/home/insley/JTAN/CODE/palabos-lammps/")
@@ -109,9 +110,17 @@ set_property(TARGET lammps PROPERTY
 #    lammps
 #)
 ###############################################################################
-add_executable(${EXECUTABLE_NAME} "./${EXECUTABLE_NAME}.cpp")
+#  SENSEI 
+
+include_directories(${SENSEI_DIR}/include)
+set(SENSEI_BRIDGE_SRC
+   DataAdaptor.cxx
+   Bridge.cxx
+   ) 
+
+add_executable(${EXECUTABLE_NAME} "./${EXECUTABLE_NAME}.cpp" ${SENSEI_BRIDGE_SRC})
 # Link with the following libraries
-target_link_libraries(${EXECUTABLE_NAME} palabos lammps)
+target_link_libraries(${EXECUTABLE_NAME} palabos lammps sensei)
 if(ENABLE_MPI)
     target_link_libraries(${EXECUTABLE_NAME} ${MPI_CXX_LIBRARIES})
 endif()
