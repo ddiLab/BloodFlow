@@ -38,6 +38,7 @@
 
 #include "latticeDecomposition.h"
 //#include "nearestTwoNeighborLattices3D.h"
+#include "Bridge.h"
 
 using namespace plb;
 using namespace std;
@@ -330,7 +331,8 @@ int main(int argc, char* argv[]) {
       //coupling between lammps and palabos
     Array<T,3> force(0,0.,1e-7);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
-    
+    Bridge::Initialize(global::mpi().getGlobalCommunicator());
+
     for (plint iT=0;iT<4e3;iT++){
         lattice.collideAndStream();
     }
@@ -359,6 +361,7 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
+        Bridge::Analyze();
     }
 
     timeduration = global::timer("mainloop").stop();
