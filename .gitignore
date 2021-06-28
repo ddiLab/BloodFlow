@@ -5,3 +5,9 @@ dump.*
 CMakeCache.txt
 CMakeFiles/
 *.vtk
+*.cobaltlog
+*.output
+*.error
+log.lammps
+examples/embolism/embolism
+

@@ -19,7 +19,7 @@
  */
 
 #include "lammpsWrapper.h"
-#include "mpi.h"
+#include "mpi.h" //
 #include <sstream>
 //#include "palabos3D.h"
 //#include "palabos3D.hh"
