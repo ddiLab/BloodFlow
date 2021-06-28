@@ -10,4 +10,4 @@ CMakeFiles/
 *.error
 log.lammps
 examples/embolism/embolism
-
+examples/singleCell/cellFlow
