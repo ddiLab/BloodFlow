@@ -14,12 +14,9 @@
 #include <iostream>
 using namespace std;
 
-namespace senseiLP
-{
 //----------------------------------------------------------------------
 void LPDataAdaptor::Initialize()
 {
   this->ReleaseData();
   cout << "DataAdaptor: Initialize()" << endl;
-}
 }
