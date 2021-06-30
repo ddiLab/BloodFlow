@@ -1,16 +1,25 @@
 #include <iostream>
 #include "Bridge.h"
+#include "LPdataAdaptor.h"
 
 using namespace std;
 
-void Bridge::Initialize(MPI_Comm world){
+namespace Bridge
+{
+void Initialize(MPI_Comm world){
    cout << "SENSEI: Initialize()" << endl;
+   senseiLP::LPDataAdaptor Adaptor();
+   Adaptor.Initialize();
+   
 }
-void Bridge::Analyze(){
+void SetData(){
+   cout << "SENSEI: SetData()" << endl;
+}
+void Analyze(){
    cout << "SENSEI: Analyze()" << endl;
 }
-void Bridge::Finalize(){
+void Finalize(){
    cout << "SENSEI: Finalize()" << endl;
 }
-
+}
 
