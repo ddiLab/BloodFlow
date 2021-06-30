@@ -1,4 +1,5 @@
 #include "LPdataAdaptor.h"
+
 /*
 #include "Error.h"
 #include <vtkObjectFactory.h>
@@ -13,10 +14,12 @@
 
 #include <iostream>
 using namespace std;
-
+namespace senseiLP
+{
 //----------------------------------------------------------------------
 void LPDataAdaptor::Initialize()
 {
   this->ReleaseData();
   cout << "DataAdaptor: Initialize()" << endl;
+}
 }

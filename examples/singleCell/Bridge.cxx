@@ -7,7 +7,8 @@ using namespace std;
 
 void Bridge::Initialize(MPI_Comm world){
    cout << "SENSEI: Initialize()" << endl;
-   senseiLP::LPDataAdaptor->Initialize();
+   senseiLP::LPDataAdaptor::Initialize();
+   
 }
 void Bridge::SetData(){
    cout << "SENSEI: SetData()" << endl;
