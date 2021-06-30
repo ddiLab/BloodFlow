@@ -114,7 +114,7 @@ set_property(TARGET lammps PROPERTY
 
 include_directories(${SENSEI_DIR}/include)
 set(SENSEI_BRIDGE_SRC
-   DataAdaptor.cxx
+   LPdataAdaptor.cxx
    Bridge.cxx
    ) 
 
