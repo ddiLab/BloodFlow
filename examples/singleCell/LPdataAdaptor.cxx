@@ -17,7 +17,7 @@ using namespace std;
 namespace senseiLP
 {
 //----------------------------------------------------------------------
-void lammpsDataAdaptor::Initialize()
+void LPDataAdaptor::Initialize()
 {
   this->ReleaseData();
   cout << "DataAdaptor: Initialize()" << endl;
