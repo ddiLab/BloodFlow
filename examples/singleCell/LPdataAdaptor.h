@@ -6,7 +6,7 @@
 
 namespace senseiLP
 {
-class LPDataAdaptor: public sensei::DataAdaptor
+class LPDataAdaptor //: public sensei::DataAdaptor
 {
 public:
 LPDataAdaptor();
