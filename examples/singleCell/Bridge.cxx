@@ -1,14 +1,14 @@
 #include <iostream>
 #include "Bridge.h"
+//#include "LPdataAdaptor.cxx"
 #include "LPdataAdaptor.h"
-
 using namespace std;
 
 namespace Bridge
 {
 void Initialize(MPI_Comm world){
    cout << "SENSEI: Initialize()" << endl;
-   senseiLP::LPDataAdaptor Adaptor();
+   senseiLP::LPDataAdaptor Adaptor;
    Adaptor.Initialize();
    
 }
