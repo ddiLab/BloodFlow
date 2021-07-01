@@ -113,12 +113,13 @@ set_property(TARGET lammps PROPERTY
 #  SENSEI 
 
 include_directories(${SENSEI_DIR}/include)
-set(SENSEI_BRIDGE_SRC
+set(SRC
+   ${EXECUTABLE_NAME}.cpp
    LPdataAdaptor.cxx
    Bridge.cxx
    ) 
 
-add_executable(${EXECUTABLE_NAME} "./${EXECUTABLE_NAME}.cpp" ${SENSEI_BRIDGE_SRC})
+add_executable(${EXECUTABLE_NAME} ${SRC})
 # Link with the following libraries
 target_link_libraries(${EXECUTABLE_NAME} palabos lammps sensei)
 if(ENABLE_MPI)

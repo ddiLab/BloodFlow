@@ -19,7 +19,7 @@ namespace senseiLP
 //----------------------------------------------------------------------
 void LPDataAdaptor::Initialize()
 {
-  //this->ReleaseData();
+  this->ReleaseData();
   cout << "DataAdaptor: Initialize()" << endl;
 }
 }
