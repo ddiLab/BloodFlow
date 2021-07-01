@@ -115,8 +115,8 @@ set_property(TARGET lammps PROPERTY
 include_directories(${SENSEI_DIR}/include)
 set(SRC
    ${EXECUTABLE_NAME}.cpp
-   LPdataAdaptor.cxx
-   Bridge.cxx
+   LPdataAdaptor.cpp
+   Bridge.cpp
    ) 
 
 add_executable(${EXECUTABLE_NAME} ${SRC})
