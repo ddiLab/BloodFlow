@@ -361,7 +361,7 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        Bridge::Analyze();
+        //Bridge::Analyze();
     }
 
     timeduration = global::timer("mainloop").stop();

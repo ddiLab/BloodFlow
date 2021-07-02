@@ -1,7 +1,9 @@
-#include <iostream>
-#include <vtkSmartPointer.h>
 #include "Bridge.h"
 #include "LPdataAdaptor.h"
+#include <vtkSmartPointer.h>
+#include <ConfigurableAnalysis.h>
+//#include <libIS/is_sim.h>
+#include <iostream>
 
 using namespace std;
 
