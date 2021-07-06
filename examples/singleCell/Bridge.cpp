@@ -10,15 +10,18 @@ using namespace std;
 namespace Bridge
 {
    static vtkSmartPointer<senseiLP::LPDataAdaptor>  GlobalDataAdaptor;
+   static vtkSmartPointer<sensei::ConfigurableAnalysis> GlobalAnalysisAdaptor;
 
-
-void Initialize(MPI_Comm world){
-   cout << "SENSEI: Initialize()" << endl;
+void Initialize(MPI_Comm world, const std::string& config_file){
+   //cout << "SENSEI: Initialize()" << endl;
    GlobalDataAdaptor = vtkSmartPointer<senseiLP::LPDataAdaptor>::New();
    GlobalDataAdaptor->Initialize();
-   //senseiLP::LPDataAdaptor Adaptor;
-   //Adaptor.Initialize();
-   
+   GlobalDataAdaptor->SetCommunicator(world);
+   GlobalDataAdaptor->SetDataTimeStep(-1);
+
+   GlobalAnalysisAdaptor = vtkSmartPointer<sensei::ConfigurableAnalysis>::New();
+   GlobalAnalysisAdaptor->Initialize(config_file);
+   //cout << "SENSEI:" << config_file << endl;   
 }
 void SetData(){
    cout << "SENSEI: SetData()" << endl;
