@@ -275,7 +275,8 @@ int main(int argc, char* argv[]) {
     const T Re = 5e-3;
     const plint Nref = 50;
     const T uMaxRef = 0.01;
-    const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors.
+    const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
+    std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.!!!!!!!!!!
 
     IncomprFlowParam<T> parameters(
             uMax,
@@ -331,7 +332,7 @@ int main(int argc, char* argv[]) {
       //coupling between lammps and palabos
     Array<T,3> force(0,0.,1e-7);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
-    Bridge::Initialize(global::mpi().getGlobalCommunicator());
+    Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!!
 
     for (plint iT=0;iT<4e3;iT++){
         lattice.collideAndStream();
