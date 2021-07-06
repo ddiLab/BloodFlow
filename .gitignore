@@ -2,7 +2,7 @@ build/
 *.vti
 dump.*
 *.dat
-CMakeCache.txt
+
 CMakeFiles/
 *.vtk
 *.cobaltlog
