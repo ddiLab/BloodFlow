@@ -21,8 +21,20 @@ senseiNewMacro(LPDataAdaptor);
 //----------------------------------------------------------------------
 void LPDataAdaptor::Initialize()
 {
-  this->ReleaseData();
+  this->ReleaseData();//ReleaseData must be correctly defined!!
   cout << "DataAdaptor: Initialize()" << endl;
+}
+//----------------------------------------------------------------------
+void LPDataAdaptor::AddLAMMPSData(double **x, int nlocal, double xsublo, double xsubhi,
+                                  double ysublo, double ysubhi, double zsublo,
+                                  double zsubhi)
+{
+  
+  
+  for(int i = 0; i < nlocal; i++)
+  {
+   x[i][2] += 1;
+  }
 }
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)

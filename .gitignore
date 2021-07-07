@@ -1,6 +1,5 @@
 build/
 *.vti
-dump.*
 *.dat
 
 CMakeFiles/

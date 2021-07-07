@@ -20,11 +20,15 @@ void Initialize(MPI_Comm world, const std::string& config_file){
    GlobalDataAdaptor->SetDataTimeStep(-1);
 
    GlobalAnalysisAdaptor = vtkSmartPointer<sensei::ConfigurableAnalysis>::New();
-   GlobalAnalysisAdaptor->Initialize("cellFlow.xml");
+   GlobalAnalysisAdaptor->Initialize(config_file);
    //cout << "SENSEI:" << config_file << endl;   
 }
-void SetData(){
-   cout << "SENSEI: SetData()" << endl;
+void SetData(double **x, int nlocal, double xsublo, double xsubhi,
+             double ysublo, double ysubhi, double zsublo,
+             double zsubhi)
+{
+   //cout << "SENSEI: SetData()" << endl;
+   GlobalDataAdaptor->AddLAMMPSData(x, nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
 }
 void Analyze(){
    cout << "SENSEI: Analyze()" << endl;
