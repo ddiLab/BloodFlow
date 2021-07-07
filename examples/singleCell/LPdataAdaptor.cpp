@@ -21,7 +21,7 @@ senseiNewMacro(LPDataAdaptor);
 //----------------------------------------------------------------------
 void LPDataAdaptor::Initialize()
 {
-  this->ReleaseData();
+  this->ReleaseData();//ReleaseData must be correctly defined!!
   cout << "DataAdaptor: Initialize()" << endl;
 }
 //----------------------------------------------------------------------
