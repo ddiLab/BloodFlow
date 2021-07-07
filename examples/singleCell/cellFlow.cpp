@@ -30,6 +30,8 @@
 #include <iostream>
 #include <fstream>
 
+//#include "opts.h"
+
 #include "mpi.h"
 #include "lammps.h"
 #include "input.h"
@@ -38,7 +40,10 @@
 
 #include "latticeDecomposition.h"
 //#include "nearestTwoNeighborLattices3D.h"
+//#include "senseiConfig.h"
+//#ifdef ENABLE_SENSEI
 #include "Bridge.h"
+//#endif
 
 using namespace plb;
 using namespace std;
@@ -263,6 +268,7 @@ int main(int argc, char* argv[]) {
 
     plbInit(&argc, &argv);
     global::directories().setOutputDir("./tmp/");
+    T **x = wrapper.lmp->atom->x;
 /*
     if (argc != 2) {
         pcout << "Error the parameters are wrong. The structure must be :\n";
@@ -276,8 +282,15 @@ int main(int argc, char* argv[]) {
     const plint Nref = 50;
     const T uMaxRef = 0.01;
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
-    std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.!!!!!!!!!!
-
+    //using namespace opts;
+    std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
+    
+    /*Options ops(argc, argv);
+    ops
+    #ifdef ENABLE_SENSEI
+    >> Option('f', "config", config_file, "Sensei analysis configuration xml (required)")
+    #endif
+    */
     IncomprFlowParam<T> parameters(
             uMax,
             Re,

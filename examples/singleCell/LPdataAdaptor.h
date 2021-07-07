@@ -16,6 +16,8 @@ senseiTypeMacro(LPDataAdaptor, sensei::DataAdaptor);
 
 void Initialize();
 
+void AddLAMMPSData(double **x);
+
 // SENSEI API
 int GetNumberOfMeshes(unsigned int &numMeshes) override;
 

@@ -3,12 +3,7 @@
 `git clone https://gitlab.kitware.com/sensei/sensei.git src`
 
 2. * correct configuration of cmake
-  `cmake -B ./build -S ./src \
-  -DCMAKE_INSTALL_PREFIX=./install \
-  -DENABLE_SENSEI=ON \
-  -DENABLE_VTK_IO=ON \
-  -DENABLE_CATALYST=ON \
-  -DParaView_DIR="/lus/grand/projects/visualization/srizzi/BUILDS/paraview/build/install/lib/cmake/paraview-5.9/"`
+  `cmake -B ./build -S ./src -DCMAKE_CXX_COMPILER=`which g++` -DCMAKE_C_COMPILER=`which gcc` -DCMAKE_INSTALL_PREFIX=./install -DENABLE_SENSEI=ON -DENABLE_VTK_IO=ON -DENABLE_CATALYST=ON -DParaView_DIR="/lus/grand/projects/visualization/srizzi/BUILDS/paraview/build/install/lib/cmake/paraview-5.9/"`
 
 3. * build
 `cd build`

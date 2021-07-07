@@ -25,6 +25,11 @@ void LPDataAdaptor::Initialize()
   cout << "DataAdaptor: Initialize()" << endl;
 }
 //----------------------------------------------------------------------
+void LPDataAdaptor::AddLAMMPSData(double **x)
+{
+
+}
+//----------------------------------------------------------------------
 int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
 {
    numMeshes = 1;
