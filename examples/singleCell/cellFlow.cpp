@@ -268,7 +268,7 @@ int main(int argc, char* argv[]) {
 
     plbInit(&argc, &argv);
     global::directories().setOutputDir("./tmp/");
-    T **x = wrapper.lmp->atom->x;
+    
 /*
     if (argc != 2) {
         pcout << "Error the parameters are wrong. The structure must be :\n";
@@ -346,7 +346,15 @@ int main(int argc, char* argv[]) {
     Array<T,3> force(0,0.,1e-7);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
     Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!!
-
+    T **x = wrapper.lmp->atom->x;
+    T xsublo = wrapper.lmp->domain->sublo[0];
+    T xsubhi = wrapper.lmp->domain->subhi[0];
+    T ysublo = wrapper.lmp->domain->sublo[1];
+    T ysubhi = wrapper.lmp->domain->subhi[1];
+    T zsublo = wrapper.lmp->domain->sublo[2];
+    T zsubhi = wrapper.lmp->domain->subhi[2];
+    plint nlocal = wrapper.lmp->atom->nlocal; 
+ 
     for (plint iT=0;iT<4e3;iT++){
         lattice.collideAndStream();
     }
@@ -375,6 +383,7 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
+        Bridge::SetData(x, nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
         Bridge::Analyze();
     }
 

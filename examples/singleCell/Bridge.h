@@ -6,7 +6,9 @@
 namespace Bridge
 {
   void Initialize(MPI_Comm world, const std::string& config_file);
-  void SetData(double **x);
+  void SetData(double **x, int nlocal, double xsublo, double xsubhi, 
+               double ysublo, double ysubhi, double zsublo,
+               double zsubhi);
   /*
  long ntimestep, int nlocal, int *id, )
  LAMMPS:
@@ -23,7 +25,8 @@ namespace Bridge
  bond_style? (wlc/pow) from singleCell/in.lmp4cell
  angle_style? (rbc) from in.lmp4cell
  dihedral_style (bend) from in.lmp4cell
- 
+ anglelist: angle_rbc.cpp (125) int **anglelist = neighbor->anglelist;
+ nanglelist: int nanglelist = neighbor->nanglelist; 
   */
   void Analyze();
   void Finalize();
