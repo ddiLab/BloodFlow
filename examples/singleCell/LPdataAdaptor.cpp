@@ -33,7 +33,7 @@ void LPDataAdaptor::AddLAMMPSData(double **x, int nlocal, double xsublo, double 
   
   for(int i = 0; i < nlocal; i++)
   {
-   x[i][2] += 1;
+   x[i][2] += 0.05;
   }
 }
 //----------------------------------------------------------------------
