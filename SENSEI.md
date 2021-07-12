@@ -1,5 +1,5 @@
 # Building SENSEI on Cooley and running Oscillators example
-1. * cloning the repo in the home directory:
+1. * Clone the repo in the home directory:
 `git clone https://gitlab.kitware.com/sensei/sensei.git src`
 
 2. * Use the correct configuration of cmake while in the home directory:
@@ -9,7 +9,7 @@
 `cd build` \
 `make -j8`
 
-4. * Installation. While in the build directory:
+4. * Install. While in the build directory:
 `make install`
 5. Copy oscillator executable (found in build/bin) to build/miniapps.
 
