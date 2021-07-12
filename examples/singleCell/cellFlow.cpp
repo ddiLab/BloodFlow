@@ -37,6 +37,7 @@
 #include "input.h"
 #include "library.h"
 #include "lammpsWrapper.h"
+#include "update.h"
 
 #include "latticeDecomposition.h"
 //#include "nearestTwoNeighborLattices3D.h"
@@ -353,7 +354,10 @@ int main(int argc, char* argv[]) {
     T ysubhi = wrapper.lmp->domain->subhi[1];
     T zsublo = wrapper.lmp->domain->sublo[2];
     T zsubhi = wrapper.lmp->domain->subhi[2];
-    plint nlocal = wrapper.lmp->atom->nlocal; 
+    plint nlocal = wrapper.lmp->atom->nlocal;
+    long ntimestep = wrapper.lmp->update->ntimestep; 
+    int *type = wrapper.lmp->atom->type;
+    int nghost = wrapper.lmp->atom->nghost;
  
     for (plint iT=0;iT<4e3;iT++){
         lattice.collideAndStream();
@@ -383,7 +387,7 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        Bridge::SetData(x, nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
         Bridge::Analyze();
     }
 
