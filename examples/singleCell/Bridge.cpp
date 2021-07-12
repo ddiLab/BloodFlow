@@ -30,9 +30,11 @@ void SetData(double **x, long ntimestep, int nghost, int nlocal, double xsublo,
    //cout << "SENSEI: SetData()" << endl;
    GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, xsublo, xsubhi, 
                                     ysublo, ysubhi, zsublo, zsubhi);
+   
 }
-void Analyze(){
-   cout << "SENSEI: Analyze()" << endl;
+void Analyze()
+{
+   //cout << "SENSEI: Analyze()" << endl;
    GlobalAnalysisAdaptor->Execute(GlobalDataAdaptor.GetPointer());
    GlobalDataAdaptor->ReleaseData();
 }

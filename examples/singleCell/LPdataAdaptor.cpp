@@ -75,6 +75,7 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   {
     internals.vertices = vtkSmartPointer<vtkCellArray>::New();
   }
+
 */  
 // atom coordinates
   if (internals.AtomPositions)
@@ -124,7 +125,11 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
 
 // timestep
   this->SetDataTimeStep(ntimestep);
-/*  
+
+  
+
+ /* 
+>>>>>>> 34ba72c204ac8bb5dea0c2f62e793c58ac76fe25
   for(int i = 0; i < nlocal; i++)
   {
    x[i][2] += 0.05;
@@ -177,7 +182,6 @@ int LPDataAdaptor::AddArrays(vtkDataObject* mesh, const std::string &meshName, i
 //----------------------------------------------------------------------
 int LPDataAdaptor::ReleaseData() 
 {
-  
   DInternals& internals = (*this->Internals);
   internals.AtomPositions = NULL;
   internals.nlocal = 0;
