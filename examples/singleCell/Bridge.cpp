@@ -33,10 +33,13 @@ void SetData(double **x, long ntimestep, int nghost, int nlocal, double xsublo,
 }
 void Analyze(){
    cout << "SENSEI: Analyze()" << endl;
+   GlobalAnalysisAdaptor->Execute(GlobalDataAdaptor.GetPointer());
    GlobalDataAdaptor->ReleaseData();
 }
 void Finalize(){
    cout << "SENSEI: Finalize()" << endl;
 }
+  //GlobalAnalysisAdaptor = NULL;
+  //GlobalDataAdaptor = NULL;
 }
 

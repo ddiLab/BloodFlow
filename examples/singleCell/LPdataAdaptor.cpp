@@ -75,7 +75,7 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   {
     internals.vertices = vtkSmartPointer<vtkCellArray>::New();
   }
-  
+*/  
 // atom coordinates
   if (internals.AtomPositions)
   {
@@ -91,9 +91,9 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   {
     SENSEI_ERROR("Error. Internal AtomPositions structure not initialized")
   }
-  
+/*  
 // atom types
-/*
+
   if (internals.AtomTypes)
   {
     long nvals = nlocal;
@@ -108,8 +108,7 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   {
     SENSEI_ERROR("Error. Internal AtomTypes structure not initialized")
   }
-
-
+*/
 
 // number of atoms
   internals.nlocal = nlocal;
@@ -125,12 +124,12 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
 
 // timestep
   this->SetDataTimeStep(ntimestep);
-  
+/*  
   for(int i = 0; i < nlocal; i++)
   {
    x[i][2] += 0.05;
   }
- */
+*/ 
 
 }
 //----------------------------------------------------------------------
@@ -178,7 +177,7 @@ int LPDataAdaptor::AddArrays(vtkDataObject* mesh, const std::string &meshName, i
 //----------------------------------------------------------------------
 int LPDataAdaptor::ReleaseData() 
 {
-  /*
+  
   DInternals& internals = (*this->Internals);
   internals.AtomPositions = NULL;
   internals.nlocal = 0;
@@ -189,7 +188,7 @@ int LPDataAdaptor::ReleaseData()
   internals.xsubhi = 0;
   internals.ysubhi = 0;
   internals.zsubhi = 0;
-  */
+  
   return 0;
 }
 
