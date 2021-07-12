@@ -9,36 +9,45 @@ namespace senseiLP
 class LPDataAdaptor : public sensei::DataAdaptor
 {
 public:
-static LPDataAdaptor* New();
-//LPDataAdaptor(){};
+  static LPDataAdaptor* New();
 
-senseiTypeMacro(LPDataAdaptor, sensei::DataAdaptor);
+  senseiTypeMacro(LPDataAdaptor, sensei::DataAdaptor);
 
-void Initialize();
+  void Initialize();
 
-void AddLAMMPSData(double **x, int nlocal, double xsublo, double xsubhi,
-                   double ysublo, double ysubhi, double zsublo,
-                   double zsubhi);
+  void AddLAMMPSData(double **x, long ntimestep, int nghost, int nlocal, double xsublo, double xsubhi,
+                     double ysublo, double ysubhi, double zsublo,
+                     double zsubhi);
 
 // SENSEI API
-int GetNumberOfMeshes(unsigned int &numMeshes) override;
+  int GetNumberOfMeshes(unsigned int &numMeshes) override;
 
-int GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) override;
+  int GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) override;
 
-int GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh) override;
+  int GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh) override;
 
-int GetMesh(const std::string &meshName, bool structureOnly, vtkCompositeDataSet *&mesh) override;
+  int GetMesh(const std::string &meshName, bool structureOnly, vtkCompositeDataSet *&mesh) override;
 
-int AddGhostNodesArray(vtkDataObject* mesh, const std::string &meshName) override;
+  int AddGhostNodesArray(vtkDataObject* mesh, const std::string &meshName) override;
 
-int AddGhostCellsArray(vtkDataObject* mesh, const std::string &meshName) override;
+  int AddGhostCellsArray(vtkDataObject* mesh, const std::string &meshName) override;
 
-int AddArray(vtkDataObject* mesh, const std::string &meshName, int association, const std::string &arrayName) override;
+  int AddArray(vtkDataObject* mesh, const std::string &meshName, int association, const std::string &arrayName) override;
 
-int AddArrays(vtkDataObject* mesh, const std::string &meshName, int association, const std::vector<std::string> &arrayName) override;
+  int AddArrays(vtkDataObject* mesh, const std::string &meshName, int association, const std::vector<std::string> &arrayName) override;
 
-int ReleaseData() override;
+  int ReleaseData() override;
 
+protected:
+
+LPDataAdaptor();
+
+~LPDataAdaptor();
+
+private:
+
+  struct DInternals;
+  DInternals* Internals;
 };
 
 }

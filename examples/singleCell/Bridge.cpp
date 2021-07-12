@@ -23,15 +23,17 @@ void Initialize(MPI_Comm world, const std::string& config_file){
    GlobalAnalysisAdaptor->Initialize(config_file);
    //cout << "SENSEI:" << config_file << endl;   
 }
-void SetData(double **x, int nlocal, double xsublo, double xsubhi,
-             double ysublo, double ysubhi, double zsublo,
-             double zsubhi)
+void SetData(double **x, long ntimestep, int nghost, int nlocal, double xsublo, 
+             double xsubhi, double ysublo, double ysubhi, 
+             double zsublo, double zsubhi)
 {
    //cout << "SENSEI: SetData()" << endl;
-   GlobalDataAdaptor->AddLAMMPSData(x, nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
+   GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, xsublo, xsubhi, 
+                                    ysublo, ysubhi, zsublo, zsubhi);
 }
 void Analyze(){
    cout << "SENSEI: Analyze()" << endl;
+   GlobalDataAdaptor->ReleaseData();
 }
 void Finalize(){
    cout << "SENSEI: Finalize()" << endl;

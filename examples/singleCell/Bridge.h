@@ -6,7 +6,7 @@
 namespace Bridge
 {
   void Initialize(MPI_Comm world, const std::string& config_file);
-  void SetData(double **x, int nlocal, double xsublo, double xsubhi, 
+  void SetData(double **x, long ntimestep, int nghost, int nlocal, double xsublo, double xsubhi, 
                double ysublo, double ysubhi, double zsublo,
                double zsubhi);
   /*
@@ -26,7 +26,8 @@ namespace Bridge
  angle_style? (rbc) from in.lmp4cell
  dihedral_style (bend) from in.lmp4cell
  anglelist: angle_rbc.cpp (125) int **anglelist = neighbor->anglelist;
- nanglelist: int nanglelist = neighbor->nanglelist; 
+ nanglelist: int nanglelist = neighbor->nanglelist;
+ nfix (found in ibm3D.hh) 
   */
   void Analyze();
   void Finalize();
