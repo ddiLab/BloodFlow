@@ -358,6 +358,7 @@ int main(int argc, char* argv[]) {
     long ntimestep = wrapper.lmp->update->ntimestep; 
     int *type = wrapper.lmp->atom->type;
     int nghost = wrapper.lmp->atom->nghost;
+    
  
     for (plint iT=0;iT<4e3;iT++){
         lattice.collideAndStream();

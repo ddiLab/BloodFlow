@@ -150,7 +150,30 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 }
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh)
-{
+{  
+   DInternals& internals = (*this->Internals);
+
+   if(!internals.mesh)
+   {
+     vtkSmartPointer<vtkPolyData> pd = vtkSmartPointer<vtkPolyData>::New();
+     
+     if(!structureOnly)
+     {
+       vtkSmartPointer<vtkPoints> pts = vtkSmartPointer<vtkPoints>::New();
+       pts->SetData(internals.AtomPositions);
+     pd->SetPoints(pts);
+     }
+     int rank, size;
+     MPI_Comm comm;
+
+     comm = GetCommunicator();
+     MPI_Comm_rank(comm, &rank);
+     MPI_Comm_rank(comm, &size);
+    
+     internals.mesh = vtkSmartPointer<vtkMultiBlockDataSet>::New();
+     internals.mesh->SetNumberOfBlocks(size);
+     internals.mesh->SetBlock(rank, pd);
+     }
    return 0;
 }
 //----------------------------------------------------------------------
