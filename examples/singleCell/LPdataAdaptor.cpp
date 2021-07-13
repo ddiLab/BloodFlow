@@ -5,6 +5,7 @@
 #include <vtkObjectFactory.h>
 #include <vtkSmartPointer.h>
 #include <vtkPolyData.h>
+#include <vtkUnstructuredGrid.h>/////////
 #include <vtkPointData.h>
 #include <vtkDoubleArray.h>
 #include <vtkIntArray.h>
@@ -150,30 +151,15 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 }
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh)
-{  
-   DInternals& internals = (*this->Internals);
-
-   if(!internals.mesh)
+{
+   if((meshName != "cells" ))
    {
-     vtkSmartPointer<vtkPolyData> pd = vtkSmartPointer<vtkPolyData>::New();
-     
-     if(!structureOnly)
-     {
-       vtkSmartPointer<vtkPoints> pts = vtkSmartPointer<vtkPoints>::New();
-       pts->SetData(internals.AtomPositions);
-     pd->SetPoints(pts);
-     }
-     int rank, size;
-     MPI_Comm comm;
-
-     comm = GetCommunicator();
-     MPI_Comm_rank(comm, &rank);
-     MPI_Comm_rank(comm, &size);
-    
-     internals.mesh = vtkSmartPointer<vtkMultiBlockDataSet>::New();
-     internals.mesh->SetNumberOfBlocks(size);
-     internals.mesh->SetBlock(rank, pd);
-     }
+     SENSEI_ERROR("No mesh \"" << meshName << "\"")
+     return -1; 
+   }
+   
+   DInternals& internals = (*this->Internals);
+   vtkSmartPointer<vtkUnstructuredGrid> pts = vtkSmartPointer<vtkUnstructuredGrid>::New();
    return 0;
 }
 //----------------------------------------------------------------------

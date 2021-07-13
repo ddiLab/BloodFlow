@@ -38,10 +38,11 @@ void Analyze()
    GlobalAnalysisAdaptor->Execute(GlobalDataAdaptor.GetPointer());
    GlobalDataAdaptor->ReleaseData();
 }
-void Finalize(){
+void Finalize()
+   {
    cout << "SENSEI: Finalize()" << endl;
-}
-  //GlobalAnalysisAdaptor = NULL;
-  //GlobalDataAdaptor = NULL;
+   GlobalAnalysisAdaptor = NULL;
+   GlobalDataAdaptor = NULL;
+   }
 }
 
