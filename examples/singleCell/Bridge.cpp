@@ -40,7 +40,7 @@ void Analyze()
 }
 void Finalize()
    {
-   cout << "SENSEI: Finalize()" << endl;
+   GlobalAnalysisAdaptor->Finalize();
    GlobalAnalysisAdaptor = NULL;
    GlobalDataAdaptor = NULL;
    }

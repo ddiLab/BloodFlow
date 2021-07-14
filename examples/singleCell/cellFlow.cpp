@@ -285,7 +285,7 @@ int main(int argc, char* argv[]) {
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
     //using namespace opts;
     std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
-    
+    Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!! 
     /*Options ops(argc, argv);
     ops
     #ifdef ENABLE_SENSEI
@@ -346,7 +346,7 @@ int main(int argc, char* argv[]) {
       //coupling between lammps and palabos
     Array<T,3> force(0,0.,1e-7);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
-    Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!!
+    
     T **x = wrapper.lmp->atom->x;
     T xsublo = wrapper.lmp->domain->sublo[0];
     T xsubhi = wrapper.lmp->domain->subhi[0];
@@ -388,11 +388,12 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
-        Bridge::Analyze();
+        //Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
+        //Bridge::Analyze();
     }
 
     timeduration = global::timer("mainloop").stop();
     pcout<<"total execution time "<<timeduration<<endl;
     delete boundaryCondition;
+    Bridge::Finalize();
 }

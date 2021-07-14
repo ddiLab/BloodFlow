@@ -12,7 +12,6 @@
 #include <vtkMultiBlockDataSet.h>
 #include <vtkCellArray.h>
 
-
 #include <iostream>
 using namespace std;
 namespace senseiLP
@@ -47,7 +46,7 @@ LPDataAdaptor::~LPDataAdaptor()
 void LPDataAdaptor::Initialize()
 {
   this->ReleaseData();//ReleaseData must be correctly defined!!
-  cout << "DataAdaptor: Initialize()" << endl;
+  //cout << "DataAdaptor: Initialize()" << endl;
 }
 //----------------------------------------------------------------------
 void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost, 
@@ -160,6 +159,9 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
    
    DInternals& internals = (*this->Internals);
    vtkSmartPointer<vtkUnstructuredGrid> pts = vtkSmartPointer<vtkUnstructuredGrid>::New();
+   pts->GetPointData()->AddArray(internals.AtomPositions);
+
+   mesh = pts;
    return 0;
 }
 //----------------------------------------------------------------------
@@ -206,3 +208,4 @@ int LPDataAdaptor::ReleaseData()
 }
 
 }
+
