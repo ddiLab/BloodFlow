@@ -30,15 +30,21 @@
 #include <iostream>
 #include <fstream>
 
+//#include "opts.h"
+
 #include "mpi.h"
 #include "lammps.h"
 #include "input.h"
 #include "library.h"
 #include "lammpsWrapper.h"
+#include "update.h"
 
 #include "latticeDecomposition.h"
 //#include "nearestTwoNeighborLattices3D.h"
+//#include "senseiConfig.h"
+//#ifdef ENABLE_SENSEI
 #include "Bridge.h"
+//#endif
 
 using namespace plb;
 using namespace std;
@@ -263,6 +269,7 @@ int main(int argc, char* argv[]) {
 
     plbInit(&argc, &argv);
     global::directories().setOutputDir("./tmp/");
+    
 /*
     if (argc != 2) {
         pcout << "Error the parameters are wrong. The structure must be :\n";
@@ -275,8 +282,16 @@ int main(int argc, char* argv[]) {
     const T Re = 5e-3;
     const plint Nref = 50;
     const T uMaxRef = 0.01;
-    const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors.
-
+    const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
+    //using namespace opts;
+    std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
+    Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!! 
+    /*Options ops(argc, argv);
+    ops
+    #ifdef ENABLE_SENSEI
+    >> Option('f', "config", config_file, "Sensei analysis configuration xml (required)")
+    #endif
+    */
     IncomprFlowParam<T> parameters(
             uMax,
             Re,
@@ -286,8 +301,8 @@ int main(int argc, char* argv[]) {
             40.         // lz
     );
     const T maxT    =100;//6.6e4; //(T)0.01;
-    plint iSave =10;//2000;//10;
-    plint iCheck = 10*iSave;
+    //plint iSave =10;//2000;//10;
+    //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
 
     LammpsWrapper wrapper(argv,global::mpi().getGlobalCommunicator());
@@ -331,14 +346,28 @@ int main(int argc, char* argv[]) {
       //coupling between lammps and palabos
     Array<T,3> force(0,0.,1e-7);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
-    Bridge::Initialize(global::mpi().getGlobalCommunicator());
-
+    
+    T **x = wrapper.lmp->atom->x;
+    T xsublo = wrapper.lmp->domain->sublo[0];
+    T xsubhi = wrapper.lmp->domain->subhi[0];
+    T ysublo = wrapper.lmp->domain->sublo[1];
+    T ysubhi = wrapper.lmp->domain->subhi[1];
+    T zsublo = wrapper.lmp->domain->sublo[2];
+    T zsubhi = wrapper.lmp->domain->subhi[2];
+    plint nlocal = wrapper.lmp->atom->nlocal;
+    long ntimestep = wrapper.lmp->update->ntimestep; 
+    int *type = wrapper.lmp->atom->type;
+    int nghost = wrapper.lmp->atom->nghost;
+    long time = 0; 
+ 
     for (plint iT=0;iT<4e3;iT++){
         lattice.collideAndStream();
     }
     T timeduration = T();
     global::timer("mainloop").start();
+
     for (plint iT=0; iT<maxT; ++iT) {
+/*
     //for (plint iT=0; iT<2; ++iT) {
         if (iT%iSave ==0 && iT >0){
             pcout<<"Saving VTK file..."<<endl;
@@ -348,6 +377,7 @@ int main(int argc, char* argv[]) {
             pcout<<"Timestep "<<iT<<" Saving checkPoint file..."<<endl;
             saveBinaryBlock(lattice,"checkpoint.dat");
         }
+*/
         // lammps to calculate force
         wrapper.execCommand("run 1 pre no post no");
         // Clear and spread fluid force
@@ -361,10 +391,12 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        Bridge::Analyze();
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
+        Bridge::Analyze(time++);
     }
 
     timeduration = global::timer("mainloop").stop();
     pcout<<"total execution time "<<timeduration<<endl;
     delete boundaryCondition;
+    Bridge::Finalize();
 }

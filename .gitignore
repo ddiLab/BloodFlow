@@ -1,8 +1,8 @@
 build/
 *.vti
-dump.*
 *.dat
-CMakeCache.txt
+*.pvd
+dump.*
 CMakeFiles/
 *.vtk
 *.cobaltlog
