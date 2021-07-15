@@ -1,6 +1,7 @@
 build/
 *.vti
 *.dat
+*.pvd
 dump.*
 CMakeFiles/
 *.vtk

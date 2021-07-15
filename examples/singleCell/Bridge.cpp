@@ -32,9 +32,10 @@ void SetData(double **x, long ntimestep, int nghost, int nlocal, double xsublo,
                                     ysublo, ysubhi, zsublo, zsubhi);
    
 }
-void Analyze()
+void Analyze(long ntimestep)
 {
-   //cout << "SENSEI: Analyze()" << endl;
+   GlobalDataAdaptor->SetDataTimeStep(ntimestep);
+   GlobalDataAdaptor->SetDataTime(ntimestep);
    GlobalAnalysisAdaptor->Execute(GlobalDataAdaptor.GetPointer());
    GlobalDataAdaptor->ReleaseData();
 }

@@ -301,8 +301,8 @@ int main(int argc, char* argv[]) {
             40.         // lz
     );
     const T maxT    =100;//6.6e4; //(T)0.01;
-    plint iSave =10;//2000;//10;
-    plint iCheck = 10*iSave;
+    //plint iSave =10;//2000;//10;
+    //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
 
     LammpsWrapper wrapper(argv,global::mpi().getGlobalCommunicator());
@@ -358,14 +358,16 @@ int main(int argc, char* argv[]) {
     long ntimestep = wrapper.lmp->update->ntimestep; 
     int *type = wrapper.lmp->atom->type;
     int nghost = wrapper.lmp->atom->nghost;
-    
+    long time = 0; 
  
     for (plint iT=0;iT<4e3;iT++){
         lattice.collideAndStream();
     }
     T timeduration = T();
     global::timer("mainloop").start();
+
     for (plint iT=0; iT<maxT; ++iT) {
+/*
     //for (plint iT=0; iT<2; ++iT) {
         if (iT%iSave ==0 && iT >0){
             pcout<<"Saving VTK file..."<<endl;
@@ -375,6 +377,7 @@ int main(int argc, char* argv[]) {
             pcout<<"Timestep "<<iT<<" Saving checkPoint file..."<<endl;
             saveBinaryBlock(lattice,"checkpoint.dat");
         }
+*/
         // lammps to calculate force
         wrapper.execCommand("run 1 pre no post no");
         // Clear and spread fluid force
@@ -388,8 +391,8 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        //Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
-        //Bridge::Analyze();
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
+        Bridge::Analyze(time++);
     }
 
     timeduration = global::timer("mainloop").stop();

@@ -5,6 +5,7 @@
 #include <vtkObjectFactory.h>
 #include <vtkSmartPointer.h>
 #include <vtkPolyData.h>
+#include <vtkImageData.h>
 #include <vtkUnstructuredGrid.h>/////////
 #include <vtkPointData.h>
 #include <vtkDoubleArray.h>
@@ -25,6 +26,7 @@ struct LPDataAdaptor::DInternals
   vtkSmartPointer<vtkIntArray> AtomIDs;
   vtkSmartPointer<vtkCellArray> vertices;
   double xsublo, ysublo, zsublo, xsubhi, ysubhi, zsubhi;
+  long NumBlocks;
   int nlocal, nghost;
   double **x;
   int *type;
@@ -70,13 +72,14 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   if(!internals.AtomIDs)
   {
     internals.AtomIDs = vtkSmartPointer<vtkIntArray>::New();
-  } 
+  }
+*/ 
   if(!internals.vertices)
   {
     internals.vertices = vtkSmartPointer<vtkCellArray>::New();
   }
 
-*/  
+ 
 // atom coordinates
   if (internals.AtomPositions)
   {
@@ -87,6 +90,14 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
     internals.AtomPositions->SetName("positions");
     
     internals.x = x;
+/*
+    double * values;
+    for(int i = 0; i < 20 ; i++)
+    {
+    values = internals.AtomPositions->GetTuple3(i);
+    cout << values[0] << " " << values[1] << " " << values[2] << std::endl;
+    }
+*/
   }  
   else
   {
@@ -110,6 +121,15 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
     SENSEI_ERROR("Error. Internal AtomTypes structure not initialized")
   }
 */
+//vertices
+if(internals.vertices)
+  {
+    vtkIdType pid[1] = {0};
+    for( int i=0; i < nlocal; i++) {
+	internals.vertices->InsertNextCell (1, pid);
+	pid[0]++;
+    }
+  }
 
 // number of atoms
   internals.nlocal = nlocal;
@@ -123,13 +143,10 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   internals.ysubhi = ysubhi;
   internals.zsubhi = zsubhi;
 
-// timestep
-  this->SetDataTimeStep(ntimestep);
 
   
 
  /* 
->>>>>>> 34ba72c204ac8bb5dea0c2f62e793c58ac76fe25
   for(int i = 0; i < nlocal; i++)
   {
    x[i][2] += 0.05;
@@ -146,6 +163,37 @@ int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) 
 {
+  int rank = 0;
+  int nRanks = 1;
+
+  MPI_Comm_rank(this->GetCommunicator(), &rank);
+  MPI_Comm_size(this->GetCommunicator(), &nRanks);
+
+  metadata->MeshName = "cells";
+   
+  metadata->MeshType = VTK_POLY_DATA;
+  metadata->BlockType = VTK_POLY_DATA;
+  metadata->CoordinateType = VTK_DOUBLE;
+  metadata->NumBlocks = nRanks;
+  metadata->NumBlocksLocal = {1};
+  //metadata->NumGhostCells = this->Internals->nghost;
+  metadata->NumArrays = 1;
+  metadata->ArrayName = {"data"};
+  metadata->ArrayCentering = {vtkDataObject::CELL};
+  metadata->ArrayComponents = {1};
+  metadata->ArrayType = {VTK_FLOAT};
+  metadata->StaticMesh = 0;  
+
+  if (metadata->Flags.BlockDecompSet())
+  {
+    metadata->BlockOwner.push_back(rank);
+    metadata->BlockIds.push_back(rank);
+  }
+  
+  metadata->BlockNumCells.push_back(this->Internals->nlocal/3);
+  metadata->BlockNumPoints.push_back(this->Internals->nlocal*3);
+  metadata->BlockCellArraySize.push_back(this->Internals->nlocal);
+ 
    return 0;
 }
 //----------------------------------------------------------------------
@@ -155,13 +203,27 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
    {
      SENSEI_ERROR("No mesh \"" << meshName << "\"")
      return -1; 
-   }
-   
-   DInternals& internals = (*this->Internals);
-   vtkSmartPointer<vtkUnstructuredGrid> pts = vtkSmartPointer<vtkUnstructuredGrid>::New();
-   pts->GetPointData()->AddArray(internals.AtomPositions);
+    }
+   //cout << "INSIDE GetMesh" << endl; 
+  DInternals& internals = (*this->Internals);
+/* 
+ double * values;
+      for(int i = 0; i < 20 ; i++)
+      {
+      values = internals.AtomPositions->GetTuple3(i);
+      cout << values[0] << " " << values[1] << " " << values[2] << std::endl;
+      }
+*/
 
-   mesh = pts;
+ //vtkSmartPointer<vtkUnstructuredGrid> pts = vtkSmartPointer<vtkUnstructuredGrid>::New(); SmartPointer Doesn't Work with DownCasting
+   vtkPolyData *pd = vtkPolyData::New();
+   //ug->GetPointData()->AddArray(internals.AtomPositions);
+   vtkPoints *pts = vtkPoints::New();
+   //pts->SetNumberOfPoints(internals.nlocal*3);
+   pts->SetData(internals.AtomPositions);
+   pd->SetPoints(pts);
+
+   mesh = pd;
    return 0;
 }
 //----------------------------------------------------------------------
