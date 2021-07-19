@@ -9,17 +9,19 @@ namespace senseiLP
 class LPDataAdaptor : public sensei::DataAdaptor
 {
 public:
+
   static LPDataAdaptor* New();
 
   senseiTypeMacro(LPDataAdaptor, sensei::DataAdaptor);
 
   void Initialize();
 
-  void AddLAMMPSData(double **x, long ntimestep, int nghost, int nlocal, double xsublo, double xsubhi,
+  void AddLAMMPSData(double **x, long ntimestep, int nghost, 
+                     int nlocal, double xsublo, double xsubhi,
                      double ysublo, double ysubhi, double zsublo,
                      double zsubhi);
 
-// SENSEI API
+// SENSEI API (Virtual functions overridden from sensei/DataAdaptor.h)
   int GetNumberOfMeshes(unsigned int &numMeshes) override;
 
   int GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) override;

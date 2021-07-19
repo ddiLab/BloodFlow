@@ -1,12 +1,9 @@
 #include "LPdataAdaptor.h"
-
-
 #include "Error.h"
 #include <vtkObjectFactory.h>
 #include <vtkSmartPointer.h>
 #include <vtkPolyData.h>
 #include <vtkImageData.h>
-#include <vtkUnstructuredGrid.h>/////////
 #include <vtkPointData.h>
 #include <vtkDoubleArray.h>
 #include <vtkIntArray.h>
@@ -48,7 +45,6 @@ LPDataAdaptor::~LPDataAdaptor()
 void LPDataAdaptor::Initialize()
 {
   this->ReleaseData();//ReleaseData must be correctly defined!!
-  //cout << "DataAdaptor: Initialize()" << endl;
 }
 //----------------------------------------------------------------------
 void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost, 
