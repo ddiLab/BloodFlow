@@ -1,13 +1,13 @@
 if(CI)
 ###############################################################################
-get_filename_component(EXECUTABLE_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+    get_filename_component(EXECUTABLE_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 ###############################################################################
 #get_filename_component(PROJECT_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
-get_filename_component(PROJECT_NAME ${EXECUTABLE_NAME} NAME)
-add_executable(${PROJECT_NAME} "./${EXECUTABLE_NAME}.cpp")
+    get_filename_component(PROJECT_NAME ${EXECUTABLE_NAME} NAME)
+    add_executable(${PROJECT_NAME} "./${EXECUTABLE_NAME}.cpp")
 # Link with the following libraries
-target_link_libraries(${PROJECT_NAME} palabos)
+    target_link_libraries(${PROJECT_NAME} palabos)
 if(ENABLE_MPI)
     target_link_libraries(${PROJECT_NAME} ${MPI_CXX_LIBRARIES})
 endif()
@@ -19,6 +19,11 @@ endif()
 cmake_minimum_required(VERSION 2.8.12)
 project(palabosExample)
 enable_language(CXX)
+
+find_package(SENSEI)
+if(SENSEI_FOUND)
+  message("FOUND SENSEI")
+endif()
 
 set(PALABOS_ROOT "$ENV{HOME}/palabos" CACHE PATH "Path to PALABOS root directory")
 set(BLOODFLOW_ROOT "$ENV{HOME}/BloodFlow" CACHE PATH "Path to BloodFlow root directory")
@@ -105,9 +110,18 @@ set_property(TARGET lammps PROPERTY
 #    lammps
 #)
 ###############################################################################
-add_executable(${EXECUTABLE_NAME} "./${EXECUTABLE_NAME}.cpp")
+#  SENSEI 
+
+include_directories(${SENSEI_DIR}/include)
+set(SRC
+   ${EXECUTABLE_NAME}.cpp
+   LPdataAdaptor.cpp
+   Bridge.cpp
+   ) 
+
+add_executable(${EXECUTABLE_NAME} ${SRC})
 # Link with the following libraries
-target_link_libraries(${EXECUTABLE_NAME} palabos lammps)
+target_link_libraries(${EXECUTABLE_NAME} palabos lammps sensei)
 if(ENABLE_MPI)
     target_link_libraries(${EXECUTABLE_NAME} ${MPI_CXX_LIBRARIES})
 endif()

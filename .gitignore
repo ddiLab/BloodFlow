@@ -1,7 +1,12 @@
 build/
 *.vti
-dump.*
 *.dat
-CMakeCache.txt
+dump.*
 CMakeFiles/
 *.vtk
+*.cobaltlog
+*.output
+*.error
+log.lammps
+examples/embolism/embolism
+examples/singleCell/cellFlow
