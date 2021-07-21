@@ -232,13 +232,6 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
 
    }
 
-   int rank,size;
-   MPI_Comm comm;
-
-   comm = GetCommunicator();
-   MPI_Comm_rank(comm, &rank);
-   MPI_Comm_size(comm, &size);
-
    mesh = pd;
    return 0;
 }
