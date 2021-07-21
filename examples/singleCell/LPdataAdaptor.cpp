@@ -208,17 +208,8 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
      SENSEI_ERROR("No mesh \"" << meshName << "\"")
      return -1; 
     }
-   //cout << "INSIDE GetMesh" << endl; 
   DInternals& internals = (*this->Internals);
-/* values;
-      for(int i = 0; i < 20 ; i++)
-      {
-      values = internals.AtomPositions->GetTuple3(i);
-      cout << values[0] << " " << values[1] << " " << values[2] << std::endl;
-      }
-*/
 
- //if (!internals.mesh){
    vtkPolyData *pd = vtkPolyData::New();
 
    if(!structureOnly){
@@ -240,6 +231,14 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
      pd->SetPolys(Triangles);
 
    }
+
+   int rank,size;
+   MPI_Comm comm;
+
+   comm = GetCommunicator();
+   MPI_Comm_rank(comm, &rank);
+   MPI_Comm_size(comm, &size);
+
    mesh = pd;
    return 0;
 }
