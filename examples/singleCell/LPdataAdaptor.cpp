@@ -92,9 +92,9 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
     internals.x = x;
 /*
     double * values;
-    for(int i = 0; i < 20 ; i++)
+    for(int i = 0; i < nlocal ; i++)
     {
-    values = internals.AtomPositions->GetTuple3(i);
+    values = internals.atompositions->gettuple3(i);
     cout << values[0] << " " << values[1] << " " << values[2] << std::endl;
     }
 */
@@ -149,9 +149,10 @@ if(internals.vertices)
  /* 
   for(int i = 0; i < nlocal; i++)
   {
-   x[i][2] += 0.05;
+   
+   cout << x[i][0] << "," << x[i][1] << "," << x[i][2] << "\"" << endl;
   }
-*/ 
+ */
 
 }
 //----------------------------------------------------------------------
@@ -182,7 +183,7 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
   metadata->ArrayCentering = {vtkDataObject::CELL};
   metadata->ArrayComponents = {1};
   metadata->ArrayType = {VTK_FLOAT};
-  metadata->StaticMesh = 0;  
+  metadata->StaticMesh = 1;  
 
   if (metadata->Flags.BlockDecompSet())
   {
@@ -206,8 +207,7 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
     }
    //cout << "INSIDE GetMesh" << endl; 
   DInternals& internals = (*this->Internals);
-/* 
- double * values;
+/* values;
       for(int i = 0; i < 20 ; i++)
       {
       values = internals.AtomPositions->GetTuple3(i);
@@ -216,13 +216,23 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
 */
 
  //vtkSmartPointer<vtkUnstructuredGrid> pts = vtkSmartPointer<vtkUnstructuredGrid>::New(); SmartPointer Doesn't Work with DownCasting
+ //if (!internals.mesh){
    vtkPolyData *pd = vtkPolyData::New();
-   //ug->GetPointData()->AddArray(internals.AtomPositions);
-   vtkPoints *pts = vtkPoints::New();
+   //vtkNew<vtkPolyData> pd;
+   if(!structureOnly){
+   //vtkPoints *pts = vtkPoints::New();
    //pts->SetNumberOfPoints(internals.nlocal*3);
-   pts->SetData(internals.AtomPositions);
-   pd->SetPoints(pts);
+   //pts->SetData(internals.AtomPositions);
+   vtkNew<vtkPoints> pts;
+   pts->InsertNextPoint(11, 13.1029, 19.8517);
+   pts->InsertNextPoint(11, 8.89708, 19.8517);
+   pts->InsertNextPoint(11, 8.89708, 22.1483);
+   pts->InsertNextPoint(13.1029, 14.4026, 21);
+   pts->InsertNextPoint(13.1029, 7.5974, 21);
+   pd->SetPoints(pts) ;
+   } 
 
+ //}
    mesh = pd;
    return 0;
 }
