@@ -6,14 +6,13 @@
 #include <vtkObjectFactory.h>
 #include <vtkSmartPointer.h>
 #include <vtkPolyData.h>
+#include <vtkImageData.h>
 #include <vtkUnstructuredGrid.h>/////////
 #include <vtkPointData.h>
 #include <vtkDoubleArray.h>
 #include <vtkIntArray.h>
 #include <vtkMultiBlockDataSet.h>
 #include <vtkCellArray.h>
-#include <vtkImageData.h>
-#include <vtkObjectFactory.h>
 #include "Bridge.h"
 #include <iostream>
 using namespace std;
@@ -38,6 +37,7 @@ struct LPDataAdaptor::DInternals
   //vtkDoubleArray *velocityNormDoubleArray;   
 // --------------------------------------
   double xsublo, ysublo, zsublo, xsubhi, ysubhi, zsubhi;
+  long NumBlocks;
   int nlocal, nghost;
   double **x;
   int *type;
@@ -65,7 +65,7 @@ void LPDataAdaptor::Initialize()
 //int nblocks = 1; 
 //this->Internals->NumBlocks = nblocks; 
   this->ReleaseData();//ReleaseData must be correctly defined!!
-  cout << "DataAdaptor: Initialize()" << endl;
+  //cout << "DataAdaptor: Initialize()" << endl;
 }
 //----------------------------------------------------------------------
 void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost, 
@@ -89,13 +89,14 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   if(!internals.AtomIDs)
   {
     internals.AtomIDs = vtkSmartPointer<vtkIntArray>::New();
-  } 
+  }
+*/ 
   if(!internals.vertices)
   {
     internals.vertices = vtkSmartPointer<vtkCellArray>::New();
   }
 
-*/  
+ 
 // atom coordinates
   if (internals.AtomPositions)
   {
@@ -106,6 +107,14 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
     internals.AtomPositions->SetName("positions");
     
     internals.x = x;
+/*
+    double * values;
+    for(int i = 0; i < 20 ; i++)
+    {
+    values = internals.AtomPositions->GetTuple3(i);
+    cout << values[0] << " " << values[1] << " " << values[2] << std::endl;
+    }
+*/
   }  
   else
   {
@@ -129,6 +138,15 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
     SENSEI_ERROR("Error. Internal AtomTypes structure not initialized")
   }
 */
+//vertices
+if(internals.vertices)
+  {
+    vtkIdType pid[1] = {0};
+    for( int i=0; i < nlocal; i++) {
+	internals.vertices->InsertNextCell (1, pid);
+	pid[0]++;
+    }
+  }
 
 // number of atoms
   internals.nlocal = nlocal;
@@ -141,30 +159,19 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   internals.xsubhi = xsubhi;
   internals.ysubhi = ysubhi;
   internals.zsubhi = zsubhi;
+<<<<<<< HEAD
 // timestep
   this->SetDataTimeStep(ntimestep);
 
+
   
 
- /* 
->>>>>>> 34ba72c204ac8bb5dea0c2f62e793c58ac76fe25
-  for(int i = 0; i < nlocal; i++)
-  {
-   x[i][2] += 0.05;
-  }
-*/ 
 
 }
- // Bridge::Initialize(
- // double lattice = VtkPalabos.Getlattice();  
- // plb::MultiTensorField3D<double, 3> VelocityArray=*computeVelocity(lattice);
- // plb::MultiTensorField3D<double, 3> VorticityArray=*computeVorticity(*computeVelocity(lattice));
- // plb::MultiScalarField3D<double> VelocityNormArray=*computeVelocityNorm(lattice));
 
 void LPDataAdaptor::AddPalabosData(vtkDoubleArray *velocityDoubleArray,
 		     		   vtkDoubleArray *vorticityDoubleArray,
 		    		   vtkDoubleArray *velocityNormDoubleArray)  
-				   // change mumti to tkdouble
    {
 
 	int nx = 20, ny = 20, nz = 40; 
@@ -174,28 +181,7 @@ void LPDataAdaptor::AddPalabosData(vtkDoubleArray *velocityDoubleArray,
 	internals.pb_velocityDoubleArray = velocityDoubleArray;
 	internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
 	internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;  
-	
 
-//	internals.pb_vorticityDoubleArray = vtkDoubleArray::New();
-//	internals.pb_vorticityDoubleArray->SetNumberOfComponents(3);
-  //      internals.pb_vorticityDoubleArray->SetNumberOfTuples(nx*ny*nz);
-
-//	internals.pb_velocityNormDoubleArray = vtkDoubleArray::New();
-//	internals.pb_velocityNormDoubleArray->SetNumberOfComponents(1);
-  //      internals.pb_velocityNormDoubleArray->SetNumberOfTuples(nx*ny*nz);
-
-     //:wq
-     //internals.pb_velocityDoubleArray-> 	
-//	internals.pb_velocityDoubleArray = velocityDoubleArray; 
-//	internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
-//	internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;
-
-// double *values; 
-// for(int i = 0; i < 20 ; i++)
-  // {
-  //   values = internals.pb_velocityDoubleArray->GetTuple3(i);      
- //    cout << values[0] << " " << values[1] << " " << values[2] << std::endl;
-  //     }
   }   
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
@@ -208,12 +194,14 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 {
 	int rank = 0;	
 	int nRanks = 1;
-	int nx = 20, ny = 20, nz =40; 
+	int nx = 20, ny = 20, nz =40; // pass these from palabos!!! 
 	MPI_Comm_rank(this->GetCommunicator(), &rank);
 	MPI_Comm_rank(this->GetCommunicator(), &nRanks); 	
 	//int nBlocks = this->Internals->BlockData.size(); 
+ 
 	metadata->MeshName = "fluid"; 
-
+ if(MeshName == "fluid")
+  {
 	metadata->MeshType = VTK_IMAGE_DATA;
 	metadata->BlockType=VTK_IMAGE_DATA; 
 	metadata->CoordinateType = VTK_DOUBLE;
@@ -233,7 +221,35 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
     	}
 	 metadata->BlockNumCells.push_back(nx * ny * nz * 3); 
 	 metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
-	 metadata->BlockCellArraySize.push_back(nx * ny * nz);  
+	 metadata->BlockCellArraySize.push_back(nx * ny * nz); 
+  } 
+
+  metadata->MeshName = "cells";
+if(MeshName == "cells")
+{   
+  metadata->MeshType = VTK_POLY_DATA;
+  metadata->BlockType = VTK_POLY_DATA;
+  metadata->CoordinateType = VTK_DOUBLE;
+  metadata->NumBlocks = nRanks;
+  metadata->NumBlocksLocal = {1};
+  //metadata->NumGhostCells = this->Internals->nghost;
+  metadata->NumArrays = 1;
+  metadata->ArrayName = {"data"};
+  metadata->ArrayCentering = {vtkDataObject::CELL};
+  metadata->ArrayComponents = {1};
+  metadata->ArrayType = {VTK_FLOAT};
+  metadata->StaticMesh = 0;  
+
+  if (metadata->Flags.BlockDecompSet())
+  {
+    metadata->BlockOwner.push_back(rank);
+    metadata->BlockIds.push_back(rank);
+  }
+  
+  metadata->BlockNumCells.push_back(this->Internals->nlocal/3);
+  metadata->BlockNumPoints.push_back(this->Internals->nlocal*3);
+  metadata->BlockCellArraySize.push_back(this->Internals->nlocal);
+ 
    return 0;
 }
 //----------------------------------------------------------------------
@@ -274,7 +290,7 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
    mesh = velocity;
    mesh = vorticity; 
    mesh = velocityNorm; 
-  // fluid->Delete();  
+
    return 0;
 }
 //----------------------------------------------------------------------
@@ -341,3 +357,4 @@ int LPDataAdaptor::ReleaseData()
 }
 
 }
+

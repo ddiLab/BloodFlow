@@ -374,7 +374,7 @@ int main(int argc, char* argv[]) {
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
     //using namespace opts;
     std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
-    Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);
+    Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!! 
     /*Options ops(argc, argv);
     ops
     #ifdef ENABLE_SENSEI
@@ -390,8 +390,8 @@ int main(int argc, char* argv[]) {
             40.         // lz
     );
     const T maxT    =100;//6.6e4; //(T)0.01;
-    plint iSave =10;//2000;//10;
-    plint iCheck = 10*iSave;
+    //plint iSave =10;//2000;//10;
+    //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
 
     LammpsWrapper wrapper(argv,global::mpi().getGlobalCommunicator());
@@ -445,13 +445,12 @@ int main(int argc, char* argv[]) {
     double ysubhi = wrapper.lmp->domain->subhi[1];
     double zsublo = wrapper.lmp->domain->sublo[2];
     double zsubhi = wrapper.lmp->domain->subhi[2];
+    
     plint nlocal = wrapper.lmp->atom->nlocal;
     long ntimestep = wrapper.lmp->update->ntimestep; 
     int *type = wrapper.lmp->atom->type;
     int nghost = wrapper.lmp->atom->nghost;
     long time = 0; 
-   // ---------------------
-   // Palabos
  
     for (plint iT=0;iT<4e3;iT++){
         lattice.collideAndStream();
@@ -460,17 +459,6 @@ int main(int argc, char* argv[]) {
     global::timer("mainloop").start();
    
    for (plint iT=0; iT<maxT; ++iT) {
-    //for (plint iT=0; iT<2; ++iT) {
-        if (iT%iSave ==0 && iT >0){
-            pcout<<"Saving VTK file..."<<endl;
-            writeVTK(lattice, parameters, iT);
-	    VtkPalabos(lattice, parameters, iT);
-        }
-        if (iT%iCheck ==0 && iT >0){
-            pcout<<"Timestep "<<iT<<" Saving checkPoint file..."<<endl;
-            saveBinaryBlock(lattice,"checkpoint.dat");
-        }
-       
         // lammps to calculate force
         wrapper.execCommand("run 1 pre no post no");
         // Clear and spread fluid force

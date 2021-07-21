@@ -92,7 +92,6 @@ void Analyze(long ntimestep)
 }
 void Finalize()
    {
-   cout << "SENSEI: Finalize()" << endl;
    GlobalAnalysisAdaptor->Finalize();
    GlobalAnalysisAdaptor = NULL;
    GlobalDataAdaptor = NULL;
