@@ -358,6 +358,9 @@ int main(int argc, char* argv[]) {
     long ntimestep = wrapper.lmp->update->ntimestep; 
     int *type = wrapper.lmp->atom->type;
     int nghost = wrapper.lmp->atom->nghost;
+    int **anglelist = wrapper.lmp->neighbor->anglelist;
+    int nanglelist = wrapper.lmp->neighbor->nanglelist;
+    
     long time = 0; 
  
     for (plint iT=0;iT<4e3;iT++){
@@ -391,7 +394,7 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi);
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist);
         Bridge::Analyze(time++);
     }
 
