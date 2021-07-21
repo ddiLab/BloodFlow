@@ -1,10 +1,12 @@
 #pragma once
-
+#include "palabos3D.h"
+#include "palabos3D.hh"
 #include <DataAdaptor.h>
 #include <vtkDoubleArray.h>
 #include <vtkIntArray.h>
-
-namespace senseiLP
+#include <vtkImageData.h>
+using namespace plb; 
+namespace senseiLP 
 {
 class LPDataAdaptor : public sensei::DataAdaptor
 {
@@ -18,13 +20,16 @@ public:
   void AddLAMMPSData(double **x, long ntimestep, int nghost, int nlocal, double xsublo, double xsubhi,
                      double ysublo, double ysubhi, double zsublo,
                      double zsubhi);
-
+ 
+  void AddPalabosData(vtkDoubleArray *velocityDoubleArray,
+                      vtkDoubleArray *vorticityDoubleArray,
+                      vtkDoubleArray *velocityNormDoubleArray);
 // SENSEI API
   int GetNumberOfMeshes(unsigned int &numMeshes) override;
 
   int GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) override;
 
-  int GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh) override;
+  int GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh) override ;
 
   int GetMesh(const std::string &meshName, bool structureOnly, vtkCompositeDataSet *&mesh) override;
 
