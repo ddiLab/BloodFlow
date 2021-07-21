@@ -9,6 +9,7 @@
 #include <vtkIntArray.h>
 #include <vtkMultiBlockDataSet.h>
 #include <vtkCellArray.h>
+#include <vtkTriangle.h>
 
 #include <iostream>
 using namespace std;
@@ -103,16 +104,8 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   }
 
 // anglelists
-  if (internals.anglelist)
-  {
     internals.anglelist = anglelist;
-    internals.anglelist = nanglelist;
-  }
-  else
-  {
-    SENSEI_ERROR("Error. Internal Anglelist Array not initialized")
-  }
-
+    internals.nanglelist = nanglelist;
 /*  
 // atom types
 
@@ -225,27 +218,26 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
       }
 */
 
- //vtkSmartPointer<vtkUnstructuredGrid> pts = vtkSmartPointer<vtkUnstructuredGrid>::New(); SmartPointer Doesn't Work with DownCasting
  //if (!internals.mesh){
    vtkPolyData *pd = vtkPolyData::New();
 
    if(!structureOnly){
-   vtkPoints *pts = vtkPoints::New();
-   pts->SetNumberOfPoints(internals.nlocal*3);
-   pts->SetData(internals.AtomPositions);
+     vtkPoints *pts = vtkPoints::New();
+     pts->SetNumberOfPoints(internals.nlocal*3);
+     pts->SetData(internals.AtomPositions);
 
-   vtkCellArray *Triangles = vtkCellArray::New();
-   for (int i = 0 ; i < internals.nanglelist ; i++)
-   {
-     vtkTriangle *Triangle = vtkTriangle::New();
-     Triangle->GetPointIds()->SetId(0, internals.anglelist[n][0]);
-     Triangle->GetPointIds()->SetId(1, internals.anglelist[n][1]);
-     Triangle->GetPointIds()->SetId(2, internals.anglelist[n][2]);
-     Triangles->InsertNextCell(Triangle);
-   }
+     vtkCellArray *Triangles = vtkCellArray::New();
+     for (int i = 0 ; i < internals.nanglelist ; i++)
+     {
+       vtkTriangle *Triangle = vtkTriangle::New();
+       Triangle->GetPointIds()->SetId(0, internals.anglelist[i][0]);
+       Triangle->GetPointIds()->SetId(1, internals.anglelist[i][1]);
+       Triangle->GetPointIds()->SetId(2, internals.anglelist[i][2]);
+       Triangles->InsertNextCell(Triangle);
+     }
 
-   pd->SetPoints(pts);
-   pd->SetPolys(Triangles);
+     pd->SetPoints(pts);
+     pd->SetPolys(Triangles);
 
    }
    mesh = pd;

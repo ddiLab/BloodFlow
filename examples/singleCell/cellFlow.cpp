@@ -38,6 +38,7 @@
 #include "library.h"
 #include "lammpsWrapper.h"
 #include "update.h"
+#include "neighbor.h"
 
 #include "latticeDecomposition.h"
 //#include "nearestTwoNeighborLattices3D.h"
@@ -360,7 +361,6 @@ int main(int argc, char* argv[]) {
     int nghost = wrapper.lmp->atom->nghost;
     int **anglelist = wrapper.lmp->neighbor->anglelist;
     int nanglelist = wrapper.lmp->neighbor->nanglelist;
-    
     long time = 0; 
  
     for (plint iT=0;iT<4e3;iT++){
