@@ -22,12 +22,13 @@ struct LPDataAdaptor::DInternals
   vtkSmartPointer<vtkIntArray> AtomTypes;
   vtkSmartPointer<vtkIntArray> AtomIDs;
   vtkSmartPointer<vtkCellArray> vertices;
+ 
   double xsublo, ysublo, zsublo, xsubhi, ysubhi, zsubhi;
   long NumBlocks;
-  int nlocal, nghost;
+  int nlocal, nghost, nanglelist;
   double **x;
   int *type;
-  int *id;
+  int **anglelist;
 };
 //----------------------------------------------------------------------
 senseiNewMacro(LPDataAdaptor);
@@ -50,7 +51,7 @@ void LPDataAdaptor::Initialize()
 void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost, 
                                   int nlocal, double xsublo, double xsubhi,
                                   double ysublo, double ysubhi, double zsublo,
-                                  double zsubhi)
+                                  double zsubhi, int **anglelist, int nanglelist)
 
 {
 
@@ -65,16 +66,17 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   { 
     internals.AtomTypes = vtkSmartPointer<vtkIntArray>::New();
   }
+
   if(!internals.AtomIDs)
   {
     internals.AtomIDs = vtkSmartPointer<vtkIntArray>::New();
   }
-*/ 
+
   if(!internals.vertices)
   {
     internals.vertices = vtkSmartPointer<vtkCellArray>::New();
   }
-
+*/
  
 // atom coordinates
   if (internals.AtomPositions)
@@ -99,6 +101,18 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   {
     SENSEI_ERROR("Error. Internal AtomPositions structure not initialized")
   }
+
+// anglelists
+  if (internals.anglelist)
+  {
+    internals.anglelist = anglelist;
+    internals.anglelist = nanglelist;
+  }
+  else
+  {
+    SENSEI_ERROR("Error. Internal Anglelist Array not initialized")
+  }
+
 /*  
 // atom types
 
@@ -116,7 +130,7 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   {
     SENSEI_ERROR("Error. Internal AtomTypes structure not initialized")
   }
-*/
+
 //vertices
 if(internals.vertices)
   {
@@ -126,7 +140,7 @@ if(internals.vertices)
 	pid[0]++;
     }
   }
-
+*/
 // number of atoms
   internals.nlocal = nlocal;
   internals.nghost = nghost;
@@ -213,11 +227,22 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
 
  //vtkSmartPointer<vtkUnstructuredGrid> pts = vtkSmartPointer<vtkUnstructuredGrid>::New(); SmartPointer Doesn't Work with DownCasting
    vtkPolyData *pd = vtkPolyData::New();
-   //ug->GetPointData()->AddArray(internals.AtomPositions);
    vtkPoints *pts = vtkPoints::New();
-   //pts->SetNumberOfPoints(internals.nlocal*3);
+   pts->SetNumberOfPoints(internals.nlocal*3);
    pts->SetData(internals.AtomPositions);
+
+   vtkCellArray *Triangles = vtkCellArray::New();
+   for (int i = 0 ; i < internals.nanglelist ; i++)
+   {
+     vtkTriangle *Triangle = vtkTriangle::New();
+     Triangle->GetPointIds()->SetId(0, internals.anglelist[n][0]);
+     Triangle->GetPointIds()->SetId(1, internals.anglelist[n][1]);
+     Triangle->GetPointIds()->SetId(2, internals.anglelist[n][2]);
+     Triangles->InsertNextCell(Triangle);
+   }
+
    pd->SetPoints(pts);
+   pd->SetPolys(Triangles);
 
    mesh = pd;
    return 0;

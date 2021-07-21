@@ -25,11 +25,11 @@ void Initialize(MPI_Comm world, const std::string& config_file){
 void SetData(double **x, long ntimestep, int nghost, 
              int nlocal, double xsublo, double xsubhi, 
              double ysublo, double ysubhi, double zsublo, 
-             double zsubhi)
+             double zsubhi, int **anglelist, int nanglelist)
 {
    //cout << "SENSEI: SetData()" << endl;
    GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, xsublo, xsubhi, 
-                                    ysublo, ysubhi, zsublo, zsubhi);
+                                    ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist);
    
 }
 void Analyze(long ntimestep)

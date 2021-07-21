@@ -19,7 +19,7 @@ public:
   void AddLAMMPSData(double **x, long ntimestep, int nghost, 
                      int nlocal, double xsublo, double xsubhi,
                      double ysublo, double ysubhi, double zsublo,
-                     double zsubhi);
+                     double zsubhi, int **anglelist, int nanglelist);
 
 // SENSEI API (Virtual functions overridden from sensei/DataAdaptor.h)
   int GetNumberOfMeshes(unsigned int &numMeshes) override;
