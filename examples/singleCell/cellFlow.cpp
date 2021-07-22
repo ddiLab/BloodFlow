@@ -44,6 +44,13 @@
 //#include "nearestTwoNeighborLattices3D.h"
 //#include "senseiConfig.h"
 //#ifdef ENABLE_SENSEI
+#include <vtkVersion.h>
+#include <vtkImageData.h>
+#include <vtkXMLImageDataWriter.h>
+#include <vtkPointData.h>
+#include <vtkDoubleArray.h>
+#include <vtkSmartPointer.h>
+#include <vtkUniformGrid.h> 
 #include "Bridge.h"
 //#endif
 
@@ -264,6 +271,88 @@ void writeVTK(MultiBlockLattice3D<T,DESCRIPTOR>& lattice,
     vtkOut.writeData<3,float>(*computeVorticity(*computeVelocity(lattice)), "vorticity", 1./dt);
 }
 
+void VtkPalabos(MultiBlockLattice3D<T, DESCRIPTOR>& lattice,
+    IncomprFlowParam<T> const& parameters,  plint iter)
+{
+
+	MultiTensorField3D<double, 3> velocityArray=*computeVelocity(lattice);
+ 	MultiTensorField3D<double, 3> VorticityArray=*computeVorticity(*computeVelocity(lattice));
+	MultiScalarField3D<double> VelocityNormArray=*computeVelocityNorm(lattice);
+
+ 	pcout << VelocityNormArray << endl; 
+	int  nx = parameters.getNx();  
+	int  ny = parameters.getNy();  
+	int  nz = parameters.getNz();
+  
+	vtkSmartPointer<vtkImageData> imageData =
+        	vtkSmartPointer<vtkImageData>::New();
+
+	imageData->SetDimensions(nx, ny, nz);
+
+	//vtkSmartPointer<vtkDoubleArray> VelocityValues =
+        //	vtkSmartPointer<vtkDoubleArray>::New();
+	
+	vtkDoubleArray *VelocityValues = vtkDoubleArray::New(); 	 
+	
+	VelocityValues->SetNumberOfComponents(3);
+	VelocityValues->SetNumberOfTuples(nx * ny * nz); 
+
+	//vtkSmartPointer<vtkDoubleArray> VorticityValues =
+          //      vtkSmartPointer<vtkDoubleArray>::New();
+      
+	vtkDoubleArray *VorticityValues = vtkDoubleArray::New();
+        
+	VorticityValues->SetNumberOfComponents(3);
+        VorticityValues->SetNumberOfTuples(nx * ny * nz);
+
+//	vtkSmartPointer<vtkDoubleArray> VelocityNormValues =
+  //              vtkSmartPointer<vtkDoubleArray>::New();
+
+	vtkDoubleArray *VelocityNormValues = vtkDoubleArray::New();
+	
+        VelocityNormValues->SetNumberOfComponents(1);
+        VelocityNormValues->SetNumberOfTuples(nx * ny * nz);
+ 
+	for (int i=0; i<nz; i++)  
+	{
+ 		for (int j=0; j<ny; j++)
+        	{
+                	for (int k=0; k<nx; k++) 
+                	{	
+			Array<double,3> vel = velocityArray.get(k,j,i); 
+			Array<double,3> vor = VorticityArray.get(k,j,i); 
+			double norm = VelocityNormArray.get(k,j,i);
+  
+			int index = j * nx + k + i * nx * ny; 
+   
+			VelocityValues->SetTuple3(index,vel[0],vel[1],vel[2]);
+			VorticityValues->SetTuple3(index,vor[0],vor[1],vor[2]);
+			VelocityNormValues->SetTuple1(index,norm);	  
+			}
+		}
+	}
+
+
+	imageData->GetPointData()->AddArray(VelocityValues);
+		VelocityValues->SetName("Velocity");
+
+	imageData->GetPointData()->AddArray(VorticityValues);
+                VorticityValues->SetName("Vorticity");
+
+	
+        imageData->GetPointData()->AddArray(VelocityNormValues); // ass these lines to add Array pb_vel
+                VelocityNormValues->SetName("Velocity Norm");
+
+//	vtkSmartPointer<vtkXMLImageDataWriter> writer =
+//		vtkSmartPointer<vtkXMLImageDataWriter>::New();
+
+//	char filename[64];
+//      sprintf (filename, "VtkDataStruc%d.vti", iter);
+
+//	writer->SetInputData(imageData);
+//	writer->SetFileName(filename);
+//	writer->Write();
+}
 
 
 int main(int argc, char* argv[]) {
@@ -347,14 +436,15 @@ int main(int argc, char* argv[]) {
       //coupling between lammps and palabos
     Array<T,3> force(0,0.,1e-7);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
+   // LAMMPS
+    double **x = wrapper.lmp->atom->x;
+    double xsublo = wrapper.lmp->domain->sublo[0];
+    double xsubhi = wrapper.lmp->domain->subhi[0];
+    double ysublo = wrapper.lmp->domain->sublo[1];
+    double ysubhi = wrapper.lmp->domain->subhi[1];
+    double zsublo = wrapper.lmp->domain->sublo[2];
+    double zsubhi = wrapper.lmp->domain->subhi[2];
     
-    T **x = wrapper.lmp->atom->x;
-    T xsublo = wrapper.lmp->domain->sublo[0];
-    T xsubhi = wrapper.lmp->domain->subhi[0];
-    T ysublo = wrapper.lmp->domain->sublo[1];
-    T ysubhi = wrapper.lmp->domain->subhi[1];
-    T zsublo = wrapper.lmp->domain->sublo[2];
-    T zsubhi = wrapper.lmp->domain->subhi[2];
     plint nlocal = wrapper.lmp->atom->nlocal;
     long ntimestep = wrapper.lmp->update->ntimestep; 
     int *type = wrapper.lmp->atom->type;
@@ -368,19 +458,8 @@ int main(int argc, char* argv[]) {
     }
     T timeduration = T();
     global::timer("mainloop").start();
-
-    for (plint iT=0; iT<maxT; ++iT) {
-/*
-    //for (plint iT=0; iT<2; ++iT) {
-        if (iT%iSave ==0 && iT >0){
-            pcout<<"Saving VTK file..."<<endl;
-            writeVTK(lattice, parameters, iT);
-        }
-        if (iT%iCheck ==0 && iT >0){
-            pcout<<"Timestep "<<iT<<" Saving checkPoint file..."<<endl;
-            saveBinaryBlock(lattice,"checkpoint.dat");
-        }
-*/
+   
+   for (plint iT=0; iT<maxT; ++iT) {
         // lammps to calculate force
         wrapper.execCommand("run 1 pre no post no");
         // Clear and spread fluid force
@@ -394,8 +473,13 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist);
+        MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice);
+        MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
+        MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice);
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
+			            velocityArray, vorticityArray, velocityNormArray);  
         Bridge::Analyze(time++);
+	
     }
 
     timeduration = global::timer("mainloop").stop();

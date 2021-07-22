@@ -8,6 +8,7 @@ CMakeFiles/
 *.cobaltlog
 *.output
 *.error
+*.jpg
 log.lammps
 examples/embolism/embolism
 examples/singleCell/cellFlow
