@@ -138,10 +138,34 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 	int nx = 20, ny = 20, nz =40; // pass these from palabos!!! 
 	MPI_Comm_rank(this->GetCommunicator(), &rank);
 	MPI_Comm_rank(this->GetCommunicator(), &nRanks); 	
- 
-	metadata->MeshName = "fluid"; 
- if(MeshName == "fluid")
+  if (id == 0)
   {
+    metadata->MeshName = "cells";
+    metadata->MeshType = VTK_POLY_DATA;
+    metadata->BlockType = VTK_POLY_DATA;
+    metadata->CoordinateType = VTK_DOUBLE;
+    metadata->NumBlocks = nRanks;
+    metadata->NumBlocksLocal = {1};
+    //metadata->NumGhostCells = this->Internals->nghost;
+    metadata->NumArrays = 1;
+    metadata->ArrayName = {"data"};
+    metadata->ArrayCentering = {vtkDataObject::CELL};
+    metadata->ArrayComponents = {1};
+    metadata->ArrayType = {VTK_FLOAT};
+    metadata->StaticMesh = 1;  
+
+    if (metadata->Flags.BlockDecompSet())
+    {
+      metadata->BlockOwner.push_back(rank);
+      metadata->BlockIds.push_back(rank);
+    }
+  
+    metadata->BlockNumCells.push_back(this->Internals->nlocal/3);
+    metadata->BlockNumPoints.push_back(this->Internals->nlocal*3);
+    metadata->BlockCellArraySize.push_back(this->Internals->nlocal);
+  else
+  {
+    metadata->MeshName = "fluid"; 
 	metadata->MeshType = VTK_IMAGE_DATA;
 	metadata->BlockType=VTK_IMAGE_DATA; 
 	metadata->CoordinateType = VTK_DOUBLE;
@@ -162,35 +186,10 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 	 metadata->BlockNumCells.push_back(nx * ny * nz * 3); 
 	 metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
 	 metadata->BlockCellArraySize.push_back(nx * ny * nz); 
-  } 
-
-  metadata->MeshName = "cells";
-if(MeshName == "cells")
-{   
-  metadata->MeshType = VTK_POLY_DATA;
-  metadata->BlockType = VTK_POLY_DATA;
-  metadata->CoordinateType = VTK_DOUBLE;
-  metadata->NumBlocks = nRanks;
-  metadata->NumBlocksLocal = {1};
-  //metadata->NumGhostCells = this->Internals->nghost;
-  metadata->NumArrays = 1;
-  metadata->ArrayName = {"data"};
-  metadata->ArrayCentering = {vtkDataObject::CELL};
-  metadata->ArrayComponents = {1};
-  metadata->ArrayType = {VTK_FLOAT};
-  metadata->StaticMesh = 1;  
-
-  if (metadata->Flags.BlockDecompSet())
-  {
-    metadata->BlockOwner.push_back(rank);
-    metadata->BlockIds.push_back(rank);
   }
+  }
+    return 0;
   
-  metadata->BlockNumCells.push_back(this->Internals->nlocal/3);
-  metadata->BlockNumPoints.push_back(this->Internals->nlocal*3);
-  metadata->BlockCellArraySize.push_back(this->Internals->nlocal);
- 
-   return 0;
 }
 }
 //----------------------------------------------------------------------
