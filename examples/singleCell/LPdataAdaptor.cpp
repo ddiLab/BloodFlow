@@ -120,26 +120,28 @@ void LPDataAdaptor::AddPalabosData(vtkDoubleArray *velocityDoubleArray,
 
 	
 	internals.pb_velocityDoubleArray = velocityDoubleArray;
-	ke -DSENSEI_DIR=/home/murphyc/install/lib/cmake/ -C /home/murphyc/BloodFlow/sites/cooley.cmake ../internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
+	internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
 	internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;  
 
 }   
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
 {
-   numMeshes = 1;
+   numMeshes = 2;
    return 0;
 }
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) 
 {
-	int rank = 0;	
+    int rank = 0;	
 	int nRanks = 1;
 	int nx = 20, ny = 20, nz =40; // pass these from palabos!!! 
 	MPI_Comm_rank(this->GetCommunicator(), &rank);
 	MPI_Comm_rank(this->GetCommunicator(), &nRanks); 	
+
   if (id == 0)
   {
+    cout << "TESTING!!!!!!" << endl;
     metadata->MeshName = "cells";
     metadata->MeshType = VTK_POLY_DATA;
     metadata->BlockType = VTK_POLY_DATA;
@@ -147,11 +149,13 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
     metadata->NumBlocks = nRanks;
     metadata->NumBlocksLocal = {1};
     //metadata->NumGhostCells = this->Internals->nghost;
+    
     metadata->NumArrays = 1;
     metadata->ArrayName = {"data"};
     metadata->ArrayCentering = {vtkDataObject::CELL};
     metadata->ArrayComponents = {1};
     metadata->ArrayType = {VTK_FLOAT};
+    
     metadata->StaticMesh = 1;  
 
     if (metadata->Flags.BlockDecompSet())
@@ -163,6 +167,8 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
     metadata->BlockNumCells.push_back(this->Internals->nlocal/3);
     metadata->BlockNumPoints.push_back(this->Internals->nlocal*3);
     metadata->BlockCellArraySize.push_back(this->Internals->nlocal);
+  }
+ 
   else
   {
     metadata->MeshName = "fluid"; 
@@ -187,10 +193,8 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 	 metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
 	 metadata->BlockCellArraySize.push_back(nx * ny * nz); 
   }
-  }
-    return 0;
   
-}
+  return 0;
 }
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh)
@@ -204,6 +208,7 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
      return -1; 
     }
 */
+ 
   DInternals& internals = (*this->Internals);
 
    vtkPolyData *pd = vtkPolyData::New();
@@ -212,7 +217,7 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
      vtkPoints *pts = vtkPoints::New();
      pts->SetNumberOfPoints(internals.nlocal*3);
      pts->SetData(internals.AtomPositions);
-
+     cout <<"TESTING 2 !!! " << endl;
      vtkCellArray *Triangles = vtkCellArray::New();
      for (int i = 0 ; i < internals.nanglelist ; i++)
      {
@@ -227,17 +232,13 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
      pd->SetPolys(Triangles);
 
    }
+   mesh = pd;
  }
  else if(meshName == "fluid")
  {
-   int nx = 20, ny = 20, nz = 40; 
+   int nx = 20, ny = 20, nz = 40;
    DInternals& internals = (*this->Internals);
    mesh = nullptr; 
-//   if((meshName != "cells" || meshName != "fluid" ))
- //  {
-  //   SENSEI_ERROR("No mesh \"" << meshName << "\"")
-   //  return -1; 
-  // }
  
   cout << "Inside get mesh " << meshName << endl;
 
