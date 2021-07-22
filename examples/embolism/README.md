@@ -1,11 +1,11 @@
 # How to run the embolism code
 
 The embolism example is tested with the following versions:
-- Palabos (https://gitlab.com/unigespc/palabos) \
+- Palabos (https://gitlab.com/unigespc/palabos): \
 `git clone git@gitlab.com:unigespc/palabos.git` (clone with ssh)\
 `git clone https://gitlab.com/unigespc/palabos.git` (clone with https)\
 `git checkout e960674cea38515ae3749218c314a9e1a3c6c140` (update to the version we know works)
-- LAMMPS  (https://github.com/lammps/lammps) \
+- LAMMPS  (https://github.com/lammps/lammps): \
 `git clone git@github.com:lammps/lammps.git` (clone with ssh)\
 `git clone https://github.com/lammps/lammps.git` (clone with https)\
 `git checkout e498e8ad7f24fd7ff87313670db7873703c1fd3f` (update to the version we know works)
@@ -15,7 +15,8 @@ The embolism example is tested with the following versions:
 `git clone git@github.com:ddiLab/BloodFlow.git` (clone with ssh)\
 `git clone https://github.com/ddiLab/BloodFlow.git` (clone with https)\
 2. Embolism needs several files to be copied from `BloodFlow/rbc` to `lammps/src`. These all begin with fix. \
-When in `BloodFlow/rbc`: `cp fix* path/to/lammps/src`
+When in `BloodFlow/rbc`: \
+ `cp fix* path/to/lammps/src`
 3. The embolism.sh executable file needs to have a directory path updated. This file is in `BloodFlow/examples/embolism`. \
 `EMB_PATH=path/to/your/embolism` \
 **NOTE:** This step is only needed for running embolism on Cooley.\

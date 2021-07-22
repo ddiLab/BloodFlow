@@ -1,12 +1,14 @@
 build/
 *.vti
 *.dat
+*.pvd
 dump.*
 CMakeFiles/
 *.vtk
 *.cobaltlog
 *.output
 *.error
+*.jpg
 log.lammps
 examples/embolism/embolism
 examples/singleCell/cellFlow
