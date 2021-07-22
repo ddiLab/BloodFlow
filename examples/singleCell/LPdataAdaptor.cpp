@@ -113,17 +113,17 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
 void LPDataAdaptor::AddPalabosData(vtkDoubleArray *velocityDoubleArray,
 		     		   vtkDoubleArray *vorticityDoubleArray,
 		    		   vtkDoubleArray *velocityNormDoubleArray)  
-   {
+{
 
 	int nx = 20, ny = 20, nz = 40; 
 	DInternals& internals = (*this->Internals);
 
 	
 	internals.pb_velocityDoubleArray = velocityDoubleArray;
-	internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
+	ke -DSENSEI_DIR=/home/murphyc/install/lib/cmake/ -C /home/murphyc/BloodFlow/sites/cooley.cmake ../internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
 	internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;  
 
-  }   
+}   
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
 {
@@ -154,11 +154,11 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 	metadata->ArrayCentering = {vtkDataObject::CELL};
 	metadata->StaticMesh = 1; 
 
-	if (metadata->Flags.BlockDecompSet())
-    	{
-     	  metadata->BlockOwner.push_back(rank);
-     	  metadata->BlockIds.push_back(rank);
-    	}
+    if (metadata->Flags.BlockDecompSet())
+    {
+      metadata->BlockOwner.push_back(rank);
+      metadata->BlockIds.push_back(rank);
+    }
 	 metadata->BlockNumCells.push_back(nx * ny * nz * 3); 
 	 metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
 	 metadata->BlockCellArraySize.push_back(nx * ny * nz); 
@@ -191,6 +191,7 @@ if(MeshName == "cells")
   metadata->BlockCellArraySize.push_back(this->Internals->nlocal);
  
    return 0;
+}
 }
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh)
@@ -300,15 +301,6 @@ int LPDataAdaptor::AddArray(vtkDataObject* mesh, const std::string &meshName,
 //----------------------------------------------------------------------
 int LPDataAdaptor::AddArrays(vtkDataObject* mesh, const std::string &meshName, int association, const std::vector<std::string> &arrayName)
 {
-  // DInternals& internals = (*this->Internals);
-
-//   vtkImageData *imageData = vtkImageData::New();
-
- //  imageData->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
-   //            internals.pb_velocityDoubleArray->SetName("velocity");
-
-
-   
    return 0;
 }
 //----------------------------------------------------------------------

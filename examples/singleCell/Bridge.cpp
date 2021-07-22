@@ -22,8 +22,6 @@ void Initialize(MPI_Comm world, const std::string& config_file){
    GlobalAnalysisAdaptor->Initialize(config_file);
 
 }
-   GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, xsublo, xsubhi, 
-                                    ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist);
 void SetData(double **x, long ntimestep, int nghost, 
              int nlocal, double xsublo, double xsubhi, 
              double ysublo, double ysubhi, double zsublo, 
