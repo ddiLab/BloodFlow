@@ -1,0 +1,42 @@
+# 2d SRD test: big + small particles
+log log.lammps
+units		lj
+atom_style	molecular
+
+#atom_style	atomic
+atom_modify	first cells	# treat big as first group atom list
+dimension	3
+boundary 	p p	f	# x periodic y fix z periodic
+
+# create big particles with sigma 1.0
+
+lattice		sc 1 # reduced density: factor^2=1/0.4
+bond_style      wlc/pow 
+angle_style     rbc
+dihedral_style  bend
+read_data        in.one_cell  #in.one_cell_lb_200_nm_chute 
+
+pair_style soft 1 
+pair_coeff * * 1e-6 1.0
+
+group           cells type 1 
+
+reset_timestep	0 # reset timestep to 0
+
+neighbor	0.3 bin	    # create neighbor list: set skin=0.3, using bin style
+neigh_modify	delay 0 every 1 check no exclude molecule/intra cells #exclude group core core 
+comm_modify cutoff 5
+
+timestep    100
+
+fix 5 all fcm 1
+fix 4 all wall/reflect zlo EDGE zhi EDGE
+
+thermo  1
+thermo_style custom step temp ebond eangle edihed fmax
+thermo_modify flush yes
+
+dump    1 all xyz 500 dump.rbc.xyz #id mol type x y z 
+
+run 1
+
