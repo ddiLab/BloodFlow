@@ -11,4 +11,4 @@
 5. While in the newly created build directory, run the following command (install directory is created when building Sensei): `cmake -DSENSEI_DIR=/path/to/install/lib/cmake/ -C /path/to/BloodFlow/sites/personal.cmake ../`\
 Next run: `make -j8`
 
-6. Return to `BloodFlow/examples/singleCell` and run: mpirun -n 4 cellFlow in.lmp4cell
+6. Return to `BloodFlow/examples/singleCell` and run: mpirun -n 1 cellFlow in.lmp4cell
