@@ -8,7 +8,7 @@ BloodFlow has several directories and text files, each with a specific purpose. 
 It attempts to explain code developed by Palabos that someone new to the software may not understand, even when being proficient in c++.
 
 2. SENSEI.md : Instructions on how to build SENSEI on Cooley and how to run an example called oscillator\
-   [SenseiPersonal.md](BloodFlow/SenseiPersonal.md)
+   [SenseiPersonal.md](SenseiPersonal.md)
 
 3. examples (directory) : Several examples exist here to begin getting familiar to running such code. 
 Embolism contains a README file with instructions for running its code on both Cooley and one's personnal computer.
