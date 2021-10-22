@@ -284,8 +284,8 @@ int main(int argc, char* argv[]) {
             20.,        // ly
             80.         // lz
     );
-    const T maxT    =100;//6.6e4; //(T)0.01;
-    plint iSave =10;//2000;//10;
+    const T maxT    =10000;//6.6e4; //(T)0.01;
+    plint iSave =50;//2000;//10;
     plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
 

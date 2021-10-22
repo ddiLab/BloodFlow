@@ -434,7 +434,7 @@ int main(int argc, char* argv[]) {
     // Loop over main time iteration.
     util::ValueTracer<T> converge(parameters.getLatticeU(),parameters.getResolution(),1.0e-3);
       //coupling between lammps and palabos
-    Array<T,3> force(0,0.,1e-7);
+    Array<T,3> force(0,0.,1e-6);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
    // LAMMPS
     double **x = wrapper.lmp->atom->x;
