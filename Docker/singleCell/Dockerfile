@@ -187,8 +187,10 @@ RUN cmake -S ${SRCDIR}/BloodFlow/examples/singleCell \
 WORKDIR ${BUILDDIR}/singleCell
 RUN make -j 8
 
+
 ############################
 ####    Final settings   ###
 ############################
 
 ENV LD_LIBRARY_PATH=${INSTALLDIR}/vtk/lib:${INSTALLDIR}/adios/lib:$LD_LIBRARY_PATH
+
