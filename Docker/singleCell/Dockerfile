@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 SHELL ["/bin/bash", "-c"]
 
 # directory structure for the build
-ENV BASEDIR=/embolism
+ENV BASEDIR=/singleCell
 ENV SRCDIR=$BASEDIR/src
 ENV INSTALLDIR=$BASEDIR/install
 ENV BUILDDIR=$BASEDIR/build
@@ -18,6 +18,7 @@ RUN apt-get update
 RUN apt-get install -y \
     git \
     build-essential \
+    python3-dev \
     libmpich-dev \
     wget
 
@@ -66,9 +67,6 @@ RUN make -j8 install
 ##########################################
 ###            ADIOS 2.7.1             ###
 ##########################################
-
-# python needed
-RUN apt-get install -y python3-dev 
 
 # clone ADIOS2
 WORKDIR ${SRCDIR}
@@ -126,9 +124,8 @@ RUN make -j8
 WORKDIR ${BUILDDIR}/sensei
 RUN make -j8 install
 
-
 ###################################
-###         Embolism            ###
+###     BloodFlow repo          ###
 ###################################
 
 WORKDIR ${SRCDIR}
@@ -151,4 +148,42 @@ WORKDIR ${SRCDIR}
 RUN git clone https://github.com/lammps/lammps.git && \
     cd lammps && \
     git checkout e960674cea38515ae3749218c314a9e1a3c6c140
+
+###################################
+###       Patch LAMMPS          ###
+###################################
+
+WORKDIR ${SRCDIR}
+RUN cp ./BloodFlow/rbc/bond_wlc_pow.* ./lammps/src \
+ && cp ./BloodFlow/rbc/angle_rbc.* ./lammps/src \
+ && cp ./BloodFlow/rbc/dihedral_bend.* ./lammps/src \
+ && cp ./BloodFlow/rbc/fix* ./lammps/src
+
+###################################
+###       Build LAMMPS          ###
+###################################
+
+WORKDIR ${SRCDIR}/lammps/src
+RUN make yes-MOLECULE \
+ && make yes-MC \
+ && make mpi mode=lib -j 8
+
+###################################
+###      Application            ###
+###################################
+
+# configure
+WORKDIR ${BASEDIR}
+RUN cmake -S ${SRCDIR}/BloodFlow/examples/singleCell \
+          -B ${BUILDDIR}/singleCell \
+          -DSENSEI_DIR=${INSTALLDIR}/sensei/lib/cmake \
+          -DPALABOS_ROOT=${SRCDIR}/palabos \
+          -DBLOODFLOW_ROOT=${SRCDIR}/BloodFlow \
+          -DLAMMPS_DIR=${SRCDIR}/lammps \
+          -DCMAKE_C_COMPILER=mpicc \
+          -DCMAKE_CXX_STANDARD=11
+
+# build
+WORKDIR ${BUILDDIR}/singleCell
+RUN make -j 8
 
