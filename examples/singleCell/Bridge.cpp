@@ -28,13 +28,12 @@ void SetData(double **x, long ntimestep, int nghost,
              double zsubhi, int **anglelist, int nanglelist, 
 	         MultiTensorField3D<double, 3> velocityArray,
 	         MultiTensorField3D<double, 3> vorticityArray,
-	         MultiScalarField3D<double> velocityNormArray)
+	         MultiScalarField3D<double> velocityNormArray,
+           int nx, int ny, int nz)
 {
   GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, xsublo, xsubhi,
                                    ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist);
   
-  int nx = 20, ny = 20, nz = 40;
-
 
   vtkDoubleArray *velocityDoubleArray = vtkDoubleArray::New();
   vtkDoubleArray *vorticityDoubleArray = vtkDoubleArray::New();
@@ -69,7 +68,7 @@ void SetData(double **x, long ntimestep, int nghost,
   }
 
   
- GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray); 
+ GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray, nx, ny, nz); 
    
 }
 void Analyze(long ntimestep)
