@@ -373,6 +373,9 @@ int main(int argc, char* argv[]) {
     const plint Nref = 50;
     const T uMaxRef = 0.01;
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
+    const int nx = 20;
+    const int ny = 20;
+    const int nz = 40;
     //using namespace opts;
     std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
     Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!! 
@@ -386,9 +389,9 @@ int main(int argc, char* argv[]) {
             uMax,
             Re,
             N,
-            20.,        // lx
-            20.,        // ly
-            40.         // lz
+            nx,        // lx
+            ny,        // ly
+            nz         // lz
     );
     const T maxT    =100;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
@@ -477,7 +480,7 @@ int main(int argc, char* argv[]) {
         MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
         MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice);
         Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
-			            velocityArray, vorticityArray, velocityNormArray);  
+			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz);  
         Bridge::Analyze(time++);
 	
     }

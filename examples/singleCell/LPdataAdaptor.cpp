@@ -41,6 +41,7 @@ struct LPDataAdaptor::DInternals
   int *type;
   int **anglelist;
   int *id;
+  int pb_nx, pb_ny, pb_nz;
 };
 //----------------------------------------------------------------------
 senseiNewMacro(LPDataAdaptor);
@@ -112,16 +113,19 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
 //---------------------------------------------------------------------------
 void LPDataAdaptor::AddPalabosData(vtkDoubleArray *velocityDoubleArray,
 		     		   vtkDoubleArray *vorticityDoubleArray,
-		    		   vtkDoubleArray *velocityNormDoubleArray)  
+		    		   vtkDoubleArray *velocityNormDoubleArray,
+               int nx, int ny, int nz)  
 {
 
-	int nx = 20, ny = 20, nz = 40; 
 	DInternals& internals = (*this->Internals);
 
 	
 	internals.pb_velocityDoubleArray = velocityDoubleArray;
 	internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
-	internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;  
+	internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;
+  internals.pb_nx = nx;
+  internals.pb_ny = ny;
+  internals.pb_nz = nz;
 
 }   
 //----------------------------------------------------------------------
@@ -135,8 +139,10 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 {
     int rank = 0;	
 	int nRanks = 1;
-	int nx = 20, ny = 20, nz =40; // pass these from palabos!!! 
-	MPI_Comm_rank(this->GetCommunicator(), &rank);
+	int nx = this->Internals->pb_nx;
+  int ny = this->Internals->pb_ny;
+  int nz = this->Internals->pb_nz;	
+  MPI_Comm_rank(this->GetCommunicator(), &rank);
 	MPI_Comm_rank(this->GetCommunicator(), &nRanks); 	
 
   if (id == 0)
@@ -236,20 +242,19 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
  }
  else if(meshName == "fluid")
  {
-   int nx = 20, ny = 20, nz = 40;
    DInternals& internals = (*this->Internals);
    mesh = nullptr; 
  
   cout << "Inside get mesh " << meshName << endl;
 
   vtkImageData *velocity = vtkImageData::New();
-  velocity->SetDimensions(nx, ny, nz); 
+  velocity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
  
   vtkImageData *vorticity = vtkImageData::New(); 
-  vorticity->SetDimensions(nx, ny, nz); 
+  vorticity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
 
   vtkImageData *velocityNorm = vtkImageData::New();
-  velocityNorm->SetDimensions(nx, ny, nz); 
+  velocityNorm->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
    
   velocity->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
   internals.pb_velocityDoubleArray->SetName("velocity");

@@ -13,7 +13,8 @@ namespace Bridge
                double zsubhi, int **anglelist, int nanglelist,
 	           MultiTensorField3D<double, 3> velocityDoubleArray, 
 	           MultiTensorField3D<double, 3> vorticityDoubleArray, 
-	           MultiScalarField3D<double> velocityNormDoubleArray);
+	           MultiScalarField3D<double> velocityNormDoubleArray,
+             int nx, int ny, int nz);
   void Analyze(long ntimestep); 
   void Finalize();
 }
