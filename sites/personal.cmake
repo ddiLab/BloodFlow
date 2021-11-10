@@ -1,5 +1,5 @@
-set(PALABOS_ROOT "/home/mectro/palabos" CACHE STRING "")
+set(PALABOS_ROOT "/home/mectro/src/palabos" CACHE STRING "")
 set(BLOODFLOW_ROOT "/home/mectro/BloodFlow" CACHE STRING "")
-set(LAMMPS_DIR "/home/mectro/lammps" CACHE STRING "")
+set(LAMMPS_DIR "/home/mectro/src/lammps" CACHE STRING "")
 set(CMAKE_C_COMPILER "mpicc" CACHE STRING "Specify the compiler to use")
 set(CMAKE_CXX_STANDARD "11" CACHE STRING "Using c++11 version")

@@ -3,6 +3,6 @@
 # individual users must edit this
 # environment variable to match their
 # system or docker hub username
-export IMAGENAME="srizzi/singlecell:latest"
+export IMAGENAME="singlecell:latest"
 
 docker build -t $IMAGENAME .

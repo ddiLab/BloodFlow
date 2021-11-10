@@ -25,11 +25,11 @@ if(SENSEI_FOUND)
   message("FOUND SENSEI")
 endif()
 
-set(PALABOS_ROOT "$ENV{HOME}/palabos" CACHE PATH "Path to PALABOS root directory")
+set(PALABOS_ROOT "$ENV{HOME}/src/palabos" CACHE PATH "Path to PALABOS root directory")
 set(BLOODFLOW_ROOT "$ENV{HOME}/BloodFlow" CACHE PATH "Path to BloodFlow root directory")
 #set(COUPLING_ROOT "/home/insley/JTAN/CODE/palabos-lammps/")
 #FIND_PACKAGE(LAMMPS REQUIRED)
-set(LAMMPS_DIR "$ENV{HOME}/lammps" CACHE PATH "Path to LAMMPS root directory")
+set(LAMMPS_DIR "$ENV{HOME}/src/lammps" CACHE PATH "Path to LAMMPS root directory")
 FIND_PATH(COUPLING_DIR palabos-lammps)
 set(LAMMPS_LIB "${LAMMPS_DIR}/src")
 #CONNOR:Change the following line to your executable name

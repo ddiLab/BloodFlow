@@ -7,12 +7,12 @@ BloodFlow has several directories and text files, each with a specific purpose. 
 1. PALABOS.md : This text file includes lines of code within embolism.cpp that are of interest.
 It attempts to explain code developed by Palabos that someone new to the software may not understand, even when being proficient in c++.
 
-1. [Embolism Example](examples/embolism/README.md) lists instructions on how to build LAMMPS and Palabos as well as running the embolism example.
+1. [Embolism Example](examples/embolism/README.md) lists instructions on how to build LAMMPS and Palabos as well as running the embolism example. NOTE: This example doesn't include integration of SENSEI
 
 2. SENSEI.md : Instructions on how to build SENSEI on Cooley and how to run an example called oscillator\
    [SenseiPersonal.md](SenseiPersonal.md) gives documentation on building SENSEI on one's personal computer. This is required to run the singleCells example with SENSEI.
 
-3. [Follow this link](examples/singleCell/singleCellPersonal.md) for instructions on how to run the singleCell simulation
+3. [Follow this link](examples/singleCell/singleCellPersonal.md) for instructions on how to run the singleCell simulation on a personal computer. NOTE: Going through the embolism example will help with building LAMMPS and Palabos, both of which are needed for this example
 
 
 4. examples (directory) : Several examples exist here to begin getting familiar to running such code. 
