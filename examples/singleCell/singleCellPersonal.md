@@ -2,7 +2,7 @@
 
 1. Sensei must be properly built on your computer
 
-2. Go to `Bloodflow/rbc` and use the following commands: `cp bond_wlc_pow.* ../../lammps/src` \ `angle_rbc.* ../../lammps/src` \ `dihedr    al_bend.* ../../lammps/src`
+2. Go to `Bloodflow/rbc` and use the following commands: `cp * /path/to/lammps/src`
 
 3. Make a build directory while in `BloodFlow/examples/singleCell`: `mkdir build`
 
