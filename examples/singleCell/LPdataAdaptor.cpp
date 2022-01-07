@@ -65,7 +65,6 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
                                   int nlocal, double xsublo, double xsubhi,
                                   double ysublo, double ysubhi, double zsublo,
                                   double zsubhi, int **anglelist, int nanglelist)
-
 {
 
   DInternals& internals = (*this->Internals);
@@ -114,20 +113,17 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
 void LPDataAdaptor::AddPalabosData(vtkDoubleArray *velocityDoubleArray,
 		     		   vtkDoubleArray *vorticityDoubleArray,
 		    		   vtkDoubleArray *velocityNormDoubleArray,
-               int nx, int ny, int nz)  
-{
+                       int nx, int ny, int nz)  
+   {
+   DInternals& internals = (*this->Internals);
 
-	DInternals& internals = (*this->Internals);
-
-	
-	internals.pb_velocityDoubleArray = velocityDoubleArray;
-	internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
-	internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;
-  internals.pb_nx = nx;
-  internals.pb_ny = ny;
-  internals.pb_nz = nz;
-
-}   
+   internals.pb_velocityDoubleArray = velocityDoubleArray;
+   internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
+   internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;
+   internals.pb_nx = nx;
+   internals.pb_ny = ny;
+   internals.pb_nz = nz;
+   }   
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
 {
@@ -137,24 +133,24 @@ int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) 
 {
-    int rank = 0;	
-	int nRanks = 1;
-	int nx = this->Internals->pb_nx;
+  int rank, nRanks;
+	
+  int nx = this->Internals->pb_nx;
   int ny = this->Internals->pb_ny;
   int nz = this->Internals->pb_nz;	
   MPI_Comm_rank(this->GetCommunicator(), &rank);
-	MPI_Comm_rank(this->GetCommunicator(), &nRanks); 	
+  MPI_Comm_size(this->GetCommunicator(), &nRanks); 	
 
   if (id == 0)
   {
-    cout << "TESTING!!!!!!" << endl;
+    //cout << "TESTING!!!!!!" << endl;
     metadata->MeshName = "cells";
-    metadata->MeshType = VTK_POLY_DATA;
+    metadata->MeshType = VTK_MULTIBLOCK_DATA_SET; //VTK_POLY_DATA;
     metadata->BlockType = VTK_POLY_DATA;
     metadata->CoordinateType = VTK_DOUBLE;
     metadata->NumBlocks = nRanks;
     metadata->NumBlocksLocal = {1};
-    //metadata->NumGhostCells = this->Internals->nghost;
+    metadata->NumGhostCells = this->Internals->nghost;
     
     metadata->NumArrays = 1;
     metadata->ArrayName = {"data"};
@@ -205,70 +201,88 @@ int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &met
 //----------------------------------------------------------------------
 int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkDataObject *&mesh)
 {
- if(meshName == "cells")
- {
-/*
-   if((meshName != "cells" ))
-   {
-     SENSEI_ERROR("No mesh \"" << meshName << "\"")
-     return -1; 
-    }
-*/
  
-  DInternals& internals = (*this->Internals);
+
+ if(meshName == "cells")
+   {
+   //mesh = nullptr; //QUESTION: DO WE NEED THIS????  
+   DInternals& internals = (*this->Internals);
 
    vtkPolyData *pd = vtkPolyData::New();
+   vtkMultiBlockDataSet *mb = vtkMultiBlockDataSet::New();
 
-   if(!structureOnly){
+   if(!structureOnly)
+     {
      vtkPoints *pts = vtkPoints::New();
      pts->SetNumberOfPoints(internals.nlocal*3);
      pts->SetData(internals.AtomPositions);
-     cout <<"TESTING 2 !!! " << endl;
+     //cout <<"TESTING 2 !!! " << endl;
      vtkCellArray *Triangles = vtkCellArray::New();
      for (int i = 0 ; i < internals.nanglelist ; i++)
-     {
+       {
        vtkTriangle *Triangle = vtkTriangle::New();
        Triangle->GetPointIds()->SetId(0, internals.anglelist[i][0]);
        Triangle->GetPointIds()->SetId(1, internals.anglelist[i][1]);
        Triangle->GetPointIds()->SetId(2, internals.anglelist[i][2]);
        Triangles->InsertNextCell(Triangle);
-     }
+       }
 
      pd->SetPoints(pts);
      pd->SetPolys(Triangles);
+     }
+   int rank, size; 
+   MPI_Comm_rank(this->GetCommunicator(), &rank);
+   MPI_Comm_size(this->GetCommunicator(), &size);
 
+   mb->SetNumberOfBlocks(size);
+   mb->SetBlock(rank,pd); 
+   mesh = mb;
    }
-   mesh = pd;
- }
+
  else if(meshName == "fluid")
- {
+   {
    DInternals& internals = (*this->Internals);
    mesh = nullptr; 
+   vtkMultiBlockDataSet *mbfluid = vtkMultiBlockDataSet::New();
  
-  cout << "Inside get mesh " << meshName << endl;
+   cout << "Inside get mesh " << meshName << endl;
 
-  vtkImageData *velocity = vtkImageData::New();
-  velocity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
+   vtkImageData *velocity = vtkImageData::New();
+   velocity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
  
-  vtkImageData *vorticity = vtkImageData::New(); 
-  vorticity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
+   vtkImageData *vorticity = vtkImageData::New(); 
+   vorticity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
 
-  vtkImageData *velocityNorm = vtkImageData::New();
-  velocityNorm->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
+   vtkImageData *velocityNorm = vtkImageData::New();
+   velocityNorm->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
    
-  velocity->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
-  internals.pb_velocityDoubleArray->SetName("velocity");
+   velocity->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
+   internals.pb_velocityDoubleArray->SetName("velocity");
 
-  vorticity->GetPointData()->AddArray(internals.pb_vorticityDoubleArray);
-  internals.pb_vorticityDoubleArray->SetName("vorticity"); 
+   vorticity->GetPointData()->AddArray(internals.pb_vorticityDoubleArray);
+   internals.pb_vorticityDoubleArray->SetName("vorticity"); 
 
-  velocityNorm->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
-  internals.pb_velocityNormDoubleArray->SetName("velocityNorm");
+   velocityNorm->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
+   internals.pb_velocityNormDoubleArray->SetName("velocityNorm");
 
+   int rank, size;
+   MPI_Comm_rank(this->GetCommunicator(), &rank);
+   MPI_Comm_size(this->GetCommunicator(), &size);
+   //mbfluid->SetNumberOfBlocks(size);
+   //mbfluid->SetBlock(rank,velocity);
+   //mbfluid->SetBlock(rank,vorticity);
+   //mbfluid->SetBlock(rank,velocityNorm);
+   
    mesh = velocity;
    mesh = vorticity; 
    mesh = velocityNorm; 
- }
+   }
+ else
+   {
+   SENSEI_ERROR("No mesh \"" << meshName << "\"")
+   return -1;
+   }
+
    return 0;
 }
 //----------------------------------------------------------------------
