@@ -12,3 +12,4 @@ CMakeFiles/
 log.lammps
 examples/embolism/embolism
 examples/singleCell/cellFlow
+examples/singleCell/vtk_output/
