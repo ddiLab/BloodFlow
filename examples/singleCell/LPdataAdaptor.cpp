@@ -73,7 +73,7 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   {
     internals.AtomPositions = vtkSmartPointer<vtkDoubleArray>::New();
   }
- 
+   
 // atom coordinates
   if (internals.AtomPositions)
   {
@@ -89,6 +89,8 @@ void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost,
   {
     SENSEI_ERROR("Error. Internal AtomPositions structure not initialized")
   }
+
+  
 
 // anglelists
   internals.anglelist = anglelist;
@@ -230,12 +232,23 @@ int LPDataAdaptor::GetMesh(const std::string &meshName, bool structureOnly, vtkD
      pd->SetPoints(pts);
      pd->SetPolys(Triangles);
      }
+   
+   pd->SetVerts( internals.vertices );
    int rank, size; 
    MPI_Comm_rank(this->GetCommunicator(), &rank);
    MPI_Comm_size(this->GetCommunicator(), &size);
 
    mb->SetNumberOfBlocks(size);
-   mb->SetBlock(rank,pd); 
+   mb->SetBlock(rank,pd);
+
+//Testing ************************************
+   cout << "RANK NUMBER:" << rank << endl;
+   for (int j = 0; j < internals.nanglelist; j++)
+    {
+     cout << internals.anglelist[j][4] << ", " << internals.anglelist[j][1] << ", " << internals.anglelist[j][3] << endl;
+    }
+   cout << "NUMBER OF ANGLES IN THIS PROCESSOR:" << internals.nanglelist << endl; 
+//*********************************************
    mesh = mb;
    }
 
