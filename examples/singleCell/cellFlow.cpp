@@ -393,7 +393,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT    =100;//6.6e4; //(T)0.01;
+    const T maxT =100;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
@@ -425,7 +425,7 @@ int main(int argc, char* argv[]) {
     MultiBlockLattice3D<T, DESCRIPTOR> lattice (
         parameters.getNx(), parameters.getNy(), parameters.getNz(), 
         new DYNAMICS );*/
-
+pcout << "DIMENSIONS:" << parameters.getNx() << endl;
     // Use periodic boundary conditions.
     lattice.periodicity().toggle(2,true);
 
@@ -436,10 +436,10 @@ int main(int argc, char* argv[]) {
 
     // Loop over main time iteration.
     util::ValueTracer<T> converge(parameters.getLatticeU(),parameters.getResolution(),1.0e-3);
-      //coupling between lammps and palabos
+    //coupling between lammps and palabos
     Array<T,3> force(0,0.,1e-6);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
-   // LAMMPS
+    //LAMMPS
     double **x = wrapper.lmp->atom->x;
     double xsublo = wrapper.lmp->domain->sublo[0];
     double xsubhi = wrapper.lmp->domain->subhi[0];

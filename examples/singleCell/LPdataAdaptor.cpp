@@ -241,15 +241,7 @@ namespace senseiLP
 
       mb->SetNumberOfBlocks(size);
       mb->SetBlock(rank,pd);
-
-    //Testing ************************************
-      cout << "RANK NUMBER:" << rank << endl;
-      for (int j = 0; j < internals.nanglelist; j++)
-      {
-        cout << internals.anglelist[j][4] << ", " << internals.anglelist[j][1] << ", " << internals.anglelist[j][3] << endl;
-      }
-      cout << "NUMBER OF ANGLES IN THIS PROCESSOR:" << internals.nanglelist << endl; 
-    //*********************************************
+ 
       mesh = mb;
     }
 
@@ -270,6 +262,8 @@ namespace senseiLP
       vtkImageData *velocityNorm = vtkImageData::New();
       velocityNorm->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
       
+      //cout << internals.pb_nx << "," << internals.pb_ny << "," << internals.pb_nz << endl;
+      
       velocity->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
       internals.pb_velocityDoubleArray->SetName("velocity");
 
@@ -282,10 +276,11 @@ namespace senseiLP
       int rank, size;
       MPI_Comm_rank(this->GetCommunicator(), &rank);
       MPI_Comm_size(this->GetCommunicator(), &size);
-      //mbfluid->SetNumberOfBlocks(size);
-      //mbfluid->SetBlock(rank,velocity);
-      //mbfluid->SetBlock(rank,vorticity);
-      //mbfluid->SetBlock(rank,velocityNorm);
+
+      // mbfluid->SetNumberOfBlocks(size);
+      // mbfluid->SetBlock(rank,velocity);
+      // mbfluid->SetBlock(rank,vorticity);
+      // mbfluid->SetBlock(rank,velocityNorm);
       
       mesh = velocity;
       mesh = vorticity; 
