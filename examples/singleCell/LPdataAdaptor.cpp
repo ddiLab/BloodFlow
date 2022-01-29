@@ -168,9 +168,9 @@ namespace senseiLP
         metadata->BlockIds.push_back(rank);
       }
     
-      metadata->BlockNumCells.push_back(this->Internals->nlocal/3);
+      metadata->BlockNumCells.push_back(this->Internals->nanglelist);
       metadata->BlockNumPoints.push_back(this->Internals->nlocal*3);
-      metadata->BlockCellArraySize.push_back(this->Internals->nlocal);
+      metadata->BlockCellArraySize.push_back(0);
     }
     else
     {
@@ -180,11 +180,11 @@ namespace senseiLP
       metadata->CoordinateType = VTK_DOUBLE;
       metadata->NumBlocks = nRanks;
       metadata->NumBlocksLocal = {1}; 
-      metadata->NumArrays=1;
-      metadata->ArrayName = {"velocity"};
-      metadata->ArrayComponents = {3}; 
-      metadata->ArrayType = {VTK_DOUBLE};
-      metadata->ArrayCentering = {vtkDataObject::CELL};
+      metadata->NumArrays=3;
+      metadata->ArrayName = {"velocity","vorticity","velocityNorm"};
+      metadata->ArrayComponents = {3, 3, 3}; 
+      metadata->ArrayType = {VTK_DOUBLE, VTK_DOUBLE, VTK_DOUBLE};
+      metadata->ArrayCentering = {vtkDataObject::CELL, vtkDataObject::CELL, vtkDataObject::CELL};
       metadata->StaticMesh = 1; 
 
       if (metadata->Flags.BlockDecompSet())
@@ -253,38 +253,35 @@ namespace senseiLP
     
       cout << "Inside get mesh " << meshName << endl;
 
-      vtkImageData *velocity = vtkImageData::New();
-      velocity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
-    
+      vtkImageData *FluidImageData = vtkImageData::New();
+      FluidImageData->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
+    /*
       vtkImageData *vorticity = vtkImageData::New(); 
       vorticity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
 
       vtkImageData *velocityNorm = vtkImageData::New();
       velocityNorm->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
+      */
       
       //cout << internals.pb_nx << "," << internals.pb_ny << "," << internals.pb_nz << endl;
       
-      velocity->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
+      FluidImageData->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
       internals.pb_velocityDoubleArray->SetName("velocity");
 
-      vorticity->GetPointData()->AddArray(internals.pb_vorticityDoubleArray);
+      FluidImageData->GetPointData()->AddArray(internals.pb_vorticityDoubleArray);
       internals.pb_vorticityDoubleArray->SetName("vorticity"); 
 
-      velocityNorm->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
+      FluidImageData->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
       internals.pb_velocityNormDoubleArray->SetName("velocityNorm");
-
+    
       int rank, size;
       MPI_Comm_rank(this->GetCommunicator(), &rank);
       MPI_Comm_size(this->GetCommunicator(), &size);
 
-      // mbfluid->SetNumberOfBlocks(size);
-      // mbfluid->SetBlock(rank,velocity);
-      // mbfluid->SetBlock(rank,vorticity);
-      // mbfluid->SetBlock(rank,velocityNorm);
+      mbfluid->SetNumberOfBlocks(size);
+      mbfluid->SetBlock(rank,FluidImageData);
       
-      mesh = velocity;
-      mesh = vorticity; 
-      mesh = velocityNorm; 
+      mesh = FluidImageData;
     }
     else
     {
