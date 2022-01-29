@@ -169,7 +169,7 @@ namespace senseiLP
       }
     
       metadata->BlockNumCells.push_back(this->Internals->nanglelist);
-      metadata->BlockNumPoints.push_back(this->Internals->nlocal*3);
+      metadata->BlockNumPoints.push_back(this->Internals->nlocal + this->Internals->nghost);
       metadata->BlockCellArraySize.push_back(0);
     }
     else
@@ -195,7 +195,7 @@ namespace senseiLP
 
       metadata->BlockNumCells.push_back(nx * ny * nz * 3); 
       metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
-      metadata->BlockCellArraySize.push_back(nx * ny * nz); 
+      metadata->BlockCellArraySize.push_back(0); 
     }
     
     return 0;
