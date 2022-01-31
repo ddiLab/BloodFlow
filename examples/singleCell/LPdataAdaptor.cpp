@@ -145,7 +145,6 @@ namespace senseiLP
 
     if (id == 0)
     {
-      //cout << "TESTING!!!!!!" << endl;
       metadata->MeshName = "cells";
       metadata->MeshType = VTK_MULTIBLOCK_DATA_SET; //VTK_POLY_DATA;
       metadata->BlockType = VTK_POLY_DATA;
@@ -167,6 +166,7 @@ namespace senseiLP
         metadata->BlockOwner.push_back(rank);
         metadata->BlockIds.push_back(rank);
       }
+    //We use nanglelist for BlockNumCells because it give the number of triangles on a given processor
     
       metadata->BlockNumCells.push_back(this->Internals->nanglelist);
       metadata->BlockNumPoints.push_back(this->Internals->nlocal + this->Internals->nghost);
@@ -193,7 +193,7 @@ namespace senseiLP
         metadata->BlockIds.push_back(rank);
       }
 
-      metadata->BlockNumCells.push_back(nx * ny * nz * 3); 
+      metadata->BlockNumCells.push_back(nx * ny * nz * 3); //THESE NEED TO BE CHANGED MOST LIKELY
       metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
       metadata->BlockCellArraySize.push_back(0); 
     }
@@ -218,7 +218,6 @@ namespace senseiLP
         vtkPoints *pts = vtkPoints::New();
         pts->SetNumberOfPoints(internals.nlocal*3);
         pts->SetData(internals.AtomPositions);
-        //cout <<"TESTING 2 !!! " << endl;
         vtkCellArray *Triangles = vtkCellArray::New();
 
         for (int i = 0 ; i < internals.nanglelist ; i++)
@@ -254,7 +253,7 @@ namespace senseiLP
       cout << "Inside get mesh " << meshName << endl;
 
       vtkImageData *FluidImageData = vtkImageData::New();
-      FluidImageData->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
+      FluidImageData->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); //HERE IS WHERE WE NEED TO CHANGE DIMENSIONS
     /*
       vtkImageData *vorticity = vtkImageData::New(); 
       vorticity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
@@ -281,7 +280,7 @@ namespace senseiLP
       mbfluid->SetNumberOfBlocks(size);
       mbfluid->SetBlock(rank,FluidImageData);
       
-      mesh = FluidImageData;
+      mesh = mbfluid;
     }
     else
     {
