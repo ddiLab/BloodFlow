@@ -425,7 +425,7 @@ int main(int argc, char* argv[]) {
     MultiBlockLattice3D<T, DESCRIPTOR> lattice (
         parameters.getNx(), parameters.getNy(), parameters.getNz(), 
         new DYNAMICS );*/
-pcout << "DIMENSIONS:" << parameters.getNx() << endl;
+
     // Use periodic boundary conditions.
     lattice.periodicity().toggle(2,true);
 
@@ -440,6 +440,9 @@ pcout << "DIMENSIONS:" << parameters.getNx() << endl;
     Array<T,3> force(0,0.,1e-6);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
     //LAMMPS
+    //Box3D TestBox = lattice.getBoundingBox(); What is in Box3D/how to print it to screen
+    
+/*
     double **x = wrapper.lmp->atom->x;
     double xsublo = wrapper.lmp->domain->sublo[0];
     double xsubhi = wrapper.lmp->domain->subhi[0];
@@ -447,13 +450,10 @@ pcout << "DIMENSIONS:" << parameters.getNx() << endl;
     double ysubhi = wrapper.lmp->domain->subhi[1];
     double zsublo = wrapper.lmp->domain->sublo[2];
     double zsubhi = wrapper.lmp->domain->subhi[2];
-    
-    plint nlocal = wrapper.lmp->atom->nlocal;
-    long ntimestep = wrapper.lmp->update->ntimestep; 
     int *type = wrapper.lmp->atom->type;
-    int nghost = wrapper.lmp->atom->nghost;
     int **anglelist = wrapper.lmp->neighbor->anglelist;
-    int nanglelist = wrapper.lmp->neighbor->nanglelist;
+    */ 
+    int rank;
     long time = 0; 
  
     for (plint iT=0;iT<4e3;iT++){
@@ -463,8 +463,25 @@ pcout << "DIMENSIONS:" << parameters.getNx() << endl;
     global::timer("mainloop").start();
    
    for (plint iT=0; iT<maxT; ++iT) {
+        
         // lammps to calculate force
         wrapper.execCommand("run 1 pre no post no");
+        //Block for LAMMPS Data sent to SENSEI ****************
+        //Some values are dynamically changing
+        plint nlocal = wrapper.lmp->atom->nlocal;
+        long ntimestep = wrapper.lmp->update->ntimestep;
+        int nanglelist = wrapper.lmp->neighbor->nanglelist;
+        int nghost = wrapper.lmp->atom->nghost;
+        double **x = wrapper.lmp->atom->x;
+        double xsublo = wrapper.lmp->domain->sublo[0];
+        double xsubhi = wrapper.lmp->domain->subhi[0];
+        double ysublo = wrapper.lmp->domain->sublo[1];
+        double ysubhi = wrapper.lmp->domain->subhi[1];
+        double zsublo = wrapper.lmp->domain->sublo[2];
+        double zsubhi = wrapper.lmp->domain->subhi[2];
+        int *type = wrapper.lmp->atom->type;
+        int **anglelist = wrapper.lmp->neighbor->anglelist;
+        
         // Clear and spread fluid force
         setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
         ////-----classical ibm coupling-------------//
@@ -479,6 +496,11 @@ pcout << "DIMENSIONS:" << parameters.getNx() << endl;
         MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice);
         MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
         MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice);
+        
+        MPI_Comm_rank(global::mpi().getGlobalCommunicator(), &rank);
+    
+        cout<< rank << " : CELLFLOW nlocal " << wrapper.lmp->atom->nlocal << " nAnglelist " << wrapper.lmp->neighbor->nanglelist << " nghost " << wrapper.lmp->atom->nghost << " : Local nlocal " << nlocal << " Local anglelist " << nanglelist << " Local nghost " << nghost << endl;
+        
         Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
 			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz);  
         Bridge::Analyze(time++);
