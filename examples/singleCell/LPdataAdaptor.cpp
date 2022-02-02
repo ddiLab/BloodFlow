@@ -154,9 +154,7 @@ namespace senseiLP
       metadata->NumBlocks = nRanks;
       metadata->NumBlocksLocal = {1};
       metadata->NumGhostCells = 0;
-      
       metadata->NumArrays = 0;
-      
       metadata->StaticMesh = 0;  
 
       if (metadata->Flags.BlockExtentsSet())
@@ -167,18 +165,17 @@ namespace senseiLP
         // There should be no extent for a PolyData, but ADIOS2 needs this
         std::array<int,6> ext = { 0, 0, 0, 0, 0, 0};
         metadata->Extent = std::move(ext);
-
         metadata->BlockExtents.reserve(1);	// One block per rank
         metadata->BlockExtents.emplace_back(std::move(ext));
       }
-
+      
       if (metadata->Flags.BlockDecompSet())
       {
         metadata->BlockOwner.push_back(rank);
         metadata->BlockIds.push_back(rank);
       }
-    //We use nanglelist for BlockNumCells because it give the number of triangles on a given processor
     
+      //We use nanglelist for BlockNumCells because it give the number of triangles on a given processor
       metadata->BlockNumCells.push_back(this->Internals->nanglelist);
       metadata->BlockNumPoints.push_back(this->Internals->nlocal + this->Internals->nghost);
       metadata->BlockCellArraySize.push_back(0);
@@ -193,9 +190,9 @@ namespace senseiLP
       metadata->NumBlocksLocal = {1}; 
       metadata->NumArrays=3;
       metadata->ArrayName = {"velocity","vorticity","velocityNorm"};
-      metadata->ArrayComponents = {3, 3, 3}; 
+      metadata->ArrayComponents = {3, 3, 1}; 
       metadata->ArrayType = {VTK_DOUBLE, VTK_DOUBLE, VTK_DOUBLE};
-      metadata->ArrayCentering = {vtkDataObject::CELL, vtkDataObject::CELL, vtkDataObject::CELL};
+      metadata->ArrayCentering = {vtkDataObject::POINT, vtkDataObject::POINT, vtkDataObject::POINT};
       metadata->StaticMesh = 1; 
 
       if (metadata->Flags.BlockDecompSet())
@@ -217,7 +214,8 @@ namespace senseiLP
     int rank, size; 
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &size);
-
+    mesh = nullptr;
+    
     if(meshName == "cells")
     {
       //mesh = nullptr; //QUESTION: DO WE NEED THIS????  
@@ -229,7 +227,6 @@ namespace senseiLP
       if(!structureOnly)
       {
         vtkPoints *pts = vtkPoints::New();
-        cout<< rank << " : Number of Points " << internals.nlocal << " nAnglelist " << internals.nanglelist << " nghost" << internals.nghost << endl;
         //pts->SetNumberOfPoints(internals.nlocal+internals.nghost);
         pts->SetData(internals.AtomPositions);
         cout << rank <<": SetDataTest" << endl;
@@ -259,14 +256,13 @@ namespace senseiLP
 
     else if(meshName == "fluid")
     {
-      DInternals& internals = (*this->Internals);
-      mesh = nullptr; 
+      DInternals& internals = (*this->Internals); 
       vtkMultiBlockDataSet *mbfluid = vtkMultiBlockDataSet::New();
     
-      cout << "Inside get mesh " << meshName << endl;
+      //cout << "Inside get mesh " << meshName << endl;
 
       vtkImageData *FluidImageData = vtkImageData::New();
-      FluidImageData->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); //HERE IS WHERE WE NEED TO CHANGE DIMENSIONS
+      FluidImageData->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); //XXX HERE IS WHERE WE NEED TO CHANGE DIMENSIONS
     /*
       vtkImageData *vorticity = vtkImageData::New(); 
       vorticity->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); 
@@ -328,15 +324,18 @@ namespace senseiLP
       vtkImageData *velocityNorm = dynamic_cast<vtkImageData*>(mesh); //XXX Once again, this should be one line, not three
       // vtkImageData *velocity = vtkImageData::New(); 
       // velocity = vtkImageData::New(); 
-/*
-      FluidImageData->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
+      /*    
       internals.pb_velocityDoubleArray->SetName("velocity");
-
-      FluidImageData->GetPointData()->AddArray(internals.pb_vorticityDoubleArray);
+      FluidImageData->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
+      
+      
       internals.pb_vorticityDoubleArray->SetName("vorticity"); 
+      FluidImageData->GetPointData()->AddArray(internals.pb_vorticityDoubleArray);
+     
 
-      FluidImageData->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
       internals.pb_velocityNormDoubleArray->SetName("velocityNorm");
+      FluidImageData->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
+      
       */
       
       velocity->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
