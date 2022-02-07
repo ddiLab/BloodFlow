@@ -29,6 +29,7 @@
 #include <cmath>
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 
 //#include "opts.h"
 
@@ -442,17 +443,6 @@ int main(int argc, char* argv[]) {
     //LAMMPS
     //Box3D TestBox = lattice.getBoundingBox(); What is in Box3D/how to print it to screen
     
-/*
-    double **x = wrapper.lmp->atom->x;
-    double xsublo = wrapper.lmp->domain->sublo[0];
-    double xsubhi = wrapper.lmp->domain->subhi[0];
-    double ysublo = wrapper.lmp->domain->sublo[1];
-    double ysubhi = wrapper.lmp->domain->subhi[1];
-    double zsublo = wrapper.lmp->domain->sublo[2];
-    double zsubhi = wrapper.lmp->domain->subhi[2];
-    int *type = wrapper.lmp->atom->type;
-    int **anglelist = wrapper.lmp->neighbor->anglelist;
-    */ 
     int rank;
     long time = 0; 
  
@@ -461,27 +451,47 @@ int main(int argc, char* argv[]) {
     }
     T timeduration = T();
     global::timer("mainloop").start();
-   
+   plint nlocal;
+   long ntimestep;
+   int nanglelist;
+   int nghost;
+   double **x;
+   double xsublo;
+   double xsubhi;
+   double ysublo;
+   double ysubhi;
+   double zsublo;
+   double zsubhi;
+   int *type;
+   int **anglelist;
+
    for (plint iT=0; iT<maxT; ++iT) {
         
         // lammps to calculate force
         wrapper.execCommand("run 1 pre no post no");
         //Block for LAMMPS Data sent to SENSEI ****************
         //Some values are dynamically changing
-        plint nlocal = wrapper.lmp->atom->nlocal;
-        long ntimestep = wrapper.lmp->update->ntimestep;
-        int nanglelist = wrapper.lmp->neighbor->nanglelist;
-        int nghost = wrapper.lmp->atom->nghost;
-        double **x = wrapper.lmp->atom->x;
-        double xsublo = wrapper.lmp->domain->sublo[0];
-        double xsubhi = wrapper.lmp->domain->subhi[0];
-        double ysublo = wrapper.lmp->domain->sublo[1];
-        double ysubhi = wrapper.lmp->domain->subhi[1];
-        double zsublo = wrapper.lmp->domain->sublo[2];
-        double zsubhi = wrapper.lmp->domain->subhi[2];
-        int *type = wrapper.lmp->atom->type;
-        int **anglelist = wrapper.lmp->neighbor->anglelist;
-        
+        nlocal = wrapper.lmp->atom->nlocal;
+        ntimestep = wrapper.lmp->update->ntimestep;
+        nanglelist = wrapper.lmp->neighbor->nanglelist;
+        nghost = wrapper.lmp->atom->nghost;
+        x = wrapper.lmp->atom->x;
+        xsublo = wrapper.lmp->domain->sublo[0];
+        xsubhi = wrapper.lmp->domain->subhi[0];
+        ysublo = wrapper.lmp->domain->sublo[1];
+        ysubhi = wrapper.lmp->domain->subhi[1];
+        zsublo = wrapper.lmp->domain->sublo[2];
+        zsubhi = wrapper.lmp->domain->subhi[2];
+        type = wrapper.lmp->atom->type;
+        anglelist = wrapper.lmp->neighbor->anglelist;
+        LAMMPS_NS::tagint *tag = wrapper.lmp->atom->tag;
+        MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice);
+        MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
+        MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice);
+
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
+			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz);  
+        Bridge::Analyze(time++);
         // Clear and spread fluid force
         setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
         ////-----classical ibm coupling-------------//
@@ -493,17 +503,7 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice);
-        MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
-        MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice);
-        
-        MPI_Comm_rank(global::mpi().getGlobalCommunicator(), &rank);
-    
-        cout<< rank << " : CELLFLOW nlocal " << wrapper.lmp->atom->nlocal << " nAnglelist " << wrapper.lmp->neighbor->nanglelist << " nghost " << wrapper.lmp->atom->nghost << " : Local nlocal " << nlocal << " Local anglelist " << nanglelist << " Local nghost " << nghost << endl;
-        
-        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
-			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz);  
-        Bridge::Analyze(time++);
+       
 	
     }
 
