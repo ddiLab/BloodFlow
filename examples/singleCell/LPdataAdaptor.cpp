@@ -109,6 +109,7 @@ namespace senseiLP
     internals.xsubhi = xsubhi;
     internals.ysubhi = ysubhi;
     internals.zsubhi = zsubhi;
+    
   // timestep
     this->SetDataTimeStep(ntimestep);
 
@@ -124,6 +125,10 @@ namespace senseiLP
     internals.pb_velocityDoubleArray = velocityDoubleArray;
     internals.pb_vorticityDoubleArray = vorticityDoubleArray; 
     internals.pb_velocityNormDoubleArray = velocityNormDoubleArray;
+    internals.pb_velocityDoubleArray->SetName("velocity");
+    internals.pb_vorticityDoubleArray->SetName("vorticity"); 
+    internals.pb_velocityNormDoubleArray->SetName("velocityNorm");
+      
     internals.pb_nx = nx;
     internals.pb_ny = ny;
     internals.pb_nz = nz;
@@ -137,11 +142,12 @@ namespace senseiLP
   //----------------------------------------------------------------------
   int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) 
   {
+    cout << "Calling GetMeshMetaData" << endl;
     int rank, nRanks;
     
     int nx = this->Internals->pb_nx;
     int ny = this->Internals->pb_ny;
-    int nz = this->Internals->pb_nz;	
+    int nz = this->Internals->pb_nz; 	
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &nRanks); 	
 
@@ -184,8 +190,8 @@ namespace senseiLP
     else
     {
       metadata->MeshName = "fluid"; 
-      metadata->MeshType = VTK_IMAGE_DATA;
-      metadata->BlockType=VTK_IMAGE_DATA; 
+      metadata->MeshType = VTK_MULTIBLOCK_DATA_SET;
+      metadata->BlockType= VTK_IMAGE_DATA; 
       metadata->CoordinateType = VTK_DOUBLE;
       metadata->NumBlocks = nRanks;
       metadata->NumBlocksLocal = {1}; 
@@ -202,7 +208,20 @@ namespace senseiLP
         metadata->BlockIds.push_back(rank);
       }
 
-      metadata->BlockNumCells.push_back(nx * ny * nz * 3); //THESE NEED TO BE CHANGED MOST LIKELY
+      if (metadata->Flags.BlockExtentsSet())
+      {
+        //SENSEI_WARNING("lammps data adaptor. Flags.BlockExtentsSet()")
+        
+        // fixme
+        // There should be no extent for a PolyData, but ADIOS2 needs this
+        std::array<int,6> ext = { 0, nx, 0, ny, 0, nz };
+        std::array<int,6> blockext = { 0, nx, 0, ny, 0, nz }; //XXX This is incorrect right now
+        metadata->Extent = std::move(ext);
+        metadata->BlockExtents.reserve(1);	// One block per rank
+        metadata->BlockExtents.emplace_back(std::move(blockext)); //XXX We have to figure out the local numbers for block ext
+      }
+
+      metadata->BlockNumCells.push_back(nx * ny * nz * 3); //XXX THESE NEED TO BE CHANGED MOST LIKELY
       metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
       metadata->BlockCellArraySize.push_back(0); 
     }
@@ -216,7 +235,7 @@ namespace senseiLP
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &size);
     mesh = nullptr;
-    
+    cout << "Calling GetMesh" << endl;
     if(meshName == "cells")
     {  
       DInternals& internals = (*this->Internals);
@@ -277,7 +296,7 @@ namespace senseiLP
       mbfluid->SetNumberOfBlocks(size);
       mbfluid->SetBlock(rank,FluidImageData);
       
-      mesh = FluidImageData;
+      mesh = mbfluid;
     }
     else
     {
@@ -306,50 +325,50 @@ namespace senseiLP
   int LPDataAdaptor::AddArray(vtkDataObject* mesh, const std::string &meshName,
       int association, const std::string &arrayName)
   {
+    cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
+    int rank;
+    MPI_Comm_rank(this->GetCommunicator(), &rank);
     if(meshName == "fluid")
     {
       DInternals& internals = (*this->Internals); 
-      
+      /*
       vtkImageData *velocity = dynamic_cast<vtkImageData*>(mesh); //XXX PROBABLY NEEDS TO BE vtkmultiblockdataset
       vtkImageData *vorticity = dynamic_cast<vtkImageData*>(mesh); //XXX extract image data and then add arrays
       vtkImageData *velocityNorm = dynamic_cast<vtkImageData*>(mesh); //XXX Once again, this should be one line, not three
-      //vtkImageData *velocity = vtkImageData::New();
-      // vtkImageData *velocity = vtkImageData::New(); 
-      // velocity = vtkImageData::New(); 
-      /*    
-      internals.pb_velocityDoubleArray->SetName("velocity");
-      FluidImageData->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
-      
-      
-      internals.pb_vorticityDoubleArray->SetName("vorticity"); 
-      FluidImageData->GetPointData()->AddArray(internals.pb_vorticityDoubleArray);
-     
-
-      internals.pb_velocityNormDoubleArray->SetName("velocityNorm");
-      FluidImageData->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
-      
-      if(arrayName == "velocity")
-      {
-
-      }
-      else if(arrayName == "vorticity")
-      {
-
-      }
-      else if(arrayName == "velocityNorm")
-      {
-
-      }
-      else
-      {
-        SENSEI_ERROR("Array name for Palabos AddArray does not exist")
-      }
-     */
-      
       velocity->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
       vorticity->GetPointData()->AddArray(internals.pb_vorticityDoubleArray); 
       velocityNorm->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
-      
+      */
+      vtkMultiBlockDataSet *mbfluid = dynamic_cast<vtkMultiBlockDataSet*>(mesh); 
+      if(!mbfluid)   
+      {
+        SENSEI_ERROR("unexpected mesh type "<< (mesh ? mesh->GetClassName() : "nullptr"))
+        return -1;
+      }
+      vtkImageData *FluidImageData = (vtkImageData*)mbfluid->GetBlock(rank);
+      if(!FluidImageData)
+      {
+        SENSEI_ERROR("Cannot Get Block in LPDataAdaptor::AddArray")
+        return -1;
+      }
+      if(arrayName == "velocity")
+      {
+        FluidImageData->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
+      }
+      else if(arrayName == "vorticity")
+      {
+        FluidImageData->GetPointData()->AddArray(internals.pb_vorticityDoubleArray);
+      }
+      else if(arrayName == "velocityNorm")
+      {
+        FluidImageData->GetPointData()->AddArray(internals.pb_velocityNormDoubleArray);
+      }
+      else
+      {
+        SENSEI_ERROR("Array name for Palabos AddArray does not exist in LPDataAdaptor::AddArray")
+        return -1;
+      }
+       
     }
     return 0;
    
