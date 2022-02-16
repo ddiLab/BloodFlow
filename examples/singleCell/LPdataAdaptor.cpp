@@ -151,7 +151,7 @@ namespace senseiLP
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &nRanks); 	
 
-    if (id == 0)
+    if (id == 0) // id == 0 is cells
     {
       //cout << "GetMeshMetaData Cells Test" << endl;
       metadata->MeshName = "cells";
@@ -187,7 +187,7 @@ namespace senseiLP
       metadata->BlockNumPoints.push_back(this->Internals->nlocal + this->Internals->nghost );
       metadata->BlockCellArraySize.push_back(0);
     }
-    else
+    else if(id == 1) // id == 1 is fluid
     {
       metadata->MeshName = "fluid"; 
       metadata->MeshType = VTK_MULTIBLOCK_DATA_SET;
@@ -225,7 +225,10 @@ namespace senseiLP
       metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
       metadata->BlockCellArraySize.push_back(0); 
     }
-    
+    else
+    {
+      SENSEI_ERROR("MeshMetaData Error: id value does not exist")
+    }
     return 0;
   }
   //----------------------------------------------------------------------
