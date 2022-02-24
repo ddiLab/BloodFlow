@@ -42,6 +42,8 @@ namespace senseiLP
     int **anglelist;
     int *id;
     int pb_nx, pb_ny, pb_nz;
+    Box3D domainBox; //XXX added for domainBox 2/23/22
+    
   };
   //----------------------------------------------------------------------
   senseiNewMacro(LPDataAdaptor);
@@ -118,7 +120,7 @@ namespace senseiLP
   void LPDataAdaptor::AddPalabosData(vtkDoubleArray *velocityDoubleArray,
                 vtkDoubleArray *vorticityDoubleArray,
                 vtkDoubleArray *velocityNormDoubleArray,
-                        int nx, int ny, int nz)  
+                        int nx, int ny, int nz, Box3D domainBox) 
   {
     DInternals& internals = (*this->Internals);
 
@@ -132,6 +134,7 @@ namespace senseiLP
     internals.pb_nx = nx;
     internals.pb_ny = ny;
     internals.pb_nz = nz;
+    internals.domainBox = domainBox;//XXX domainBox 2/23/22
   }   
   //----------------------------------------------------------------------
   int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
@@ -142,12 +145,21 @@ namespace senseiLP
   //----------------------------------------------------------------------
   int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) 
   {
-    cout << "Calling GetMeshMetaData" << endl;
+    //cout << "Calling GetMeshMetaData" << endl;
     int rank, nRanks;
     
     int nx = this->Internals->pb_nx;
     int ny = this->Internals->pb_ny;
-    int nz = this->Internals->pb_nz; 	
+    int nz = this->Internals->pb_nz; 
+
+    //XXX Added for domainBox 2/23/22********	
+    Box3D domainBox = this->Internals->domainBox;
+    int nlx = domainBox.getNx(); 
+    int nly = domainBox.getNy();
+    int nlz = domainBox.getNz();
+    plb::Array<plint, 6> localExtents = domainBox.to_plbArray();//XXX look at palabos/src/core/geometry3D.h for documentation
+    //***************************************
+
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &nRanks); 	
 
@@ -215,14 +227,14 @@ namespace senseiLP
         // fixme
         // There should be no extent for a PolyData, but ADIOS2 needs this
         std::array<int,6> ext = { 0, nx, 0, ny, 0, nz };
-        std::array<int,6> blockext = { 0, nx, 0, ny, 0, nz }; //XXX This is incorrect right now
+        std::array<int,6> blockext = { localExtents[0], localExtents[1], localExtents[2], localExtents[3], localExtents[4], localExtents[5]}; //XXX Changes 2/23/22
         metadata->Extent = std::move(ext);
         metadata->BlockExtents.reserve(1);	// One block per rank
         metadata->BlockExtents.emplace_back(std::move(blockext)); //XXX We have to figure out the local numbers for block ext
       }
 
-      metadata->BlockNumCells.push_back(nx * ny * nz * 3); //XXX THESE NEED TO BE CHANGED MOST LIKELY
-      metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
+      metadata->BlockNumCells.push_back(nlx * nly * nlz * 3); //XXX Changed 2/23/22
+      metadata->BlockNumPoints.push_back(nlx * nly * nlz * 3); //XXX Changed 2/23/22
       metadata->BlockCellArraySize.push_back(0); 
     }
     else
@@ -238,7 +250,7 @@ namespace senseiLP
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &size);
     mesh = nullptr;
-    cout << "Calling GetMesh" << endl;
+    //cout << "Calling GetMesh" << endl;
     if(meshName == "cells")
     {  
       DInternals& internals = (*this->Internals);
@@ -328,7 +340,7 @@ namespace senseiLP
   int LPDataAdaptor::AddArray(vtkDataObject* mesh, const std::string &meshName,
       int association, const std::string &arrayName)
   {
-    cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
+    //cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
     int rank;
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     if(meshName == "fluid")

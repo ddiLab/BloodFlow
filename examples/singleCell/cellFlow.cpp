@@ -198,7 +198,7 @@ void squarePoiseuilleSetup( MultiBlockLattice3D<T,DESCRIPTOR>& lattice,
     Box3D top    = Box3D(0,    nx-1, ny-1, ny-1, 0, nz-1);
     Box3D bottom = Box3D(0,    nx-1, 0,    0,    0, nz-1);
     
-    Box3D inlet    = Box3D(0,    nx-1, 1,    ny-2, 0,    0);
+    Box3D inlet  = Box3D(0,    nx-1, 1,    ny-2, 0,    0);
     Box3D outlet = Box3D(0,    nx-1, 1,    ny-2, nz-1, nz-1);
     
     Box3D left   = Box3D(0,    0,    1,    ny-2, 1, nz-2);
@@ -270,6 +270,18 @@ void writeVTK(MultiBlockLattice3D<T,DESCRIPTOR>& lattice,
     vtkOut.writeData<3,float>(*computeVelocity(lattice), "velocity", dx/dt);
     vtkOut.writeData<3,float>(*computeVorticity(*computeVelocity(lattice)), "vorticity", 1./dt);
 }
+//**************************************Connor Changed 2/17/22
+void writeVTK(MultiBlockLattice3D<T,DESCRIPTOR>& lattice,
+              Box3D domain, plint iter)
+{
+    //T dx = parameters.getDeltaX();
+    //T dt = parameters.getDeltaT();
+    VtkImageOutput3D<T> vtkOut(createFileName("vtk", iter, 6), 1);
+    //vtkOut.writeData<float>(*computeVelocityNorm(lattice), "velocityNorm", dx/dt);
+    vtkOut.writeData<3,float>(*computeVelocity(lattice,domain), "velocity", 1);
+    //vtkOut.writeData<3,float>(*computeVorticity(*computeVelocity(lattice)), "vorticity", 1./dt);
+}
+//**************************************
 
 void VtkPalabos(MultiBlockLattice3D<T, DESCRIPTOR>& lattice,
     IncomprFlowParam<T> const& parameters,  plint iter)
@@ -393,7 +405,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT =100;//6.6e4; //(T)0.01;
+    const T maxT =50;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
@@ -403,19 +415,52 @@ int main(int argc, char* argv[]) {
     wrapper.execFile(inlmp);
    
     //MultiTensorField3D<T,3> vel(parameters.getNx(),parameters.getNy(),parameters.getNz());
+
+    plint localdomain[4][6]; //XXX First index: Rank value   Second Index: extents (0: xlo 1: xhi 2: ylo 3: yhi 4: zlo 5: zhi)
+    //XXX Figure out how setup with the given number of processors
+
+
     pcout<<"Nx,Ny,Nz "<<parameters.getNx()<<" "<<parameters.getNy()<<" "<<parameters.getNz()<<endl;
     LatticeDecomposition lDec(parameters.getNx(),parameters.getNy(),parameters.getNz(),
-                              wrapper.lmp);
+                              wrapper.lmp, localdomain); //XXX sending a double array to store extents of each processor for palabos data (Connor Murphy 2/19/22)
+    /*
+    for(int i = 0; i<4; i++)
+    {
+        pcout << "Zlo: " << localdomain[i][4] << " Zhi: " << localdomain[i][5] << endl;
+    }
+    */
+
     SparseBlockStructure3D blockStructure = lDec.getBlockDistribution();
     ExplicitThreadAttribution* threadAttribution = lDec.getThreadAttribution();
     plint envelopeWidth = 2;
 
+
+    MultiBlockManagement3D management = MultiBlockManagement3D(blockStructure, threadAttribution, envelopeWidth);//XXX New Change
+    
+    /*XXX This might be used to access local extents directly from palabos at some point
+    ThreadAttribution const& orgThreadAttribution = management.getThreadAttribution();
+        plint myrank = global::mpi().getRank();
+        plint mysize = global::mpi().getSize();
+        vector<plint> localBlocks;
+        localBlocks = blockStructure.getLocalBlocks(orgThreadAttribution);
+        vector<Box3D> bulks;
+        for (plint i=0;i<localBlocks.size();i++)
+        {
+            Box3D domain;
+            bool domainStatus = blockStructure.getBulk(i,domain);
+            bulks.push_back(domain);
+            cout<< "processor: "<< myrank<< " blockID: "<<i<<" x domain: "<<domain.x0<<" "<<domain.x1<< " y domain: " <<domain.y0<<" "<<domain.y1<<" z domain: " <<domain.z0<<" "<<domain.z1<<endl;
+            cout<< "processor: "<< myrank<< " EXTENTS X Y Z: " << domain.getNx()<< " " << domain.getNy()<< " " << domain.getNz()<<endl;
+            
+        }
+    */
     MultiBlockLattice3D<T, DESCRIPTOR> 
-      lattice (MultiBlockManagement3D (blockStructure, threadAttribution, envelopeWidth ),
+      lattice (management,
                defaultMultiBlockPolicy3D().getBlockCommunicator(),
                defaultMultiBlockPolicy3D().getCombinedStatistics(),
                defaultMultiBlockPolicy3D().getMultiCellAccess<T,DESCRIPTOR>(),
                new DYNAMICS );
+    
     
     //Cell<T,DESCRIPTOR> &cell = lattice.get(550,5500,550);
     pcout<<"dx "<<parameters.getDeltaX()<<" dt  "<<parameters.getDeltaT()<<" tau "<<parameters.getTau()<<endl;
@@ -463,6 +508,7 @@ int main(int argc, char* argv[]) {
    double zsubhi;
    int *type;
    int **anglelist;
+   
 
    for (plint iT=0; iT<maxT; ++iT) {
         
@@ -484,25 +530,42 @@ int main(int argc, char* argv[]) {
         type = wrapper.lmp->atom->type;
         anglelist = wrapper.lmp->neighbor->anglelist;
         LAMMPS_NS::tagint *tag = wrapper.lmp->atom->tag;
-        MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice);
-        MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
-        MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice);
+        
+        plint myrank = global::mpi().getRank();
+        Box3D domainBox = Box3D(localdomain[myrank][0], localdomain[myrank][1],localdomain[myrank][2], localdomain[myrank][3], localdomain[myrank][4], localdomain[myrank][5]); //XXX Creating a Box3D from localdomain
+    
+        // plb::Array<plint, 6> localExtents = domainBox.to_plbArray();
+        // cout << localExtents[0] << " " << localExtents[1] << " "<< localExtents[2] << " "<< localExtents[3] << " "<< localExtents[4] << " "<< localExtents[5] << endl;
 
+        MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice, domainBox);
+        MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
+        MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice, domainBox);
+
+
+        //cout<<"Rank: " << myrank <<" Velocity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
+       
         Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
-			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz);  
+			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz, domainBox);
+
+      
         Bridge::Analyze(time++);
         // Clear and spread fluid force
+        cout << "DONE 1" << endl;
         setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
+        cout << "DONE 5" << endl;
         ////-----classical ibm coupling-------------//
         spreadForce3D(lattice,wrapper);
+        cout << "DONE 2" << endl;
         ////// Lattice Boltzmann iteration step.
         lattice.collideAndStream();
+        cout << "DONE 3" << endl;
         ////// Interpolate and update solid position
         interpolateVelocity3D(lattice,wrapper);
+        cout << "DONE 4" << endl;
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-       
+        //writeVTK(lattice, bulks[0], iT);
 	
     }
 

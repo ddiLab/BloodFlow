@@ -29,7 +29,7 @@ void SetData(double **x, long ntimestep, int nghost,
 	         MultiTensorField3D<double, 3> velocityArray,
 	         MultiTensorField3D<double, 3> vorticityArray,
 	         MultiScalarField3D<double> velocityNormArray,
-           int nx, int ny, int nz)
+           int nx, int ny, int nz, Box3D domainBox)
 {
   GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, xsublo, xsubhi,
                                    ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist);
@@ -39,39 +39,47 @@ void SetData(double **x, long ntimestep, int nghost,
   vtkDoubleArray *vorticityDoubleArray = vtkDoubleArray::New();
   vtkDoubleArray *velocityNormDoubleArray = vtkDoubleArray::New();
 
+//XXXNew local values added with domainBox 2/23/22*****
+  int nlx = domainBox.getNx(); 
+  int nly = domainBox.getNy();
+  int nlz = domainBox.getNz();
+//*****************************************************
+
   velocityDoubleArray->SetNumberOfComponents(3);
-  velocityDoubleArray->SetNumberOfTuples(nx * ny * nz);
+  velocityDoubleArray->SetNumberOfTuples(nlx * nly * nlz); 
 
   vorticityDoubleArray->SetNumberOfComponents(3);
-  vorticityDoubleArray->SetNumberOfTuples(nx * ny * nz);
+  vorticityDoubleArray->SetNumberOfTuples(nlx * nly * nlz);
 
    velocityNormDoubleArray->SetNumberOfComponents(1);
-   velocityNormDoubleArray->SetNumberOfTuples(nx * ny * nz);
+   velocityNormDoubleArray->SetNumberOfTuples(nlx * nly * nlz);
 
 //XXX Need to convert this to zero copy: FUTURE WORK
 //XXX Needs to be restructured to copy only the local domain
-  for (int i=0; i<nz; i++)
+cout << "NLX: " << nlx << " NLY: " << nly << " NLZ: " << nlz << endl;
+  for (int i=0; i<nlz; i++)
   {
-    for (int j=0; j<ny; j++)
+    for (int j=0; j<nly; j++)
     {
-     for (int k=0; k<nx; k++)
+     for (int k=0; k<nlx; k++)
       {
         Array<double,3> vel = velocityArray.get(k,j,i); 
         Array<double,3> vor = vorticityArray.get(k,j,i);
         double norm = velocityNormArray.get(k,j,i);
 
-        int index = j * nx + k + i * nx * ny;
+        int index = j * nlx + k + i * nlx * nly;
 
         velocityDoubleArray->SetTuple3(index,vel[0],vel[1],vel[2]);
         vorticityDoubleArray->SetTuple3(index,vor[0],vor[1],vor[2]);
         velocityNormDoubleArray->SetTuple1(index,norm);
+        //out << "X: " << k << " Y: " << j << " Z: " << i << endl;
       }
     }
   }
-//*****************
+
   
- GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray, nx, ny, nz); 
-   
+ GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray, nx, ny, nz, domainBox); 
+ cout << "ENDING IS DONE"<< endl;  
 }
 void Analyze(long ntimestep)
 {

@@ -14,7 +14,7 @@ namespace Bridge
 	           MultiTensorField3D<double, 3> velocityDoubleArray, 
 	           MultiTensorField3D<double, 3> vorticityDoubleArray, 
 	           MultiScalarField3D<double> velocityNormDoubleArray,
-             int nx, int ny, int nz);
+             int nx, int ny, int nz, Box3D domainBox); 
   void Analyze(long ntimestep); 
   void Finalize();
 }
