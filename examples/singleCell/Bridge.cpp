@@ -56,7 +56,8 @@ void SetData(double **x, long ntimestep, int nghost,
 
 //XXX Need to convert this to zero copy: FUTURE WORK
 //XXX Needs to be restructured to copy only the local domain
-cout << "NLX: " << nlx << " NLY: " << nly << " NLZ: " << nlz << endl;
+plint myrank = global::mpi().getRank();
+cout << "RANK: " << myrank <<" NLX: " << nlx << " NLY: " << nly << " NLZ: " << nlz << endl;
   for (int i=0; i<nlz; i++)
   {
     for (int j=0; j<nly; j++)
@@ -72,14 +73,18 @@ cout << "NLX: " << nlx << " NLY: " << nly << " NLZ: " << nlz << endl;
         velocityDoubleArray->SetTuple3(index,vel[0],vel[1],vel[2]);
         vorticityDoubleArray->SetTuple3(index,vor[0],vor[1],vor[2]);
         velocityNormDoubleArray->SetTuple1(index,norm);
-        //out << "X: " << k << " Y: " << j << " Z: " << i << endl;
+        if(myrank == 1 && i >= 9)
+        {
+          cout << i << " Velocity: " << velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
+          //cout << "X: " << k << " Y: " << j << " Z: " << i << endl;
+        }
       }
     }
   }
 
   
  GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray, nx, ny, nz, domainBox); 
- cout << "ENDING IS DONE"<< endl;  
+ cout <<"RANK: " << myrank <<" LOOPING IS DONE"<< endl;  
 }
 void Analyze(long ntimestep)
 {

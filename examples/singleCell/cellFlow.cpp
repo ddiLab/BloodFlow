@@ -415,8 +415,10 @@ int main(int argc, char* argv[]) {
     wrapper.execFile(inlmp);
    
     //MultiTensorField3D<T,3> vel(parameters.getNx(),parameters.getNy(),parameters.getNz());
-
-    plint localdomain[4][6]; //XXX First index: Rank value   Second Index: extents (0: xlo 1: xhi 2: ylo 3: yhi 4: zlo 5: zhi)
+    plint mysize = global::mpi().getSize();
+    plint localdomain[mysize][6]; //XXX First index: Rank value   Second Index: extents (0: xlo 1: xhi 2: ylo 3: yhi 4: zlo 5: zhi)
+    cout << "MYSIZE : " << mysize << endl;
+    
     //XXX Figure out how setup with the given number of processors
 
 
@@ -432,7 +434,7 @@ int main(int argc, char* argv[]) {
 
     SparseBlockStructure3D blockStructure = lDec.getBlockDistribution();
     ExplicitThreadAttribution* threadAttribution = lDec.getThreadAttribution();
-    plint envelopeWidth = 2;
+    plint envelopeWidth = 3;
 
 
     MultiBlockManagement3D management = MultiBlockManagement3D(blockStructure, threadAttribution, envelopeWidth);//XXX New Change
@@ -542,30 +544,31 @@ int main(int argc, char* argv[]) {
         MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice, domainBox);
 
 
-        //cout<<"Rank: " << myrank <<" Velocity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
-       
+        cout<<"Rank: " << myrank <<" Vorticity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
+        cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
+        cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
         Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
 			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz, domainBox);
 
       
         Bridge::Analyze(time++);
         // Clear and spread fluid force
-        cout << "DONE 1" << endl;
+        cout << myrank <<" DONE 1" << endl;
         setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
-        cout << "DONE 5" << endl;
+        cout << myrank <<" DONE 2" << endl;
         ////-----classical ibm coupling-------------//
         spreadForce3D(lattice,wrapper);
-        cout << "DONE 2" << endl;
+        cout << myrank << " DONE 3" << endl;
         ////// Lattice Boltzmann iteration step.
         lattice.collideAndStream();
-        cout << "DONE 3" << endl;
+        cout << myrank << " DONE 4" << endl;
         ////// Interpolate and update solid position
         interpolateVelocity3D(lattice,wrapper);
-        cout << "DONE 4" << endl;
+        cout << myrank << " DONE 5" << endl;
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        //writeVTK(lattice, bulks[0], iT);
+        //writeVTK(lattice, domainBox, iT);
 	
     }
 

@@ -288,13 +288,22 @@ namespace senseiLP
 
     else if(meshName == "fluid")
     {
+      
       DInternals& internals = (*this->Internals); 
+      //XXX added 2/24/22**********************
+      Box3D domainBox = this->Internals->domainBox;
+      int nlx = domainBox.getNx(); 
+      int nly = domainBox.getNy();
+      int nlz = domainBox.getNz();
+      
+      //***************************************
+
       vtkMultiBlockDataSet *mbfluid = vtkMultiBlockDataSet::New();
-    
+      
       //cout << "Inside get mesh " << meshName << endl;
 
       vtkImageData *FluidImageData = vtkImageData::New();
-      FluidImageData->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); //XXX HERE IS WHERE WE NEED TO CHANGE DIMENSIONS
+      FluidImageData->SetDimensions(nlx, nly, nlz); //XXX Changed on 2/24/22
       
       //cout << internals.pb_nx << "," << internals.pb_ny << "," << internals.pb_nz << endl;
       /*
