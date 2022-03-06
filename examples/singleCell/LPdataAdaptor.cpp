@@ -165,7 +165,7 @@ namespace senseiLP
 
     if (id == 0) // id == 0 is cells
     {
-      //cout << "GetMeshMetaData Cells Test" << endl;
+      cout << "GetMeshMetaData Cells Test" << endl;
       metadata->MeshName = "cells";
       metadata->MeshType = VTK_MULTIBLOCK_DATA_SET; //VTK_POLY_DATA;
       metadata->BlockType = VTK_POLY_DATA;
@@ -201,6 +201,7 @@ namespace senseiLP
     }
     else if(id == 1) // id == 1 is fluid
     {
+      cout << "GetMeshMetaData Fluid Test" << endl;
       metadata->MeshName = "fluid"; 
       metadata->MeshType = VTK_MULTIBLOCK_DATA_SET;
       metadata->BlockType= VTK_IMAGE_DATA; 
