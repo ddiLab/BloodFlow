@@ -48,6 +48,8 @@ void SetData(double **x, long ntimestep, int nghost,
    velocityNormDoubleArray->SetNumberOfComponents(1);
    velocityNormDoubleArray->SetNumberOfTuples(nx * ny * nz);
 
+//XXX Need to convert this to zero copy: FUTURE WORK
+//XXX Needs to be restructured to copy only the local domain
   for (int i=0; i<nz; i++)
   {
     for (int j=0; j<ny; j++)
@@ -66,7 +68,7 @@ void SetData(double **x, long ntimestep, int nghost,
       }
     }
   }
-
+//*****************
   
  GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray, nx, ny, nz); 
    

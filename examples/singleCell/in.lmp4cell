@@ -36,7 +36,7 @@ reset_timestep	0 # reset timestep to 0
 neighbor	0.5 bin	    # create neighbor list: set skin=0.3, using bin style
 neigh_modify	delay 0 every 1 check yes exclude molecule/intra cells
 #neigh_modify    exclude molecule plt
-comm_modify cutoff 5
+comm_modify cutoff 2  # XXX Was 5: Communication Distance, might need to be changed for further simulations
 # by (atom_modify first big)
 
 # no pairwise interactions with small particles

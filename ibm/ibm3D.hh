@@ -397,6 +397,9 @@ namespace plb {
         groupbit = f_fcm->groupbit;//new code
       }
       virtual void process(Box3D domain, BlockLattice3D<T,Descriptor> &lattice){
+        nx = domain.x1 - domain.x0 + 1; //XXX Changed for passing local dimensions Connor Murphy 2/1/2022
+        ny = domain.y1 - domain.y0 + 1;
+        nz = domain.z1 - domain.z0 + 1;
         Dot3D offset = lattice.getLocation();
         plint xl,yl,zl,ix,iy,iz,ii,jj,kk;
         T rx,ry,rz,wgt;
@@ -473,6 +476,8 @@ namespace plb {
       LammpsWrapper &wrapper;
       class LAMMPS_NS::FixFCM *f_fcm;
       plint groupbit;
+      plint nx,ny,nz; //XXX Connor Changed this 2/1/2022 
+      
 
   };
 

@@ -4,7 +4,7 @@
       <mesh name="cells"/>
       <mesh name="fluid">
       <point_arrays> velocity, vorticity, velocityNorm </point_arrays>
- 
       </mesh> 
   </analysis>
+  <analysis type="catalyst" pipeline="pythonscript" filename="fluidstate.py" enabled="0" />
 </sensei>

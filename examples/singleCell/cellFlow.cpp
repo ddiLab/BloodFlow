@@ -393,7 +393,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT    =100;//6.6e4; //(T)0.01;
+    const T maxT =100;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
@@ -436,24 +436,13 @@ int main(int argc, char* argv[]) {
 
     // Loop over main time iteration.
     util::ValueTracer<T> converge(parameters.getLatticeU(),parameters.getResolution(),1.0e-3);
-      //coupling between lammps and palabos
+    //coupling between lammps and palabos
     Array<T,3> force(0,0.,1e-6);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
-   // LAMMPS
-    double **x = wrapper.lmp->atom->x;
-    double xsublo = wrapper.lmp->domain->sublo[0];
-    double xsubhi = wrapper.lmp->domain->subhi[0];
-    double ysublo = wrapper.lmp->domain->sublo[1];
-    double ysubhi = wrapper.lmp->domain->subhi[1];
-    double zsublo = wrapper.lmp->domain->sublo[2];
-    double zsubhi = wrapper.lmp->domain->subhi[2];
+    //LAMMPS
+    //Box3D TestBox = lattice.getBoundingBox(); What is in Box3D/how to print it to screen
     
-    plint nlocal = wrapper.lmp->atom->nlocal;
-    long ntimestep = wrapper.lmp->update->ntimestep; 
-    int *type = wrapper.lmp->atom->type;
-    int nghost = wrapper.lmp->atom->nghost;
-    int **anglelist = wrapper.lmp->neighbor->anglelist;
-    int nanglelist = wrapper.lmp->neighbor->nanglelist;
+    int rank;
     long time = 0; 
  
     for (plint iT=0;iT<4e3;iT++){
@@ -461,10 +450,47 @@ int main(int argc, char* argv[]) {
     }
     T timeduration = T();
     global::timer("mainloop").start();
-   
+   plint nlocal;
+   long ntimestep;
+   int nanglelist;
+   int nghost;
+   double **x;
+   double xsublo;
+   double xsubhi;
+   double ysublo;
+   double ysubhi;
+   double zsublo;
+   double zsubhi;
+   int *type;
+   int **anglelist;
+
    for (plint iT=0; iT<maxT; ++iT) {
+        
         // lammps to calculate force
         wrapper.execCommand("run 1 pre no post no");
+        //Block for LAMMPS Data sent to SENSEI ****************
+        //Some values are dynamically changing
+        nlocal = wrapper.lmp->atom->nlocal;
+        ntimestep = wrapper.lmp->update->ntimestep;
+        nanglelist = wrapper.lmp->neighbor->nanglelist;
+        nghost = wrapper.lmp->atom->nghost;
+        x = wrapper.lmp->atom->x;
+        xsublo = wrapper.lmp->domain->sublo[0];
+        xsubhi = wrapper.lmp->domain->subhi[0];
+        ysublo = wrapper.lmp->domain->sublo[1];
+        ysubhi = wrapper.lmp->domain->subhi[1];
+        zsublo = wrapper.lmp->domain->sublo[2];
+        zsubhi = wrapper.lmp->domain->subhi[2];
+        type = wrapper.lmp->atom->type;
+        anglelist = wrapper.lmp->neighbor->anglelist;
+        LAMMPS_NS::tagint *tag = wrapper.lmp->atom->tag;
+        MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice);
+        MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
+        MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice);
+
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
+			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz);  
+        Bridge::Analyze(time++);
         // Clear and spread fluid force
         setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
         ////-----classical ibm coupling-------------//
@@ -476,12 +502,7 @@ int main(int argc, char* argv[]) {
         //-----force FSI ibm coupling-------------//
         //forceCoupling3D(lattice,wrapper);
         //lattice.collideAndStream();
-        MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice);
-        MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
-        MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice);
-        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
-			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz);  
-        Bridge::Analyze(time++);
+       
 	
     }
 
