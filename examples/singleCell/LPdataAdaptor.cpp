@@ -251,7 +251,7 @@ namespace senseiLP
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &size);
     mesh = nullptr;
-    //cout << "Calling GetMesh" << endl;
+    cout << "Calling GetMesh" << endl;
     if(meshName == "cells")
     {  
       DInternals& internals = (*this->Internals);
@@ -350,7 +350,7 @@ namespace senseiLP
   int LPDataAdaptor::AddArray(vtkDataObject* mesh, const std::string &meshName,
       int association, const std::string &arrayName)
   {
-    //cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
+    cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
     int rank;
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     if(meshName == "fluid")

@@ -519,8 +519,6 @@ int main(int argc, char* argv[]) {
         LAMMPS_NS::tagint *tag = wrapper.lmp->atom->tag;
         
         plint myrank = global::mpi().getRank();
-    
-        //domainBox = Box3D(localdomain[myrank][0], localdomain[myrank][1], localdomain[myrank][2], localdomain[myrank][3], localdomain[myrank][4], localdomain[myrank][5]); //XXX Creating a Box3D from localdomain
        
         MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice, domain);
         MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
