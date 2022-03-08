@@ -135,6 +135,7 @@ namespace senseiLP
     internals.pb_ny = ny;
     internals.pb_nz = nz;
     internals.domainBox = domainBox;//XXX domainBox 2/23/22
+    cout << " ADD PALABOS DATA" << endl;
   }   
   //----------------------------------------------------------------------
   int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)

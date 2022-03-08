@@ -61,7 +61,7 @@ plint myrank = global::mpi().getRank();
 //cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
 //cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
 //cout << "RANK: " << myrank <<" NLX: " << nlx << " NLY: " << nly << " NLZ: " << nlz << endl;
-cout << " STEP 2" << endl;
+//cout << " STEP 2" << endl;
   for (int k=0; k<nlz; k++)
   {
     for (int j=0; j<nly; j++)
@@ -99,9 +99,9 @@ cout << " STEP 2" << endl;
   }
 
  //cout <<"RANK: " << myrank << "BEFORE ADD PALABOS DATA" << endl;
- cout << " STEP 3" << endl;
+ //cout << " STEP 3" << endl;
  GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray, nx, ny, nz, domainBox); 
- cout << " STEP 4" << endl;
+ //cout << " STEP 4" << endl;
  //cout <<"RANK: " << myrank <<" LOOPING IS DONE"<< endl;  
 }
 void Analyze(long ntimestep)
