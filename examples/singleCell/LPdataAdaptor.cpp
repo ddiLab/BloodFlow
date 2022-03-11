@@ -135,7 +135,6 @@ namespace senseiLP
     internals.pb_ny = ny;
     internals.pb_nz = nz;
     internals.domainBox = domainBox;//XXX domainBox 2/23/22
-    cout << " ADD PALABOS DATA" << endl;
   }   
   //----------------------------------------------------------------------
   int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
@@ -166,7 +165,7 @@ namespace senseiLP
 
     if (id == 0) // id == 0 is cells
     {
-      cout << "GetMeshMetaData Cells Test" << endl;
+      //cout << "GetMeshMetaData Cells Test" << endl;
       metadata->MeshName = "cells";
       metadata->MeshType = VTK_MULTIBLOCK_DATA_SET; //VTK_POLY_DATA;
       metadata->BlockType = VTK_POLY_DATA;
@@ -202,7 +201,7 @@ namespace senseiLP
     }
     else if(id == 1) // id == 1 is fluid
     {
-      cout << "GetMeshMetaData Fluid Test" << endl;
+      //cout << "GetMeshMetaData Fluid Test" << endl;
       metadata->MeshName = "fluid"; 
       metadata->MeshType = VTK_MULTIBLOCK_DATA_SET;
       metadata->BlockType= VTK_IMAGE_DATA; 
@@ -252,7 +251,7 @@ namespace senseiLP
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &size);
     mesh = nullptr;
-    cout << "Calling GetMesh" << endl;
+    //cout << "Calling GetMesh" << endl;
     if(meshName == "cells")
     {  
       DInternals& internals = (*this->Internals);
@@ -351,7 +350,7 @@ namespace senseiLP
   int LPDataAdaptor::AddArray(vtkDataObject* mesh, const std::string &meshName,
       int association, const std::string &arrayName)
   {
-    cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
+    //cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
     int rank;
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     if(meshName == "fluid")

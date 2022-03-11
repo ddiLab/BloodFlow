@@ -43,8 +43,8 @@ void SetData(double **x, long ntimestep, int nghost,
   int nlx = domainBox.getNx(); 
   int nly = domainBox.getNy();
   int nlz = domainBox.getNz();
+  plint myrank = global::mpi().getRank();
 //*****************************************************
-  cout << " STEP 1" << endl;
   velocityDoubleArray->SetNumberOfComponents(3);
   velocityDoubleArray->SetNumberOfTuples(nlx * nly * nlz); 
 
@@ -56,12 +56,13 @@ void SetData(double **x, long ntimestep, int nghost,
 
 //XXX Need to convert this to zero copy: FUTURE WORK
 //XXX Needs to be restructured to copy only the local domain
-plint myrank = global::mpi().getRank();
+
 //cout<<"Rank: " << myrank <<" Vorticity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
 //cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
 //cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
 //cout << "RANK: " << myrank <<" NLX: " << nlx << " NLY: " << nly << " NLZ: " << nlz << endl;
 //cout << " STEP 2" << endl;
+
   for (int k=0; k<nlz; k++)
   {
     for (int j=0; j<nly; j++)
@@ -69,7 +70,8 @@ plint myrank = global::mpi().getRank();
      for (int i=0; i<nlx; i++)
       {
         //cout <<"RANK: " << myrank<< "Before Velocity: " << " X: " << i << " Y: " << j << " Z: " << k <<endl;
-        Array<double,3> vel = velocityArray.get(i,j,k); 
+        Array<double,3> vel = velocityArray.get(i,j,k);
+        //cout << " Rank: " << myrank << " " << "Indice: " << xlo+i << " " << ylo+j << " " << zlo+k << endl;
         //cout <<"RANK: " << myrank<< "Before Vorticity : " << " X: " << i << " Y: " << j << " Z: " << k <<endl;
         Array<double,3> vor = vorticityArray.get(i,j,k);
         //cout <<"RANK: " << myrank<< "Before Norm: " << " X: " << i << " Y: " << j << " Z: " << k <<endl;
