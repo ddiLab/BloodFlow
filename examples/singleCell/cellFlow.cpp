@@ -386,7 +386,7 @@ int main(int argc, char* argv[]) {
     const T uMaxRef = 0.01;
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
     const int nx = 20;
-    const int ny = 20;
+    const int ny = 25;
     const int nz = 40;
     //using namespace opts;
     std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
@@ -425,7 +425,7 @@ int main(int argc, char* argv[]) {
 
     SparseBlockStructure3D blockStructure = lDec.getBlockDistribution();
     ExplicitThreadAttribution* threadAttribution = lDec.getThreadAttribution();
-    plint envelopeWidth = 3;
+    plint envelopeWidth = 4;
 
 
     MultiBlockManagement3D management = MultiBlockManagement3D(blockStructure, threadAttribution, envelopeWidth);//XXX New Change
@@ -439,20 +439,24 @@ int main(int argc, char* argv[]) {
                defaultMultiBlockPolicy3D().getMultiCellAccess<T,DESCRIPTOR>(),
                new DYNAMICS );
     
-    std::vector<plint> localBlocks = blockStructure.getLocalBlocks(orgThreadAttribution);
-    //bool domainStatus = blockStructure.getBulk(0,domainBox);
-    std::vector<Box3D> bulks;
-    //bulks.push_back(domainBox);
-    //std::cout<<"main processor: "<<myrank<<" domain [z0 z1] "<<domainBox.z0<<" "<<domainBox.z1<<std::endl;
-
+    
+    //********************************************* XXX Possible alternative for passing local extents to computeVelocity function
     /*
-    Box3D domain;    
-    for (plint i=0;i<localBlocks.size();i++){
-        bool domainStatus = blockStructure.getBulk(i,domain);
-        std::cout<<"main processor: "<<myrank<<" domain [x0 x1] "<<domain.x0<<" "<<domain.x1<<std::endl;
-        bulks.push_back(domain);
+    std::vector<plint> localBlocks = blockStructure.getLocalBlocks(orgThreadAttribution);
+    std::map<plint, Box3D> bulksMap = blockStructure.getBulks();
+    std::vector<Box3D> bulks;
+    plint blockId;
+    Box3D bulk;
+    auto it=bulksMap.begin();
+    cout << " bulkSmap size " << bulksMap.size() << endl;
+    for(;it!=bulksMap.end();++it)
+    {
+        bulk = it->second;
+        blockId = it->first;
+        cout<<"block id= " << blockId<< " proc " << myrank <<" bulk: Nx " << bulk.getNx() << " Ny " << bulk.getNy() << " Nz " << bulk.getNz() << endl;
     }
     */
+    //**********************************************
     
     //Cell<T,DESCRIPTOR> &cell = lattice.get(550,5500,550);
     pcout<<"dx "<<parameters.getDeltaX()<<" dt  "<<parameters.getDeltaT()<<" tau "<<parameters.getTau()<<endl;
@@ -500,6 +504,9 @@ int main(int argc, char* argv[]) {
    int *type;
    int **anglelist;
 
+   MultiTensorField3D<T,3> vel(lattice);
+   MultiTensorField3D<double, 3> vort(lattice);
+   MultiScalarField3D<double> velNorm(lattice);
    for (plint iT=0; iT<maxT; ++iT) {
         
         // lammps to calculate force
@@ -523,32 +530,21 @@ int main(int argc, char* argv[]) {
         
         plint myrank = global::mpi().getRank();
 
-        //cout << "RANK: " << myrank << " Xlo: " << localdomain[myrank][0] << " Xhi: " << localdomain[myrank][1] << endl;
-        
-        Box3D domain = Box3D( localdomain[myrank][0],localdomain[myrank][1],localdomain[myrank][2],localdomain[myrank][3],localdomain[myrank][4],localdomain[myrank][5]);
-        
-        if(myrank == 1){
-            domain = Box3D(5,9,localdomain[myrank][2],localdomain[myrank][3],localdomain[myrank][4],localdomain[myrank][5]);
-            //cout << "DOMAIN: " << domain.x0 << " " << domain.x1 << " " << domain.z1 << endl;
-        }
-       
-        MultiTensorField3D<double, 3> velocityArray= *computeVelocity(lattice, domain);
-        MultiTensorField3D<double, 3> vorticityArray= *computeVorticity(velocityArray);
-        MultiScalarField3D<double> velocityNormArray= *computeVelocityNorm(lattice, domain);
-        
-        cout<< "RANK:" << myrank << " Norm test point: " <<velocityNormArray.get(2,10,10) << endl;
+        //*************************************
+        vel = *computeVelocity(lattice,lattice.getBoundingBox());
+        vort = *computeVorticity(vel);
+        velNorm = *computeVelocityNorm(lattice,lattice.getBoundingBox());
+        TensorField3D<T,3> velocityArray = vel.getComponent(myrank);
+        TensorField3D<T,3> vorticityArray = vort.getComponent(myrank);
+        ScalarField3D<T> velocityNormArray = velNorm.getComponent(myrank);
 
-         std::vector<Overlap3D> const & arrays = vorticityArray.getLocalInfo().getNormalOverlaps();
-         for (plint iarray=0;iarray<arrays.size();++iarray){
-         Box3D const & locate = arrays[iarray].getOriginalCoordinates();
-         plb::Array<plint, 6> arrayextent = locate.to_plbArray();
-         //cout << "Rank: " << myrank << " x0 "<< arrayextent[0] << " x1 "<< arrayextent[1] << " y0 " << arrayextent[2] << " y1 " << arrayextent[3] << " z0 " << arrayextent[4] <<" z1 " <<arrayextent[5] << endl;
-         }
-         
+        Box3D domain = Box3D(localdomain[myrank][0],localdomain[myrank][1],localdomain[myrank][2],localdomain[myrank][3],localdomain[myrank][4],localdomain[myrank][5]);
+        //*************************************
         
-        //cout<<"Rank: " << myrank <<" Vorticity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
-        //cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
-        //cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
+        cout<<"Rank: " << myrank <<" Vorticity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
+        cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
+        cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
+        
         Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
 			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz, domain);
 

@@ -11,9 +11,9 @@ namespace Bridge
                int nlocal, double xsublo, double xsubhi, 
                double ysublo, double ysubhi, double zsublo,
                double zsubhi, int **anglelist, int nanglelist,
-	           MultiTensorField3D<double, 3> velocityDoubleArray, 
-	           MultiTensorField3D<double, 3> vorticityDoubleArray, 
-	           MultiScalarField3D<double> velocityNormDoubleArray,
+	           TensorField3D<double, 3> velocityDoubleArray, 
+	           TensorField3D<double, 3> vorticityDoubleArray, 
+	           ScalarField3D<double> velocityNormDoubleArray,
              int nx, int ny, int nz, Box3D domainBox); 
   void Analyze(long ntimestep); 
   void Finalize();

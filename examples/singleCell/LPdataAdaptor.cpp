@@ -228,7 +228,7 @@ namespace senseiLP
         // fixme
         // There should be no extent for a PolyData, but ADIOS2 needs this
         std::array<int,6> ext = { 0, nx, 0, ny, 0, nz };
-        std::array<int,6> blockext = { localExtents[0], localExtents[1], localExtents[2], localExtents[3], localExtents[4], localExtents[5]}; //XXX Changes 2/23/22
+        std::array<int,6> blockext = {localExtents[0], localExtents[1], localExtents[2], localExtents[3], localExtents[4], localExtents[5]}; //XXX Changes 2/23/22
         metadata->Extent = std::move(ext);
         metadata->BlockExtents.reserve(1);	// One block per rank
         metadata->BlockExtents.emplace_back(std::move(blockext)); //XXX We have to figure out the local numbers for block ext
