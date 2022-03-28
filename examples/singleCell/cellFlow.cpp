@@ -198,8 +198,8 @@ void squarePoiseuilleSetup( MultiBlockLattice3D<T,DESCRIPTOR>& lattice,
     Box3D top    = Box3D(0,    nx-1, ny-1, ny-1, 0, nz-1);
     Box3D bottom = Box3D(0,    nx-1, 0,    0,    0, nz-1);
     
-    Box3D inlet  = Box3D(0,    nx-1, 1,    ny-2, 0,    0);
-    Box3D outlet = Box3D(0,    nx-1, 1,    ny-2, nz-1, nz-1);
+    //Box3D inlet  = Box3D(0,    nx-1, 1,    ny-2, 0,    0);
+    //Box3D outlet = Box3D(0,    nx-1, 1,    ny-2, nz-1, nz-1);
     
     Box3D left   = Box3D(0,    0,    1,    ny-2, 1, nz-2);
     Box3D right  = Box3D(nx-1, nx-1, 1,    ny-2, 1, nz-2);
@@ -382,8 +382,8 @@ int main(int argc, char* argv[]) {
     //const plint N = atoi(argv[1]);
     const plint N = 1;// atoi(argv[1]);
     const T Re = 5e-3;
-    const plint Nref = 50;
-    const T uMaxRef = 0.01;
+    //const plint Nref = 50;
+    //const T uMaxRef = 0.01;
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
     const int nx = 20;
     const int ny = 25;
@@ -416,7 +416,6 @@ int main(int argc, char* argv[]) {
    
     //MultiTensorField3D<T,3> vel(parameters.getNx(),parameters.getNy(),parameters.getNz());
     plint mysize = global::mpi().getSize();
-    plint myrank = global::mpi().getRank();
     plint localdomain[mysize][6]; //XXX First index: Rank value Second Index: extents (0: xlo 1: xhi 2: ylo 3: yhi 4: zlo 5: zhi)
 
     pcout<<"Nx,Ny,Nz "<<parameters.getNx()<<" "<<parameters.getNy()<<" "<<parameters.getNz()<<endl;
@@ -425,11 +424,11 @@ int main(int argc, char* argv[]) {
 
     SparseBlockStructure3D blockStructure = lDec.getBlockDistribution();
     ExplicitThreadAttribution* threadAttribution = lDec.getThreadAttribution();
-    plint envelopeWidth = 4;
+    plint envelopeWidth = 3;
 
 
     MultiBlockManagement3D management = MultiBlockManagement3D(blockStructure, threadAttribution, envelopeWidth);//XXX New Change
-    ThreadAttribution const & orgThreadAttribution = management.getThreadAttribution();
+    
     
 
     MultiBlockLattice3D<T, DESCRIPTOR> 
@@ -442,6 +441,7 @@ int main(int argc, char* argv[]) {
     
     //********************************************* XXX Possible alternative for passing local extents to computeVelocity function
     /*
+    ThreadAttribution const & orgThreadAttribution = management.getThreadAttribution();
     std::vector<plint> localBlocks = blockStructure.getLocalBlocks(orgThreadAttribution);
     std::map<plint, Box3D> bulksMap = blockStructure.getBulks();
     std::vector<Box3D> bulks;
@@ -482,7 +482,6 @@ int main(int argc, char* argv[]) {
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
     //LAMMPS
 
-    int rank;
     long time = 0; 
  
     for (plint iT=0;iT<4e3;iT++){
@@ -501,7 +500,7 @@ int main(int argc, char* argv[]) {
    double ysubhi;
    double zsublo;
    double zsubhi;
-   int *type;
+   
    int **anglelist;
 
    MultiTensorField3D<T,3> vel(lattice);
@@ -511,7 +510,7 @@ int main(int argc, char* argv[]) {
         
         // lammps to calculate force
         wrapper.execCommand("run 1 pre no post no");
-        //Block for LAMMPS Data sent to SENSEI ****************
+
         //Some values are dynamically changing
         nlocal = wrapper.lmp->atom->nlocal;
         ntimestep = wrapper.lmp->update->ntimestep;
@@ -524,9 +523,7 @@ int main(int argc, char* argv[]) {
         ysubhi = wrapper.lmp->domain->subhi[1];
         zsublo = wrapper.lmp->domain->sublo[2];
         zsubhi = wrapper.lmp->domain->subhi[2];
-        type = wrapper.lmp->atom->type;
         anglelist = wrapper.lmp->neighbor->anglelist;
-        LAMMPS_NS::tagint *tag = wrapper.lmp->atom->tag;
         
         plint myrank = global::mpi().getRank();
 
@@ -541,12 +538,12 @@ int main(int argc, char* argv[]) {
         Box3D domain = Box3D(localdomain[myrank][0],localdomain[myrank][1],localdomain[myrank][2],localdomain[myrank][3],localdomain[myrank][4],localdomain[myrank][5]);
         //*************************************
         
-        cout<<"Rank: " << myrank <<" Vorticity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
-        cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
-        cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
+        //cout<<"Rank: " << myrank <<" Vorticity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
+        //cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
+        //cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
         
         Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
-			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz, domain);
+			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz, domain, envelopeWidth);
 
         Bridge::Analyze(time++);
         

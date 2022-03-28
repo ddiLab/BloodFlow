@@ -26,7 +26,7 @@ public:
    void AddPalabosData(vtkDoubleArray *velocityDoubleArray,
                       vtkDoubleArray *vorticityDoubleArray,
                       vtkDoubleArray *velocityNormDoubleArray,
-                      int nx, int ny, int nz, Box3D domainBox);
+                      int nx, int ny, int nz, Box3D domainBox, plint envelopeWidth);
 // SENSEI API (Virtual functions overridden from sensei/DataAdaptor.h)
   int GetNumberOfMeshes(unsigned int &numMeshes) override;
 

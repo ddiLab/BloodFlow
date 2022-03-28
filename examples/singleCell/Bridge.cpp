@@ -29,7 +29,7 @@ void SetData(double **x, long ntimestep, int nghost,
 	         TensorField3D<double, 3> velocityArray,
 	         TensorField3D<double, 3> vorticityArray,
 	         ScalarField3D<double> velocityNormArray,
-           int nx, int ny, int nz, Box3D domainBox)
+           int nx, int ny, int nz, Box3D domainBox, plint envelopeWidth)
 {
   GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, xsublo, xsubhi,
                                    ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist);
@@ -55,7 +55,7 @@ void SetData(double **x, long ntimestep, int nghost,
    velocityNormDoubleArray->SetNumberOfComponents(1);
    velocityNormDoubleArray->SetNumberOfTuples(nlx * nly * nlz);
 
-   plint EW = 4;
+   plint EW = envelopeWidth;
 
 //XXX Need to convert this to zero copy: FUTURE WORK
 
@@ -76,7 +76,7 @@ void SetData(double **x, long ntimestep, int nghost,
     }
   }
 
- GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray, nx, ny, nz, domainBox); 
+ GlobalDataAdaptor->AddPalabosData(velocityDoubleArray, vorticityDoubleArray, velocityNormDoubleArray, nx, ny, nz, domainBox, envelopeWidth); 
  
 }
 void Analyze(long ntimestep)
