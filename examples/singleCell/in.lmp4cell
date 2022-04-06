@@ -6,7 +6,7 @@ atom_style	molecular
 #atom_style	atomic
 atom_modify	first cells	# treat big as first group atom list
 dimension	3
-boundary 	f p f		# x periodic y fix z periodic
+boundary 	f f p	# x periodic y fix z periodic
 processors 4 1 1 #map xyz
 # create big particles with sigma 1.0
 

@@ -386,7 +386,7 @@ int main(int argc, char* argv[]) {
     //const T uMaxRef = 0.01;
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
     const int nx = 20;
-    const int ny = 25;
+    const int ny = 20;
     const int nz = 40;
     //using namespace opts;
     std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
@@ -405,7 +405,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT =10;//6.6e4; //(T)0.01;
+    const T maxT =2500;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
@@ -469,6 +469,7 @@ int main(int argc, char* argv[]) {
 
     // Use periodic boundary conditions.
     lattice.periodicity().toggle(2,true);
+   
 
     OnLatticeBoundaryCondition3D<T,DESCRIPTOR>* boundaryCondition
         = createLocalBoundaryCondition3D<T,DESCRIPTOR>();
@@ -535,7 +536,7 @@ int main(int argc, char* argv[]) {
         TensorField3D<T,3> vorticityArray = vort.getComponent(myrank);
         ScalarField3D<T> velocityNormArray = velNorm.getComponent(myrank);
 
-        Box3D domain = Box3D(localdomain[myrank][0],localdomain[myrank][1],localdomain[myrank][2],localdomain[myrank][3],localdomain[myrank][4],localdomain[myrank][5]);
+        Box3D domain = Box3D(localdomain[myrank][0]-envelopeWidth,localdomain[myrank][1]+envelopeWidth,localdomain[myrank][2]-envelopeWidth,localdomain[myrank][3]+envelopeWidth,localdomain[myrank][4]-envelopeWidth,localdomain[myrank][5]+envelopeWidth);
         //*************************************
         
         //cout<<"Rank: " << myrank <<" Vorticity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
