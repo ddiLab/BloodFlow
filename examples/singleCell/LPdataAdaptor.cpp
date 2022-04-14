@@ -34,20 +34,16 @@ vtkUnsignedCharArray *newGhostCellsArray(plb::Box3D domain, int ng, int gnx, int
     int nz = domain.getNz()-1;
     int nxny = nx*ny;
     int ncells = nx*ny*nz;
-    gnx = gnx+1;//There is an extra node
-    gny = gny+1;
-    gnz = gnz+1;
-
+    cout << "X Extents (domain.getNX()): " << domain.getNx() << endl;
     vtkUnsignedCharArray *g = vtkUnsignedCharArray::New();
     g->SetNumberOfTuples(ncells);
     memset(g->GetVoidPointer(0), 0, sizeof(unsigned char) * ncells);
-    g->SetName("vtkGhostType");
+    g->SetName("vtkTestType");
+    
     unsigned char *gptr = (unsigned char *)g->GetVoidPointer(0);
     unsigned char ghost = 1;
-    unsigned char external = 32;
-    unsigned char surface = 16;
-    cout << "Global Extents: " << gnx << " " << gny << " " << gnz << endl;
-    cout << "MINIMUM X: " << imin << endl;
+    unsigned char external = 1;
+    unsigned char surface = 1;
     //I Low********************************************
     if(imin < 0) 
     {
@@ -163,9 +159,9 @@ vtkUnsignedCharArray *newGhostCellsArray(plb::Box3D domain, int ng, int gnx, int
     }    
     //****************************************************
     
-    gptr[4 * nxny + 4*nx + 4] = surface;
-    gptr[1 * nxny + 1*nx + 3] = surface;
-    gptr[1 * nxny + 1*nx + 3] = surface;
+    //gptr[0 * nxny + 0*nx + 0] = surface;
+    //gptr[1 * nxny + 1*nx + 0] = surface;
+    //gptr[2 * nxny + 2*nx + 0] = surface;
     
     return g;
 }
@@ -364,7 +360,7 @@ namespace senseiLP
       metadata->CoordinateType = VTK_DOUBLE;
       metadata->NumBlocks = nRanks;
       metadata->NumBlocksLocal = {1};
-      metadata->NumGhostCells = 3; //XXX FIX This to envelopeWidth 
+      metadata->NumGhostCells = this->Internals->envelopeWidth; //XXX FIX This to envelopeWidth 
       metadata->NumArrays=3;
       metadata->ArrayName = {"velocity","vorticity","velocityNorm"};
       metadata->ArrayComponents = {3, 3, 1}; 
@@ -451,7 +447,6 @@ namespace senseiLP
       int nlx = domainBox.getNx(); 
       int nly = domainBox.getNy();
       int nlz = domainBox.getNz();
-      
       //***************************************
 
       vtkMultiBlockDataSet *mbfluid = vtkMultiBlockDataSet::New();
@@ -461,6 +456,7 @@ namespace senseiLP
       vtkImageData *FluidImageData = vtkImageData::New();
       FluidImageData->SetDimensions(nlx, nly, nlz); //XXX Changed on 2/24/22 (+2 because of extra layer on each side of vtk file)
       FluidImageData->SetExtent(domainBox.x0, domainBox.x1, domainBox.y0, domainBox.y1, domainBox.z0, domainBox.z1);
+
       //cout << internals.pb_nx << "," << internals.pb_ny << "," << internals.pb_nz << endl;
       /*
       FluidImageData->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
@@ -501,6 +497,7 @@ namespace senseiLP
   int LPDataAdaptor::AddGhostCellsArray(vtkDataObject* mesh, const std::string &meshName)
   {
     //cout << " TESTING NODE ARRAY" << endl;
+    
     int rank;
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     if(meshName == "fluid")
@@ -526,6 +523,7 @@ namespace senseiLP
       dsa->AddArray(ga);
       ga->Delete(); 
     }
+    
     return 0;
   }
   //----------------------------------------------------------------------

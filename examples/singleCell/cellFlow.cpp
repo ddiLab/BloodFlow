@@ -385,9 +385,9 @@ int main(int argc, char* argv[]) {
     //const plint Nref = 50;
     //const T uMaxRef = 0.01;
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
-    const int nx = 20;
-    const int ny = 20;
-    const int nz = 40;
+    const int nx = 90;
+    const int ny = 90;
+    const int nz = 150;
     //using namespace opts;
     std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
     Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!! 
@@ -405,7 +405,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT =2500;//6.6e4; //(T)0.01;
+    const T maxT = 9;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
@@ -479,7 +479,7 @@ int main(int argc, char* argv[]) {
     // Loop over main time iteration.
     util::ValueTracer<T> converge(parameters.getLatticeU(),parameters.getResolution(),1.0e-3);
     //coupling between lammps and palabos
-    Array<T,3> force(0,0.,1e-6);
+    Array<T,3> force(0,0,1e-6);
     setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
     //LAMMPS
 
@@ -543,9 +543,11 @@ int main(int argc, char* argv[]) {
         //cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
         //cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
         
-        Bridge::SetData(x, ntimestep, nghost ,nlocal, xsublo, xsubhi, ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist,
-			            velocityArray, vorticityArray, velocityNormArray, nx, ny, nz, domain, envelopeWidth);
-
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, 
+                        xsublo, xsubhi, ysublo, ysubhi, 
+                        zsublo, zsubhi, anglelist, nanglelist,
+			            velocityArray, vorticityArray, velocityNormArray, 
+                        nx, ny, nz, domain, envelopeWidth);
         Bridge::Analyze(time++);
         
         // Clear and spread fluid force

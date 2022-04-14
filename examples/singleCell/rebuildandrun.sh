@@ -9,14 +9,14 @@ make -j 8
 
 cd ..
 
-mpirun -n 4 cellFlow in.lmp4cell
+mpirun -n 6 cellFlow in.lmp4cell
 
 echo 'Transferring Paraview Data to:'
 echo '/mnt/c/Users/Connor/Documents/post'
 
 cd vtk_output
 
-#rm /mnt/c/Users/Connor/Documents/post/
+rm /mnt/c/Users/Connor/Documents/post3/*
 mv * /mnt/c/Users/Connor/Documents/post3
 
 cd .. 

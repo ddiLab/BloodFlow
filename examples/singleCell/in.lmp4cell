@@ -14,7 +14,8 @@ lattice		sc 1 # reduced density: factor^2=1/0.4
 bond_style      wlc/pow
 angle_style     rbc
 dihedral_style  bend
-read_data       in.cells 
+read_data       in.cells
+#read_dump dump.rbc.xyz 0 x y z box no format xyz
 
 #pair_style lj/cut 3
 #pair_coeff 1 1 0 2 3 
@@ -72,7 +73,7 @@ fix 2 cells fcm 1
 #thermo		100
 #run             1000000
 # output thermodynamic infor every 100 timesteps
-dump            1 cells xyz 10 dump.rbc.xyz
+#dump            1 cells xyz 10 dump.rbc.xyz
 #dump           2 all custom 500 dump.rbc.force id fx fy fz
 #dump           3 all custom 500 dump.rbc.vel id vx vy vz
 run	      1 
