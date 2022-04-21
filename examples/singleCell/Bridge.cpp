@@ -16,23 +16,20 @@ void Initialize(MPI_Comm world, const std::string& config_file){
    GlobalDataAdaptor = vtkSmartPointer<senseiLP::LPDataAdaptor>::New();
    GlobalDataAdaptor->Initialize();
    GlobalDataAdaptor->SetCommunicator(world);
-   GlobalDataAdaptor->SetDataTimeStep(-1);
+   GlobalDataAdaptor->SetDataTimeStep(-1); //XXX Why -1?
 
    GlobalAnalysisAdaptor = vtkSmartPointer<sensei::ConfigurableAnalysis>::New();
    GlobalAnalysisAdaptor->Initialize(config_file);
 
 }
 void SetData(double **x, long ntimestep, int nghost, 
-             int nlocal, double xsublo, double xsubhi, 
-             double ysublo, double ysubhi, double zsublo, 
-             double zsubhi, int **anglelist, int nanglelist, 
+             int nlocal, int **anglelist, int nanglelist, 
 	         TensorField3D<double, 3> velocityArray,
 	         TensorField3D<double, 3> vorticityArray,
 	         ScalarField3D<double> velocityNormArray,
            int nx, int ny, int nz, Box3D domainBox, plint envelopeWidth)
 {
-  GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, xsublo, xsubhi,
-                                   ysublo, ysubhi, zsublo, zsubhi, anglelist, nanglelist);
+  GlobalDataAdaptor->AddLAMMPSData(x, ntimestep, nghost, nlocal, anglelist, nanglelist);
   
 
   vtkDoubleArray *velocityDoubleArray = vtkDoubleArray::New();
@@ -44,8 +41,7 @@ void SetData(double **x, long ntimestep, int nghost,
   int nly = velocityArray.getNy();
   int nlz = velocityArray.getNz();
   plint myrank = global::mpi().getRank();
-  //cout << "Rank: " << myrank << "Extent: " << nlx << endl;
-  //plint EW = envelopeWidth-1;
+
 //*****************************************************
   velocityDoubleArray->SetNumberOfComponents(3);
   velocityDoubleArray->SetNumberOfTuples((nlx) * (nly) * (nlz)); 

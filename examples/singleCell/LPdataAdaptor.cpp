@@ -42,7 +42,7 @@ vtkUnsignedCharArray *newGhostCellsArray(plb::Box3D domain, int ng, int gnx, int
     
     unsigned char *gptr = (unsigned char *)g->GetVoidPointer(0);
     unsigned char ghost = 1;
-    unsigned char external = 1;
+    unsigned char external = 32;
     unsigned char surface = 1;
     //I Low********************************************
     if(imin < 0) 
@@ -183,7 +183,6 @@ namespace senseiLP
     vtkDoubleArray *pb_vorticityDoubleArray; 
     vtkDoubleArray *pb_velocityNormDoubleArray;
   // --------------------------------------
-    double xsublo, ysublo, zsublo, xsubhi, ysubhi, zsubhi;
     long NumBlocks;
     int nlocal, nghost, nanglelist;
     double **x;
@@ -214,9 +213,7 @@ namespace senseiLP
   }
   //----------------------------------------------------------------------
   void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost, 
-                                    int nlocal, double xsublo, double xsubhi,
-                                    double ysublo, double ysubhi, double zsublo,
-                                    double zsubhi, int **anglelist, int nanglelist)
+                                    int nlocal, int **anglelist, int nanglelist)
   {
     
 
@@ -254,16 +251,9 @@ namespace senseiLP
     internals.nlocal = nlocal;
     internals.nghost = nghost;
 
-  // bounding box 
-    internals.xsublo = xsublo;
-    internals.ysublo = ysublo;
-    internals.zsublo = zsublo;
-    internals.xsubhi = xsubhi;
-    internals.ysubhi = ysubhi;
-    internals.zsubhi = zsubhi;
-    
+  
   // timestep
-    this->SetDataTimeStep(ntimestep);
+    this->SetDataTimeStep(ntimestep);//XXX 4/20/22 There is a SetDataTimeStep in the Analyze() function in Bridge.cpp. Is this redundant?
 
   }
   //---------------------------------------------------------------------------
@@ -332,7 +322,6 @@ namespace senseiLP
       {
         //SENSEI_WARNING("lammps data adaptor. Flags.BlockExtentsSet()")
         
-        // fixme
         // There should be no extent for a PolyData, but ADIOS2 needs this
         std::array<int,6> ext = { 0, 0, 0, 0, 0, 0};
         metadata->Extent = std::move(ext);
@@ -360,7 +349,7 @@ namespace senseiLP
       metadata->CoordinateType = VTK_DOUBLE;
       metadata->NumBlocks = nRanks;
       metadata->NumBlocksLocal = {1};
-      metadata->NumGhostCells = this->Internals->envelopeWidth; //XXX FIX This to envelopeWidth 
+      metadata->NumGhostCells = this->Internals->envelopeWidth;  
       metadata->NumArrays=3;
       metadata->ArrayName = {"velocity","vorticity","velocityNorm"};
       metadata->ArrayComponents = {3, 3, 1}; 
@@ -430,7 +419,7 @@ namespace senseiLP
         pd->SetPolys(Triangles);
       }
       
-      pd->SetVerts( internals.vertices );
+      pd->SetVerts( internals.vertices ); //XXX Does this do anything? vertices gets created in DInternals but doesn't get set as anything
 
       mb->SetNumberOfBlocks(size);
       mb->SetBlock(rank,pd);
@@ -588,14 +577,6 @@ namespace senseiLP
   {
     DInternals& internals = (*this->Internals);
     internals.AtomPositions = NULL;
-    internals.nlocal = 0;
-    internals.nghost = 0;
-    internals.xsublo = 0;
-    internals.ysublo = 0;
-    internals.zsublo = 0;
-    internals.xsubhi = 0;
-    internals.ysubhi = 0;
-    internals.zsubhi = 0;
     
     return 0;
   }

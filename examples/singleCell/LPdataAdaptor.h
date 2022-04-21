@@ -19,9 +19,7 @@ public:
   void Initialize();
 
   void AddLAMMPSData(double **x, long ntimestep, int nghost, 
-                     int nlocal, double xsublo, double xsubhi,
-                     double ysublo, double ysubhi, double zsublo,
-                     double zsubhi, int **anglelist, int nanglelist);
+                     int nlocal, int **anglelist, int nanglelist);
 
    void AddPalabosData(vtkDoubleArray *velocityDoubleArray,
                       vtkDoubleArray *vorticityDoubleArray,

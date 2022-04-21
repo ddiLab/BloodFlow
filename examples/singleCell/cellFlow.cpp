@@ -385,9 +385,9 @@ int main(int argc, char* argv[]) {
     //const plint Nref = 50;
     //const T uMaxRef = 0.01;
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
-    const int nx = 90;
-    const int ny = 90;
-    const int nz = 150;
+    const int nx = 20;
+    const int ny = 20;
+    const int nz = 40;
     //using namespace opts;
     std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
     Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!! 
@@ -405,7 +405,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT = 9;//6.6e4; //(T)0.01;
+    const T maxT = 100;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
@@ -495,12 +495,6 @@ int main(int argc, char* argv[]) {
    int nanglelist;
    int nghost;
    double **x;
-   double xsublo;
-   double xsubhi;
-   double ysublo;
-   double ysubhi;
-   double zsublo;
-   double zsubhi;
    
    int **anglelist;
 
@@ -518,12 +512,6 @@ int main(int argc, char* argv[]) {
         nanglelist = wrapper.lmp->neighbor->nanglelist;
         nghost = wrapper.lmp->atom->nghost;
         x = wrapper.lmp->atom->x;
-        xsublo = wrapper.lmp->domain->sublo[0];
-        xsubhi = wrapper.lmp->domain->subhi[0];
-        ysublo = wrapper.lmp->domain->sublo[1];
-        ysubhi = wrapper.lmp->domain->subhi[1];
-        zsublo = wrapper.lmp->domain->sublo[2];
-        zsubhi = wrapper.lmp->domain->subhi[2];
         anglelist = wrapper.lmp->neighbor->anglelist;
         
         plint myrank = global::mpi().getRank();
@@ -543,9 +531,7 @@ int main(int argc, char* argv[]) {
         //cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
         //cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
         
-        Bridge::SetData(x, ntimestep, nghost ,nlocal, 
-                        xsublo, xsubhi, ysublo, ysubhi, 
-                        zsublo, zsubhi, anglelist, nanglelist,
+        Bridge::SetData(x, ntimestep, nghost ,nlocal, anglelist, nanglelist,
 			            velocityArray, vorticityArray, velocityNormArray, 
                         nx, ny, nz, domain, envelopeWidth);
         Bridge::Analyze(time++);
