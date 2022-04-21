@@ -19,14 +19,12 @@ public:
   void Initialize();
 
   void AddLAMMPSData(double **x, long ntimestep, int nghost, 
-                     int nlocal, double xsublo, double xsubhi,
-                     double ysublo, double ysubhi, double zsublo,
-                     double zsubhi, int **anglelist, int nanglelist);
+                     int nlocal, int **anglelist, int nanglelist);
 
    void AddPalabosData(vtkDoubleArray *velocityDoubleArray,
                       vtkDoubleArray *vorticityDoubleArray,
                       vtkDoubleArray *velocityNormDoubleArray,
-                      int nx, int ny, int nz);
+                      int nx, int ny, int nz, Box3D domainBox, plint envelopeWidth);
 // SENSEI API (Virtual functions overridden from sensei/DataAdaptor.h)
   int GetNumberOfMeshes(unsigned int &numMeshes) override;
 

@@ -35,6 +35,8 @@ namespace plb{
 class LatticeDecomposition {
 public:
   LatticeDecomposition(plb::plint nx_, plb::plint ny_, plb::plint nz_, LAMMPS_NS::LAMMPS *lmp_);
+
+  LatticeDecomposition(plb::plint nx_, plb::plint ny_, plb::plint nz_, LAMMPS_NS::LAMMPS *lmp_, plb::plint localdomain[][6]); //XXX Added By Connor 2/19/22
   
   ~LatticeDecomposition();
 

@@ -1,0 +1,85 @@
+LAMMPS (8 Apr 2021)
+Lattice spacing in x,y,z = 1.0000000 1.0000000 1.0000000
+Reading data file ...
+  orthogonal box = (0.0000000 0.0000000 0.0000000) to (20.000000 20.000000 40.000000)
+  2 by 1 by 1 MPI processor grid
+  reading atoms ...
+  42 atoms
+  scanning bonds ...
+  5 = max bonds/atom
+  scanning angles ...
+  4 = max angles/atom
+  scanning dihedrals ...
+  5 = max dihedrals/atom
+  reading bonds ...
+  120 bonds
+  reading angles ...
+  80 angles
+  reading dihedrals ...
+  120 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     6 = max # of 1-2 neighbors
+    28 = max # of 1-3 neighbors
+   160 = max # of 1-4 neighbors
+    28 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.005 seconds
+42 atoms in group cells
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 2
+  ghost atom cutoff = 10
+  binsize = 1, bins = 20 20 40
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair soft, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 100
+Per MPI rank memory allocation (min/avg/max) = 12.38 | 12.38 | 12.38 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0            0            0 0.0013306576 0.0013306576 1.0920508e-10 
+       1            0            0 0.0013306576 0.0013306576 1.0920508e-10 
+Loop time of 5.055e-05 on 2 procs for 1 steps with 42 atoms
+
+Performance: 170919881305.638 tau/day, 19782.394 timesteps/s
+78.1% CPU use with 2 MPI tasks x no OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 5e-07      | 5e-07      | 5e-07      |   0.0 |  0.99
+Bond    | 8.1e-06    | 9.2e-06    | 1.03e-05   |   0.0 | 18.20
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 3.4e-06    | 4.45e-06   | 5.5e-06    |   0.0 |  8.80
+Output  | 5.7e-06    | 1.865e-05  | 3.16e-05   |   0.0 | 36.89
+Modify  | 5e-07      | 5.5e-07    | 6e-07      |   0.0 |  1.09
+Other   |            | 1.72e-05   |            |       | 34.03
+
+Nlocal:        21.0000 ave          25 max          17 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:        63.0000 ave          67 max          59 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:         0.00000 ave           0 max           0 min
+Histogram: 2 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0.0000000
+Ave special neighs/atom = 27.142857
+Neighbor list builds = 0
+Dangerous builds = 0
+Nx,Ny,Nz 21 21 41
+ z 0 proc 0
+lammps domain 40 lo-hi in z 0 40
+ z 1 proc 41
+lammps domain 40 lo-hi in z 0 40
+main processor: 1 domain [z0 z1] 0 10
+main processor: 0 domain [z0 z1] 0 10
+dx 1 dt  0.00075 tau 0.95

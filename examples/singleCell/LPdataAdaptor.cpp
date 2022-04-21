@@ -18,6 +18,155 @@
 #include <iostream>
 using namespace std;
 using namespace plb; 
+
+static
+vtkUnsignedCharArray *newGhostCellsArray(plb::Box3D domain, int ng, int gnx, int gny, int gnz)
+{
+    // This sim is always 3D.
+    int imin = domain.x0;
+    int jmin = domain.y0;
+    int kmin = domain.z0;
+    int imax = domain.x1;
+    int jmax = domain.y1;
+    int kmax = domain.z1;
+    int nx = domain.getNx()-1;
+    int ny = domain.getNy()-1;
+    int nz = domain.getNz()-1;
+    int nxny = nx*ny;
+    int ncells = nx*ny*nz;
+    cout << "X Extents (domain.getNX()): " << domain.getNx() << endl;
+    vtkUnsignedCharArray *g = vtkUnsignedCharArray::New();
+    g->SetNumberOfTuples(ncells);
+    memset(g->GetVoidPointer(0), 0, sizeof(unsigned char) * ncells);
+    g->SetName("vtkTestType");
+    
+    unsigned char *gptr = (unsigned char *)g->GetVoidPointer(0);
+    unsigned char ghost = 1;
+    unsigned char external = 32;
+    unsigned char surface = 1;
+    //I Low********************************************
+    if(imin < 0) 
+    {
+      // Set the lowest I faces to external surface.
+      for(int k = 0; k < nz; ++k)
+      for(int j = 0; j < ny; ++j)
+      for(int i = 0; i < ng; ++i)
+          gptr[k * nxny + j*nx + i] = external;
+    }
+    else
+    { 
+      // Set the low I faces to ghosts.
+      for(int k = 0; k < nz; ++k)
+      for(int j = 0; j < ny; ++j)
+      for(int i = 0; i < ng; ++i)
+          gptr[k * nxny + j*nx + i] = ghost;
+    }   
+    //*************************************************
+    
+    //I High*******************************************
+    if(imax > gnx)
+    {
+      // Set the highest I faces to external.
+      for(int k = 0; k < nz; ++k)
+      for(int j = 0; j < ny; ++j)
+      for(int i = nx-ng; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = external;
+    }
+    else{
+      // Set the high I faces to ghosts.
+      for(int k = 0; k < nz; ++k)
+      for(int j = 0; j < ny; ++j)
+      for(int i = nx-ng+1; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = ghost;
+    }
+    //**************************************************
+    
+    //J Low*********************************************
+    if(jmin < 0 )
+    {
+      // Set the lowest J faces to external.
+      for(int k = 0; k < nz; ++k)
+      for(int j = 0; j < ng; ++j)
+      for(int i = 0; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = external;
+    }
+    else
+    {
+      // Set the low J faces to ghosts.
+      for(int k = 0; k < nz; ++k)
+      for(int j = 0; j < ng; ++j)
+      for(int i = 0; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = ghost;
+    }
+    //**************************************************
+
+    //J High********************************************
+    if(jmax > gny)
+    {
+      // Set the highest J faces to external.
+      for(int k = 0; k < nz; ++k)
+      for(int j = ny-ng; j < ny; ++j)
+      for(int i = 0; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = external;
+    }
+    else
+    {
+        // Set the high J faces to ghosts.
+      for(int k = 0; k < nz; ++k)
+      for(int j = ny-ng+1; j < ny; ++j)
+      for(int i = 0; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = ghost;
+    }
+    //***************************************************
+
+    //K Low**********************************************
+    // Set the low K faces to ghosts.
+    if(kmin < 0 )
+    {
+      // Set the lowest K faces to external.
+      for(int k = 0; k < ng; ++k)
+      for(int j = 0; j < ny; ++j)
+      for(int i = 0; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = external;
+    }
+    else
+    {
+      // Set the low K faces to ghosts.
+      for(int k = 0; k < ng; ++k)
+      for(int j = 0; j < ny; ++j)
+      for(int i = 0; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = ghost;
+    }
+    //****************************************************
+
+    //K High**********************************************
+    // Set the high K faces to ghosts.
+    if(kmax > gnz)
+    {
+      // Set the high K faces to ghosts.
+      for(int k = nz-ng; k < nz; ++k)
+      for(int j = 0; j < ny; ++j)
+      for(int i = 0; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = external;
+    }
+    else
+    {
+      // Set the high K faces to ghosts.
+      for(int k = nz-ng+1; k < nz; ++k)
+      for(int j = 0; j < ny; ++j)
+      for(int i = 0; i < nx; ++i)
+          gptr[k * nxny + j*nx + i] = ghost;
+    }    
+    //****************************************************
+    
+    //gptr[0 * nxny + 0*nx + 0] = surface;
+    //gptr[1 * nxny + 1*nx + 0] = surface;
+    //gptr[2 * nxny + 2*nx + 0] = surface;
+    
+    return g;
+}
+
+
 namespace senseiLP
 {
   //----------------------------------------------------------------------
@@ -34,7 +183,6 @@ namespace senseiLP
     vtkDoubleArray *pb_vorticityDoubleArray; 
     vtkDoubleArray *pb_velocityNormDoubleArray;
   // --------------------------------------
-    double xsublo, ysublo, zsublo, xsubhi, ysubhi, zsubhi;
     long NumBlocks;
     int nlocal, nghost, nanglelist;
     double **x;
@@ -42,6 +190,9 @@ namespace senseiLP
     int **anglelist;
     int *id;
     int pb_nx, pb_ny, pb_nz;
+    Box3D domainBox; //XXX added for domainBox 2/23/22
+    int envelopeWidth;
+    
   };
   //----------------------------------------------------------------------
   senseiNewMacro(LPDataAdaptor);
@@ -62,9 +213,7 @@ namespace senseiLP
   }
   //----------------------------------------------------------------------
   void LPDataAdaptor::AddLAMMPSData(double **x, long ntimestep, int nghost, 
-                                    int nlocal, double xsublo, double xsubhi,
-                                    double ysublo, double ysubhi, double zsublo,
-                                    double zsubhi, int **anglelist, int nanglelist)
+                                    int nlocal, int **anglelist, int nanglelist)
   {
     
 
@@ -102,23 +251,16 @@ namespace senseiLP
     internals.nlocal = nlocal;
     internals.nghost = nghost;
 
-  // bounding box 
-    internals.xsublo = xsublo;
-    internals.ysublo = ysublo;
-    internals.zsublo = zsublo;
-    internals.xsubhi = xsubhi;
-    internals.ysubhi = ysubhi;
-    internals.zsubhi = zsubhi;
-    
+  
   // timestep
-    this->SetDataTimeStep(ntimestep);
+    this->SetDataTimeStep(ntimestep);//XXX 4/20/22 There is a SetDataTimeStep in the Analyze() function in Bridge.cpp. Is this redundant?
 
   }
   //---------------------------------------------------------------------------
   void LPDataAdaptor::AddPalabosData(vtkDoubleArray *velocityDoubleArray,
                 vtkDoubleArray *vorticityDoubleArray,
                 vtkDoubleArray *velocityNormDoubleArray,
-                        int nx, int ny, int nz)  
+                        int nx, int ny, int nz, Box3D domainBox, plint envelopeWidth) 
   {
     DInternals& internals = (*this->Internals);
 
@@ -132,6 +274,8 @@ namespace senseiLP
     internals.pb_nx = nx;
     internals.pb_ny = ny;
     internals.pb_nz = nz;
+    internals.domainBox = domainBox;//XXX domainBox 2/23/22
+    internals.envelopeWidth = envelopeWidth;
   }   
   //----------------------------------------------------------------------
   int LPDataAdaptor::GetNumberOfMeshes(unsigned int &numMeshes)
@@ -142,12 +286,22 @@ namespace senseiLP
   //----------------------------------------------------------------------
   int LPDataAdaptor::GetMeshMetadata(unsigned int id, sensei::MeshMetadataPtr &metadata) 
   {
-    cout << "Calling GetMeshMetaData" << endl;
+    //cout << "ID NUMBER: " << id << endl;
+    //cout << "Calling GetMeshMetaData" << endl;
     int rank, nRanks;
     
     int nx = this->Internals->pb_nx;
     int ny = this->Internals->pb_ny;
-    int nz = this->Internals->pb_nz; 	
+    int nz = this->Internals->pb_nz; 
+
+    //XXX Added for domainBox 2/23/22********	
+    Box3D domainBox = this->Internals->domainBox;
+    int nlx = domainBox.getNx(); 
+    int nly = domainBox.getNy();
+    int nlz = domainBox.getNz();
+    plb::Array<plint, 6> localExtents = domainBox.to_plbArray();//XXX look at palabos/src/core/geometry3D.h for documentation
+    //***************************************
+
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &nRanks); 	
 
@@ -168,7 +322,6 @@ namespace senseiLP
       {
         //SENSEI_WARNING("lammps data adaptor. Flags.BlockExtentsSet()")
         
-        // fixme
         // There should be no extent for a PolyData, but ADIOS2 needs this
         std::array<int,6> ext = { 0, 0, 0, 0, 0, 0};
         metadata->Extent = std::move(ext);
@@ -189,12 +342,14 @@ namespace senseiLP
     }
     else if(id == 1) // id == 1 is fluid
     {
+      //cout << "GetMeshMetaData Fluid Test" << endl;
       metadata->MeshName = "fluid"; 
       metadata->MeshType = VTK_MULTIBLOCK_DATA_SET;
       metadata->BlockType= VTK_IMAGE_DATA; 
       metadata->CoordinateType = VTK_DOUBLE;
       metadata->NumBlocks = nRanks;
-      metadata->NumBlocksLocal = {1}; 
+      metadata->NumBlocksLocal = {1};
+      metadata->NumGhostCells = this->Internals->envelopeWidth;  
       metadata->NumArrays=3;
       metadata->ArrayName = {"velocity","vorticity","velocityNorm"};
       metadata->ArrayComponents = {3, 3, 1}; 
@@ -211,18 +366,16 @@ namespace senseiLP
       if (metadata->Flags.BlockExtentsSet())
       {
         //SENSEI_WARNING("lammps data adaptor. Flags.BlockExtentsSet()")
-        
-        // fixme
-        // There should be no extent for a PolyData, but ADIOS2 needs this
         std::array<int,6> ext = { 0, nx, 0, ny, 0, nz };
-        std::array<int,6> blockext = { 0, nx, 0, ny, 0, nz }; //XXX This is incorrect right now
+        std::array<int,6> blockext = {localExtents[0], localExtents[1], localExtents[2], localExtents[3], localExtents[4], localExtents[5]}; //XXX Changes 2/23/22
+        cout << " CHECK DOMAIN: " << localExtents[0] << " " << localExtents[1] << " " << localExtents[2] << " " << localExtents[3] << " " << localExtents[4] << " " << localExtents[5] << endl;
         metadata->Extent = std::move(ext);
         metadata->BlockExtents.reserve(1);	// One block per rank
         metadata->BlockExtents.emplace_back(std::move(blockext)); //XXX We have to figure out the local numbers for block ext
       }
 
-      metadata->BlockNumCells.push_back(nx * ny * nz * 3); //XXX THESE NEED TO BE CHANGED MOST LIKELY
-      metadata->BlockNumPoints.push_back(nx * ny * nz * 3); 
+      metadata->BlockNumCells.push_back((nlx-1) * (nly-1) * (nlz-1)); //(nlx * nly * nlz * 3);//XXX Changed 2/23/22
+      metadata->BlockNumPoints.push_back((nlx) * (nly) * (nlz)); //(nlx * nly * nlz * 3); //XXX Changed 2/23/22
       metadata->BlockCellArraySize.push_back(0); 
     }
     else
@@ -238,7 +391,7 @@ namespace senseiLP
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     MPI_Comm_size(this->GetCommunicator(), &size);
     mesh = nullptr;
-    cout << "Calling GetMesh" << endl;
+    //cout << "Calling GetMesh" << endl;
     if(meshName == "cells")
     {  
       DInternals& internals = (*this->Internals);
@@ -266,7 +419,7 @@ namespace senseiLP
         pd->SetPolys(Triangles);
       }
       
-      pd->SetVerts( internals.vertices );
+      pd->SetVerts( internals.vertices ); //XXX Does this do anything? vertices gets created in DInternals but doesn't get set as anything
 
       mb->SetNumberOfBlocks(size);
       mb->SetBlock(rank,pd);
@@ -276,14 +429,23 @@ namespace senseiLP
 
     else if(meshName == "fluid")
     {
+      
       DInternals& internals = (*this->Internals); 
+      //XXX added 2/24/22**********************
+      Box3D domainBox = this->Internals->domainBox;
+      int nlx = domainBox.getNx(); 
+      int nly = domainBox.getNy();
+      int nlz = domainBox.getNz();
+      //***************************************
+
       vtkMultiBlockDataSet *mbfluid = vtkMultiBlockDataSet::New();
-    
+      
       //cout << "Inside get mesh " << meshName << endl;
 
       vtkImageData *FluidImageData = vtkImageData::New();
-      FluidImageData->SetDimensions(internals.pb_nx, internals.pb_ny, internals.pb_nz); //XXX HERE IS WHERE WE NEED TO CHANGE DIMENSIONS
-      
+      FluidImageData->SetDimensions(nlx, nly, nlz); //XXX Changed on 2/24/22 (+2 because of extra layer on each side of vtk file)
+      FluidImageData->SetExtent(domainBox.x0, domainBox.x1, domainBox.y0, domainBox.y1, domainBox.z0, domainBox.z1);
+
       //cout << internals.pb_nx << "," << internals.pb_ny << "," << internals.pb_nz << endl;
       /*
       FluidImageData->GetPointData()->AddArray(internals.pb_velocityDoubleArray);
@@ -317,18 +479,47 @@ namespace senseiLP
   //----------------------------------------------------------------------
   int LPDataAdaptor::AddGhostNodesArray(vtkDataObject* mesh, const std::string &meshName)
   {
+   
     return 0;
   }
   //----------------------------------------------------------------------
   int LPDataAdaptor::AddGhostCellsArray(vtkDataObject* mesh, const std::string &meshName)
   {
-    return 0; 
+    //cout << " TESTING NODE ARRAY" << endl;
+    
+    int rank;
+    MPI_Comm_rank(this->GetCommunicator(), &rank);
+    if(meshName == "fluid")
+    {
+      DInternals& internals = (*this->Internals); 
+      
+      vtkMultiBlockDataSet *mbfluid = dynamic_cast<vtkMultiBlockDataSet*>(mesh); 
+      if(!mbfluid)   
+      {
+        SENSEI_ERROR("unexpected mesh type "<< (mesh ? mesh->GetClassName() : "nullptr"))
+        return -1;
+      }
+      vtkImageData *FluidImageData = (vtkImageData*)mbfluid->GetBlock(rank);
+      if(!FluidImageData)
+      {
+        SENSEI_ERROR("Cannot Get Block in LPDataAdaptor::AddArray")
+        return -1;
+      }
+      
+      vtkDataSetAttributes *dsa = FluidImageData->GetAttributes(vtkDataObject::CELL);
+
+      vtkUnsignedCharArray *ga = newGhostCellsArray(this->Internals->domainBox, this->Internals->envelopeWidth , this->Internals->pb_nx, this->Internals->pb_ny, this->Internals->pb_nz);//XXX Fix this to envelopeWidth
+      dsa->AddArray(ga);
+      ga->Delete(); 
+    }
+    
+    return 0;
   }
   //----------------------------------------------------------------------
   int LPDataAdaptor::AddArray(vtkDataObject* mesh, const std::string &meshName,
       int association, const std::string &arrayName)
   {
-    cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
+    //cout << "meshname: " << meshName<< "  ArrayName: " << arrayName << endl;
     int rank;
     MPI_Comm_rank(this->GetCommunicator(), &rank);
     if(meshName == "fluid")
@@ -386,15 +577,8 @@ namespace senseiLP
   {
     DInternals& internals = (*this->Internals);
     internals.AtomPositions = NULL;
-    internals.nlocal = 0;
-    internals.nghost = 0;
-    internals.xsublo = 0;
-    internals.ysublo = 0;
-    internals.zsublo = 0;
-    internals.xsubhi = 0;
-    internals.ysubhi = 0;
-    internals.zsubhi = 0;
     
     return 0;
   }
+
 }

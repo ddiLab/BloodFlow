@@ -6,15 +6,16 @@ atom_style	molecular
 #atom_style	atomic
 atom_modify	first cells	# treat big as first group atom list
 dimension	3
-boundary 	f p f		# x periodic y fix z periodic
-#processors 8 5 1 map zyx
+boundary 	f f p	# x periodic y fix z periodic
+processors 4 1 1 #map xyz
 # create big particles with sigma 1.0
 
 lattice		sc 1 # reduced density: factor^2=1/0.4
 bond_style      wlc/pow
 angle_style     rbc
 dihedral_style  bend
-read_data       in.cells 
+read_data       in.cells
+#read_dump dump.rbc.xyz 0 x y z box no format xyz
 
 #pair_style lj/cut 3
 #pair_coeff 1 1 0 2 3 
@@ -36,7 +37,7 @@ reset_timestep	0 # reset timestep to 0
 neighbor	0.5 bin	    # create neighbor list: set skin=0.3, using bin style
 neigh_modify	delay 0 every 1 check yes exclude molecule/intra cells
 #neigh_modify    exclude molecule plt
-comm_modify cutoff 2  # XXX Was 5: Communication Distance, might need to be changed for further simulations
+comm_modify cutoff 10#  # XXX Was 5: Communication Distance, might need to be changed for further simulations
 # by (atom_modify first big)
 
 # no pairwise interactions with small particles
@@ -72,7 +73,7 @@ fix 2 cells fcm 1
 #thermo		100
 #run             1000000
 # output thermodynamic infor every 100 timesteps
-dump            1 cells xyz 10 dump.rbc.xyz
+#dump            1 cells xyz 10 dump.rbc.xyz
 #dump           2 all custom 500 dump.rbc.force id fx fy fz
 #dump           3 all custom 500 dump.rbc.vel id vx vy vz
 run	      1 
