@@ -42,8 +42,8 @@ vtkUnsignedCharArray *newGhostCellsArray(plb::Box3D domain, int ng, int gnx, int
     
     unsigned char *gptr = (unsigned char *)g->GetVoidPointer(0);
     unsigned char ghost = 1;
-    unsigned char external = 32;
-    unsigned char surface = 1;
+    unsigned char external = 1;
+   
     //I Low********************************************
     if(imin < 0) 
     {
