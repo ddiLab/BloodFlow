@@ -104,7 +104,9 @@ RUN make -j8 install
 # clone SENSEI
 WORKDIR ${SRCDIR}
 # this line clones develop branch
-RUN git clone https://github.com/SENSEI-insitu/SENSEI.git    
+RUN git clone https://github.com/SENSEI-insitu/SENSEI.git && \   
+    cd SENSEI && \
+    git checkout v3.2.2 
 
 # config SENSEI
 WORKDIR ${BASEDIR}
@@ -135,7 +137,7 @@ RUN make -j8 install
 ###################################
 
 WORKDIR ${SRCDIR}
-RUN git clone https://github.com/ddiLab/BloodFlow.git
+RUN git clone https://github.com/Mectr0/BloodFlow.git
 
 ###################################
 ###          Palabos            ###

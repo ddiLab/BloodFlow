@@ -390,7 +390,7 @@ int main(int argc, char* argv[]) {
     const int nz = 40;
     //using namespace opts;
     std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
-    Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);//!!!!!!!!!!!! 
+    Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);
     /*Options ops(argc, argv);
     ops
     #ifdef ENABLE_SENSEI
@@ -405,7 +405,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT = 100;//6.6e4; //(T)0.01;
+    const T maxT = 9;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
@@ -416,7 +416,7 @@ int main(int argc, char* argv[]) {
    
     //MultiTensorField3D<T,3> vel(parameters.getNx(),parameters.getNy(),parameters.getNz());
     plint mysize = global::mpi().getSize();
-    plint localdomain[mysize][6]; //XXX First index: Rank value Second Index: extents (0: xlo 1: xhi 2: ylo 3: yhi 4: zlo 5: zhi)
+    plint localdomain[mysize][6]; //First index: Rank value Second Index: extents (0: xlo 1: xhi 2: ylo 3: yhi 4: zlo 5: zhi)
 
     pcout<<"Nx,Ny,Nz "<<parameters.getNx()<<" "<<parameters.getNy()<<" "<<parameters.getNz()<<endl;
     LatticeDecomposition lDec(parameters.getNx(),parameters.getNy(),parameters.getNz(),
