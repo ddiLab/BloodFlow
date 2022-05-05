@@ -6,3 +6,4 @@
 export IMAGENAME="singlecell-sensei-paraview:latest"
 
 docker build -t $IMAGENAME .
+

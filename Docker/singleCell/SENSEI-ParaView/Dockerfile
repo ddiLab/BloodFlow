@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 SHELL ["/bin/bash", "-c"]
 
 # directory structure for the build
-ENV BASEDIR=/singleCell
+ENV BASEDIR=/SeniorDesign
 ENV SRCDIR=$BASEDIR/src
 ENV INSTALLDIR=$BASEDIR/install
 ENV BUILDDIR=$BASEDIR/build
@@ -183,7 +183,7 @@ RUN make yes-MOLECULE \
 # configure
 WORKDIR ${BASEDIR}
 RUN cmake -S ${SRCDIR}/BloodFlow/examples/singleCell \
-          -B ${BUILDDIR}/singleCell \
+          -B ${SRCDIR}/BloodFlow/examples/singleCell/build \
           -DSENSEI_DIR=${INSTALLDIR}/sensei/lib/cmake \
           -DPALABOS_ROOT=${SRCDIR}/palabos \
           -DBLOODFLOW_ROOT=${SRCDIR}/BloodFlow \
@@ -192,7 +192,7 @@ RUN cmake -S ${SRCDIR}/BloodFlow/examples/singleCell \
           -DCMAKE_CXX_STANDARD=11
 
 # build
-WORKDIR ${BUILDDIR}/singleCell
+WORKDIR ${SRCDIR}/BloodFlow/examples/singleCell/build
 RUN make -j 8
 
 ############################
