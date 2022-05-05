@@ -405,7 +405,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT = 9;//6.6e4; //(T)0.01;
+    const T maxT = 500;//6.6e4; //(T)0.01;
     //plint iSave =10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
