@@ -405,8 +405,8 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT = 9;//6.6e4; //(T)0.01;
-    //plint iSave =10;//2000;//10;
+    const T maxT = 500;//6.6e4; //(T)0.01;
+    plint iSave = atoi(argv[2]);//10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
 
@@ -530,11 +530,12 @@ int main(int argc, char* argv[]) {
         //cout<<"Rank: " << myrank <<" Vorticity Extents: " <<vorticityArray.getNx() << " " << vorticityArray.getNy() << " " << vorticityArray.getNz()<<endl;
         //cout<<"Rank: " << myrank <<" Velocity Extents: " <<velocityArray.getNx() << " " << velocityArray.getNy() << " " << velocityArray.getNz()<<endl;
         //cout<<"Rank: " << myrank <<" Velocity Norm Extents: " <<velocityNormArray.getNx() << " " << velocityNormArray.getNy() << " " << velocityNormArray.getNz()<<endl;
-        
+        if (iT%iSave ==0 && iT >0){
         Bridge::SetData(x, ntimestep, nghost ,nlocal, anglelist, nanglelist,
 			            velocityArray, vorticityArray, velocityNormArray, 
                         nx, ny, nz, domain, envelopeWidth);
         Bridge::Analyze(time++);
+        }
         
         // Clear and spread fluid force
         setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
