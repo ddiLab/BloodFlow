@@ -7,15 +7,15 @@ atom_style	molecular
 atom_modify	first cells	# treat big as first group atom list
 dimension	3
 boundary 	f f p	# x periodic y fix z periodic
-processors 4 1 1 #map xyz
-# create big particles with sigma 1.0
+processors 2 1 3 #map xyz
+#create big particles with sigma 1.0
 
 lattice		sc 1 # reduced density: factor^2=1/0.4
 bond_style      wlc/pow
 angle_style     rbc
 dihedral_style  bend
-read_data       in.cells
-#read_dump dump.rbc.xyz 0 x y z box no format xyz
+read_data       in.cellsrefined
+read_dump dump.rbc.xyz 0 x y z box no format xyz
 
 #pair_style lj/cut 3
 #pair_coeff 1 1 0 2 3 
