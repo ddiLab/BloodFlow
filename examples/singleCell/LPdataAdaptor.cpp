@@ -414,9 +414,13 @@ namespace senseiLP
           Triangle->GetPointIds()->SetId(1, internals.anglelist[i][1]);
           Triangle->GetPointIds()->SetId(2, internals.anglelist[i][2]);
           Triangles->InsertNextCell(Triangle);
+	  
+	  Triangle->Delete();
         }
         pd->SetPoints(pts);
         pd->SetPolys(Triangles);
+	pts->Delete();
+	Triangles->Delete();
       }
       
       pd->SetVerts( internals.vertices ); //XXX Does this do anything? vertices gets created in DInternals but doesn't get set as anything
@@ -425,6 +429,7 @@ namespace senseiLP
       mb->SetBlock(rank,pd);
  
       mesh = mb;
+      pd->Delete();
     }
 
     else if(meshName == "fluid")
@@ -460,7 +465,8 @@ namespace senseiLP
 
       mbfluid->SetNumberOfBlocks(size);
       mbfluid->SetBlock(rank,FluidImageData);
-      
+      FluidImageData->Delete();
+
       mesh = mbfluid;
     }
     else
@@ -575,8 +581,13 @@ namespace senseiLP
   //----------------------------------------------------------------------
   int LPDataAdaptor::ReleaseData() 
   {
-    DInternals& internals = (*this->Internals);
-    internals.AtomPositions = NULL;
+    //DInternals& internals = (*this->Internals); //XXX Might want to set if check depending on if you have solid or fluid data
+    //internals.AtomPositions = NULL;
+    //internals.anglelist = NULL;
+    //internals.nanglelist = NULL;
+    //internals.pb_velocityDoubleArray = NULL;
+    //internals.pb_vorticityDoubleArray = NULL;
+    //internals.pb_velocityNormDoubleArray = NULL;
     
     return 0;
   }

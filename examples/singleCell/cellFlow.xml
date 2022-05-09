@@ -11,5 +11,5 @@
       <point_arrays> velocity, vorticity, velocityNorm </point_arrays>-->
       </mesh>
   </analysis>
-  <analysis type="catalyst" pipeline="pythonscript" filename="TestScript.py" enabled="1" />
+  <analysis type="catalyst" pipeline="pythonscript" filename="TestTencell.py" enabled="1" />
 </sensei>

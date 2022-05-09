@@ -385,11 +385,11 @@ int main(int argc, char* argv[]) {
     //const plint Nref = 50;
     //const T uMaxRef = 0.01;
     const T uMax = 0.00075;//uMaxRef /(T)N * (T)Nref; // Needed to avoid compressibility errors
-    const int nx = 90;
-    const int ny = 90;
-    const int nz = 150;
+    const int nx = 30;
+    const int ny = 30;
+    const int nz = 80;
     //using namespace opts;
-    std::string config_file("cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
+    std::string config_file("/home/jifutan/insituBloodFlow/BloodFlow/examples/singleCell/cellFlow.xml");//Configuration file to tell SENSEI what to do with data.
     Bridge::Initialize(global::mpi().getGlobalCommunicator(), config_file);
     /*Options ops(argc, argv);
     ops
@@ -405,7 +405,7 @@ int main(int argc, char* argv[]) {
             ny,        // ly
             nz         // lz
     );
-    const T maxT = 15;//6.6e4; //(T)0.01;
+    const T maxT = 500000;//6.6e4; //(T)0.01;
     plint iSave = atoi(argv[2]);//10;//2000;//10;
     //plint iCheck = 10*iSave;
     writeLogFile(parameters, "3D square Poiseuille");
@@ -498,9 +498,13 @@ int main(int argc, char* argv[]) {
    
    int **anglelist;
 
+   plint myrank = global::mpi().getRank();
    MultiTensorField3D<T,3> vel(lattice);
    MultiTensorField3D<double, 3> vort(lattice);
    MultiScalarField3D<double> velNorm(lattice);
+   //TensorField3D<T,3> velocityArray = vel.getComponent(myrank);
+   //TensorField3D<T,3> vorticityArray = vort.getComponent(myrank);
+   //ScalarField3D<T> velocityNormArray = velNorm.getComponent(myrank);
    for (plint iT=0; iT<maxT; ++iT) {
         
         // lammps to calculate force
@@ -514,16 +518,16 @@ int main(int argc, char* argv[]) {
         x = wrapper.lmp->atom->x;
         anglelist = wrapper.lmp->neighbor->anglelist;
         
-        plint myrank = global::mpi().getRank();
 
         //*************************************
         vel = *computeVelocity(lattice,lattice.getBoundingBox());
         vort = *computeVorticity(vel);
         velNorm = *computeVelocityNorm(lattice,lattice.getBoundingBox());
-        TensorField3D<T,3> velocityArray = vel.getComponent(myrank);
-        TensorField3D<T,3> vorticityArray = vort.getComponent(myrank);
-        ScalarField3D<T> velocityNormArray = velNorm.getComponent(myrank);
 
+	TensorField3D<T,3> velocityArray = vel.getComponent(myrank);
+   	TensorField3D<T,3> vorticityArray = vort.getComponent(myrank);
+      	ScalarField3D<T> velocityNormArray = velNorm.getComponent(myrank);
+      
         Box3D domain = Box3D(localdomain[myrank][0]-envelopeWidth,localdomain[myrank][1]+envelopeWidth,localdomain[myrank][2]-envelopeWidth,localdomain[myrank][3]+envelopeWidth,localdomain[myrank][4]-envelopeWidth,localdomain[myrank][5]+envelopeWidth);
         //*************************************
         
@@ -536,7 +540,7 @@ int main(int argc, char* argv[]) {
                         nx, ny, nz, domain, envelopeWidth);
         Bridge::Analyze(time++);
         }
-        
+
         // Clear and spread fluid force
         setExternalVector(lattice,lattice.getBoundingBox(),DESCRIPTOR<T>::ExternalField::forceBeginsAt,force);
         ////-----classical ibm coupling-------------//
